@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+
+	<typedef name="SpecificationLevel" class="com.ressq.stateasy.model.hibernate.GenericEnumUserType">
+		<param name="enumClass">com.ressq.stateasy.model.enums.SpecificationLevel</param>
+	</typedef>
+	
+	<typedef name="AttributeDataType" class="com.ressq.stateasy.model.hibernate.GenericEnumUserType">
+		<param name="enumClass">com.ressq.stateasy.model.enums.AttributeDataType</param>
+	</typedef>
+
+	<class name="EventGroupingAttributeType" table="eventGroupingAttributeTypes">
+		<id name="id" column="eventGroupingAttributeType" unsaved-value="null">
+			<generator class="native"/>
+		</id>
+		
+		<property name="name">
+			<column name="name"/>
+		</property>
+		
+		<property name="defaultValue">
+			<column name="defaultValue"/>
+		</property>
+		
+		<property name="index">
+			<column name="eventGroupingAttributeTypeIndex"/>
+		</property>
+		
+		<property name="specificationLevel" type="SpecificationLevel">
+			<column name="specificationLevel"/>
+		</property>
+		
+		<property name="type" type="AttributeDataType">
+			<column name="attributeDataType"/>
+		</property>
+		
+		<many-to-one name="parentGrouping" column="eventGroupingType" class="EventGroupingType" not-null="true" />
+		
+	</class>
+</hibernate-mapping>

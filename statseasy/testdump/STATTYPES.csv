@@ -1,0 +1,43 @@
+STATTYPE,UUID,NAME,ONLINEHELP,SHORTCUT,PARSEINFORMATION,STATEFFECT,SEEKTIMEOFFSET,ENDTIMEOFFSET,ACTIONENDINGSTAT,LOCATIONAWARE,POINTCOUNT,COLOR,SHAPE,LINESTYLE,LINEWIDTH,SPORT,DOUBLETAP,PRIVATESTAT
+1,1d90dcda-a0a0-4ec6-82bf-180af7381996,Assist,,a,"%p ",,-5.0E0,5.0E0,0,0,,,POINT,DOTTED,,1,0,0
+2,094b12e8-b04a-4627-93be-d6746df7ee29,Attempt,,at,"%p ",1,-5.0E0,5.0E0,0,1,2,#e1ff00,POINT,DOTTED,2,1,0,0
+3,39a5df14-6cef-45d5-ae46-433819821232,Ball Handling Error,,bhe,"%p ",2,-5.0E0,5.0E0,1,0,,,POINT,DOTTED,,1,0,0
+4,9ee3d116-6ce5-48cb-af05-8001097a5a64,Block Touch,,bt,"%p ",,-5.0E0,5.0E0,0,0,,,,,,1,0,0
+5,f629a007-8ca7-4f05-bc77-2fd04182627d,Blocking Error,,be,"%p ",2,-5.0E0,5.0E0,1,0,,,POINT,DOTTED,,1,0,0
+6,677b199e-4097-46c6-8652-18d0d36d54e3,"Cover ",,c,"%p ",,-5.0E0,5.0E0,0,0,,,,,,1,,0
+7,5c4fa758-0f17-4537-b1ee-09618f29e2ab,Dig,,d,"%p ",3,-5.0E0,5.0E0,0,0,,,,,,1,0,0
+8,3b2226f4-970d-481d-90a5-d92c170b0919,Dig Rating,,dr,"%p %d ",,-5.0E0,5.0E0,0,0,,,,,,1,0,0
+9,abaf18da-8ebe-4bec-9c96-56e3fd094ffa,Double Block,,db,"%p %p ",13,-5.0E0,5.0E0,1,0,,,POINT,DOTTED,,1,0,0
+10,6b9f4b15-82a9-41d1-a5cf-2425d21ca332,Error,,e,"%p ",4,-5.0E0,5.0E0,1,1,2,#ff0505,POINT,SOLID,2,1,0,0
+11,2d36b897-45f4-47de-90e9-85622b0fe70f,Free Ball Zero,,fa,"%p ",,-7.0E0,3.0E0,0,0,,,,,,1,,0
+12,ef684998-fc19-442b-a109-0e76c3ebc750,Free Ball-Overpass Dig,,fb,"%p ",,-5.0E0,5.0E0,0,0,,,,,,1,,0
+13,b869ef2e-a1af-4618-b934-5f7374d9c815,Freeball,,f,"%p %d ",,-5.0E0,5.0E0,0,0,,,POINT,DOTTED,,1,0,0
+14,204dad0d-dfc2-4cd7-a607-ceb785c8c410,Kill,,k,"%p ",5,-5.0E0,5.0E0,1,1,2,#15ff00,POINT,DOTTED,2,1,0,0
+15,331a713e-2f51-4c46-a2ff-ba9e9fafe7f0,Missed Dig,,md,"%p ",2,-5.0E0,5.0E0,1,0,,,POINT,DOTTED,,1,0,0
+16,ff579bbc-de30-4edc-a785-f9a95c4f2ebc,Our Point,,op,,13,-5.0E0,5.0E0,1,0,,,POINT,DOTTED,,1,0,0
+17,22605e44-7b66-4209-b612-7cd5c3acdbeb,Out Of System,,o,,,-2.0E0,4.0E0,0,0,,,,,,1,0,0
+18,ba82f576-83c8-42a9-bc8f-6a2fa5c5c345,Passer Rating,,p,"%p %d ",6,-5.0E0,5.0E0,0,0,,,POINT,DOTTED,,1,0,0
+19,5f2d604d-f0b1-41d2-ab5e-9743d65a2e17,Serve Rating,,ser,"%p %d ",,-5.0E0,5.0E0,0,0,,,,,,1,0,0
+20,6335a0ec-6b20-40bc-a3e0-ee816e99ec80,Serve Type - Hybrid,,hy,,7,-5.0E0,5.0E0,0,0,,,POINT,DOTTED,,1,0,0
+21,c3b03232-8169-4e61-9c16-e87d85d3c280,Serve Type - Jump Float,,jf,,7,-5.0E0,5.0E0,0,0,,,POINT,DOTTED,,1,,0
+22,69c46b80-24cb-489d-9e1a-daaabf190b50,Serve Type - Jump Serve,,js,,7,-5.0E0,5.0E0,0,0,,,POINT,DOTTED,,1,,0
+23,b0584a27-c9bf-401b-81d0-b0a689daf958,Serve Type - Standing Float,,sf,,7,-5.0E0,5.0E0,0,0,,,,,,1,,0
+24,6044afe4-0a7f-4f49-b3bd-9749da87fb37,Service Ace,,sa,"%p ",13,-2.0E0,4.0E0,1,0,,,POINT,DOTTED,,1,0,0
+25,93c78c12-12ed-4661-8bda-09ab96137f48,Service Attempt,,sat,"%p ",,-5.0E0,5.0E0,0,0,,,POINT,DOTTED,,1,0,0
+26,991c3adf-255d-4448-b183-a164b3c66d2d,Service Error,,se,"%p ",2,-5.0E0,5.0E0,1,0,,,POINT,DOTTED,,1,0,0
+27,f62bd79a-d109-4a58-a3f8-8a87fff89e1c,Set Attempt,,s,"%p ",,-5.0E0,5.0E0,0,0,,,,,,1,0,0
+28,2595c51e-9ef5-42df-94e4-e2edf1640693,Set Rotation Number,,srn,"%d ",8,-5.0E0,5.0E0,0,0,,,,,,1,0,0
+29,7005858d-5fb4-4465-81d0-5e29bb0c8e47,Set Setter,,set,"%p ",9,-5.0E0,5.0E0,0,0,,,POINT,DOTTED,,1,0,0
+30,d67bebfc-d837-4438-9c67-770a01f17837,Set Type - Pipe,,i,,10,-5.0E0,5.0E0,0,0,,,POINT,DOTTED,,1,,0
+31,83412fb8-dd48-44c6-be3c-d7f1bf9aead4,Setter Out,,so,%p,,-2.0E0,5.0E0,0,0,,,,,,1,0,0
+32,74cbdcae-d1b0-4b71-bf1d-6baa6ce852f8,Sideout Failure,,nosideout,,,-5.0E0,5.0E0,0,0,,,,,,1,,0
+33,b2b7841f-87d4-477e-b1ea-2922369688d8,Sideout Success,,sideout,,,-5.0E0,5.0E0,0,0,,,,,,1,,0
+34,89d7a496-dc24-413d-aea7-ca61c9db1e11,"Solo Block ",,sb,"%p ",13,-9.0E0,1.0E0,1,0,,,POINT,DOTTED,,1,0,0
+35,2bd6245c-d47d-4302-9520-b60408cce89b,Starting Lineup,,sl,"%p %p %p %p %p %p ",11,-5.0E0,5.0E0,0,0,,,,,,1,0,0
+36,5b31d7d2-e8be-47e2-b8e1-7204b9be7358,Sub,,sub,"%p %p ",12,-5.0E0,5.0E0,0,0,,,,,,1,0,0
+37,a445ff85-d557-468a-af36-f0291a112813,Their Point,,tp,,2,-5.0E0,5.0E0,1,0,,,,,,1,0,0
+38,47918a96-09ac-4842-8722-cd96bca9ca7d,Triple Block,,tb,"%p %p %p ",13,-5.0E0,5.0E0,1,0,,,POINT,DOTTED,,1,0,0
+39,13c5f009-e6c4-4309-b6d6-2ab05ad472f6,Net,,n,"%p ",2,-5.0E0,5.0E0,1,0,,,,,,1,0,1
+40,07dc5790-549c-415e-9839-7a98c5c69dc4,Over Pass Kill,,opk,"%p ",13,-5.0E0,5.0E0,1,0,,,,,,1,0,1
+41,ede8695b-14fe-4e56-897a-372d256226e5,Over Pass Error,,ope,"%p ",2,-5.0E0,5.0E0,1,0,,,,,,1,0,1
+42,4ce7a5c1-245a-44a9-9d50-d305bcf615ef,Over Pass Attempt,,opa,"%p ",,-5.0E0,5.0E0,0,0,,,,,,1,0,1

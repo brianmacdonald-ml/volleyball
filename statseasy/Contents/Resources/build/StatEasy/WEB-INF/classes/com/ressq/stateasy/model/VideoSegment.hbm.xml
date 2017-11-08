@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+
+	<typedef name="StorageType" class="com.ressq.stateasy.model.hibernate.GenericEnumUserType">
+		<param name="enumClass">com.ressq.stateasy.model.enums.StorageType</param>
+	</typedef>
+	
+	<class name="VideoSegment" table="videosegments">
+		<id name="id" column="videosegment" unsaved-value="null">
+			<generator class="native"/>
+		</id>
+		
+		<property name="uuid" index="videosegmentuuidindex">
+			<column name="uuid"/>
+		</property>
+	
+		<property name="sourceFileName">
+			<column name="sourceFileName"/>
+		</property>
+	
+		<property name="encodedFileName">
+			<column name="encodedFileName"/>
+		</property>
+	
+		<property name="displayName">
+			<column name="displayname"/>
+		</property>
+	
+		<property name="duration">
+			<column name="duration"/>
+		</property>
+		
+		<property name="size">
+			<column name="size"/>
+		</property>
+	
+		<property name="status">
+			<column name="status"/>
+		</property>
+		
+		<property name="serverShared">
+			<column name="serverShared"/>
+		</property>
+		
+		<property name="pieceHash" type="text">
+			<column name="pieceHash"/>
+		</property>
+		
+		<property name="creationDate">
+			<column name="creationDate"/>
+		</property>
+		
+		<property name="encodingStart">
+			<column name="encodingStart"/>
+		</property>
+		
+		<property name="encodingEnd">
+			<column name="encodingEnd"/>
+		</property>
+		
+		<property name="firstUploadedDate">
+			<column name="firstUploadedDate"/>
+		</property>
+		
+		<property name="lastUploadedDate">
+			<column name="lastUploadedDate"/>
+		</property>
+		
+		<property name="currentPercentage">
+			<column name="currentPercentage"/>
+		</property>
+		
+		<property name="storageType" type="StorageType">
+			<column name="storageType"/>
+		</property>
+		
+		<property name="location">
+			<column name="location"/>
+		</property>
+		
+		<property name="uploadId">
+			<column name="uploadId"/>
+		</property>
+		
+		<bag name="videoSources" cascade="all" lazy="false">
+			<key column="videoSegment" />
+			<one-to-many class="VideoSource"/>
+		</bag>
+		
+		<set name="videoPartETags" cascade="all, delete-orphan" lazy="false">
+			<key column="videoSegment" />
+			<one-to-many class="VideoPartETag"/>
+		</set>
+		
+	</class>
+</hibernate-mapping>

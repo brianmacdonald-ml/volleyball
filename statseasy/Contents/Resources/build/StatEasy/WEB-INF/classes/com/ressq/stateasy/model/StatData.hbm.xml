@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+	<class name="StatData" table="statdata" batch-size="250">
+		<id name="id" column="statdata" unsaved-value="null">
+			<generator class="native"/>
+		</id>
+		
+		<many-to-one name="player" column="player" class="Player"/>
+		
+		<property name="numericalData" index="numericalDataIndex">
+			<column name="numericalData"/>
+		</property>
+		
+		<property name="time">
+			<column name="time"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

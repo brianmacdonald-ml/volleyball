@@ -1,0 +1,19 @@
+#innercontent .inputSection .events {
+	border: 1px solid black;
+	background: #fff;
+}
+
+#innercontent .inputSection .events ul {
+	width: 280px;
+}
+
+#innercontent .inputSection .events li {
+	width: 267px;
+	margin: 0;
+}
+
+#innercontent .inputSection .events a {
+	display: block;
+	float: left;
+	width: 253px;
+}

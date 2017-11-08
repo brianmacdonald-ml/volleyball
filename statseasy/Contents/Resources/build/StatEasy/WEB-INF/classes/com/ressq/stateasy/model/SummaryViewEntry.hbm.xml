@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+	<class name="SummaryViewEntry" table="summaryViewEntries">
+		<id name="id" column="summaryViewEntry" unsaved-value="null">
+			<generator class="native"/>
+		</id>
+		
+		<many-to-one name="parentSummaryView" column="summaryView" class="SummaryView" not-null="true" />
+		
+		<property name="index">
+			<column name="entryIndex"/>
+		</property>
+		
+		<many-to-one name="sourceView" column="sourceView" class="View" not-null="true" />
+		
+		<many-to-one name="sourceGrouping" column="sourceGrouping" class="Grouping" not-null="true" />
+	
+		<property name="totalRow">
+			<column name="totalrow"/>
+		</property>
+	
+		<property name="flipColRow">
+			<column name="flipColRow"/>
+		</property>
+	
+		<property name="mergeOpponentTables">
+			<column name="mergeOpponentTables"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

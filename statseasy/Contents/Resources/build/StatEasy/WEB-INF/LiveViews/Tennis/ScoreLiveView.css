@@ -1,0 +1,62 @@
+#ScoreLiveView_Div {
+	background-color: #61995E;
+}
+
+#ScoreLiveView_Div table {
+	float: left;
+	color: white;
+	clear: left;
+	text-shadow: 1px 1px black;
+}
+
+.setResults {
+}
+
+.upperLeft {
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.setTeamName {
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.setNumber {
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.setScore {
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.court {
+	background-color: #E19B4E;
+	border: 2px solid white;
+	height: 360px;
+	width: 180px;
+	padding: 0;
+	-moz-box-shadow: 1px 1px 6px #000;
+	text-align: center;
+}
+	
+.opponent-backrow td {
+	border-bottom: 2px solid white;
+	height: 120px;
+}
+	
+.opponent-frontrow td {
+	border-bottom: 2px solid black;
+	height: 60px;
+}
+	
+.our-frontrow td {
+	border-bottom: 2px solid white;
+	height: 60px;
+}
+	
+.our-backrow td {
+	height: 120px;
+}

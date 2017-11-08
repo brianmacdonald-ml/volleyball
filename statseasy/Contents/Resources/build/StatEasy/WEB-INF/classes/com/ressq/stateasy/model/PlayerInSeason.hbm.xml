@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+	<class name="PlayerInSeason" table="playersinseasons">
+		<id name="id" column="playerinseason" unsaved-value="null">
+			<generator class="native"/>
+		</id>
+		
+		<property name="uuid" index="playerinseasonindex">
+			<column name="uuid"/>
+		</property>
+		
+		<many-to-one name="player" column="player" class="Player" not-null="true" cascade="persist,merge,save-update,lock,refresh,evict,replicate"/>
+		<many-to-one 
+			name="season" 
+			column="season" 
+			class="Season"
+			unique-key="UniqueShortcutsPerSeason" />
+	
+		<property name="number">
+			<column name="number"/>
+		</property>
+	
+		<property name="shortcut" unique-key="UniqueShortcutsPerSeason">
+			<column name="shortcut"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

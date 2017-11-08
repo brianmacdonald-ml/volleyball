@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+	<class name="Event" table="games">
+		<id name="id" column="game" unsaved-value="null">
+			<generator class="native"/>
+		</id>
+		
+		<property name="uuid" index="eventuuidindex">
+			<column name="uuid"/>
+		</property>
+		
+		<property name="startTime">
+			<column name="starttime"/>
+		</property>
+		
+		<one-to-one name="eventGrouping" class="EventGrouping" property-ref="associatedEvent" />
+		
+		<bag name="allStats" cascade="all-delete-orphan" order-by="statIndex asc" inverse="true">
+			<key column="game"/>
+			<one-to-many class="Stat"/>
+		</bag>
+		
+		<property name="nextStatIndex">
+			<column name="nextstatindex" default="0"/>
+		</property>
+		
+		<!-- This should be a not-null relation once StatEffects come into existence? -->
+		<many-to-one name="currentState" cascade="persist,merge,save-update" column="currentstate" class="GameState"/>
+		
+		<many-to-one name="ourSeason" column="ourSeason" class="Season" not-null="false" />
+		<many-to-one name="theirSeason" column="theirSeason" class="Season" not-null="false" />
+		
+		<property name="takeStatsNowEvent" index="takeStatsNowIndex">
+			<column name="takeStatsNowEvent" default="0"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

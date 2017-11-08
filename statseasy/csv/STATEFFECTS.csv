@@ -1,0 +1,635 @@
+STATEFFECT|UUID|NAME|FRIENDLYNAME|VERSION|PROVIDEINFO|EFFECT|SHAREDCODE|SPORT
+1|c078c324-1d66-4786-8296-6ea62655bf0c|Attempt|A player attacks the ball, and no point is awarded to either team.  Adds a set attempt for our setter, if one is set.|2.3E0|[null]|
+function execute() {
+	setFirstAttempt();
+
+	addSetAttempt(relevantStat);
+	
+	currentState.unset("setType");
+	newState.unset("setType");
+}
+
+
+/*
+ * We need to set up an object that will have name & version properties and 
+ * have an execute() function
+ */
+var statType = {
+	name         : "Attempt",
+	friendlyName : "A player attacks the ball, and no point is awarded to either team.  Adds a set attempt for our setter, if one is set.",
+	version      : 2.3,
+	execute      : execute
+};|0|1
+2|443ae09d-7a2d-42b9-8ff7-4c484c2658b6|Their Point|Gives their team a point|2.4E0|[null]|function execute() {
+	pointFor(relevantStat, !relevantStat.opponentStat, currentState, newState);
+}
+
+/*
+ * We need to set up an object that will have name & version properties and 
+ * have an execute() function
+ */
+var statType = {
+	name:    "Their Point",
+	friendlyName: "Gives their team a point",
+	version: 2.4,
+	execute: execute
+};|0|1
+3|a4910485-6741-49ea-943b-3e8eb0a23d14|Dig|Adds a 'Setter Out' statistic if the setter dug the ball.|2.5E0|[null]|
+function execute() {
+	var prefix = !!relevantStat.opponentStat ? "their" : "our";
+	var setter = getSetter(relevantStat.opponentStat);
+	
+	var player = relevantStat.allData.get(0).player;
+	
+	if ((setter != undefined) && (player.id == setter.id)) {
+		addSupplementalStatByTypeAddSetter(relevantStat, "Setter Out");
+	}
+}
+
+/*
+ * We need to set up an object that will have name & version properties and 
+ * have an execute() function
+ */
+var statType = {
+	name        : "Dig",
+	friendlyName: "Adds a 'Setter Out' statistic if the setter dug the ball.",
+	version     : 2.5,
+	execute     : execute,
+};|0|1
+4|6f6b68d4-f00a-4ce8-a6d6-3ec2d76c8252|Error|Do everything required for an error|1.7E0|[null]|function execute() {
+	pointFor(relevantStat, !relevantStat.opponentStat, currentState, newState);
+	
+	setFirstAttempt();
+	
+	addSetAttempt(relevantStat);
+}
+
+/*
+ * We need to set up an object that will have name & version properties and 
+ * have an execute() function
+ */
+var statType = {
+	name:    "Error",
+	friendlyName: "Do everything required for an error",
+	version: 1.7,
+	execute: execute
+};|0|1
+5|e9c86711-206f-4a4d-9413-8f590d24c708|Kill|Do everything required for a kill|1.4E0|[null]|function execute() {
+	pointFor(relevantStat, relevantStat.opponentStat, currentState, newState);
+	
+	setFirstAttempt();
+	
+	addAssist(relevantStat);
+}
+
+/*
+ * We need to set up an object that will have name & version properties and 
+ * have an execute() function
+ */
+var statType = {
+	name:    "Kill",
+	friendlyName: "Do everything required for a kill",
+	version: 1.4,
+	execute: execute
+};|0|1
+6|b5ce7f9c-07fe-44ae-8362-c61edc80fb67|Pass Rating|If the previous stat taken was a Service Attempt, we update it to add the service rating based on this pass rating.|6.6E0|[null]|
+function matches(someName) {
+	return function (element) {
+		return element == someName;
+	};
+}
+
+function isScoringOpportunity(someStat) {
+	return (someStat.statType.statEffectObject != null) && (someStat.statType.statEffectObject.name == "Attempt");
+}
+
+function skipServeType(someStat) {
+	return (someStat.statType.statEffectObject != null) && ("Serve Type" != someStat.statType.statEffectObject.name);
+}
+
+function isServiceAttempt(someStat) {
+	return (someStat.statType.name == "Service Attempt");
+}
+
+function findServiceAttempt(someStat) {
+	return isServiceAttempt(someStat) || skipServeType(someStat);
+}
+
+function findFBSO(someStat) {
+	var lookingForEvents = ["Service Attempt", "Kill", "Error", "Attempt", "Passer Rating", "Dig"];
+	return lookingForEvents.some(matches(someStat.statType.name));
+}
+
+function getPrevious(testFunction) {
+	var allStats = relevantStat.event.allStats;
+	var i = relevantStat.getStatIndex() - 1; // Start at the index just before this stat
+	return (i >= 0) && testFunction(allStats.get(i)) ? allStats.get(i) : undefined;
+}
+
+function traverseBack(isStopStatFunction, iterationFunction, includeStoppingStat) {
+	var allStats = relevantStat.event.allStats;
+	
+	var foundStopEvent = false;
+	var stopRequested = false;
+	var i = relevantStat.getStatIndex() - 1; // Start at the index just before this stat
+	var currentStat;
+	
+	while ((i < allStats.size()) && (0 <= i) && !foundStopEvent && !stopRequested) 
+	{
+		currentStat = allStats.get(i);
+		
+		foundStopEvent = isStopStatFunction(currentStat);
+		
+		//logger.debug("Traverse[" + i + "]: " + currentStat.getStatText() + " foundStopEvent " + foundStopEvent);
+		
+		if ((!foundStopEvent || includeStoppingStat) && (iterationFunction != undefined)) {
+			stopRequested = !!iterationFunction(currentStat);
+			//logger.debug("iterationFunction ran: " + stopRequested);
+		}
+		
+		//logger.debug("foundStopEvent: " + foundStopEvent);
+		
+		i--;
+	}
+	
+	if (foundStopEvent) {
+		return currentStat;
+	}
+}
+
+function findStatTypeByName(typeName) {
+	var supplementalStatType = undefined;
+	
+	for (var i = 0; i < allStatTypes.size(); i++) {
+		var statType = allStatTypes.get(i);
+		if (statType.name == typeName) {
+			supplementalStatType = statType;
+		}
+	}
+	
+	return supplementalStatType;
+}
+
+function getSetter(opponentStat) {
+	var prefix = opponentStat ? "their" : "our";
+	var allPlayers = relevantStat.event[prefix + "Season"].allPlayers;
+	var setterId = currentState.get(prefix + "Setter");
+	
+	var ourPlayer;
+	for (var i = 0; i < allPlayers.size(); i++) {
+		var playerInSeason = allPlayers.get(i);
+		if (setterId == playerInSeason.number) {
+			ourPlayer = playerInSeason.player;
+		}
+	}
+	
+	if (ourPlayer == undefined) {
+		newState.set("warningMessage", "You have no setter set for " + relevantStat.event[prefix + "Season"].team.teamName + ".");
+	}
+	
+	return ourPlayer;
+}
+
+function addSetter(someStat, index) {
+	var ourPlayer = getSetter(someStat.opponentStat);
+	
+	if (ourPlayer != undefined) {
+		someStat.setPlayerAtIndex(ourPlayer, index);
+	}
+	
+	return ourPlayer;
+}
+
+function movePlayer(from, to, startingState, endingState) {
+	var atOldPos = startingState.get("position_" + from);
+	
+	if (!!atOldPos) {
+		logger.debug("Moving " + atOldPos + " from " + from + " to " + to);
+	
+		newState.set("position_" + to, atOldPos);
+	}
+}
+
+function rotatePlayers(positionOffset, startingState, endingState) {
+	movePlayer(2 + positionOffset, 1 + positionOffset, startingState, endingState);
+	movePlayer(3 + positionOffset, 2 + positionOffset, startingState, endingState);
+	movePlayer(4 + positionOffset, 3 + positionOffset, startingState, endingState);
+	movePlayer(5 + positionOffset, 4 + positionOffset, startingState, endingState);
+	movePlayer(6 + positionOffset, 5 + positionOffset, startingState, endingState);
+	movePlayer(1 + positionOffset, 6 + positionOffset, startingState, endingState);
+	
+	var stateName = "ourRotation";
+	if (positionOffset != 0) {
+		stateName = "theirRotation";
+	}
+	var oldRotation = Number(startingState.get(stateName));
+	if (!!oldRotation) {
+		var newRotation = (oldRotation + 1) % 7;
+		if (newRotation < 1) {
+			newRotation = 1;
+		}
+		logger.debug("Old rotation = " + oldRotation + ", New rotation = " + newRotation);
+		endingState.set(stateName, newRotation);
+	}
+}
+
+function addSetAttempt(toStat) {
+	addSupplementalStatByTypeAddSetter(toStat, "Set Attempt");	
+}
+
+function addAssist(toStat) {
+	addSupplementalStatByTypeAddSetter(toStat, "Assist");	
+}
+
+function addSupplementalStatByType(toStat, opponentStat, supplementalTypeName) {
+	var supplementalStatType = findStatTypeByName(supplementalTypeName);
+	
+	if (supplementalStatType != undefined) {
+		var supplementalStat = new Packages.com.ressq.stateasy.model.Stat();
+		supplementalStat.statType = supplementalStatType;
+		supplementalStat.opponentStat = opponentStat;
+		supplementalStat.parentStat = toStat;
+		supplementalStat.timeTaken = toStat.timeTaken;
+		
+		newStats.add(supplementalStat);
+		
+		return supplementalStat;
+	} else {
+		logger.error("Error: no stat type named " + supplementalTypeName);
+	}
+}
+
+function addSupplementalStatByTypeAddSetter(toStat, supplementalTypeName) {
+	var setter = getSetter(toStat.opponentStat);
+	if (setter == undefined) {
+		return;
+	}
+	
+	var supplementalStat = addSupplementalStatByType(toStat, toStat.opponentStat, supplementalTypeName);
+	
+	if (supplementalStat != null) {
+		supplementalStat.setPlayerAtIndex(setter, 0);
+		logger.debug("Inserting " + supplementalTypeName + " for " + setter.firstName + " " + setter.lastName);		
+	}
+}
+
+function setFirstAttempt() {
+	// Is there a kill, error or attempt between this stat and the nearest Service Attempt?
+	var fbsoTest = traverseBack(findFBSO);
+	if ((fbsoTest != undefined) && ((fbsoTest.statType.name == "Service Attempt") || (fbsoTest.statType.name == "Passer Rating"))) {
+		currentState.set("firstAttempt", "Yes");
+	}
+}
+
+function setBeginningState(someStat, stateName, stateValue) {
+	setBeginningStateDontAddToModified(someStat, stateName, stateValue);
+	
+	modifiedStats.add(someStat);
+}
+
+function setBeginningStateDontAddToModified(someStat, stateName, stateValue) {
+	var beginningState = someStat.beginningGameState.clone();
+	beginningState.set(stateName, stateValue);
+	someStat.beginningGameState = beginningState;
+}
+
+function pointFor(toStat, opponentStat, startingState, endingState) {
+	var scoreString = opponentStat ? "theirScore" : "ourScore";
+	var rotateString = opponentStat ? "weDo" : "theyDo";
+	var newServer = opponentStat ? "theyDo" : "weDo";
+	var positionOffset = opponentStat ? 6 : 0;
+	
+	var score = Number(currentState.get(scoreString));
+	newState.set(scoreString, score+1);
+	
+	var hasServe = currentState.get("hasServe");
+	if (hasServe == rotateString) {
+		rotatePlayers(positionOffset, startingState, endingState);
+	}
+		
+	newState.set("hasServe", newServer);
+	
+	startingState.unset("setType");
+	endingState.unset("setType");
+	
+	resolveSideoutAttemptForPointScore(toStat, opponentStat, startingState);
+	
+	return score + 1;
+}
+
+function resolveSideoutAttemptForPointScore(toStat, opponentPoint, servingState) {
+	var hasServe = servingState.get("hasServe");
+	
+	var sideoutStat = null;
+	
+	if ((hasServe == "weDo") && opponentPoint) {
+		sideoutStat = addSupplementalStatByType(toStat, true, "Sideout Success");
+	} else if ((hasServe == "weDo") && !opponentPoint) {
+		sideoutStat = addSupplementalStatByType(toStat, true, "Sideout Failure");
+	} else if ((hasServe == "theyDo") && opponentPoint) {
+		sideoutStat = addSupplementalStatByType(toStat, false, "Sideout Failure");
+	} else if ((hasServe == "theyDo") && !opponentPoint) {
+		sideoutStat = addSupplementalStatByType(toStat, false, "Sideout Success");
+	}
+	
+	if (sideoutStat != null) {
+		logger.debug("Setting rotation to " + servingState.get("ourRotation"));
+		sideoutStat.beginningGameState = servingState;
+	}
+}
+
+function passRating(pointScale) {
+	var prefix = !!relevantStat.opponentStat ? "their" : "our";
+	var otherPrefix = !!relevantStat.opponentStat ? "our" : "their";
+	
+	var passerRating = relevantStat.allData.get(1).numericalData;
+	var score = Number(currentState.get(otherPrefix + "Score"));
+	
+	var newServer = !relevantStat.opponentStat ? "theyDo" : "weDo";
+	currentState.set("hasServe", newServer);
+	newState.set("hasServe", newServer);
+	
+	if (passerRating == 0) {
+		score = pointFor(relevantStat, !relevantStat.opponentStat, currentState, newState);
+	}
+	
+	var previousStat = traverseBack(findServiceAttempt);
+	
+	if ((previousStat != null) && (previousStat.statType.name == "Service Attempt")) {
+		
+		if (previousStat.beginningGameState.get("serveType") != undefined) {
+			var serveType = previousStat.beginningGameState.get("serveType");
+			logger.debug("Found a service attempt with type information (" + serveType + ").  Copying to this Passer Rating");
+			currentState.set("serveType", serveType);
+		}
+		
+		if (passerRating == 0) {
+			previousStat.statType = findStatTypeByName("Service Ace");
+			
+			var newGameState = previousStat.getEndingGameState().clone();
+			newGameState.set(otherPrefix + "Score", score);
+			previousStat.endingGameState = newGameState;
+			
+			modifiedStats.add(previousStat);
+		} else {
+			var supplementalStatType = findStatTypeByName("Serve Rating");
+			if (supplementalStatType != undefined) {
+				var supplementalStat = new Packages.com.ressq.stateasy.model.Stat();
+				supplementalStat.statType = supplementalStatType;
+				supplementalStat.opponentStat = previousStat.opponentStat;
+				supplementalStat.parentStat = relevantStat;
+				supplementalStat.timeTaken = relevantStat.timeTaken;
+				
+				supplementalStat.setPlayerAtIndex(previousStat.allData.get(0).player, 0);
+				supplementalStat.setNumericalAtIndex(pointScale + 1 - passerRating, 1);
+				
+				newStats.add(supplementalStat);
+			} else {
+				logger.debug("StatType 'Serve Rating' was not found.");
+			}
+		}
+	}
+}
+
+function execute() {
+	passRating(3);
+}
+
+/*
+ * We need to set up an object that will have name & version properties and 
+ * have an execute() function
+ */
+var statType = {
+	name        : "Pass Rating",
+	friendlyName: "If the previous stat taken was a Service Attempt, we update it to add the service rating based on this pass rating.",
+	version     : 6.6,
+	execute     : execute,
+	sharedCode	: true,
+};|1|1
+7|4c63ebcb-d4b9-48e3-8a5c-91762a841e35|Serve Type|Sets the type of the serve.|1.9E0|[null]|var serveStats = {
+	"Service Attempt"	: true,
+	"Service Ace"		: true,
+	"Service Error"		: true,
+}
+
+function stopAtServe(someStat) {
+	return serveStats[someStat.statType.name];
+}
+
+function execute() {
+	var stateName = "serveType";
+	var stateValue = relevantStat.statType.name;
+	var stripText = "Serve Type - ";
+	if (stateValue.indexOf(stripText) == 0) {
+		stateValue = stateValue.substr(stripText.length);
+	}
+	
+	stateValue = stateValue.replace(/^\s+|\s+$/g, '');
+	
+	var previousStat = traverseBack(stopAtServe, function (currentStat) {
+		logger.debug("Found " + currentStat.getStatText() + " as a non serve stat.  Setting " + stateName + " to " + stateValue);
+		
+		// Set the "type" of this serve to be the name of this stat type.
+		setBeginningState(currentStat, stateName, stateValue);
+	});
+	
+	logger.debug("Previous Stat found " + (previousStat == null ? "null" : previousStat.statType.name));
+	
+	if ((previousStat != null) && 
+		((previousStat.statType.name == "Service Attempt") || 
+		 (previousStat.statType.name == "Service Ace") || 
+		 (previousStat.statType.name == "Service Error"))) 
+	{
+		// Set the "type" of this serve to be the name of this stat type.
+		setBeginningState(previousStat, stateName, stateValue);
+		
+		relevantStat.opponentStat = previousStat.opponentStat;
+	}
+}
+
+
+/*
+ * We need to set up an object that will have name & version properties and 
+ * have an execute() function
+ */
+var statType = {
+	name:    "Serve Type",
+	friendlyName: "Sets the type of the serve.",
+	version: 1.9,
+	execute: execute,
+};|0|1
+8|a618fed8-0878-4a08-84e2-b07d3b36d6dd|Set Rotation Number|Sets the rotation number that we're in|2.0E0|[null]|
+function execute() {
+	var stateName = "ourRotation";
+	if (!!relevantStat.opponentStat) {
+		stateName = "theirRotation";
+	}
+	var rotation = Number(relevantStat.allData.get(0).numericalData);
+	
+	newState.set(stateName, rotation);
+	logger.debug("Set " + stateName + " to " + rotation);
+}
+
+/*
+ * We need to set up an object that will have name & version properties and 
+ * have an execute() function
+ */
+var statType = {
+	name:    "Set Rotation Number",
+	friendlyName: "Sets the rotation number that we're in",
+	version: 2.0,
+	execute: execute
+};|0|1
+9|0edfbf0f-bb0f-4fff-ac46-6538d663f6f7|Set Setter|Sets the Setter for this game/practice|1.1E0|[null]|
+function execute() {
+	var prefix = !!relevantStat.opponentStat ? "their" : "our";
+	var allPlayers = relevantStat.event[prefix + "Season"].allPlayers;
+	
+	var requestedPlayerId = relevantStat.allData.get(0).player.id;
+	
+	var ourPlayer = null;
+	for (var i = 0; i < allPlayers.size(); i++) {
+		var playerInSeason = allPlayers.get(i);
+		if (requestedPlayerId == playerInSeason.player.id) {
+			newState.set(prefix + "Setter", playerInSeason.number);
+			return;
+		}
+	}
+}
+
+/*
+ * We need to set up an object that will have name & version properties and 
+ * have an execute() function
+ */
+var statType = {
+	name:    "Set Setter",
+	friendlyName: "Sets the Setter for this game/practice",
+	version: 1.1,
+	execute: execute
+};|0|1
+10|f7d076c0-2d4b-4027-9695-8195a500836f|Set Type|Sets the type of the set for the [Set Attempt, Assist] and the [Kill, Error, Attempt].|3.2E0|[null]|var setStats = {
+	"Set Attempt"			: true,
+	"Assist"				: true,
+	"Sideout Success"		: true,
+	"Sideout Failure"		: true,
+};
+
+var attemptStats = {
+	"Kill"			: true,
+	"Error"			: true,
+	"Attempt"		: true,
+}
+
+function isSetStat(someStat) {
+	return setStats[someStat.statType.name];
+}
+
+function isNotSetStat(someStat) {
+	logger.debug("Looking at " + someStat.statType.name);
+	return !isSetStat(someStat) && !isAttemptStat(someStat);
+}
+
+function isAttemptStat(someStat) {
+	return attemptStats[someStat.statType.name];
+}
+
+function execute() {
+	logger.debug("Executing Set Type for " + relevantStat.statType.name);
+	
+	var stateName = "setType";
+	var stateValue = relevantStat.statType.name;
+	var stripText = "Set Type - ";
+	if (stateValue.indexOf(stripText) == 0) {
+		stateValue = stateValue.substr(stripText.length);
+	}
+	stateValue = stateValue.replace(/^\s+|\s+$/g, '');
+	
+	var previousStat = traverseBack(isNotSetStat, function (currentStat) {
+		logger.debug("Found " + currentStat.getStatText() + " as a set related stat.  Setting " + stateName + " to " + stateValue);
+		
+		var beginningState = currentStat.beginningGameState.clone();
+		beginningState.set(stateName, stateValue);
+		currentStat.beginningGameState = beginningState;
+		
+		modifiedStats.add(currentStat);
+		
+		relevantStat.opponentStat = currentStat.opponentStat;
+	});
+	
+}
+
+
+/*
+ * We need to set up an object that will have name & version properties and 
+ * have an execute() function
+ */
+var statType = {
+	name:    "Set Type",
+	friendlyName: "Sets the type of the set for the [Set Attempt, Assist] and the [Kill, Error, Attempt].",
+	version: 3.2,
+	execute: execute,
+};|0|1
+11|8e4bd5bd-cbaa-45ff-963d-b8142f63e27e|Setup All Rotations|Puts six players into spots one through six on the court|2.0E0|[null]|
+function execute() {
+	var positionOffset = !!relevantStat.opponentStat ? 6 : 0;
+	
+	for (var i = 0; i < 6; i++) {
+		var player = relevantStat.allData.get(i).player;
+		var positionNumber = positionOffset + (i + 1);
+		
+		newState.set("position_" + positionNumber, player.id);
+		
+		logger.debug("Set position_" + positionNumber + " to " + player.id);
+	}
+}
+
+/*
+ * We need to set up an object that will have name & version properties and 
+ * have an execute() function
+ */
+var statType = {
+	name:    "Setup All Rotations",
+	friendlyName: "Puts six players into spots one through six on the court",
+	version: 2.0,
+	execute: execute
+};|0|1
+12|e7345c47-018b-4f3a-81a9-829582346c12|Substitution|Substitute one player for another|2.3E0|[null]|
+function execute() {
+	var positionOffset = !!relevantStat.opponentStat ? 6 : 0;
+	var playerComingIn = relevantStat.allData.get(0).player;
+	var playerGoingOut = relevantStat.allData.get(1).player;
+	
+	for (var position = 1; position <= 6; position++) {
+		var positionNumber = positionOffset + position;
+		
+		if (Number(currentState.get("position_" + positionNumber)) == playerGoingOut.id) {
+			newState.set("position_" + positionNumber, playerComingIn.id);
+			logger.debug("Subbed player " + playerGoingOut.id + " for " + playerComingIn.id + " in position " + positionNumber);
+		}
+	}
+}
+
+/*
+ * We need to set up an object that will have name & version properties and 
+ * have an execute() function
+ */
+var statType = {
+	name:         "Substitution",
+	friendlyName: "Substitute one player for another",
+	version: 2.3,
+	execute: execute
+};|0|1
+13|4f48649d-caee-4f65-ba8c-8dd13ef5297f|Our Point|Gives us the point and rotates the players if we get the serve|2.4E0|[null]|function execute() {
+	pointFor(relevantStat, relevantStat.opponentStat, currentState, newState);
+}
+
+/*
+ * We need to set up an object that will have name & version properties and 
+ * have an execute() function
+ */
+var statType = {
+	name:    "Our Point",
+	friendlyName: "Gives us the point and rotates the players if we get the serve",
+	version: 2.4,
+	execute: execute
+};|0|1

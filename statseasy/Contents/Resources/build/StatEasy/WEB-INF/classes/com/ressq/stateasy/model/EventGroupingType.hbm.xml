@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+	<typedef name="SpecificationLevel" class="com.ressq.stateasy.model.hibernate.GenericEnumUserType">
+		<param name="enumClass">com.ressq.stateasy.model.enums.SpecificationLevel</param>
+	</typedef>
+
+	<class name="EventGroupingType" table="eventGroupingTypes">
+		<id name="id" column="eventGroupingType" unsaved-value="null">
+			<generator class="native"/>
+		</id>
+		
+		<property name="index">
+			<column name="eventGroupingTypeIndex"/>
+		</property>
+		
+		<property name="leafType">
+			<column name="leafType"/>
+		</property>
+		
+		<many-to-one name="parentSeries" column="eventGroupingSeries" class="EventGroupingSeries" not-null="true" />
+		
+		<property name="name">
+			<column name="name"/>
+		</property>
+		
+		<property name="nameFormat" not-null="true">
+			<column name="nameFormat"/>
+		</property>
+		
+		<property name="contributeWinLoss" not-null="true">
+			<column name="contributeWinLoss"/>
+		</property>
+		
+		<property name="displayWinLoss" not-null="true">
+			<column name="displayWinLoss"/>
+		</property>
+		
+		<property name="displayScore" not-null="true">
+			<column name="displayScore"/>
+		</property>
+		
+		<property name="displayTie" not-null="true">
+			<column name="displayTie"/>
+		</property>
+		
+		<property name="displayInStream" not-null="true">
+			<column name="displayInStream"/>
+		</property>
+		
+		<property name="displayAsPractice" not-null="true">
+			<column name="displayAsPractice"/>
+		</property>
+		
+		<property name="opponentSpecLevel" type="SpecificationLevel">
+			<column name="opponentSpecLevel"/>
+		</property>
+		
+		<bag name="additionalData" inverse="true" order-by="eventGroupingAttributeTypeIndex" cascade="all">
+			<key column="eventGroupingType"/>
+			<one-to-many class="EventGroupingAttributeType"/>
+		</bag>
+		
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,48 @@
+{
+   "checksum": "9fb13f071bb5e141b31810e5c5b66b3d",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13022957556959628",
+            "id": "4",
+            "meta_info": {
+               "last_visited_desktop": "13149299849926001"
+            },
+            "name": "StatEasy Installed",
+            "type": "url",
+            "url": "http://localhost:8080/hello.htm"
+         }, {
+            "date_added": "13022957565295326",
+            "id": "5",
+            "meta_info": {
+               "last_visited_desktop": "13148852035239930"
+            },
+            "name": "StatEasy Cloud",
+            "type": "url",
+            "url": "http://app.getstateasy.com/launch.htm"
+         } ],
+         "date_added": "13022957550385355",
+         "date_modified": "13022957565295326",
+         "id": "1",
+         "name": "Bookmarks Bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13022957550385361",
+         "date_modified": "0",
+         "id": "2",
+         "name": "Other Bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13022957550385369",
+         "date_modified": "0",
+         "id": "3",
+         "name": "Mobile Bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

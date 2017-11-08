@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+
+	<typedef name="ImportStatus" class="com.ressq.stateasy.model.hibernate.GenericEnumUserType">
+		<param name="enumClass">com.ressq.stateasy.model.StatImport$ImportStatus</param>
+	</typedef>
+	
+	<class name="StatImport" table="statImports">
+		<id name="id" column="statImport" unsaved-value="null">
+			<generator class="native"/>
+		</id>
+		
+		<property name="fileName">
+			<column name="filename"/>
+		</property>
+		
+		<property name="importDate">
+			<column name="importDate"/>
+		</property>
+		
+		<many-to-one name="resultingGroup" column="eventGrouping" class="EventGrouping" />
+		
+		<property name="status" type="ImportStatus">
+			<column name="status"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,159 @@
+/*video player controls */
+[class^="play_cntrl_"] {
+  background: url("@{videoControlPath}") no-repeat 0 0;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.play_cntrl_fast_backwrds {
+  background-position: -1px 0;
+  width: 18px;
+  height: 18px;
+  &:hover {
+    background-position: -2px -40px;
+  }
+  &.active,&:active {
+    background-position: -2px -77px;
+  }
+}
+.play_cntrl_prev {
+  background-position:  -28px 0;
+  width: 21px;
+  height: 18px;
+  &:hover {
+    background-position: -29px -40px;
+  }
+  &.active,&:active {
+    background-position: -29px -77px;
+  }
+}
+.play_cntrl_pause {
+  background-position: -59px -108px;
+  height: 18px;
+  width: 18px;
+  &:hover {
+    background-position: -59px -40px;
+  }
+  &.active,&:active {
+    background-position: -59px -77px;
+  }
+}
+.pause {
+  background-position: -58px 0;
+  height: 18px;
+  width: 18px;
+  &:hover {
+    background-position: -77px -260px;
+  }
+  &.active,&:active {
+    background-position: -77px -284px;
+  }
+}
+.play_cntrl_next {
+  background-position:  -85px 0;
+  width: 21px;
+  height: 18px;
+  &:hover {
+    background-position: -85px -40px;
+  }
+  &.active,&:active {
+    background-position: -85px -77px;
+  }
+}
+.play_cntrl_fast_fwd {
+  background-position: -115px 0;
+  width: 18px;
+  height: 18px;
+  &:hover {
+    background-position: -115px -40px;
+  }
+  &.active,&:active {
+    background-position: -115px -77px;
+  }
+}
+.play_cntrl_sound {
+  background-position: 0 -142px;
+  width: 23px;
+  height: 21px;
+  &:hover {
+    background-position: 0px -184px;
+  }
+  &.active,&:active {
+    background-position: 0px -232px;
+  }
+  &.muted {
+  	background-position: 0px -280px;
+  	  &:hover {
+	    background-position: -28px -256px;
+	  }
+	  &.active,&:active {
+	    background-position: 0px -256px;
+	  }
+  }
+}
+.play_cntrl_time {
+  background-position: -30px -278px;
+  width: 22px;
+  height: 22px;
+  &:hover {
+    background-position: -109px -107px;
+  }
+  &.active,&:active {
+    background-position: -83px -107px;
+  }
+  &.downtime {
+  	background-position:  -31px -142px;
+  	&:hover {
+  		background-position: -31px -184px;
+  	}
+  	&.active,&:active {
+  		background-position: -31px -232px;
+  	}
+  }
+}
+.play_cntrl_screen {
+  background-position:  -62px -142px;
+  width: 24px;
+  height: 19px;
+  &:hover {
+    background-position: -62px -184px;
+  }
+  &.active,&:active  {
+    background-position: -62px -232px;
+  }
+}
+.play_cntrl_screen1 {
+  background-position:  -96px -142px;
+  width: 24px;
+  height: 19px;
+  &:hover {
+    background-position: -96px -184px;
+  }
+  &.active,&:active {
+    background-position: -96px -232px;
+  }
+}
+.play_cntrl_sound_off {
+  background-position: 0 -282px;
+  width: 23px;
+  height: 18px;
+}
+.play_cntrl_skip_time {
+  background-position: -31px -278px;
+  width: 22px;
+  height: 24px;
+}
+.play_cntrl_pause_active {
+  background-position:  -77px -284px;
+  width: 18px;
+  height: 18px;
+}
+.video_controls {
+  .play_controls_wrap {
+    >li.active {
+       .play_cntrl_fast_backwrds {
+
+       }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+	<class name="VideoSyncPoint" table="videosyncpoints">
+		<id name="id" column="videosyncpoint" unsaved-value="null">
+			<generator class="native"/>
+		</id>
+		
+		<many-to-one name="gameVideo" column="gamevideo" class="GameVideo" not-null="true" />
+		
+		<many-to-one name="stat" column="stat" class="Stat" not-null="true" />
+	
+		<property name="secondsInVideo" not-null="true">
+			<column name="secondsinvideo"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

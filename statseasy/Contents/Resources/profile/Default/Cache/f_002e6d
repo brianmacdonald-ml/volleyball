@@ -1,0 +1,5333 @@
+
+
+
+
+
+
+
+
+
+
+<html>
+	<head>
+		<title>The StatEasy Content Creator</title>
+		<link rel="stylesheet" href="/css/tokens.css" type="text/css">
+		<link rel="stylesheet" href="/css/print.css" type="text/css" media="print">
+		<link rel="stylesheet" href="/css/jquery.autocomplete.css" type="text/css">
+
+		<script src="/js/jquery-1.6.1.js" type="text/javascript"></script>
+		<script src="/js/jquery.easing.1.3.js" type="text/javascript"></script>
+		<script src="/js/jquery.corners.min.js" type="text/javascript"></script>
+		<script src="/js/jquery.dropshadow.js" type="text/javascript"></script>
+		<script src="/js/jquery.autocomplete.js" type="text/javascript"></script>
+		
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		
+		<link rel="shortcut icon" href="/images/favicon_1.jpg" />
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				$(".autofocus").focus();
+			});
+		</script>
+		
+	</head>
+
+	<body>
+
+<div id="container">
+	<div id="header">
+		<img src="/images/logo.png" class="headerLogo" />
+		
+		<div id="gameType"><span id="gameTypeInnerText"><a href="/hello.htm" title="Return to the Welcome page." class="noUnderline">Logout</a></span></div>
+
+		
+		
+		<div id="sportUpdates"></div>
+	</div>
+	<div id="navigation">
+		
+		<ul id="launch">
+			<li class="main
+				 
+			"><a href="/launch.htm" title="Select an action from the StatEasy dashboard">Dashboard</a></li>
+		</ul>
+		<ul id="config">
+			<li class="main
+				 
+			">
+			
+			<a href="/configure/stats.htm" title="Configure your stats, reports, views, teams, or players">Configuration</a></li>
+		</ul>
+		<ul id="account">
+			<li class="main">
+			<a href="http://app.stateasy.com:80/" target="_blank">Social Sports Network</a>
+			</li>
+		</ul>
+		
+
+		
+
+	</div>
+
+
+<link type="text/css" href="/css/jquery.ui/jquery-ui-1.8.2.custom.css?sv=1" rel="stylesheet" />
+<script src="/js/jquery.ui/jquery-ui-1.8.2.custom.js?sv=1" type="text/javascript"></script>
+<script type="text/javascript" src="/js/jquery.plugins/jquery.cookie.js?sv=1"></script>
+<script type="text/javascript" src="/js/encoder.js?sv=1"></script>
+<script type="text/javascript" src="/js/common.js?sv=1"></script>
+<script type="text/javascript" src="/js/seasonDisplay.js?sv=1"></script>
+<script type="text/javascript" src="/js/objectSelector.js?sv=1"></script>
+<script type="text/javascript" src="/js/seasonManagement.js?sv=1"></script>
+
+<div id="content"><div id="innercontent">
+<div class="middle">
+
+<script type="text/javascript">
+var eventGroupings = {"194":{"pointsAgainst":1,"practice":false,"typeName":"Tournament","gameVideos":[],"pointsTied":2,"myType":1,"id":194,"childrenGroups":[195,198,201,204,207,209],"favorited":false,"ourTeam":"Varsity","pointsFor":3,"index":0,"dateString":"","parentGroupName":"","parentGroupScore":"","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Tournament: Cannon Mac","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Location":"Cannon Mac","Name":"Cannon Mac"},"sportName":"Volleyball","theirTeam":"","sport":1,"theirTeamId":""},"195":{"pointsAgainst":0,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":194,"id":195,"childrenGroups":[196,197],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":2,"index":0,"dateString":"Saturday, September 5, 2015","theirSeason":28,"parentGroupName":"Tournament: Cannon Mac","parentGroupScore":"3-2-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. Beaver on Sep 5, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1441425600000","opponent":"Beaver","Location":"Cannon Mac"},"sportName":"Volleyball","theirTeam":"Beaver","sport":1,"theirTeamId":28},"196":{"pointsAgainst":19,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":195,"id":196,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":133,"ourTeam":"Varsity","pointsFor":25,"index":0,"dateString":"Saturday, September 5, 2015","theirSeason":28,"parentGroupName":"Match: Varsity vs. Beaver on Sep 5, 2015","parentGroupScore":"2-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 9:32:19 AM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1441425600000","Start Time":"1441459939000","Location":"Cannon Mac"},"sportName":"Volleyball","theirTeam":"Beaver","sport":1,"theirTeamId":28},"197":{"pointsAgainst":21,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":195,"id":197,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":134,"ourTeam":"Varsity","pointsFor":25,"index":1,"dateString":"Saturday, September 5, 2015","theirSeason":28,"parentGroupName":"Match: Varsity vs. Beaver on Sep 5, 2015","parentGroupScore":"2-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #2 @ 9:55:56 AM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1441425600000","Start Time":"1441461356000","Location":"Cannon Mac"},"sportName":"Volleyball","theirTeam":"Beaver","sport":1,"theirTeamId":28},"198":{"pointsAgainst":0,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":194,"id":198,"childrenGroups":[199,200],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":2,"index":1,"dateString":"Saturday, September 5, 2015","theirSeason":29,"parentGroupName":"Tournament: Cannon Mac","parentGroupScore":"3-2-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. Quaker Valley on Sep 5, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1441425600000","opponent":"Quaker Valley","Location":"Cannon Mac"},"sportName":"Volleyball","theirTeam":"Quaker Valley","sport":1,"theirTeamId":29},"231":{"pointsAgainst":1,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":4,"id":231,"childrenGroups":[232,233,234,235],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":3,"index":4,"dateString":"Thursday, September 17, 2015","theirSeason":38,"parentGroupName":"","parentGroupScore":"","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. Oakland Catholic on Sep 17, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1442462400000","opponent":"Oakland Catholic","Location":"Oakland Catholic"},"sportName":"Volleyball","theirTeam":"Oakland Catholic","sport":1,"theirTeamId":34},"199":{"pointsAgainst":22,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":198,"id":199,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":135,"ourTeam":"Varsity","pointsFor":25,"index":0,"dateString":"Saturday, September 5, 2015","theirSeason":29,"parentGroupName":"Match: Varsity vs. Quaker Valley on Sep 5, 2015","parentGroupScore":"2-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 11:59:17 AM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1441425600000","Start Time":"1441468757000","Location":"Cannon Mac"},"sportName":"Volleyball","theirTeam":"Quaker Valley","sport":1,"theirTeamId":29},"232":{"pointsAgainst":20,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":231,"id":232,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":158,"ourTeam":"Varsity","pointsFor":25,"index":0,"dateString":"Thursday, September 17, 2015","theirSeason":38,"parentGroupName":"Match: Varsity vs. Oakland Catholic on Sep 17, 2015","parentGroupScore":"3-0-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 7:09:24 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1442462400000","Start Time":"1442531364000","Location":"Oakland Catholic"},"sportName":"Volleyball","theirTeam":"Oakland Catholic","sport":1,"theirTeamId":34},"233":{"pointsAgainst":21,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":231,"id":233,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":159,"ourTeam":"Varsity","pointsFor":25,"index":1,"dateString":"Thursday, September 17, 2015","theirSeason":38,"parentGroupName":"Match: Varsity vs. Oakland Catholic on Sep 17, 2015","parentGroupScore":"3-0-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #2 @ 7:40:33 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1442462400000","Start Time":"1442533233000","Location":"Oakland Catholic"},"sportName":"Volleyball","theirTeam":"Oakland Catholic","sport":1,"theirTeamId":34},"234":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":231,"id":234,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":160,"ourTeam":"Varsity","pointsFor":23,"index":2,"dateString":"Thursday, September 17, 2015","theirSeason":38,"parentGroupName":"Match: Varsity vs. Oakland Catholic on Sep 17, 2015","parentGroupScore":"3-0-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #3 @ 8:04:29 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1442462400000","Start Time":"1442534669000","Location":"Oakland Catholic"},"sportName":"Volleyball","theirTeam":"Oakland Catholic","sport":1,"theirTeamId":34},"235":{"pointsAgainst":17,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":231,"id":235,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":161,"ourTeam":"Varsity","pointsFor":25,"index":3,"dateString":"Thursday, September 17, 2015","theirSeason":38,"parentGroupName":"Match: Varsity vs. Oakland Catholic on Sep 17, 2015","parentGroupScore":"3-0-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #4 @ 8:30:52 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1442462400000","Start Time":"1442536252000","Location":"Oakland Catholic"},"sportName":"Volleyball","theirTeam":"Oakland Catholic","sport":1,"theirTeamId":34},"239":{"pointsAgainst":1,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":4,"id":239,"childrenGroups":[240,241,242,243],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":3,"index":5,"dateString":"Monday, September 21, 2015","theirSeason":40,"parentGroupName":"","parentGroupScore":"","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. Gateway on Sep 21, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1442808000000","opponent":"Gateway","Location":"Gateway"},"sportName":"Volleyball","theirTeam":"Gateway","sport":1,"theirTeamId":35},"240":{"pointsAgainst":24,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":239,"id":240,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":164,"ourTeam":"Varsity","pointsFor":26,"index":0,"dateString":"Monday, September 21, 2015","theirSeason":40,"parentGroupName":"Match: Varsity vs. Gateway on Sep 21, 2015","parentGroupScore":"3-0-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 7:09:41 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1442808000000","Start Time":"1442876981000","Location":"Gateway"},"sportName":"Volleyball","theirTeam":"Gateway","sport":1,"theirTeamId":35},"241":{"pointsAgainst":17,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":239,"id":241,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":165,"ourTeam":"Varsity","pointsFor":25,"index":1,"dateString":"Monday, September 21, 2015","theirSeason":40,"parentGroupName":"Match: Varsity vs. Gateway on Sep 21, 2015","parentGroupScore":"3-0-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #2 @ 7:42:19 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1442808000000","Start Time":"1442878939000","Location":"Gateway"},"sportName":"Volleyball","theirTeam":"Gateway","sport":1,"theirTeamId":35},"242":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":239,"id":242,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":166,"ourTeam":"Varsity","pointsFor":21,"index":2,"dateString":"Monday, September 21, 2015","theirSeason":40,"parentGroupName":"Match: Varsity vs. Gateway on Sep 21, 2015","parentGroupScore":"3-0-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #3 @ 8:07:55 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1442808000000","Start Time":"1442880475000","Location":"Gateway"},"sportName":"Volleyball","theirTeam":"Gateway","sport":1,"theirTeamId":35},"243":{"pointsAgainst":24,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":239,"id":243,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":167,"ourTeam":"Varsity","pointsFor":26,"index":3,"dateString":"Monday, September 21, 2015","theirSeason":40,"parentGroupName":"Match: Varsity vs. Gateway on Sep 21, 2015","parentGroupScore":"3-0-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #4 @ 8:37:28 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1442808000000","Start Time":"1442882248000","Location":"Gateway"},"sportName":"Volleyball","theirTeam":"Gateway","sport":1,"theirTeamId":35},"244":{"pointsAgainst":0,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":4,"id":244,"childrenGroups":[245,246,247],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":3,"index":6,"dateString":"Thursday, September 24, 2015","theirSeason":41,"parentGroupName":"","parentGroupScore":"","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. Penn Hills on Sep 24, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1443067200000","opponent":"Penn Hills","Location":"Penn Hills"},"sportName":"Volleyball","theirTeam":"Penn Hills","sport":1,"theirTeamId":36},"245":{"pointsAgainst":11,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":244,"id":245,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":168,"ourTeam":"Varsity","pointsFor":25,"index":0,"dateString":"Thursday, September 24, 2015","theirSeason":41,"parentGroupName":"Match: Varsity vs. Penn Hills on Sep 24, 2015","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 7:25:07 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1443067200000","Start Time":"1443137107000","Location":"Penn Hills"},"sportName":"Volleyball","theirTeam":"Penn Hills","sport":1,"theirTeamId":36},"246":{"pointsAgainst":18,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":244,"id":246,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":169,"ourTeam":"Varsity","pointsFor":25,"index":1,"dateString":"Thursday, September 24, 2015","theirSeason":41,"parentGroupName":"Match: Varsity vs. Penn Hills on Sep 24, 2015","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #2 @ 7:45:26 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1443067200000","Start Time":"1443138326000","Location":"Penn Hills"},"sportName":"Volleyball","theirTeam":"Penn Hills","sport":1,"theirTeamId":36},"247":{"pointsAgainst":9,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":244,"id":247,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":170,"ourTeam":"Varsity","pointsFor":25,"index":2,"dateString":"Thursday, September 24, 2015","theirSeason":41,"parentGroupName":"Match: Varsity vs. Penn Hills on Sep 24, 2015","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #3 @ 8:09:04 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1443067200000","Start Time":"1443139744000","Location":"Penn Hills"},"sportName":"Volleyball","theirTeam":"Penn Hills","sport":1,"theirTeamId":36},"248":{"pointsAgainst":3,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":4,"id":248,"childrenGroups":[249,250,251,252],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":1,"index":7,"dateString":"Tuesday, September 29, 2015","theirSeason":42,"parentGroupName":"","parentGroupScore":"","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. Armstrong on Sep 29, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1443499200000","opponent":"Armstrong","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Armstrong","sport":1,"theirTeamId":37},"249":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":248,"id":249,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":171,"ourTeam":"Varsity","pointsFor":22,"index":0,"dateString":"Tuesday, September 29, 2015","theirSeason":42,"parentGroupName":"Match: Varsity vs. Armstrong on Sep 29, 2015","parentGroupScore":"1-0-3","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 7:16:20 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1443499200000","Start Time":"1443568580000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Armstrong","sport":1,"theirTeamId":37},"250":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":248,"id":250,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":172,"ourTeam":"Varsity","pointsFor":20,"index":1,"dateString":"Tuesday, September 29, 2015","theirSeason":42,"parentGroupName":"Match: Varsity vs. Armstrong on Sep 29, 2015","parentGroupScore":"1-0-3","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #2 @ 7:40:27 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1443499200000","Start Time":"1443570027000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Armstrong","sport":1,"theirTeamId":37},"251":{"pointsAgainst":29,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":248,"id":251,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":173,"ourTeam":"Varsity","pointsFor":31,"index":2,"dateString":"Tuesday, September 29, 2015","theirSeason":42,"parentGroupName":"Match: Varsity vs. Armstrong on Sep 29, 2015","parentGroupScore":"1-0-3","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #3 @ 8:06:11 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1443499200000","Start Time":"1443571571000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Armstrong","sport":1,"theirTeamId":37},"252":{"pointsAgainst":28,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":248,"id":252,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":174,"ourTeam":"Varsity","pointsFor":26,"index":3,"dateString":"Tuesday, September 29, 2015","theirSeason":42,"parentGroupName":"Match: Varsity vs. Armstrong on Sep 29, 2015","parentGroupScore":"1-0-3","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #4 @ 8:38:50 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1443499200000","Start Time":"1443573530000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Armstrong","sport":1,"theirTeamId":37},"253":{"pointsAgainst":0,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":4,"id":253,"childrenGroups":[254,255,256],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":3,"index":8,"dateString":"Thursday, October 1, 2015","theirSeason":34,"parentGroupName":"","parentGroupScore":"","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. Woodland Hillls on Oct 1, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1443672000000","opponent":"Woodland Hillls","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Woodland Hillls","sport":1,"theirTeamId":32},"254":{"pointsAgainst":10,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":253,"id":254,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":175,"ourTeam":"Varsity","pointsFor":25,"index":0,"dateString":"Thursday, October 1, 2015","theirSeason":34,"parentGroupName":"Match: Varsity vs. Woodland Hillls on Oct 1, 2015","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 7:10:48 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1443672000000","Start Time":"1443741048000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Woodland Hillls","sport":1,"theirTeamId":32},"255":{"pointsAgainst":4,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":253,"id":255,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":176,"ourTeam":"Varsity","pointsFor":25,"index":1,"dateString":"Thursday, October 1, 2015","theirSeason":34,"parentGroupName":"Match: Varsity vs. Woodland Hillls on Oct 1, 2015","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #2 @ 7:29:58 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1443672000000","Start Time":"1443742198000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Woodland Hillls","sport":1,"theirTeamId":32},"256":{"pointsAgainst":7,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":253,"id":256,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":177,"ourTeam":"Varsity","pointsFor":25,"index":2,"dateString":"Thursday, October 1, 2015","theirSeason":34,"parentGroupName":"Match: Varsity vs. Woodland Hillls on Oct 1, 2015","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #3 @ 7:45:28 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1443672000000","Start Time":"1443743128000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Woodland Hillls","sport":1,"theirTeamId":32},"257":{"pointsAgainst":1,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":4,"id":257,"childrenGroups":[258,259,260,261],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":3,"index":9,"dateString":"Monday, October 5, 2015","theirSeason":43,"parentGroupName":"","parentGroupScore":"","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. Hampton on Oct 5, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1444017600000","opponent":"Hampton","Location":"Hampton"},"sportName":"Volleyball","theirTeam":"Hampton","sport":1,"theirTeamId":38},"258":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":257,"id":258,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":178,"ourTeam":"Varsity","pointsFor":23,"index":0,"dateString":"Monday, October 5, 2015","theirSeason":43,"parentGroupName":"Match: Varsity vs. Hampton on Oct 5, 2015","parentGroupScore":"3-0-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 7:18:49 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1444017600000","Start Time":"1444087129000","Location":"Hampton"},"sportName":"Volleyball","theirTeam":"Hampton","sport":1,"theirTeamId":38},"259":{"pointsAgainst":20,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":257,"id":259,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":179,"ourTeam":"Varsity","pointsFor":25,"index":1,"dateString":"Monday, October 5, 2015","theirSeason":43,"parentGroupName":"Match: Varsity vs. Hampton on Oct 5, 2015","parentGroupScore":"3-0-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #2 @ 7:45:42 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1444017600000","Start Time":"1444088742000","Location":"Hampton"},"sportName":"Volleyball","theirTeam":"Hampton","sport":1,"theirTeamId":38},"260":{"pointsAgainst":20,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":257,"id":260,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":180,"ourTeam":"Varsity","pointsFor":25,"index":2,"dateString":"Monday, October 5, 2015","theirSeason":43,"parentGroupName":"Match: Varsity vs. Hampton on Oct 5, 2015","parentGroupScore":"3-0-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #3 @ 8:08:30 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1444017600000","Start Time":"1444090110000","Location":"Hampton"},"sportName":"Volleyball","theirTeam":"Hampton","sport":1,"theirTeamId":38},"261":{"pointsAgainst":20,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":257,"id":261,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":181,"ourTeam":"Varsity","pointsFor":25,"index":3,"dateString":"Monday, October 5, 2015","theirSeason":43,"parentGroupName":"Match: Varsity vs. Hampton on Oct 5, 2015","parentGroupScore":"3-0-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #4 @ 8:30:57 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1444017600000","Start Time":"1444091457000","Location":"Hampton"},"sportName":"Volleyball","theirTeam":"Hampton","sport":1,"theirTeamId":38},"262":{"pointsAgainst":0,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":4,"id":262,"childrenGroups":[263,264,265],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":3,"index":10,"dateString":"Tuesday, October 6, 2015","theirSeason":35,"parentGroupName":"","parentGroupScore":"","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. Shaler on Oct 6, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1444104000000","opponent":"Shaler","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Shaler","sport":1,"theirTeamId":6},"263":{"pointsAgainst":8,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":262,"id":263,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":182,"ourTeam":"Varsity","pointsFor":25,"index":0,"dateString":"Tuesday, October 6, 2015","theirSeason":35,"parentGroupName":"Match: Varsity vs. Shaler on Oct 6, 2015","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 7:13:47 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1444104000000","Start Time":"1444173227000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Shaler","sport":1,"theirTeamId":6},"264":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":262,"id":264,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":183,"ourTeam":"Varsity","pointsFor":27,"index":1,"dateString":"Tuesday, October 6, 2015","theirSeason":35,"parentGroupName":"Match: Varsity vs. Shaler on Oct 6, 2015","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #2 @ 7:31:29 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1444104000000","Start Time":"1444174289000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Shaler","sport":1,"theirTeamId":6},"265":{"pointsAgainst":18,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":262,"id":265,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":184,"ourTeam":"Varsity","pointsFor":25,"index":2,"dateString":"Tuesday, October 6, 2015","theirSeason":35,"parentGroupName":"Match: Varsity vs. Shaler on Oct 6, 2015","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #3 @ 8:00:48 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1444104000000","Start Time":"1444176048000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Shaler","sport":1,"theirTeamId":6},"266":{"pointsAgainst":1,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":4,"id":266,"childrenGroups":[267,268,269,270],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":3,"index":11,"dateString":"Thursday, October 8, 2015","theirSeason":36,"parentGroupName":"","parentGroupScore":"","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. Plum on Oct 8, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1444276800000","opponent":"Plum","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Plum","sport":1,"theirTeamId":23},"267":{"pointsAgainst":15,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":266,"id":267,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":185,"ourTeam":"Varsity","pointsFor":25,"index":0,"dateString":"Thursday, October 8, 2015","theirSeason":36,"parentGroupName":"Match: Varsity vs. Plum on Oct 8, 2015","parentGroupScore":"3-0-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 7:18:14 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1444276800000","Start Time":"1444346294000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Plum","sport":1,"theirTeamId":23},"300":{"pointsAgainst":0,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":293,"id":300,"childrenGroups":[301],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":1,"index":3,"dateString":"Saturday, October 24, 2015","theirSeason":38,"parentGroupName":"Tournament: NA","parentGroupScore":"2-0-2","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. Oakland Catholic on Oct 24, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1445659200000","opponent":"Oakland Catholic","Location":"NA"},"sportName":"Volleyball","theirTeam":"Oakland Catholic","sport":1,"theirTeamId":34},"268":{"pointsAgainst":23,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":266,"id":268,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":186,"ourTeam":"Varsity","pointsFor":25,"index":1,"dateString":"Thursday, October 8, 2015","theirSeason":36,"parentGroupName":"Match: Varsity vs. Plum on Oct 8, 2015","parentGroupScore":"3-0-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #2 @ 7:40:48 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1444276800000","Start Time":"1444347648000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Plum","sport":1,"theirTeamId":23},"301":{"pointsAgainst":20,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":300,"id":301,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":209,"ourTeam":"Varsity","pointsFor":25,"index":0,"dateString":"Saturday, October 24, 2015","theirSeason":38,"parentGroupName":"Match: Varsity vs. Oakland Catholic on Oct 24, 2015","parentGroupScore":"1-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 10:53:14 AM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1445659200000","Start Time":"1445698394000","Location":"NA"},"sportName":"Volleyball","theirTeam":"Oakland Catholic","sport":1,"theirTeamId":34},"269":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":266,"id":269,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":187,"ourTeam":"Varsity","pointsFor":20,"index":2,"dateString":"Thursday, October 8, 2015","theirSeason":36,"parentGroupName":"Match: Varsity vs. Plum on Oct 8, 2015","parentGroupScore":"3-0-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #3 @ 8:08:31 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1444276800000","Start Time":"1444349311000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Plum","sport":1,"theirTeamId":23},"302":{"pointsAgainst":3,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":4,"id":302,"childrenGroups":[303,304,305],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":0,"index":18,"dateString":"Wednesday, October 28, 2015","theirSeason":48,"parentGroupName":"","parentGroupScore":"","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. Norwin on Oct 28, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1446004800000","opponent":"Norwin","Location":"Norwin"},"sportName":"Volleyball","theirTeam":"Norwin","sport":1,"theirTeamId":22},"303":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":302,"id":303,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":210,"ourTeam":"Varsity","pointsFor":17,"index":0,"dateString":"Wednesday, October 28, 2015","theirSeason":48,"parentGroupName":"Match: Varsity vs. Norwin on Oct 28, 2015","parentGroupScore":"0-0-3","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 8:26:16 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1446004800000","Start Time":"1446078376000","Location":"Norwin"},"sportName":"Volleyball","theirTeam":"Norwin","sport":1,"theirTeamId":22},"304":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":302,"id":304,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":211,"ourTeam":"Varsity","pointsFor":12,"index":1,"dateString":"Wednesday, October 28, 2015","theirSeason":48,"parentGroupName":"Match: Varsity vs. Norwin on Oct 28, 2015","parentGroupScore":"0-0-3","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #2 @ 8:50:42 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1446004800000","Start Time":"1446079842000","Location":"Norwin"},"sportName":"Volleyball","theirTeam":"Norwin","sport":1,"theirTeamId":22},"305":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":302,"id":305,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":212,"ourTeam":"Varsity","pointsFor":14,"index":2,"dateString":"Wednesday, October 28, 2015","theirSeason":48,"parentGroupName":"Match: Varsity vs. Norwin on Oct 28, 2015","parentGroupScore":"0-0-3","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #3 @ 9:11:04 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1446004800000","Start Time":"1446081064000","Location":"Norwin"},"sportName":"Volleyball","theirTeam":"Norwin","sport":1,"theirTeamId":22},"270":{"pointsAgainst":21,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":266,"id":270,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":188,"ourTeam":"Varsity","pointsFor":25,"index":3,"dateString":"Thursday, October 8, 2015","theirSeason":36,"parentGroupName":"Match: Varsity vs. Plum on Oct 8, 2015","parentGroupScore":"3-0-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #4 @ 8:35:04 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1444276800000","Start Time":"1444350904000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Plum","sport":1,"theirTeamId":23},"271":{"pointsAgainst":3,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":4,"id":271,"childrenGroups":[272,273,274,275],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":1,"index":12,"dateString":"Tuesday, October 13, 2015","theirSeason":38,"parentGroupName":"","parentGroupScore":"","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. Oakland Catholic on Oct 13, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1444708800000","opponent":"Oakland Catholic","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Oakland Catholic","sport":1,"theirTeamId":34},"272":{"pointsAgainst":15,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":271,"id":272,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":189,"ourTeam":"Varsity","pointsFor":25,"index":0,"dateString":"Tuesday, October 13, 2015","theirSeason":38,"parentGroupName":"Match: Varsity vs. Oakland Catholic on Oct 13, 2015","parentGroupScore":"1-0-3","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 7:28:21 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1444708800000","Start Time":"1444778901000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Oakland Catholic","sport":1,"theirTeamId":34},"273":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":271,"id":273,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":190,"ourTeam":"Varsity","pointsFor":18,"index":1,"dateString":"Tuesday, October 13, 2015","theirSeason":38,"parentGroupName":"Match: Varsity vs. Oakland Catholic on Oct 13, 2015","parentGroupScore":"1-0-3","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #2 @ 7:52:47 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1444708800000","Start Time":"1444780367000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Oakland Catholic","sport":1,"theirTeamId":34},"274":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":271,"id":274,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":191,"ourTeam":"Varsity","pointsFor":20,"index":2,"dateString":"Tuesday, October 13, 2015","theirSeason":38,"parentGroupName":"Match: Varsity vs. Oakland Catholic on Oct 13, 2015","parentGroupScore":"1-0-3","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #3 @ 8:16:28 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1444708800000","Start Time":"1444781788000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Oakland Catholic","sport":1,"theirTeamId":34},"275":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":271,"id":275,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":192,"ourTeam":"Varsity","pointsFor":17,"index":3,"dateString":"Tuesday, October 13, 2015","theirSeason":38,"parentGroupName":"Match: Varsity vs. Oakland Catholic on Oct 13, 2015","parentGroupScore":"1-0-3","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #4 @ 8:42:57 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1444708800000","Start Time":"1444783377000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Oakland Catholic","sport":1,"theirTeamId":34},"276":{"pointsAgainst":0,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":4,"id":276,"childrenGroups":[277,278,279],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":3,"index":13,"dateString":"Thursday, October 15, 2015","theirSeason":40,"parentGroupName":"","parentGroupScore":"","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. Gateway on Oct 15, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1444881600000","opponent":"Gateway","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Gateway","sport":1,"theirTeamId":35},"277":{"pointsAgainst":11,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":276,"id":277,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":193,"ourTeam":"Varsity","pointsFor":25,"index":0,"dateString":"Thursday, October 15, 2015","theirSeason":40,"parentGroupName":"Match: Varsity vs. Gateway on Oct 15, 2015","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 7:36:21 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1444881600000","Start Time":"1444952181000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Gateway","sport":1,"theirTeamId":35},"278":{"pointsAgainst":21,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":276,"id":278,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":194,"ourTeam":"Varsity","pointsFor":25,"index":1,"dateString":"Thursday, October 15, 2015","theirSeason":40,"parentGroupName":"Match: Varsity vs. Gateway on Oct 15, 2015","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #2 @ 8:00:29 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1444881600000","Start Time":"1444953629000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Gateway","sport":1,"theirTeamId":35},"279":{"pointsAgainst":23,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":276,"id":279,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":195,"ourTeam":"Varsity","pointsFor":25,"index":2,"dateString":"Thursday, October 15, 2015","theirSeason":40,"parentGroupName":"Match: Varsity vs. Gateway on Oct 15, 2015","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #3 @ 8:23:14 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1444881600000","Start Time":"1444954994000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Gateway","sport":1,"theirTeamId":35},"280":{"pointsAgainst":0,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":4,"id":280,"childrenGroups":[281,282,283],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":3,"index":14,"dateString":"Monday, October 19, 2015","theirSeason":44,"parentGroupName":"","parentGroupScore":"","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. penn Trafford on Oct 19, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1445227200000","opponent":"penn Trafford","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"penn Trafford","sport":1,"theirTeamId":39},"281":{"pointsAgainst":11,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":280,"id":281,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":196,"ourTeam":"Varsity","pointsFor":25,"index":0,"dateString":"Monday, October 19, 2015","theirSeason":44,"parentGroupName":"Match: Varsity vs. penn Trafford on Oct 19, 2015","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 7:27:10 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1445227200000","Start Time":"1445297230000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"penn Trafford","sport":1,"theirTeamId":39},"282":{"pointsAgainst":8,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":280,"id":282,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":197,"ourTeam":"Varsity","pointsFor":25,"index":1,"dateString":"Monday, October 19, 2015","theirSeason":44,"parentGroupName":"Match: Varsity vs. penn Trafford on Oct 19, 2015","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #2 @ 7:52:15 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1445227200000","Start Time":"1445298735000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"penn Trafford","sport":1,"theirTeamId":39},"283":{"pointsAgainst":23,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":280,"id":283,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":198,"ourTeam":"Varsity","pointsFor":25,"index":2,"dateString":"Monday, October 19, 2015","theirSeason":44,"parentGroupName":"Match: Varsity vs. penn Trafford on Oct 19, 2015","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #3 @ 8:09:07 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1445227200000","Start Time":"1445299747000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"penn Trafford","sport":1,"theirTeamId":39},"284":{"pointsAgainst":0,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":4,"id":284,"childrenGroups":[285,286,287],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":3,"index":15,"dateString":"Tuesday, October 20, 2015","theirSeason":45,"parentGroupName":"","parentGroupScore":"","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. Penn Hill on Oct 20, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1445313600000","opponent":"Penn Hill","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Penn Hill","sport":1,"theirTeamId":40},"285":{"pointsAgainst":14,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":284,"id":285,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":199,"ourTeam":"Varsity","pointsFor":25,"index":0,"dateString":"Tuesday, October 20, 2015","theirSeason":45,"parentGroupName":"Match: Varsity vs. Penn Hill on Oct 20, 2015","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 7:27:12 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1445313600000","Start Time":"1445383632000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Penn Hill","sport":1,"theirTeamId":40},"286":{"pointsAgainst":7,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":284,"id":286,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":200,"ourTeam":"Varsity","pointsFor":25,"index":1,"dateString":"Tuesday, October 20, 2015","theirSeason":45,"parentGroupName":"Match: Varsity vs. Penn Hill on Oct 20, 2015","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #2 @ 7:52:32 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1445313600000","Start Time":"1445385152000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Penn Hill","sport":1,"theirTeamId":40},"287":{"pointsAgainst":20,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":284,"id":287,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":201,"ourTeam":"Varsity","pointsFor":25,"index":2,"dateString":"Tuesday, October 20, 2015","theirSeason":45,"parentGroupName":"Match: Varsity vs. Penn Hill on Oct 20, 2015","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #3 @ 8:07:40 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1445313600000","Start Time":"1445386060000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Penn Hill","sport":1,"theirTeamId":40},"200":{"pointsAgainst":26,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":198,"id":200,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":136,"ourTeam":"Varsity","pointsFor":27,"index":1,"dateString":"Saturday, September 5, 2015","theirSeason":29,"parentGroupName":"Match: Varsity vs. Quaker Valley on Sep 5, 2015","parentGroupScore":"2-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #2 @ 12:28:42 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1441425600000","Start Time":"1441470522000","Location":"Cannon Mac"},"sportName":"Volleyball","theirTeam":"Quaker Valley","sport":1,"theirTeamId":29},"288":{"pointsAgainst":3,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":4,"id":288,"childrenGroups":[289,290,291,292],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":1,"index":16,"dateString":"Thursday, October 22, 2015","theirSeason":42,"parentGroupName":"","parentGroupScore":"","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. Armstrong on Oct 22, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1445486400000","opponent":"Armstrong","Location":"Armstrong"},"sportName":"Volleyball","theirTeam":"Armstrong","sport":1,"theirTeamId":37},"201":{"pointsAgainst":1,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":194,"id":201,"childrenGroups":[202,203],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":1,"index":2,"dateString":"Saturday, September 5, 2015","theirSeason":30,"parentGroupName":"Tournament: Cannon Mac","parentGroupScore":"3-2-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. Moon on Sep 5, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1441425600000","opponent":"Moon","Location":"Cannon Mac"},"sportName":"Volleyball","theirTeam":"Moon","sport":1,"theirTeamId":30},"289":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":288,"id":289,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":202,"ourTeam":"Varsity","pointsFor":15,"index":0,"dateString":"Thursday, October 22, 2015","theirSeason":42,"parentGroupName":"Match: Varsity vs. Armstrong on Oct 22, 2015","parentGroupScore":"1-0-3","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 7:30:54 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1445486400000","Start Time":"1445556654000","Location":"Armstrong"},"sportName":"Volleyball","theirTeam":"Armstrong","sport":1,"theirTeamId":37},"202":{"pointsAgainst":19,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":201,"id":202,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":137,"ourTeam":"Varsity","pointsFor":25,"index":0,"dateString":"Saturday, September 5, 2015","theirSeason":30,"parentGroupName":"Match: Varsity vs. Moon on Sep 5, 2015","parentGroupScore":"1-0-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 2:38:41 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1441425600000","Start Time":"1441478321000","Location":"Cannon Mac"},"sportName":"Volleyball","theirTeam":"Moon","sport":1,"theirTeamId":30},"203":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":201,"id":203,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":138,"ourTeam":"Varsity","pointsFor":21,"index":1,"dateString":"Saturday, September 5, 2015","theirSeason":30,"parentGroupName":"Match: Varsity vs. Moon on Sep 5, 2015","parentGroupScore":"1-0-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #2 @ 3:01:07 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1441425600000","Start Time":"1441479667000","Location":"Cannon Mac"},"sportName":"Volleyball","theirTeam":"Moon","sport":1,"theirTeamId":30},"204":{"pointsAgainst":1,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":194,"id":204,"childrenGroups":[205,206],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":1,"index":3,"dateString":"Saturday, September 5, 2015","theirSeason":31,"parentGroupName":"Tournament: Cannon Mac","parentGroupScore":"3-2-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. Seton La Salle on Sep 5, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1441425600000","opponent":"Seton La Salle","Location":"Cannon Mac"},"sportName":"Volleyball","theirTeam":"Seton La Salle","sport":1,"theirTeamId":31},"205":{"pointsAgainst":22,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":204,"id":205,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":139,"ourTeam":"Varsity","pointsFor":25,"index":0,"dateString":"Saturday, September 5, 2015","theirSeason":31,"parentGroupName":"Match: Varsity vs. Seton La Salle on Sep 5, 2015","parentGroupScore":"1-0-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 4:17:17 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1441425600000","Start Time":"1441484237000","Location":"Cannon Mac"},"sportName":"Volleyball","theirTeam":"Seton La Salle","sport":1,"theirTeamId":31},"206":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":204,"id":206,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":140,"ourTeam":"Varsity","pointsFor":21,"index":1,"dateString":"Saturday, September 5, 2015","theirSeason":31,"parentGroupName":"Match: Varsity vs. Seton La Salle on Sep 5, 2015","parentGroupScore":"1-0-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #2 @ 4:41:39 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1441425600000","Start Time":"1441485699000","Location":"Cannon Mac"},"sportName":"Volleyball","theirTeam":"Seton La Salle","sport":1,"theirTeamId":31},"207":{"pointsAgainst":0,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":194,"id":207,"childrenGroups":[208],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":1,"index":4,"dateString":"Saturday, September 5, 2015","theirSeason":28,"parentGroupName":"Tournament: Cannon Mac","parentGroupScore":"3-2-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. Beaver on Sep 5, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1441425600000","opponent":"Beaver","Location":"Cannon Mac"},"sportName":"Volleyball","theirTeam":"Beaver","sport":1,"theirTeamId":28},"208":{"pointsAgainst":23,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":207,"id":208,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":141,"ourTeam":"Varsity","pointsFor":25,"index":0,"dateString":"Saturday, September 5, 2015","theirSeason":28,"parentGroupName":"Match: Varsity vs. Beaver on Sep 5, 2015","parentGroupScore":"1-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 6:53:15 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1441425600000","Start Time":"1441493595000","Location":"Cannon Mac"},"sportName":"Volleyball","theirTeam":"Beaver","sport":1,"theirTeamId":28},"209":{"pointsAgainst":1,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":194,"id":209,"childrenGroups":[210],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":0,"index":5,"dateString":"Saturday, September 5, 2015","theirSeason":30,"parentGroupName":"Tournament: Cannon Mac","parentGroupScore":"3-2-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. Moon on Sep 5, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1441425600000","opponent":"Moon","Location":"Cannon Mac"},"sportName":"Volleyball","theirTeam":"Moon","sport":1,"theirTeamId":30},"290":{"pointsAgainst":20,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":288,"id":290,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":203,"ourTeam":"Varsity","pointsFor":25,"index":1,"dateString":"Thursday, October 22, 2015","theirSeason":42,"parentGroupName":"Match: Varsity vs. Armstrong on Oct 22, 2015","parentGroupScore":"1-0-3","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #2 @ 7:59:30 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1445486400000","Start Time":"1445558370000","Location":"Armstrong"},"sportName":"Volleyball","theirTeam":"Armstrong","sport":1,"theirTeamId":37},"291":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":288,"id":291,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":204,"ourTeam":"Varsity","pointsFor":8,"index":2,"dateString":"Thursday, October 22, 2015","theirSeason":42,"parentGroupName":"Match: Varsity vs. Armstrong on Oct 22, 2015","parentGroupScore":"1-0-3","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #3 @ 8:23:42 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1445486400000","Start Time":"1445559822000","Location":"Armstrong"},"sportName":"Volleyball","theirTeam":"Armstrong","sport":1,"theirTeamId":37},"292":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":288,"id":292,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":205,"ourTeam":"Varsity","pointsFor":22,"index":3,"dateString":"Thursday, October 22, 2015","theirSeason":42,"parentGroupName":"Match: Varsity vs. Armstrong on Oct 22, 2015","parentGroupScore":"1-0-3","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #4 @ 8:42:49 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1445486400000","Start Time":"1445560969000","Location":"Armstrong"},"sportName":"Volleyball","theirTeam":"Armstrong","sport":1,"theirTeamId":37},"293":{"pointsAgainst":2,"practice":false,"typeName":"Tournament","gameVideos":[],"pointsTied":0,"myType":1,"id":293,"childrenGroups":[294,296,298,300],"favorited":false,"ourTeam":"Varsity","pointsFor":2,"index":17,"dateString":"","parentGroupName":"","parentGroupScore":"","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Tournament: NA","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Location":"NA","Name":"NA"},"sportName":"Volleyball","theirTeam":"","sport":1,"theirTeamId":""},"294":{"pointsAgainst":1,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":293,"id":294,"childrenGroups":[295],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":0,"index":0,"dateString":"Saturday, October 24, 2015","theirSeason":46,"parentGroupName":"Tournament: NA","parentGroupScore":"2-0-2","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. Hempfield on Oct 24, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1445659200000","opponent":"Hempfield","Location":"NA"},"sportName":"Volleyball","theirTeam":"Hempfield","sport":1,"theirTeamId":41},"295":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":294,"id":295,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":206,"ourTeam":"Varsity","pointsFor":18,"index":0,"dateString":"Saturday, October 24, 2015","theirSeason":46,"parentGroupName":"Match: Varsity vs. Hempfield on Oct 24, 2015","parentGroupScore":"0-0-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 8:17:27 AM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1445659200000","Start Time":"1445689047000","Location":"NA"},"sportName":"Volleyball","theirTeam":"Hempfield","sport":1,"theirTeamId":41},"296":{"pointsAgainst":0,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":293,"id":296,"childrenGroups":[297],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":1,"index":1,"dateString":"Saturday, October 24, 2015","theirSeason":36,"parentGroupName":"Tournament: NA","parentGroupScore":"2-0-2","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. Plum on Oct 24, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1445659200000","opponent":"Plum","Location":"NA"},"sportName":"Volleyball","theirTeam":"Plum","sport":1,"theirTeamId":23},"297":{"pointsAgainst":11,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":296,"id":297,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":207,"ourTeam":"Varsity","pointsFor":25,"index":0,"dateString":"Saturday, October 24, 2015","theirSeason":36,"parentGroupName":"Match: Varsity vs. Plum on Oct 24, 2015","parentGroupScore":"1-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 8:39:46 AM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1445659200000","Start Time":"1445690386000","Location":"NA"},"sportName":"Volleyball","theirTeam":"Plum","sport":1,"theirTeamId":23},"210":{"pointsAgainst":23,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":209,"id":210,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":142,"ourTeam":"Varsity","pointsFor":21,"index":0,"dateString":"Saturday, September 5, 2015","theirSeason":30,"parentGroupName":"Match: Varsity vs. Moon on Sep 5, 2015","parentGroupScore":"0-0-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 7:30:02 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1441425600000","Start Time":"1441495802000","Location":"Cannon Mac"},"sportName":"Volleyball","theirTeam":"Moon","sport":1,"theirTeamId":30},"298":{"pointsAgainst":1,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":293,"id":298,"childrenGroups":[299],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":0,"index":2,"dateString":"Saturday, October 24, 2015","theirSeason":47,"parentGroupName":"Tournament: NA","parentGroupScore":"2-0-2","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. Baldwin on Oct 24, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1445659200000","opponent":"Baldwin","Location":"NA"},"sportName":"Volleyball","theirTeam":"Baldwin","sport":1,"theirTeamId":42},"299":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":298,"id":299,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":208,"ourTeam":"Varsity","pointsFor":20,"index":0,"dateString":"Saturday, October 24, 2015","theirSeason":47,"parentGroupName":"Match: Varsity vs. Baldwin on Oct 24, 2015","parentGroupScore":"0-0-1","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 9:46:52 AM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1445659200000","Start Time":"1445694412000","Location":"NA"},"sportName":"Volleyball","theirTeam":"Baldwin","sport":1,"theirTeamId":42},"214":{"pointsAgainst":0,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":4,"id":214,"childrenGroups":[215,216,217],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":3,"index":1,"dateString":"Tuesday, September 8, 2015","theirSeason":34,"parentGroupName":"","parentGroupScore":"","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. Woodland Hillls on Sep 8, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1441684800000","opponent":"Woodland Hillls","Location":"Woodland Hills"},"sportName":"Volleyball","theirTeam":"Woodland Hillls","sport":1,"theirTeamId":32},"215":{"pointsAgainst":5,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":214,"id":215,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":145,"ourTeam":"Varsity","pointsFor":25,"index":0,"dateString":"Tuesday, September 8, 2015","theirSeason":34,"parentGroupName":"Match: Varsity vs. Woodland Hillls on Sep 8, 2015","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 4:15:27 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1441684800000","Start Time":"1441743327000","Location":"Woodland Hills"},"sportName":"Volleyball","theirTeam":"Woodland Hillls","sport":1,"theirTeamId":32},"216":{"pointsAgainst":10,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":214,"id":216,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":146,"ourTeam":"Varsity","pointsFor":25,"index":1,"dateString":"Tuesday, September 8, 2015","theirSeason":34,"parentGroupName":"Match: Varsity vs. Woodland Hillls on Sep 8, 2015","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #2 @ 4:51:05 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1441684800000","Start Time":"1441745465000","Location":"Woodland Hills"},"sportName":"Volleyball","theirTeam":"Woodland Hillls","sport":1,"theirTeamId":32},"217":{"pointsAgainst":11,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":214,"id":217,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":147,"ourTeam":"Varsity","pointsFor":25,"index":2,"dateString":"Tuesday, September 8, 2015","theirSeason":34,"parentGroupName":"Match: Varsity vs. Woodland Hillls on Sep 8, 2015","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #3 @ 5:11:19 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1441684800000","Start Time":"1441746679000","Location":"Woodland Hills"},"sportName":"Volleyball","theirTeam":"Woodland Hillls","sport":1,"theirTeamId":32},"218":{"pointsAgainst":0,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":4,"id":218,"childrenGroups":[219,220,221],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":3,"index":2,"dateString":"Thursday, September 10, 2015","theirSeason":35,"parentGroupName":"","parentGroupScore":"","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. Shaler on Sep 10, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1441857600000","opponent":"Shaler","Location":"Shaler"},"sportName":"Volleyball","theirTeam":"Shaler","sport":1,"theirTeamId":6},"219":{"pointsAgainst":22,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":218,"id":219,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":148,"ourTeam":"Varsity","pointsFor":25,"index":0,"dateString":"Thursday, September 10, 2015","theirSeason":35,"parentGroupName":"Match: Varsity vs. Shaler on Sep 10, 2015","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 7:17:03 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1441857600000","Start Time":"1441927023000","Location":"Shaler"},"sportName":"Volleyball","theirTeam":"Shaler","sport":1,"theirTeamId":6},"220":{"pointsAgainst":23,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":218,"id":220,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":149,"ourTeam":"Varsity","pointsFor":25,"index":1,"dateString":"Thursday, September 10, 2015","theirSeason":35,"parentGroupName":"Match: Varsity vs. Shaler on Sep 10, 2015","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #2 @ 7:43:27 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1441857600000","Start Time":"1441928607000","Location":"Shaler"},"sportName":"Volleyball","theirTeam":"Shaler","sport":1,"theirTeamId":6},"221":{"pointsAgainst":18,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":218,"id":221,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":150,"ourTeam":"Varsity","pointsFor":25,"index":2,"dateString":"Thursday, September 10, 2015","theirSeason":35,"parentGroupName":"Match: Varsity vs. Shaler on Sep 10, 2015","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #3 @ 8:11:02 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1441857600000","Start Time":"1441930262000","Location":"Shaler"},"sportName":"Volleyball","theirTeam":"Shaler","sport":1,"theirTeamId":6},"222":{"pointsAgainst":3,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":4,"id":222,"childrenGroups":[223,224,225,226,227],"favorited":false,"theirSeasonName":"Girls 2015","ourTeam":"Varsity","pointsFor":2,"index":3,"dateString":"Tuesday, September 15, 2015","theirSeason":36,"parentGroupName":"","parentGroupScore":"","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Match: Varsity vs. Plum on Sep 15, 2015","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1442289600000","opponent":"Plum","Location":"Plum"},"sportName":"Volleyball","theirTeam":"Plum","sport":1,"theirTeamId":23},"223":{"pointsAgainst":18,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":222,"id":223,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":151,"ourTeam":"Varsity","pointsFor":25,"index":0,"dateString":"Tuesday, September 15, 2015","theirSeason":36,"parentGroupName":"Match: Varsity vs. Plum on Sep 15, 2015","parentGroupScore":"2-0-3","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #1 @ 7:01:52 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1442289600000","Start Time":"1442358112000","Location":"Plum"},"sportName":"Volleyball","theirTeam":"Plum","sport":1,"theirTeamId":23},"224":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":222,"id":224,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":152,"ourTeam":"Varsity","pointsFor":21,"index":1,"dateString":"Tuesday, September 15, 2015","theirSeason":36,"parentGroupName":"Match: Varsity vs. Plum on Sep 15, 2015","parentGroupScore":"2-0-3","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #2 @ 7:33:00 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1442289600000","Start Time":"1442359980000","Location":"Plum"},"sportName":"Volleyball","theirTeam":"Plum","sport":1,"theirTeamId":23},"225":{"pointsAgainst":16,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":222,"id":225,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":153,"ourTeam":"Varsity","pointsFor":25,"index":2,"dateString":"Tuesday, September 15, 2015","theirSeason":36,"parentGroupName":"Match: Varsity vs. Plum on Sep 15, 2015","parentGroupScore":"2-0-3","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #3 @ 7:58:41 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1442289600000","Start Time":"1442361521000","Location":"Plum"},"sportName":"Volleyball","theirTeam":"Plum","sport":1,"theirTeamId":23},"226":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":222,"id":226,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":154,"ourTeam":"Varsity","pointsFor":21,"index":3,"dateString":"Tuesday, September 15, 2015","theirSeason":36,"parentGroupName":"Match: Varsity vs. Plum on Sep 15, 2015","parentGroupScore":"2-0-3","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #4 @ 8:20:17 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1442289600000","Start Time":"1442362817000","Location":"Plum"},"sportName":"Volleyball","theirTeam":"Plum","sport":1,"theirTeamId":23},"227":{"pointsAgainst":17,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":222,"id":227,"childrenGroups":[],"favorited":false,"theirSeasonName":"Girls 2015","associatedEvent":155,"ourTeam":"Varsity","pointsFor":15,"index":4,"dateString":"Tuesday, September 15, 2015","theirSeason":36,"parentGroupName":"Match: Varsity vs. Plum on Sep 15, 2015","parentGroupScore":"2-0-3","videoUploadPercentage":0,"ourTeamId":27,"ourSeason":27,"name":"Game #5 @ 8:46:21 PM","thumbnailPath":"","ourSeasonName":"Girls 2015","attributes":{"Start Date":"1442289600000","Start Time":"1442364381000","Location":"Plum"},"sportName":"Volleyball","theirTeam":"Plum","sport":1,"theirTeamId":23}};
+var allPlayers = [{"firstName":"Ana","lastName":"Spangenberg","name":"Ana Spangenberg","id":41},{"firstName":"Dominique","lastName":"Buccigrossi","name":"Dominique Buccigrossi","id":29},{"firstName":"Katie","lastName":"Costanzo","name":"Katie Costanzo","id":31},{"firstName":"Chloe","lastName":"Yofan","name":"Chloe Yofan","id":46},{"firstName":"Desirae","lastName":"Buccigrossi","name":"Desirae Buccigrossi","id":28},{"firstName":"Erasmia","lastName":"Yager","name":"Erasmia Yager","id":45},{"firstName":"Haley","lastName":"Herrman","name":"Haley Herrman","id":34},{"firstName":"Jessica","lastName":"Michel","name":"Jessica Michel","id":37},{"firstName":"Katherine","lastName":"Chomko","name":"Katherine Chomko","id":30},{"firstName":"Katie","lastName":"Kenney","name":"Katie Kenney","id":35},{"firstName":"Kayla","lastName":"Slovenec","name":"Kayla Slovenec","id":40},{"firstName":"Megan","lastName":"Friday","name":"Megan Friday","id":33},{"firstName":"Meredith","lastName":"Kenney","name":"Meredith Kenney","id":36},{"firstName":"Murphy","lastName":"Patterson","name":"Murphy Patterson","id":39},{"firstName":"Maya","lastName":"Weis","name":"Maya Weis","id":44},{"firstName":"Nikki","lastName":"Stumpf","name":"Nikki Stumpf","id":42},{"firstName":"Olivia","lastName":"Molina","name":"Olivia Molina","id":38},{"firstName":"Shannon","lastName":"Fisher","name":"Shannon Fisher","id":32},{"firstName":"Sarah","lastName":"Supsura","name":"Sarah Supsura","id":43}];
+</script>
+
+<form method="get" action="/reports.htm" id="reportForm">
+<h2 class="titleBorder smaller">
+	With the selected games, view the stats using 
+	<select name="viewId">
+	  
+	  	
+	  	
+		<option value="1-View" >Default View</option>
+	  
+	  	
+	  	
+		<option value="3-View" >Our Serve / Their Serve</option>
+	  
+	  	
+	  	
+		<option value="4-View" >Passing & Defense</option>
+	  
+	  	
+	  	
+		<option value="5-View" >Points Earned and Errors</option>
+	  
+	  	
+	  	
+		<option value="6-View" >Situational Offense</option>
+	  
+	  	
+	  	
+		<option value="7-View" >Team Attack</option>
+	  
+	</select>
+	focused on
+	<select name="grouping">
+	  
+	  	
+	  	
+	  	  
+	  	
+		<option value="1" selected='true'>Players</option>
+	  
+	  	
+	  	
+		<option value="2" >Our Rotation</option>
+	  
+	  	
+	  	
+		<option value="3" >Their Rotation</option>
+	  
+	  	
+	  	
+		<option value="4" >Our Setter</option>
+	  
+	  	
+	  	
+		<option value="5" >Set Type</option>
+	  
+	  	
+	  	
+		<option value="6" >Serve Type</option>
+	  
+	</select>
+	using <a id="setPlayerDialogLink" href="#">All Players</a> 
+	<input type="hidden" name="season" value="27"/>
+	<input class="hoverGreen" type="submit" value="Go"/>
+</h2>
+
+<h2 class="titleBorder borderAbove">Varsity - Girls 2015:</h2>
+
+<div id="seasonEvents">
+
+
+	<p>Create a new 
+	
+		 <a href="/eventSetup.htm?season=27&seriesId=1">Tournament</a>, 
+	
+		 <a href="/eventSetup.htm?season=27&seriesId=2">Match</a>, 
+	
+		or  <a href="/eventSetup.htm?season=27&seriesId=3">Practice</a>
+	
+	</p>
+
+
+<table class="striped forNow" style="width:100%">
+	<thead>
+	<tr>
+		<th><img id='open_close_all' class='open_close' src='/images/minus.png'/><input type="checkbox" name="selectAllEvents" id="selectAllEvents"/><span style="margin-left: 10px">Name</span></th>
+		<th>Actions</th>
+	</tr>
+	</thead>
+	<tbody>
+	
+		<tr class="depth0 eventRow" id="eventId302">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="302"/>
+				Match: Varsity vs. Norwin on Oct 28, 2015 
+				<span class="teamColor">LOSS(0-3-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=302">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=302">Edit properties</a>
+					
+				
+				
+					
+						|
+					
+					<a href="/importExport.htm?action=export&egId=302">Export</a>
+					
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=302&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[302].name, 302, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId303">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="303"/>
+				Game #1 @ 8:26:16 PM 
+				<span class="teamColor">LOSS(17-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=210">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=303">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=303&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[303].name, 303, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId304">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="304"/>
+				Game #2 @ 8:50:42 PM 
+				<span class="teamColor">LOSS(12-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=211">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=304">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=304&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[304].name, 304, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId305">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="305"/>
+				Game #3 @ 9:11:04 PM 
+				<span class="teamColor">LOSS(14-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=212">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=305">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=305&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[305].name, 305, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth0 eventRow" id="eventId293">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="293"/>
+				Tournament: NA 
+				<span class="teamColor"></span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=293">Create a new Match</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=293">Edit properties</a>
+					
+				
+				
+					
+						|
+					
+					<a href="/importExport.htm?action=export&egId=293">Export</a>
+					
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=293&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[293].name, 293, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId294">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="294"/>
+				Match: Varsity vs. Hempfield on Oct 24, 2015 
+				<span class="teamColor">LOSS(0-1-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=294">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=294">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=294&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[294].name, 294, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId295">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="295"/>
+				Game #1 @ 8:17:27 AM 
+				<span class="teamColor">LOSS(18-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=206">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=295">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=295&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[295].name, 295, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId296">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="296"/>
+				Match: Varsity vs. Plum on Oct 24, 2015 
+				<span class="teamColor">WIN(1-0-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=296">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=296">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=296&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[296].name, 296, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId297">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="297"/>
+				Game #1 @ 8:39:46 AM 
+				<span class="teamColor">WIN(25-11)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=207">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=297">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=297&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[297].name, 297, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId298">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="298"/>
+				Match: Varsity vs. Baldwin on Oct 24, 2015 
+				<span class="teamColor">LOSS(0-1-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=298">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=298">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=298&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[298].name, 298, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId299">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="299"/>
+				Game #1 @ 9:46:52 AM 
+				<span class="teamColor">LOSS(20-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=208">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=299">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=299&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[299].name, 299, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId300">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="300"/>
+				Match: Varsity vs. Oakland Catholic on Oct 24, 2015 
+				<span class="teamColor">WIN(1-0-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=300">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=300">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=300&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[300].name, 300, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId301">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="301"/>
+				Game #1 @ 10:53:14 AM 
+				<span class="teamColor">WIN(25-20)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=209">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=301">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=301&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[301].name, 301, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth0 eventRow" id="eventId288">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="288"/>
+				Match: Varsity vs. Armstrong on Oct 22, 2015 
+				<span class="teamColor">LOSS(1-3-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=288">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=288">Edit properties</a>
+					
+				
+				
+					
+						|
+					
+					<a href="/importExport.htm?action=export&egId=288">Export</a>
+					
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=288&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[288].name, 288, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId289">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="289"/>
+				Game #1 @ 7:30:54 PM 
+				<span class="teamColor">LOSS(15-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=202">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=289">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=289&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[289].name, 289, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId290">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="290"/>
+				Game #2 @ 7:59:30 PM 
+				<span class="teamColor">WIN(25-20)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=203">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=290">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=290&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[290].name, 290, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId291">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="291"/>
+				Game #3 @ 8:23:42 PM 
+				<span class="teamColor">LOSS(8-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=204">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=291">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=291&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[291].name, 291, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId292">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="292"/>
+				Game #4 @ 8:42:49 PM 
+				<span class="teamColor">LOSS(22-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=205">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=292">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=292&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[292].name, 292, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth0 eventRow" id="eventId284">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="284"/>
+				Match: Varsity vs. Penn Hill on Oct 20, 2015 
+				<span class="teamColor">WIN(3-0-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=284">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=284">Edit properties</a>
+					
+				
+				
+					
+						|
+					
+					<a href="/importExport.htm?action=export&egId=284">Export</a>
+					
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=284&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[284].name, 284, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId285">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="285"/>
+				Game #1 @ 7:27:12 PM 
+				<span class="teamColor">WIN(25-14)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=199">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=285">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=285&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[285].name, 285, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId286">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="286"/>
+				Game #2 @ 7:52:32 PM 
+				<span class="teamColor">WIN(25-7)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=200">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=286">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=286&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[286].name, 286, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId287">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="287"/>
+				Game #3 @ 8:07:40 PM 
+				<span class="teamColor">WIN(25-20)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=201">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=287">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=287&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[287].name, 287, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth0 eventRow" id="eventId280">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="280"/>
+				Match: Varsity vs. penn Trafford on Oct 19, 2015 
+				<span class="teamColor">WIN(3-0-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=280">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=280">Edit properties</a>
+					
+				
+				
+					
+						|
+					
+					<a href="/importExport.htm?action=export&egId=280">Export</a>
+					
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=280&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[280].name, 280, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId281">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="281"/>
+				Game #1 @ 7:27:10 PM 
+				<span class="teamColor">WIN(25-11)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=196">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=281">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=281&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[281].name, 281, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId282">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="282"/>
+				Game #2 @ 7:52:15 PM 
+				<span class="teamColor">WIN(25-8)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=197">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=282">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=282&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[282].name, 282, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId283">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="283"/>
+				Game #3 @ 8:09:07 PM 
+				<span class="teamColor">WIN(25-23)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=198">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=283">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=283&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[283].name, 283, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth0 eventRow" id="eventId276">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="276"/>
+				Match: Varsity vs. Gateway on Oct 15, 2015 
+				<span class="teamColor">WIN(3-0-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=276">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=276">Edit properties</a>
+					
+				
+				
+					
+						|
+					
+					<a href="/importExport.htm?action=export&egId=276">Export</a>
+					
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=276&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[276].name, 276, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId277">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="277"/>
+				Game #1 @ 7:36:21 PM 
+				<span class="teamColor">WIN(25-11)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=193">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=277">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=277&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[277].name, 277, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId278">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="278"/>
+				Game #2 @ 8:00:29 PM 
+				<span class="teamColor">WIN(25-21)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=194">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=278">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=278&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[278].name, 278, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId279">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="279"/>
+				Game #3 @ 8:23:14 PM 
+				<span class="teamColor">WIN(25-23)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=195">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=279">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=279&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[279].name, 279, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth0 eventRow" id="eventId271">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="271"/>
+				Match: Varsity vs. Oakland Catholic on Oct 13, 2015 
+				<span class="teamColor">LOSS(1-3-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=271">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=271">Edit properties</a>
+					
+				
+				
+					
+						|
+					
+					<a href="/importExport.htm?action=export&egId=271">Export</a>
+					
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=271&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[271].name, 271, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId272">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="272"/>
+				Game #1 @ 7:28:21 PM 
+				<span class="teamColor">WIN(25-15)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=189">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=272">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=272&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[272].name, 272, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId273">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="273"/>
+				Game #2 @ 7:52:47 PM 
+				<span class="teamColor">LOSS(18-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=190">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=273">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=273&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[273].name, 273, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId274">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="274"/>
+				Game #3 @ 8:16:28 PM 
+				<span class="teamColor">LOSS(20-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=191">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=274">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=274&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[274].name, 274, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId275">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="275"/>
+				Game #4 @ 8:42:57 PM 
+				<span class="teamColor">LOSS(17-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=192">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=275">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=275&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[275].name, 275, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth0 eventRow" id="eventId266">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="266"/>
+				Match: Varsity vs. Plum on Oct 8, 2015 
+				<span class="teamColor">WIN(3-1-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=266">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=266">Edit properties</a>
+					
+				
+				
+					
+						|
+					
+					<a href="/importExport.htm?action=export&egId=266">Export</a>
+					
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=266&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[266].name, 266, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId267">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="267"/>
+				Game #1 @ 7:18:14 PM 
+				<span class="teamColor">WIN(25-15)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=185">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=267">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=267&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[267].name, 267, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId268">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="268"/>
+				Game #2 @ 7:40:48 PM 
+				<span class="teamColor">WIN(25-23)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=186">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=268">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=268&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[268].name, 268, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId269">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="269"/>
+				Game #3 @ 8:08:31 PM 
+				<span class="teamColor">LOSS(20-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=187">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=269">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=269&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[269].name, 269, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId270">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="270"/>
+				Game #4 @ 8:35:04 PM 
+				<span class="teamColor">WIN(25-21)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=188">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=270">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=270&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[270].name, 270, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth0 eventRow" id="eventId262">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="262"/>
+				Match: Varsity vs. Shaler on Oct 6, 2015 
+				<span class="teamColor">WIN(3-0-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=262">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=262">Edit properties</a>
+					
+				
+				
+					
+						|
+					
+					<a href="/importExport.htm?action=export&egId=262">Export</a>
+					
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=262&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[262].name, 262, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId263">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="263"/>
+				Game #1 @ 7:13:47 PM 
+				<span class="teamColor">WIN(25-8)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=182">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=263">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=263&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[263].name, 263, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId264">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="264"/>
+				Game #2 @ 7:31:29 PM 
+				<span class="teamColor">WIN(27-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=183">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=264">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=264&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[264].name, 264, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId265">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="265"/>
+				Game #3 @ 8:00:48 PM 
+				<span class="teamColor">WIN(25-18)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=184">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=265">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=265&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[265].name, 265, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth0 eventRow" id="eventId257">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="257"/>
+				Match: Varsity vs. Hampton on Oct 5, 2015 
+				<span class="teamColor">WIN(3-1-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=257">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=257">Edit properties</a>
+					
+				
+				
+					
+						|
+					
+					<a href="/importExport.htm?action=export&egId=257">Export</a>
+					
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=257&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[257].name, 257, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId258">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="258"/>
+				Game #1 @ 7:18:49 PM 
+				<span class="teamColor">LOSS(23-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=178">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=258">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=258&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[258].name, 258, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId259">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="259"/>
+				Game #2 @ 7:45:42 PM 
+				<span class="teamColor">WIN(25-20)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=179">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=259">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=259&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[259].name, 259, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId260">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="260"/>
+				Game #3 @ 8:08:30 PM 
+				<span class="teamColor">WIN(25-20)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=180">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=260">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=260&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[260].name, 260, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId261">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="261"/>
+				Game #4 @ 8:30:57 PM 
+				<span class="teamColor">WIN(25-20)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=181">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=261">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=261&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[261].name, 261, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth0 eventRow" id="eventId253">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="253"/>
+				Match: Varsity vs. Woodland Hillls on Oct 1, 2015 
+				<span class="teamColor">WIN(3-0-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=253">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=253">Edit properties</a>
+					
+				
+				
+					
+						|
+					
+					<a href="/importExport.htm?action=export&egId=253">Export</a>
+					
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=253&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[253].name, 253, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId254">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="254"/>
+				Game #1 @ 7:10:48 PM 
+				<span class="teamColor">WIN(25-10)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=175">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=254">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=254&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[254].name, 254, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId255">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="255"/>
+				Game #2 @ 7:29:58 PM 
+				<span class="teamColor">WIN(25-4)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=176">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=255">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=255&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[255].name, 255, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId256">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="256"/>
+				Game #3 @ 7:45:28 PM 
+				<span class="teamColor">WIN(25-7)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=177">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=256">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=256&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[256].name, 256, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth0 eventRow" id="eventId248">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="248"/>
+				Match: Varsity vs. Armstrong on Sep 29, 2015 
+				<span class="teamColor">LOSS(1-3-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=248">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=248">Edit properties</a>
+					
+				
+				
+					
+						|
+					
+					<a href="/importExport.htm?action=export&egId=248">Export</a>
+					
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=248&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[248].name, 248, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId249">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="249"/>
+				Game #1 @ 7:16:20 PM 
+				<span class="teamColor">LOSS(22-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=171">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=249">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=249&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[249].name, 249, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId250">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="250"/>
+				Game #2 @ 7:40:27 PM 
+				<span class="teamColor">LOSS(20-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=172">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=250">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=250&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[250].name, 250, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId251">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="251"/>
+				Game #3 @ 8:06:11 PM 
+				<span class="teamColor">WIN(31-29)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=173">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=251">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=251&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[251].name, 251, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId252">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="252"/>
+				Game #4 @ 8:38:50 PM 
+				<span class="teamColor">LOSS(26-28)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=174">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=252">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=252&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[252].name, 252, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth0 eventRow" id="eventId244">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="244"/>
+				Match: Varsity vs. Penn Hills on Sep 24, 2015 
+				<span class="teamColor">WIN(3-0-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=244">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=244">Edit properties</a>
+					
+				
+				
+					
+						|
+					
+					<a href="/importExport.htm?action=export&egId=244">Export</a>
+					
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=244&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[244].name, 244, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId245">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="245"/>
+				Game #1 @ 7:25:07 PM 
+				<span class="teamColor">WIN(25-11)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=168">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=245">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=245&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[245].name, 245, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId246">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="246"/>
+				Game #2 @ 7:45:26 PM 
+				<span class="teamColor">WIN(25-18)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=169">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=246">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=246&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[246].name, 246, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId247">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="247"/>
+				Game #3 @ 8:09:04 PM 
+				<span class="teamColor">WIN(25-9)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=170">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=247">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=247&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[247].name, 247, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth0 eventRow" id="eventId239">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="239"/>
+				Match: Varsity vs. Gateway on Sep 21, 2015 
+				<span class="teamColor">WIN(3-1-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=239">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=239">Edit properties</a>
+					
+				
+				
+					
+						|
+					
+					<a href="/importExport.htm?action=export&egId=239">Export</a>
+					
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=239&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[239].name, 239, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId240">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="240"/>
+				Game #1 @ 7:09:41 PM 
+				<span class="teamColor">WIN(26-24)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=164">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=240">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=240&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[240].name, 240, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId241">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="241"/>
+				Game #2 @ 7:42:19 PM 
+				<span class="teamColor">WIN(25-17)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=165">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=241">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=241&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[241].name, 241, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId242">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="242"/>
+				Game #3 @ 8:07:55 PM 
+				<span class="teamColor">LOSS(21-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=166">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=242">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=242&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[242].name, 242, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId243">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="243"/>
+				Game #4 @ 8:37:28 PM 
+				<span class="teamColor">WIN(26-24)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=167">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=243">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=243&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[243].name, 243, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth0 eventRow" id="eventId231">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="231"/>
+				Match: Varsity vs. Oakland Catholic on Sep 17, 2015 
+				<span class="teamColor">WIN(3-1-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=231">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=231">Edit properties</a>
+					
+				
+				
+					
+						|
+					
+					<a href="/importExport.htm?action=export&egId=231">Export</a>
+					
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=231&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[231].name, 231, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId232">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="232"/>
+				Game #1 @ 7:09:24 PM 
+				<span class="teamColor">WIN(25-20)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=158">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=232">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=232&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[232].name, 232, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId233">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="233"/>
+				Game #2 @ 7:40:33 PM 
+				<span class="teamColor">WIN(25-21)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=159">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=233">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=233&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[233].name, 233, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId234">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="234"/>
+				Game #3 @ 8:04:29 PM 
+				<span class="teamColor">LOSS(23-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=160">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=234">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=234&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[234].name, 234, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId235">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="235"/>
+				Game #4 @ 8:30:52 PM 
+				<span class="teamColor">WIN(25-17)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=161">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=235">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=235&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[235].name, 235, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth0 eventRow" id="eventId222">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="222"/>
+				Match: Varsity vs. Plum on Sep 15, 2015 
+				<span class="teamColor">LOSS(2-3-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=222">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=222">Edit properties</a>
+					
+				
+				
+					
+						|
+					
+					<a href="/importExport.htm?action=export&egId=222">Export</a>
+					
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=222&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[222].name, 222, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId223">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="223"/>
+				Game #1 @ 7:01:52 PM 
+				<span class="teamColor">WIN(25-18)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=151">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=223">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=223&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[223].name, 223, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId224">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="224"/>
+				Game #2 @ 7:33:00 PM 
+				<span class="teamColor">LOSS(21-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=152">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=224">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=224&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[224].name, 224, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId225">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="225"/>
+				Game #3 @ 7:58:41 PM 
+				<span class="teamColor">WIN(25-16)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=153">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=225">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=225&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[225].name, 225, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId226">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="226"/>
+				Game #4 @ 8:20:17 PM 
+				<span class="teamColor">LOSS(21-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=154">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=226">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=226&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[226].name, 226, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId227">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="227"/>
+				Game #5 @ 8:46:21 PM 
+				<span class="teamColor">LOSS(15-17)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=155">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=227">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=227&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[227].name, 227, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth0 eventRow" id="eventId218">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="218"/>
+				Match: Varsity vs. Shaler on Sep 10, 2015 
+				<span class="teamColor">WIN(3-0-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=218">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=218">Edit properties</a>
+					
+				
+				
+					
+						|
+					
+					<a href="/importExport.htm?action=export&egId=218">Export</a>
+					
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=218&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[218].name, 218, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId219">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="219"/>
+				Game #1 @ 7:17:03 PM 
+				<span class="teamColor">WIN(25-22)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=148">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=219">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=219&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[219].name, 219, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId220">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="220"/>
+				Game #2 @ 7:43:27 PM 
+				<span class="teamColor">WIN(25-23)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=149">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=220">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=220&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[220].name, 220, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId221">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="221"/>
+				Game #3 @ 8:11:02 PM 
+				<span class="teamColor">WIN(25-18)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=150">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=221">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=221&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[221].name, 221, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth0 eventRow" id="eventId214">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="214"/>
+				Match: Varsity vs. Woodland Hillls on Sep 8, 2015 
+				<span class="teamColor">WIN(3-0-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=214">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=214">Edit properties</a>
+					
+				
+				
+					
+						|
+					
+					<a href="/importExport.htm?action=export&egId=214">Export</a>
+					
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=214&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[214].name, 214, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId215">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="215"/>
+				Game #1 @ 4:15:27 PM 
+				<span class="teamColor">WIN(25-5)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=145">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=215">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=215&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[215].name, 215, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId216">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="216"/>
+				Game #2 @ 4:51:05 PM 
+				<span class="teamColor">WIN(25-10)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=146">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=216">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=216&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[216].name, 216, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId217">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="217"/>
+				Game #3 @ 5:11:19 PM 
+				<span class="teamColor">WIN(25-11)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=147">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=217">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=217&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[217].name, 217, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth0 eventRow" id="eventId194">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="194"/>
+				Tournament: Cannon Mac 
+				<span class="teamColor"></span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=194">Create a new Match</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=194">Edit properties</a>
+					
+				
+				
+					
+						|
+					
+					<a href="/importExport.htm?action=export&egId=194">Export</a>
+					
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=194&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[194].name, 194, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId195">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="195"/>
+				Match: Varsity vs. Beaver on Sep 5, 2015 
+				<span class="teamColor">WIN(2-0-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=195">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=195">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=195&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[195].name, 195, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId196">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="196"/>
+				Game #1 @ 9:32:19 AM 
+				<span class="teamColor">WIN(25-19)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=133">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=196">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=196&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[196].name, 196, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId197">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="197"/>
+				Game #2 @ 9:55:56 AM 
+				<span class="teamColor">WIN(25-21)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=134">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=197">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=197&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[197].name, 197, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId198">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="198"/>
+				Match: Varsity vs. Quaker Valley on Sep 5, 2015 
+				<span class="teamColor">WIN(2-0-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=198">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=198">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=198&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[198].name, 198, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId199">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="199"/>
+				Game #1 @ 11:59:17 AM 
+				<span class="teamColor">WIN(25-22)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=135">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=199">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=199&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[199].name, 199, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId200">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="200"/>
+				Game #2 @ 12:28:42 PM 
+				<span class="teamColor">WIN(27-26)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=136">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=200">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=200&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[200].name, 200, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId201">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="201"/>
+				Match: Varsity vs. Moon on Sep 5, 2015 
+				<span class="teamColor">TIE(1-1-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=201">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=201">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=201&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[201].name, 201, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId202">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="202"/>
+				Game #1 @ 2:38:41 PM 
+				<span class="teamColor">WIN(25-19)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=137">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=202">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=202&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[202].name, 202, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId203">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="203"/>
+				Game #2 @ 3:01:07 PM 
+				<span class="teamColor">LOSS(21-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=138">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=203">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=203&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[203].name, 203, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId204">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="204"/>
+				Match: Varsity vs. Seton La Salle on Sep 5, 2015 
+				<span class="teamColor">TIE(1-1-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=204">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=204">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=204&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[204].name, 204, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId205">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="205"/>
+				Game #1 @ 4:17:17 PM 
+				<span class="teamColor">WIN(25-22)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=139">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=205">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=205&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[205].name, 205, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId206">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="206"/>
+				Game #2 @ 4:41:39 PM 
+				<span class="teamColor">LOSS(21-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=140">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=206">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=206&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[206].name, 206, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId207">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="207"/>
+				Match: Varsity vs. Beaver on Sep 5, 2015 
+				<span class="teamColor">WIN(1-0-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=207">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=207">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=207&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[207].name, 207, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId208">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="208"/>
+				Game #1 @ 6:53:15 PM 
+				<span class="teamColor">WIN(25-23)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=141">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=208">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=208&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[208].name, 208, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId209">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="209"/>
+				Match: Varsity vs. Moon on Sep 5, 2015 
+				<span class="teamColor">LOSS(0-1-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=27&eventGroupingId=209">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=209">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=209&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[209].name, 209, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId210">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="210"/>
+				Game #1 @ 7:30:02 PM 
+				<span class="teamColor">LOSS(21-23)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=142">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=210">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=210&season=27">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[210].name, 210, "/eventGrouping.htm?season=27", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+	<tr class='thebottomrow'>
+		<td colspan="2">
+			&nbsp;
+			
+				Create a new 
+				
+					 <a href="/eventSetup.htm?season=27&seriesId=1">Tournament</a>, 
+				
+					 <a href="/eventSetup.htm?season=27&seriesId=2">Match</a>, 
+				
+					or  <a href="/eventSetup.htm?season=27&seriesId=3">Practice</a>
+				
+			
+		</td>
+	</tr>
+	</tbody>
+</table>
+</div>
+
+</form>
+
+</div>
+
+</div></div>
+
+	
+	<!-- Hack for the footer to follow -->
+	<div id="push"></div>
+</div>
+
+<div id="footer">StatEasy Release #29, registered to kingleo008@yahoo.com. <br/>Copyright 2012 <a href="http://www.ressq.com/">RessQ Technologies Inc.</a>
+<div id="logo"><img src="/images/flogo.png" /></div>
+</div>
+
+</body>
+</html>

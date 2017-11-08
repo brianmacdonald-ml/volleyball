@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+	<class name="VideoPartETag" table="videoPartETags">
+		<id name="id" column="videoPartETag" unsaved-value="null">
+			<generator class="native"/>
+		</id>
+				
+		<property name="partNumber">
+			<column name="partNumber"/>
+		</property>
+		
+		<property name="eTag">
+			<column name="eTag"/>
+		</property>
+	</class>
+</hibernate-mapping>

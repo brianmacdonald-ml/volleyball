@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+
+	<class name="PlaylistShare" table="playlistShares">
+		<id name="id" column="playlistshare" unsaved-value="null">
+			<generator class="native"/>
+		</id>
+		
+		<natural-id>
+			<many-to-one name="playlist" column="playlist" class="Playlist" not-null="true" index="playlistsharenaturalindex" />
+			
+			<many-to-one name="user" column="statUser" class="StatUser" not-null="true" index="playlistsharenaturalindex" />
+		</natural-id>
+		
+		<property name="admin">
+			<column name="admin"/>
+		</property>
+		
+		<property name="sharedWhen">
+			<column name="sharedWhen"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

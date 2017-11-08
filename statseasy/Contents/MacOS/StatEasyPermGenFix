@@ -1,0 +1,15 @@
+#!/bin/sh
+
+JAVA_LOC="/System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/java"
+
+if [ ! -e $JAVA_LOC ]; then
+	osascript -e 'tell application "Finder"' -e "activate" -e "display dialog \"StatEasy requires Java version 1.6 on your machine.  Please run Software Update from the Apple menu.\" buttons {\"Ok\"}" -e 'end tell'
+	exit
+fi
+
+mypath=`dirname "$0"`/../Resources
+cd $mypath
+
+CLASSPATH=build/StatEasy/WEB-INF/classes/:build/StatEasy/:apache-tomcat/bin/tomcat-juli.jar:build/StatEasy/WEB-INF/lib/*:apache-tomcat/lib/*
+
+$JAVA_LOC -Xdock:name="StatEasy" -Xdock:icon="build/StatEasy/images/logo.png" -Xms128m -Xmx512m -XX:MaxPermSize=256m -XX:+CMSClassUnloadingEnabled -XX:+CMSPermGenSweepingEnabled -classpath $CLASSPATH com.ressq.stateasy.gui.StatEasyLaunch

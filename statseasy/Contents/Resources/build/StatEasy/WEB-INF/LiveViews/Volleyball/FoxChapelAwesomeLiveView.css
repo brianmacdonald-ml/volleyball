@@ -1,0 +1,58 @@
+#PassAndServeLiveView_Div {
+	background-color: #61995E;
+}
+
+#PassAndServeLiveView_Div table {
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+#PassAndServeLiveView_Div .score {
+	border-bottom: 1px solid black;
+}
+
+#PassAndServeLiveView_Div .content {
+	display: none;
+}
+
+#PassAndServeLiveView_Div .contentParams {
+	text-align: center;
+}
+
+#PassAndServeLiveView_Div .content p {
+	color: white;
+	text-shadow: 1px 1px black;
+	display: inline;
+}
+
+#PassAndServeLiveView_Div img.configure {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+#PassAndServeLiveView_Div .court .data {
+	color: red;
+}
+
+#PassAndServeLiveView_Div .court .name {
+	font-size: 12px;
+}
+
+#PassAndServeLiveView_Div .content .currentRotation {
+	background-color: black;
+	border: 2px solid white;
+	color: #E19B4E;
+}
+
+#PassAndServeLiveView_Div .currentRotation .opponent-backrow td {
+	border-bottom: 2px solid white;
+}
+	
+#PassAndServeLiveView_Div .currentRotation .opponent-frontrow td {
+	border-bottom: 2px solid #E19B4E;
+}
+	
+#PassAndServeLiveView_Div .currentRotation .our-frontrow td {
+	border-bottom: 2px solid white;
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+	<class name="UserGroupMember" table="userGroupMembers">
+		<id name="id" column="userGroupMember" unsaved-value="null">
+			<generator class="native"/>
+		</id>
+		
+		<many-to-one name="user" column="statUser" class="StatUser" not-null="true" unique-key="UserInOncePerUserGroup"/>
+		
+		<many-to-one name="userGroup" column="userGroup" class="UserGroup" not-null="true" unique-key="UserInOncePerUserGroup"/>
+		
+		<property name="admin">
+			<column name="admin"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

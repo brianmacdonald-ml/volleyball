@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+	
+	<class name="TutorialLink" table="tutorialLinks">
+		<id name="id" column="tutorialLink" unsaved-value="null">
+			<generator class="native"/>
+		</id>
+		
+		<many-to-one 
+			name="sport" 
+			column="sport" 
+			class="Sport" 
+			not-null="true"/>
+			
+		<property name="name">
+			<column name="name"/>
+		</property>
+		
+		<property name="link">
+			<column name="link"/>
+		</property>
+		
+		<property name="thumbnail">
+			<column name="thumbnail"/>
+		</property>
+		
+		<property name="description">
+			<column name="description"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

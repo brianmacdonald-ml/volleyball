@@ -1,0 +1,1699 @@
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('/css/type/League_Gothic-webfont.eot');
+    src: url('/css/type/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/css/type/League_Gothic-webfont.woff') format('woff'),
+         url('/css/type/League_Gothic-webfont.ttf') format('truetype'),
+         url('/css/type/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Open Sans'), local('OpenSans'), url('/css/type/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Open Sans'), local('OpenSans'), url('/css/type/OpenSans-Bold.ttf') format('truetype');
+}
+
+body
+{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 90%;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.clear {
+	clear: both;
+}
+
+a {
+	color: #FBAe17;
+}
+
+a.noUnderline {
+	text-decoration: none;
+}
+
+a.noHref {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+select {
+	font-size: 1em;
+}
+
+option {
+	font-size: 18px;
+}
+
+input {  
+	border: 2px solid #888;  
+	padding: 4px;  
+	font-size: 1em;  
+	background-color: #F8F8F8;  
+} 
+
+input[type=submit] {  
+	border: 2px solid #888;  
+	padding: 4px;  
+	font-size: 1em;  
+	background-color: #F8F8F8;  
+} 
+
+input[type=button].leftMargin {
+	margin-left: 6px;
+}
+
+input[type=button].leftMargin:hover {
+	margin-left: 6px;
+	border: 2px solid #409D12;
+	background-color: #D1F5C8;
+}
+
+input[type=radio] {
+	margin-right: 6px;
+}
+
+.hoverRed:hover {
+	border: 2px solid #AA1111;
+	background-color: #F6D0D0;
+}
+
+.hoverGreen:hover {
+	border: 2px solid #409D12;
+	background-color: #D1F5C8;
+}
+
+a.button {
+	border: 2px solid #888; 
+	padding: 4px; 
+	background-color: #F8F8F8; 
+	text-decoration: none; 
+	font-size: 1em;
+}
+
+.have {
+	color: green;
+}
+
+.need {
+	color: red;
+}
+
+.specified {
+	color: #EE9B3B;
+}
+
+input:focus {
+	border-color: #000;
+	background-color: #FFFE9D;
+	outline: none;
+}
+
+#innercontent table.tight {
+  border-collapse: collapse;
+}
+
+table.tight td {
+	padding: 2px;
+}
+
+table.headers {
+	border-collapse;
+	background: #eee;
+	border: 1px solid #999;
+}
+
+table.headers tr {
+	background: #eee;
+}
+
+#container {
+	width: 100%;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -2em;
+}
+
+#header {
+	position:relative;
+	width: 100%;
+	height: 66px;
+	background: url('/images/bg.png');
+}
+
+#header img {
+	float: left;
+}
+
+#notification {
+	padding-top: 30px;
+}
+
+#notification a {
+	color: #ffffff;
+}
+
+#notification table {
+	margin:0 auto;
+	background-color: #fff;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border: 2px solid #fff;
+}
+
+#notification table.GREEN {
+	background-color: #7DC970;
+	color: #000;
+}
+
+#notification table.YELLOW {
+	background-color: #F5FF95;
+	color: #000;
+}
+
+#notification table.RED {
+	background-color: #B42D00;
+	color: #FFF;
+}
+
+#notification td {
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.teamName {
+	float: right;
+	text-align: right;
+	color: #EE9B3B;
+	font-size: larger;
+	font-weight: bold;
+	padding: 10px 0px 10px 0px;
+	margin-right: 10px;
+	width: 410px;
+	border-bottom: double black;
+}
+
+.teamColor {
+	color: #EE9B3B;
+}
+
+table.striped .teamColor {
+	color: #666;
+	font-weight: bold;
+	font-size:14px;
+	margin-left:10px;
+}
+
+.headerLogo {
+	position: absolute;
+	top: 5px;
+	left: 10px;
+}
+
+#theirLogo {
+	border: 3px solid #000;
+	position: absolute;
+	right: 40px;
+	top: 50px;
+	z-index:10;
+}
+
+#gameType {
+	font-family:"LeagueGothicRegular", Arial, sans-serif;
+	float: right;
+	cursor: pointer;
+	background: #000;
+	font-size: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 1px;
+	padding: 8px 15px;
+}
+
+#gameType a {
+	color: #FFFFFF;
+}
+
+#loggedIn {
+	float: right;
+	color: #000000;
+	font-size:14px;
+	margin-right: 15px;
+	line-height: 40px;
+}
+
+#loggedIn a {
+	color: #000000;
+}
+
+/***************************
+	Navigation Bar
+****************************/
+
+#buffer {
+	background: #fff;
+	border-bottom: 4px solid #434343;
+	height: 4px;
+}
+
+#navigation {
+	padding-left: 175px;
+	background: #000000;
+	color: #000000;
+	font-family: "LeagueGothicRegular", Arial, sans-serif;
+	letter-spacing:0.5px;
+	text-transform:uppercase;
+	clear: both;
+	height: 50px;
+	-moz-box-shadow: #aaa -5px 3px 5px;
+	-webkit-box-shadow: #aaa -5px 3px 5px;
+	box-shadow: #aaa -5px 3px 5px;
+}
+
+#navigation ul{
+	margin:0;
+	padding:0;
+	display: inline;
+}
+#navigation li {
+	padding: 10px 5px 20px 5px;
+	color: #000;
+	float: left;
+	list-style-type: none;
+}
+#navigation li.main {
+	padding-left: 14px;
+	padding-right: 14px;
+	font-size:28px; 
+}
+#navigation li.tabbed {
+	background: url('/images/bg.png');
+	height: 20px;
+	color: #000000;
+}
+
+#navigation li.main a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#navigation li.tabbed a {
+	color: #000;
+}
+
+#navigation p{
+	padding:0px 5px;
+}
+
+ul#navigation-4 {
+	display: none;
+}
+
+ul.navigation-1
+	{ margin:0; padding:0px; list-style:none; width:100%; height:31px; background: #EE9B3B none repeat scroll 0 0; font:bold 18px 'Open Sans', arial,helvetica,sans-serif;}
+ul.navigation-1 li
+	{ margin:0; padding:0; display:block; float:left; position:relative; width:148px; }
+ul.navigation-1 li a:link,
+ul.navigation-1 li a:visited
+	{ padding:4px 0; display:block; text-align:center; text-decoration:none; background:#EE9B3B; color:#000000; width:148px; height:23px; }
+ul.navigation-1 li:hover a,
+ul.navigation-1 li a:hover,
+ul.navigation-1 li a:active
+	{ padding:4px 0; display:block; text-align:center; text-decoration:none; color:#000000; width:148px; height:23px; }
+	
+ul.navigation-1 li ul.navigation-2
+	{ margin:0; padding:0; list-style:none; display:none; background:#000000; width:146px; position:absolute; top:31px; left:-1px; border:1px solid #EE9B3B; border-top:none; }
+ul.navigation-1 li:hover ul.navigation-2
+	{ display:block; }
+ul.navigation-1 li ul.navigation-2 li
+	{ width:146px; clear:left; width:146px; }
+
+ul.navigation-1 li ul.navigation-2 li a:link,
+ul.navigation-1 li ul.navigation-2 li a:visited
+	{ clear:left; background:#EE9B3B; padding:4px 0; width:146px; border:none; border-top:1px solid #4D0000; border-left:1px solid #4D0000; border-bottom:1px solid #761A1A; border-right:1px solid #761A1A; position:relative; z-index:1000; }
+ul.navigation-1 li ul.navigation-2 li:hover a,
+ul.navigation-1 li ul.navigation-2 li a:active,
+ul.navigation-1 li ul.navigation-2 li a:hover
+	{ clear:left; background:#FFFFFF; padding:4px 0; width:146px; border:none; border-top:1px solid #4D0000; border-left:1px solid #4D0000; border-bottom:1px solid #761A1A; border-right:1px solid #761A1A; position:relative; z-index:1000; }
+
+ul.navigation-1 li ul.navigation-2 li ul.navigation-3
+	{ display:none; margin:0; padding:0px; list-style:none; position:absolute; left:147px; top:-1px; padding:0px; border:1px solid #EE9B3B; border-left:1px solid #EE9B3B; background:#000000; z-index:900; }
+ul.navigation-1 li ul.navigation-2 li:hover ul.navigation-3
+	{ display:block; }
+ul.navigation-1 li ul.navigation-2 li ul.navigation-3 li a:link,
+ul.navigation-1 li ul.navigation-2 li ul.navigation-3 li a:visited
+	{ background:#EE9B3B; }
+ul.navigation-1 li ul.navigation-2 li ul.navigation-3 li:hover a,
+ul.navigation-1 li ul.navigation-2 li ul.navigation-3 li a:hover,
+ul.navigation-1 li ul.navigation-2 li ul.navigation-3 li a:active
+	{ background:#FFFFFF; }
+ul.navigation-1 li ul.navigation-2 li a span
+	{ position:absolute; top:0; left:132px; font-size:12pt; color:#fe676f; }
+ul.navigation-1 li ul.navigation-2 li:hover a span,
+ul.navigation-1 li ul.navigation-2 li a:hover span
+	{ position:absolute; top:0; left:132px; font-size:12pt; color:#000000; }
+
+#configuration {
+	display: none;
+	font-size: 14px;
+	padding: 8px 0px 8px 0px;
+	color:#000;
+	width:100%;
+	text-decoration:none;
+	background-color: #FFF6E6; 
+	border-top:3px solid black;
+	border-bottom:3px solid black;
+	position:relative;
+	height:20px;
+}
+
+#configuration .configLinks {
+	position:absolute;
+	left:308px;
+	top:8px;
+	z-index:3;
+}
+
+#configuration a {
+	color:#000;
+	text-decoration:none;
+	font-family: "Open Sans", Arial, sans-serif;
+	padding:8px 5px;
+}
+
+/*#configuration a:hover {
+	border-bottom:6px solid black;
+	padding-bottom:4px;
+	color:#f8bd00;
+}*/
+
+#configuration a:hover {
+	color:#f8bd00;
+}
+
+
+#breadCrumb {
+	height: 18px; /* This is the height we want on our breadcrumb */
+	padding: 4px 0 0 8px;
+	background: #aaa; /* This is our background color */
+	color: #EE9B3B; 
+	margin: 0;
+	font:bold 8pt 'Open Sans', arial, helvetica;
+	border-bottom: 1px solid black;
+}
+#breadCrumb li {
+	float: left;
+	display: inline;
+	margin-right: 4px;
+	padding-left: 20px; /* We need to add some padding to the right of the link. This space is where the background image is going to be shown. */
+}
+#breadCrumb a {
+	color: #EE9B3B;
+	text-decoration: none;
+}
+#breadCrumb a:hover {
+	color: #333;
+}
+
+#footer {
+	margin-top:30px;
+	background-color:#000;
+	color:#fff;
+	font-size: smaller;
+	padding-top:20px;
+	padding-left:30px;
+	position:relative;
+}
+
+#footer, #push {
+	text-align: left;
+	clear: both;
+}
+
+#footer #logo {
+	position:absolute;
+	right:50px;
+	top:12px;
+}
+
+#error {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+	padding: 2px 40px 10px 40px;
+	
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', verdana, sans-serif;
+	font-size: 24px;
+	font-weight: none;
+	color: #333;
+}
+
+#error li {
+	padding-left: 22px;
+}
+
+#welcome {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+	background: #FFF6E6;
+	border: 3px solid #000000;
+	padding: 2px 40px 10px 40px;
+	-moz-box-shadow: #aaa 6px 6px 15px;
+	-webkit-box-shadow: #aaa 6px 6px 15px;
+	color: #e0e0e0;
+}
+#welcome li {
+	list-style-type: disc;
+	font-size: 24px;
+}
+
+#welcome h2 {
+	text-align: center;
+	color: #000;
+	font-size: 42px;
+	font-weight: none;
+	margin: 10 0 0 0;
+	padding: 0;
+}
+
+#welcome h3 {
+	font-size: 18px;
+	color: gray;
+	text-align: center;
+	font-weight: normal;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+#welcome a.sportSelection{
+	font-size: 28px;
+	text-decoration: none;
+	color:#fff;
+	font-family: "LeagueGothicRegular", Arial, sans-serif;
+	text-transform: uppercase;
+	font-weight:400;
+}
+
+#welcome a.sportSelection:hover{
+	color:#F8BD00;
+}
+
+#welcome p.skinny {
+	width:160px;
+	margin-left:auto;
+	margin-right:auto;
+	background: #000;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	padding:4px 0px;
+}
+.centerText {
+	text-align: center;
+	color:gray;
+}
+
+.gimmeRoom {
+	margin: 20px;
+}
+
+.formLabel {
+	font-size: 18px;
+	text-align: right;
+}
+
+.tinyHelpText {
+	font-size: 14px;
+	color: #23ae37;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+#content {
+	width: 100%;
+	margin-top: 42px;
+}
+
+#innercontent {
+	margin: 10px;
+	padding-bottom:20px;
+}
+
+#innercontent table {
+	padding: 5px;
+	/*font-family:"Lucida Sans Unicode","Lucida Grande",Sans-Serif;*/
+	font-family:"Open Sans", Arial, Helvetica, sans-serif;
+}
+
+#innercontent table th, .hierarchicalData table th {
+	border-bottom: 2px solid #044a83;
+	padding: 2px 5px 2px 5px;
+	text-align: left;
+	font-size: 16px;
+	font-color: #356AA0;
+}
+
+#innercontent .borderTop td {
+	border-top: 2px solid #044a83;
+	background: none;
+}
+
+#innercontent .thebottomrow td, .hierarchicalData .thebottomrow td {
+	border-top: 2px solid #044a83;
+	background: none;
+}
+
+#innercontent .thetoprow td, .hierarchicalData .thetoprow td {
+	padding-bottom: 10px;
+	background: none;
+}
+
+#innercontent table.striped {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+#innercontent table.striped thead tr:nth-child(2n) {
+  background-color:#000;
+  color:#fff;
+  font-weight:normal;
+}
+#innercontent table.striped thead tr:nth-child(2n+1) {
+  background-color:#222;
+  color:#fff;
+}
+
+#innercontent table.striped tr:nth-child(2n) {
+  background-color: #fff;
+}
+
+#innercontent table.striped tr:nth-child(2n + 1) {
+  background-color: #eee;
+}
+
+#innercontent table.striped tr:hover:not(.columnGroup) td {
+  background-color: #FFFE9D;
+}
+
+#innercontent table.striped tr.thebottomrow {
+  background: none;
+}
+
+#innercontent table.striped tr.thetoprow {
+  background: none;
+}
+
+#innercontent .statTable {
+  margin-bottom: 10px;
+}
+
+#innercontent .statTable .dataCell {
+  text-align: right;
+}
+
+#innercontent .statTable th a {
+	color: white;
+}
+
+#innercontent table td {
+	padding: 6px 9px 6px 9px;
+	font-size: 15px;
+}
+
+#innercontent ul, #innercontent ol {
+	margin: 0px;
+	padding-left: 30px;
+}
+#innercontent li {
+	margin: 0px;
+}
+
+#innercontent a {
+	color: #333333;
+}
+
+div.search {
+	padding-top:2px;
+	padding-left: 10px;
+}
+
+span.sbox_left  {
+	background: white url('../images/search_left.gif') no-repeat top left;
+	float: left;
+	width: 22px;
+	height: 30px;
+}
+
+span.sbox_right {
+	background: white url('../images/search_right.gif') no-repeat top left;
+	float: left;
+	width: 22px;
+	height: 30px;
+}
+
+span.sbox input {
+	background: white url('../images/search_bg.gif') repeat-x top left;
+	float: left;
+	border: 0;
+	height: 30px;
+	width: 243px;
+	color: #000;
+}
+
+span.sbox input.lightText {
+	color: #aaa;
+}
+
+.indentLevel1 a {
+	padding-left: 20px;
+	border-left: 20px;
+}
+
+.indentLevel2 a {
+	padding-left: 40px;
+	border-left: 40px;
+}
+
+.hierarchicalData table tr.depth0 {
+	background: #EEE;
+}
+
+#innercontent table .columnGroup td {
+	font-size: 18px;
+	text-align: center;
+}
+
+#innercontent .separatorCol {
+  border-right:thin solid #EE9B3B;
+}
+
+#innercontent .separatorRow td {
+  border-bottom: 2px solid #044a83;
+}
+
+#innercontent .rowColumnGroup {
+  border-bottom: 2px solid #044a83;
+  border-right:thin solid #EE9B3B;
+}
+
+#innercontent .separatorTotalCol {
+  border-right:thin solid #EE9B3B;
+  border-top:thin solid #000000;
+  font-weight: bold;
+}
+
+#innercontent .totalCol {
+  border-top:thin solid #000000;
+  font-weight: bold;
+}
+
+.statTypeTable {
+	display: inline;
+}
+
+.playerTable {
+	display: inline;
+}
+
+.inputSection {
+	float: left;
+}
+
+.liveViewContainer {
+	float: left;
+	margin-top: 5px;
+	margin-left: 15px;
+}
+
+.liveViewContainer.fullScreen {
+	float: left;
+	margin: 0px;
+}
+
+.commonContainer {
+	position: relative;
+}
+
+.commonOptions {
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.fullScreen {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.activeContent {
+	display: block;
+	padding: 15px 5px 5px 5px;
+	border: 1px solid black;
+	width: auto;
+	background: #fff;
+}
+
+.fullScreen .activeContent {
+	height: 100%;
+}
+
+.liveViewContent {
+	display: none;
+	width: 100%;
+	margin-top: .2em;
+}
+
+.fullScreen .liveViewMenu {
+	background-color : white;
+	padding-top: 7px;
+}
+
+.liveViewMenu {
+	padding-bottom: 3px;
+}
+
+.liveViewMenu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none; 
+}
+
+.liveViewMenu ul li {
+	display: inline; 
+}
+
+.liveViewMenu ul li a {
+	text-decoration: none;
+	padding: .25em 1em;
+	color: #fff;
+	background-color: #aaa;
+	border-right: 1px solid #333;
+	border-left: 1px solid #333;
+	border-top: 1px solid #333;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+
+.liveViewMenu ul li a:hover {
+	color: #fff;
+	background-color: #369;
+}
+
+.liveViewMenu ul li a.active {
+	color: #000;
+	background-color: #FFF;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	padding-bottom: .3em;
+}
+
+.formatFormErrors {
+	color: red;
+	font-weight: bold;
+	font-family: 'Open Sans', arial, helvetica, sans-serif;
+	font-size: 15px;
+	padding: 5px;
+}
+
+#enterStats {
+	clear: both;
+}
+
+span#bufferDiv span {
+	background-color: #9DFF9D;
+	border: 2px solid #888888;
+	padding: 4px;
+	margin-right: 4px;
+}
+
+#footer {
+	width: 98%;
+	height:100px;
+}
+
+.error {
+	padding: 10px;
+	margin: 10px;
+	border: 3px solid Red;
+	background: Orange;
+}
+
+.modal .error {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	background: none;
+}
+
+.autogenerated {
+	display: none;
+}
+
+/********************
+	File Import`
+*******************/
+
+div.middle {
+	margin-left: 30px;
+	margin-right: 30px;
+	padding: 15px;
+	padding-top: 1px;
+	padding-bottom: 20px;
+	background-color:#FFF6E6;
+	border:3px solid black;
+}
+
+div.overFlow {
+	overflow: auto;
+}
+
+h2.titleBorder {
+	padding-top: 10px;
+	padding-left: 5px;
+	margin-bottom: 6px;
+}
+
+h2.titleBorder select {
+	font-size: 14px;
+}
+
+h2.smaller {
+	font-size: 18px;
+}
+
+h2.borderAbove {
+	border-top: 2px solid #bbb;
+}
+
+h2.borderBelow {
+	border-bottom: 2px solid #bbb;
+	padding-bottom: 4px;
+	margin-bottom: 12px;
+}
+
+table.forNow {
+	width: 100%;
+}
+table.forNow td {
+	white-space: nowrap;
+}
+
+div#steps {
+	padding-left: 8px;
+}
+
+div#formContent h3 {
+	background: url('/images/step_bg.png') no-repeat;
+	background-position: bottom left;
+	padding-left: 30px; 
+	padding-top: 5px;
+	line-height: 30px;
+	color: #434343;
+	font-size: 20px;
+	border-top: 2px solid #bbb;
+	margin-bottom: 6px;
+	margin-top: 6px;
+}
+
+div#formContent h3.notyet {
+	color: #878787;
+	cursor: default;
+}
+
+div#formContent h3.complete {
+	background: url('/images/step_complete_bg.png') no-repeat;
+	background-position: bottom left;
+}
+
+div#formContent h4 {
+	padding-left: 30px; 
+	padding-top: 5px;
+	line-height: 30px;
+	color: #434343;
+	font-size: 20px;
+	margin-bottom: 6px;
+	margin-top: 6px;
+}
+
+div#steps table.secondLevel {
+	margin-left: 20px;
+}
+
+div#steps p {
+	font-size: 16px;
+	padding-left: 20px;
+}
+
+div#files {
+	background: #fff;
+	margin: 10px;
+	padding: 0px;
+	border: 1px solid #ccc;
+}
+
+div#files div {
+	border-bottom: 1px solid #ccc;
+	padding: 4px;
+	margin: 0;
+}
+div#files a, div#step3Stuff a {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+div#step3Stuff {
+	margin-bottom: 15px;
+}
+
+div#files table {
+	margin: 0;
+	padding: 0;
+}
+
+div#files table tr {
+	margin:0;
+	padding:0;
+}
+
+div#files table.title tr {
+	background: #f9f69c;
+	font-weight: bold;
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+div#files div.keepItClean {
+	padding: 0px;
+	margin: 0;
+}
+
+div#files input.hideMe {
+	display: none;
+}
+
+div#files div {
+	position: relative;
+}	
+
+div#files div.progress {
+	position: absolute;
+}
+
+/********************
+
+  CREATE AND EDIT STAT
+
+*********************/
+
+#sortable span:first-child span.leftArrow {
+	display: none;
+}
+#sortable span:last-child span.rightArrow {
+	display: none;
+}
+#sortable span.leftArrow, span.rightArrow {
+	font-weight: bold;
+	cursor: pointer;
+}
+#sortable span.leftArrow {
+	padding-right: 5px;
+	padding-left: 0px;
+}
+#sortable span.rightArrow {
+	padding-right: 0px;
+	padding-left: 5px;
+}
+#sortable span.ui-state-default {
+	margin: 5px;
+	padding: 5px;
+	width: 72px;
+	border: 1px solid #666;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	background: -webkit-linear-gradient(top, #ddd, #bbb);
+	font-size: 14px;
+	text-align: center;
+}
+#sortable {
+	padding: 0;
+	margin: 0;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+div.heavyIndent {
+	padding-left: 30px;
+}
+div.mediumIndent {
+	font-size:15px;
+	padding:2px 16px;
+}
+
+/*********************
+	DASHBOARD
+**********************/
+div.bubble {
+	font-family:"LeagueGothicRegular", Arial, sans-serif;
+	border: 3px solid black;
+	background-color: #FFF6E6;
+	cursor: pointer;
+	width: 220px;
+	height: 180px;
+	vertical-align : middle; 
+	display : table-cell;
+	padding-left: 40px;
+	padding-right: 40px;
+	-moz-box-shadow: 0 0 1em #aaa;
+	-webkit-box-shadow: 0 0 1em #aaa;
+	box-shadow: 0 0 1em #aaa;
+    font-size: 36px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+div.bubble:hover {
+	-moz-box-shadow: 0 0 1em #F3C000;
+	-webkit-box-shadow: 0 0 1em #F3C000;
+	box-shadow: 0 0 1em #F3C000;
+	border-color: #f4ba78;
+}
+
+div.disabledBubble {
+	font-family:"LeagueGothicRegular", Arial, sans-serif;
+	border: 3px solid #CCC;
+	background: #efefef;
+	width: 280px;
+	height: 180px;
+	vertical-align : middle; 
+	display : table-cell;
+	padding-left: 10px;
+	padding-right: 10px;
+	-moz-box-shadow: 0 0 1em #aaa;
+	-webkit-box-shadow: 0 0 1em #aaa;
+	font-size: 36px;
+	box-shadow: 0 0 1em #aaa;
+    font-size: 36px;
+    color: #AAA;
+    text-decoration: none;
+}
+
+div.attentionBubble {
+	font-family:"LeagueGothicRegular", Arial, sans-serif;
+	border: 3px solid black;
+	background: #FFF6E6;
+	cursor: pointer;
+	width: 280px;
+	height: 180px;
+	vertical-align : middle; 
+	display : table-cell;
+	padding-left: 10px;
+	padding-right: 10px;
+	-moz-box-shadow: 0 0 1em red;
+	-webkit-box-shadow: 0 0 1em red;
+	box-shadow: 0 0 1em red;
+    font-size: 36px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+div.attentionBubble:hover {
+	-moz-box-shadow: 0 0 1em #EE9B3B;
+	-webkit-box-shadow: 0 0 1em #EE9B3B;
+	box-shadow: 0 0 1em #EE9B3B;
+	border-color: #f4ba78;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+#innercontent table.dashboard div.bubble:hover a {
+	color: #000;
+}
+
+div.feedback {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: 6px dashed #bbb;
+	color: #555;
+	font-size: 14px;
+}
+#innercontent table.dashboard td div.feedback a {
+	color: #23ae37;
+	font-size: 14px;
+	text-decoration: underline;
+}
+
+#defaultTeam {
+	margin-right:20px;	
+}
+
+#teamAndSeasonInfo {
+	font-size: 18px;
+	margin-left: 40px;
+}
+#teamAndSeasonInfo select {
+	font-size: 16px;
+}
+table.dashboard {
+	height: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#innercontent table.dashboard td {
+	width: 25%;
+	height: 50%;
+	padding: 15px 15px;
+	text-align: center;
+	vertical-align: middle;
+}
+#innercontent table.dashboard td a {
+	font-size: 20px;
+	cursor: pointer;
+	color: #555;
+	text-decoration: none;
+}
+
+/***************************
+  General Players Dialog
+****************************/
+#addPlayerDialog, #editPlayerDialog {
+	display:none;
+	padding: 10px;
+}
+#addPlayerDialog table {
+	width: 100%;
+}
+#addPlayerDialog div.dialogTableContainer {
+	height:148px; 
+	overflow: auto;
+	border: 1px solid #999;
+}
+th.skinny, td.skinny {
+	width: 16px;
+}
+
+/* displaying the players in the table */
+div.centerMeWithPadding {
+	margin-left:auto;
+	margin-right: auto;
+	width: 80%;
+}
+span.boldTitle {
+	font-size: 18px;
+	font-weight:bold;
+}
+#innerContent table.players {
+	 border: 2px solid #666;
+	 width:100%;
+	 padding: 10px;
+	 margin-bottom: 4px;
+	 padding:0px;
+}
+
+.existingSeasonRow {
+	display:none;
+}
+
+.playersToAdd, .addedPlayers, .addPlayer {
+	float:left;
+}
+
+.playersToAdd { 
+	margin-right:10px;	
+}
+
+.addPlayer {
+	margin-top:20px;
+	margin-right:10px;
+}
+
+.rowContainer {
+	cursor:pointer;
+	position:relative;
+}
+
+.addText {
+	position:absolute;
+	right:0px;
+	top:0px;
+	color:#5FC33D;
+	background-color:#FFFE9D;
+	width:50px;
+	padding-left:15px;
+}
+
+/***************************
+    Encoding Progress 
+****************************/
+.progress .message, .progress .progressBar, .progress .timeRemaining {
+	padding-left : 10px;
+}
+
+/***************************
+    Create an EventGrouping 
+****************************/
+.autoCompleteOpponents {
+	width: 100%;
+}
+
+.opponentResize {
+	width: 296px;
+	height: 70px;
+	border-bottom: 2px solid #888888;
+    border-left: 2px solid #888888;
+    border-right: 2px solid #888888;
+}
+
+.opponentSelector {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+.opponentSelector table, .opponentSelector tr, .opponentSelector td {
+	padding: 0 !important;
+	width: 100%;
+}
+
+.acInput {
+	width: 100%;
+}
+
+.acResize {
+	width: 296px;
+	height: 200px;
+	border-bottom: 2px solid #888888;
+    border-left: 2px solid #888888;
+    border-right: 2px solid #888888;
+}
+
+.acSelector {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+.acSelector table, .acSelector tr, .acSelector td {
+	padding: 0 !important;
+	width: 100%;
+}
+
+/*******
+  No License Sign Up Page
+*******/
+
+.signUpForm { 
+	width:400px; 
+	margin-top:30px; 
+}
+
+.signUpForm .field { 
+	height:50px; 
+}
+
+.signUpForm .label { 
+	float:left; 
+	width:130px; 
+	text-align:right; 
+	margin-right:15px; 
+	margin-top:8px; 
+	color:#777; 
+}
+
+.signUpForm #register, #login { 
+	float:right; 
+	margin-top:40px; 
+	margin-right:40px; 
+}
+
+.signUpForm #login { 
+	margin-top:0px; 
+}
+
+.signUpForm .sport_check {
+	font-family:'LeagueGothicRegular', sans-serif;
+	float:left; 
+	color:#fff;
+	padding:10px; 
+	width:150px; 
+	background-color:#000; 
+	margin:6px; 
+	cursor:pointer; 
+	font-size:28px;
+}
+
+.signUpForm .sport_check input {
+	vertical-align:middle;
+}
+
+.signUpForm #logo { 
+	width:150px; 
+}
+
+.mediaView {
+	display:none;
+}
+
+#innercontent table.cellspacing {
+  border-collapse: collapse;
+}
+
+table.cellspacing tr td, table.cellspacing tr th {
+	border-right: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+}
+
+/*********************************
+	INPUT AUTOCOMPLETE
+**********************************/
+
+#statsToParse {
+	width: 310px;
+}
+
+#enterStats .autocomplete {
+	background-color: #EEEEEE; 
+	border-left: 1px solid #999; 
+	border-bottom: 1px solid #999; 
+	border-right: 1px solid #999; 
+	width: 295px; 
+	margin-left: 5px;
+}
+
+#enterStats .statDataDisplay {
+	background-color: #EEEEEE; 
+	border-left: 1px solid #999; 
+	border-bottom: 1px solid #999; 
+	border-right: 1px solid #999; 
+	width: 285px; 
+	margin-left: 15px;
+	display: none;
+}
+
+#enterStats table {
+	padding: 0;
+	width: 100%;
+}
+
+#enterStats table td {
+	padding: 0;
+	font-style: italic;
+	font-size: small;
+	color: #777;
+}
+
+#enterStats .autocomplete table td .collected {
+	color: green;
+	font-weight: bold;
+}
+
+#enterStats .autocomplete table td .currentlyEntering {
+	font-weight: bold;
+	background-color: #FFFE9D;
+	padding-right: 3px;
+}
+
+.statEffectProvided {
+	text-decoration: line-through;
+}
+
+.sharedBy {
+	font-style: italic;
+	color:#999;
+	font-size:13px;
+	margin-left:10px;
+}
+
+#notification ul {
+	list-style:none;
+}
+
+#notification ul li {
+	display:inline;
+	margin-right:10px;	
+}
+
+#daysLeftInTrial {
+	position:absolute; 
+	right:100px;
+	top:8px;
+	font-weight:bold;
+	color:#FFFFFF;
+}
+
+#daysLeftInTrial a {
+	color:#EEEEEE;
+}
+
+.tab_interface .tab {
+	cursor:pointer; 
+	float:left; 
+	border-left:3px solid #000; 
+	border-right:3px solid #000; 
+	border-top:3px solid #000; 
+	font-size:32px; 
+	padding:8px; 
+	color:#fff; 
+	background-color:#000; 
+	font-family:'LeagueGothicRegular', sans-serif; 
+	margin-bottom:-3px; 
+	margin-right:8px; 
+}
+
+.tab_interface .active {
+	background-color:#FFF6E6; 
+	color:#000; 
+}
+
+.tab_interface .tabbody { 
+	border:3px solid #000; 
+	padding:20px; 
+}
+
+#innerContent .userInviteSelectPlayer {
+	list-style:none;
+	margin-bottom:15px;
+}
+
+.tabBody .leftColumn {
+	float:left;
+	margin-right:50px;
+	width:45%;
+}
+
+.tabBody .rightColumn {
+	float:left;
+	width:45%;
+}
+
+.playerFollowers .red {
+	color:red;
+	font-weight:bold;
+}
+
+.playerFollowers .green {
+	color:green;
+}
+
+textarea.inviteTextArea {
+	width:300px;
+	height:150px;
+	vertical-align:top;
+	margin:12px 0px;
+	border: 2px solid #888;  
+	padding: 4px;  
+	font-size: 1em;  
+	background-color: #F8F8F8;
+}
+
+.shareBox {
+	float:left;
+	width:200px;
+	margin-right:15px;
+}
+
+.shareOption {
+	padding:8px 14px;
+	text-align:center;
+	background-color:#000;
+	color:#fff;
+	font-family:'LeagueGothicRegular', sans-serif;
+	font-size:28px;
+	margin-right:15px;
+	cursor:pointer;
+}
+
+.shareOptionCaption {
+	margin-top:8px;
+	font-size:12px;
+	color:#555;
+}
+
+/***********************
+Manage videos page
+***********************/
+
+#innerContent table.manageVideos th.right { 
+	text-align:right; 
+}
+
+.manageVideos tr td.right { 
+	text-align:right; 
+}
+
+.manageVideos tr td .progress { 
+	font-size:12px; 
+}
+
+.manageVideos .torrenticon { 
+	float:right; 
+}
+
+.manageVideos .progressBar span { 
+	font-size:13px; 
+}
+
+.manageVideos .progressBar { 
+	margin-right:15px; 
+}
+
+.manageVideos .progressbottom { 
+	margin-right:56px; 
+}
+
+.manageVideos .eventName { 
+	font-weight:bold; padding-left:15px; 
+}
+
+.manageVideos .indent a { 
+	margin-left:15px;
+}
+
+.helpLine img { 
+	vertical-align:middle; margin-left:3px; 
+}
+
+.helpDialog { 
+	display:none; 
+}
+
+.helpDialog table img { 
+	margin-right:15px; 
+}
+
+.helpDialog table tr td { 
+	padding-bottom:8px; 
+}
+
+.timer {
+	padding: 10px;
+	background: -webkit-linear-gradient(top, #222, #444);
+	overflow: hidden;
+	display: inline-block;
+	border: 7px solid #efefef;
+	border-radius: 5px;
+	box-shadow: 
+		inset 0 -2px 10px 1px rgba(0, 0, 0, 0.75), 
+		0 5px 20px -10px rgba(0, 0, 0, 1);
+}
+
+.timer.running {
+	background: -webkit-linear-gradient(top, #009600, #004400);
+	box-shadow: 
+		inset 0 -2px 10px 1px rgba(0, 150, 0, 0.75), 
+		0 5px 20px -10px rgba(0, 0, 0, 1);
+}
+
+.numbers {
+	font-size: 50px;
+	line-height: 40px;
+	font-family: digital, arial, verdana;
+	text-align: center;
+	color: #fff;
+	
+	/*Glow to the text*/
+	text-shadow: 0 0 5px rgba(255, 255, 255, 1);
+}
+
+@font-face {
+	font-family: 'digital';
+	src: url('/css/type/DS-DIGI.TTF');
+	
+}
+
+#innercontent a.percentUploaded {
+	color: red;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.helpText {
+	z-index:100;
+	font-size:11px;
+	position:absolute;
+	background-color:#fff;
+	border:1px solid #999;
+	padding:6px;
+}
+
+#notification .gray_link {
+	color:#777777;
+}
+
+.agreementContainer {
+	height:200px;
+	margin:30px;
+	padding:15px;
+	border:1px solid #555;
+	background-color:#fff;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.tutorial {
+	float:left;
+	margin:25px;
+	width:200px;
+	height:250px;
+}
+
+.tutorial .thumbnail img {
+	border: 1px solid #000000;
+	width:190px;
+}
+
+.tutorial .name {
+	font-weight:bold;
+	font-size:15px;
+	margin:5px 0px;
+}
+
+.tutorial .description {
+	font-size:11px;
+}

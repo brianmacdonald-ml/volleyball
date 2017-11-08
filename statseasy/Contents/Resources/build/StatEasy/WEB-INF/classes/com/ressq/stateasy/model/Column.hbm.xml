@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+	<class name="Column" table="statcolumns">
+		<id name="id" column="statcolumn" unsaved-value="null">
+			<generator class="native"/>
+		</id>
+	
+		<property name="name">
+			<column name="name"/>
+		</property>
+	
+		<property name="definition" type="text">
+			<column name="definition"/>
+		</property>
+		
+		<property name="index">
+			<column name="columnindex"/>
+		</property>
+		
+		<property name="tableNumber">
+			<column name="tableNumber"/>
+		</property>
+		
+		<property name="formatType">
+			<column name="formattype"/>
+		</property>
+		
+		<property name="formatPattern">
+			<column name="formatpattern"/>
+		</property>
+		
+		<many-to-one name="parentView" column="statview" class="View" not-null="true" />
+		
+	</class>
+</hibernate-mapping>

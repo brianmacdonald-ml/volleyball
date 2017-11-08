@@ -1,0 +1,30 @@
+// Custom Mixxins File
+
+.mix_border(@top-color, @bottom-color,@top-width:1px, @bottom-width:1px, @top-padding:0px, @bottom-padding:0px) {
+	border-top: @top-width solid @top-color;
+	border-bottom: @bottom-width solid @bottom-color;
+	padding-top: @top-padding;
+	padding-bottom: @bottom-padding;
+}
+.text-ellipsis() {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.placeholder(@color: @placeholderText) {
+  	&:-moz-placeholder {
+	    color: @color;
+  	}
+  	&:-ms-input-placeholder {
+	    color: @color;
+  	}
+  	&::-webkit-input-placeholder {
+	    color: @color;
+  	}
+  	&.watermark {
+   		color: @color;
+ 	}
+ 	&:-ms-input-placeholder {
+   		color: @color;
+ 	}
+}

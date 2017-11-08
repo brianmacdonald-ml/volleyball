@@ -1,0 +1,1349 @@
+EVENTGROUPINGATTRIBUTE,VALUE,NAME
+5,FC,Location
+5,1427342400000,Start Date
+5,NA,opponent
+6,FC,Location
+6,1427342400000,Start Date
+6,1427406950000,Start Time
+7,FC,Location
+7,1427342400000,Start Date
+7,1427408287000,Start Time
+8,NA,Location
+8,1427342400000,Start Date
+8,NA,opponent
+9,NA,Location
+9,1427342400000,Start Date
+9,1427410852000,Start Time
+10,NA,Location
+10,1427342400000,Start Date
+10,1427412498000,Start Time
+11,NA,Location
+11,1427342400000,Start Date
+11,1427413855000,Start Time
+12,Derry,Location
+12,Derry,Name
+13,Derry,Location
+13,1427515200000,Start Date
+13,Latrobe,opponent
+14,Derry,Location
+14,1427515200000,Start Date
+14,1427546490000,Start Time
+15,Derry,Location
+15,1427515200000,Start Date
+15,1427547789000,Start Time
+18,Derry,Location
+18,1427515200000,Start Date
+18,Shaler,opponent
+19,Derry,Location
+19,1427515200000,Start Date
+19,1427564143000,Start Time
+20,Derry,Location
+20,1427515200000,Start Date
+20,1427565327000,Start Time
+21,Derry,Location
+21,1427515200000,Start Date
+21,NA,opponent
+22,Derry,Location
+22,1427515200000,Start Date
+22,1427569582000,Start Time
+23,Derry,Location
+23,1427515200000,Start Date
+23,1427570981000,Start Time
+24,Derry,Location
+24,1427515200000,Start Date
+24,Deer Lakes,opponent
+25,Derry,Location
+25,1427515200000,Start Date
+25,1427576194000,Start Time
+26,Derry,Location
+26,1427515200000,Start Date
+26,Derry,opponent
+27,Derry,Location
+27,1427515200000,Start Date
+27,1427578886000,Start Time
+28,Derry,Location
+28,1427515200000,Start Date
+28,Altoona,opponent
+29,Derry,Location
+29,1427515200000,Start Date
+29,1427581100000,Start Time
+30,Derry,Location
+30,1427515200000,Start Date
+30,Penn Trafford,opponent
+31,Derry,Location
+31,1427515200000,Start Date
+31,1427582510000,Start Time
+32,FC,Location
+32,1428379200000,Start Date
+32,"North Hills ",opponent
+33,FC,Location
+33,1428379200000,Start Date
+33,1428444131000,Start Time
+34,FC,Location
+34,1428379200000,Start Date
+34,1428445475000,Start Time
+35,FC,Location
+35,1428379200000,Start Date
+35,North Hills,opponent
+36,FC,Location
+36,1428379200000,Start Date
+36,1428448757000,Start Time
+37,FC,Location
+37,1428379200000,Start Date
+37,1428450448000,Start Time
+38,FC,Location
+38,1428379200000,Start Date
+38,1428451523000,Start Time
+39,Seneca,Location
+39,1428552000000,Start Date
+39,Seneca,opponent
+40,Seneca,Location
+40,1428552000000,Start Date
+40,1428616778000,Start Time
+41,Seneca,Location
+41,1428552000000,Start Date
+41,1428617703000,Start Time
+42,Seneca,Location
+42,1428552000000,Start Date
+42,Seneca,opponent
+43,Seneca,Location
+43,1428552000000,Start Date
+43,1428619070000,Start Time
+44,Seneca,Location
+44,1428552000000,Start Date
+44,1428622197000,Start Time
+45,Seneca,Location
+45,1428552000000,Start Date
+45,1428623742000,Start Time
+46,Fox Chapel,Location
+46,Fox Chapel,Name
+47,Fox Chapel,Location
+47,1428724800000,Start Date
+47,USC,opponent
+48,Fox Chapel,Location
+48,1428724800000,Start Date
+48,1428755985000,Start Time
+49,Fox Chapel,Location
+49,1428724800000,Start Date
+49,1428756978000,Start Time
+50,Fox Chapel,Location
+50,1428724800000,Start Date
+50,Fort LeBoeuf,opponent
+51,Fox Chapel,Location
+51,1428724800000,Start Date
+51,1428760994000,Start Time
+52,Fox Chapel,Location
+52,1428724800000,Start Date
+52,1428762515000,Start Time
+53,Fox Chapel,Location
+53,1428724800000,Start Date
+53,"Bethel Park ",opponent
+54,Fox Chapel,Location
+54,1428724800000,Start Date
+54,1428767881000,Start Time
+55,Fox Chapel,Location
+55,1428724800000,Start Date
+55,1428769202000,Start Time
+56,Fox Chapel,Location
+56,1428724800000,Start Date
+56,Saegertown,opponent
+57,Fox Chapel,Location
+57,1428724800000,Start Date
+57,1428774330000,Start Time
+58,Fox Chapel,Location
+58,1428724800000,Start Date
+58,1428775574000,Start Time
+59,Fox Chapel,Location
+59,1428724800000,Start Date
+59,Central York,opponent
+60,Fox Chapel,Location
+60,1428724800000,Start Date
+60,1428780167000,Start Time
+61,Fox Chapel,Location
+61,1428724800000,Start Date
+61,1428781281000,Start Time
+62,Fox Chapel,Location
+62,1428724800000,Start Date
+62,Pine Richland,opponent
+63,Fox Chapel,Location
+63,1428724800000,Start Date
+63,1428785080000,Start Time
+64,Fox Chapel,Location
+64,1428724800000,Start Date
+64,Saegertown,opponent
+65,Fox Chapel,Location
+65,1428724800000,Start Date
+65,1428787144000,Start Time
+66,Fox Chapel,Location
+66,1428724800000,Start Date
+66,Central York,opponent
+67,Fox Chapel,Location
+67,1428724800000,Start Date
+67,1428789273000,Start Time
+70,Butler,Location
+70,1429156800000,Start Date
+70,Butler,opponent
+71,Butler,Location
+71,1429156800000,Start Date
+71,1429221843000,Start Time
+72,Butler,Location
+72,1429156800000,Start Date
+72,1429222707000,Start Time
+73,Butler,Location
+73,1429156800000,Start Date
+73,Butler,opponent
+74,Butler,Location
+74,1429156800000,Start Date
+74,1429226153000,Start Time
+75,Butler,Location
+75,1429156800000,Start Date
+75,1429227323000,Start Time
+76,Butler,Location
+76,1429156800000,Start Date
+76,1429227351000,Start Time
+77,Butler,Location
+77,1429156800000,Start Date
+77,1429228943000,Start Time
+78,shaler,Location
+78,1429502400000,Start Date
+78,Shaler,opponent
+79,shaler,Location
+79,1429502400000,Start Date
+79,1429566946000,Start Time
+80,shaler,Location
+80,1429502400000,Start Date
+80,1429568200000,Start Time
+81,Shaler,Location
+81,1429502400000,Start Date
+81,Shaler,opponent
+82,Shaler,Location
+82,1429502400000,Start Date
+82,1429571104000,Start Time
+83,Shaler,Location
+83,1429502400000,Start Date
+83,1429572702000,Start Time
+84,Shaler,Location
+84,1429502400000,Start Date
+84,1429574074000,Start Time
+85,FC,Location
+85,1429588800000,Start Date
+85,NA,opponent
+86,FC,Location
+86,1429588800000,Start Date
+86,1429653529000,Start Time
+87,FC,Location
+87,1429588800000,Start Date
+87,1429654874000,Start Time
+90,FC,Location
+90,1429588800000,Start Date
+90,NA,opponent
+91,FC,Location
+91,1429588800000,Start Date
+91,1429658193000,Start Time
+92,FC,Location
+92,1429588800000,Start Date
+92,1429659645000,Start Time
+93,FC,Location
+93,1429588800000,Start Date
+93,1429661557000,Start Time
+94,FC,Location
+94,1429588800000,Start Date
+94,1429662749000,Start Time
+95,Pine Richland,Location
+95,1429761600000,Start Date
+95,Pine Richland,opponent
+96,Pine Richland,Location
+96,1429761600000,Start Date
+96,1429826214000,Start Time
+97,Pine Richland,Location
+97,1429761600000,Start Date
+97,1429827908000,Start Time
+98,Pine Richland,Location
+98,1429761600000,Start Date
+98,Pine Richland,opponent
+99,Pine Richland,Location
+99,1429761600000,Start Date
+99,1429830914000,Start Time
+100,Pine Richland,Location
+100,1429761600000,Start Date
+100,1429832465000,Start Time
+101,Pine Richland,Location
+101,1429761600000,Start Date
+101,1429833918000,Start Time
+102,Plum,Location
+102,Plum,Name
+103,Plum,Location
+103,1429934400000,Start Date
+103,Central Catholic,opponent
+104,Plum,Location
+104,1429934400000,Start Date
+104,1429965620000,Start Time
+105,Plum,Location
+105,1429934400000,Start Date
+105,1429966618000,Start Time
+106,Plum,Location
+106,1429934400000,Start Date
+106,Montour,opponent
+107,Plum,Location
+107,1429934400000,Start Date
+107,1429971261000,Start Time
+108,Plum,Location
+108,1429934400000,Start Date
+108,1429972240000,Start Time
+109,Plum,Location
+109,1429934400000,Start Date
+109,Norwin,opponent
+110,Plum,Location
+110,1429934400000,Start Date
+110,1429979495000,Start Time
+111,Plum,Location
+111,1429934400000,Start Date
+111,1429980387000,Start Time
+112,Plum,Location
+112,1429934400000,Start Date
+112,Fort LeBoeuf,opponent
+113,Plum,Location
+113,1429934400000,Start Date
+113,1429983133000,Start Time
+114,Plum,Location
+114,1429934400000,Start Date
+114,Plum,opponent
+115,Plum,Location
+115,1429934400000,Start Date
+115,1429986482000,Start Time
+116,Plum,Location
+116,1429934400000,Start Date
+116,Derry,opponent
+117,Plum,Location
+117,1429934400000,Start Date
+117,1429991560000,Start Time
+118,Plum,Location
+118,1429934400000,Start Date
+118,Deer Lakes,opponent
+119,Plum,Location
+119,1429934400000,Start Date
+119,1429996006000,Start Time
+120,Plum,Location
+120,1429934400000,Start Date
+120,Plum,opponent
+121,Plum,Location
+121,1429934400000,Start Date
+121,1429999598000,Start Time
+122,Plum,Location
+122,1429934400000,Start Date
+122,Butler,opponent
+123,Plum,Location
+123,1429934400000,Start Date
+123,1430000976000,Start Time
+124,FC,Location
+124,1430193600000,Start Date
+124,Shaler,opponent
+125,FC,Location
+125,1430193600000,Start Date
+125,1430262998000,Start Time
+126,FC,Location
+126,1430193600000,Start Date
+126,1430264452000,Start Time
+127,FC,Location
+127,1430193600000,Start Date
+127,1430265734000,Start Time
+128,North Hills,Location
+128,1430366400000,Start Date
+128,"North Hills ",opponent
+129,North Hills,Location
+129,1430366400000,Start Date
+129,1430437619000,Start Time
+130,North Hills,Location
+130,1430366400000,Start Date
+130,1430438677000,Start Time
+131,North Hills,Location
+131,1430366400000,Start Date
+131,1430439972000,Start Time
+132,USC,Location
+132,1430712000000,Start Date
+132,USC,opponent
+133,USC,Location
+133,1430712000000,Start Date
+133,1430777011000,Start Time
+134,USC,Location
+134,1430712000000,Start Date
+134,1430778121000,Start Time
+135,USC,Location
+135,1430712000000,Start Date
+135,1430779512000,Start Time
+136,USC,Location
+136,1430712000000,Start Date
+136,USC,opponent
+137,USC,Location
+137,1430712000000,Start Date
+137,1430783645000,Start Time
+139,USC,Location
+139,1430712000000,Start Date
+139,1430785046000,Start Time
+140,USC,Location
+140,1430712000000,Start Date
+140,1430786452000,Start Time
+141,FC,Location
+141,1430798400000,Start Date
+141,Seneca,opponent
+142,FC,Location
+142,1430798400000,Start Date
+142,1430863108000,Start Time
+143,FC,Location
+143,1430798400000,Start Date
+143,1430864462000,Start Time
+144,FC,Location
+144,1430798400000,Start Date
+144,Seneca Valley,opponent
+145,FC,Location
+145,1430798400000,Start Date
+145,1430868331000,Start Time
+146,FC,Location
+146,1430798400000,Start Date
+146,1430870308000,Start Time
+147,FC,Location
+147,1430798400000,Start Date
+147,1430871823000,Start Time
+148,FC,Location
+148,1430798400000,Start Date
+148,1430873440000,Start Time
+149,FC,Location
+149,1430798400000,Start Date
+149,1430874701000,Start Time
+150,Bethel Park,Location
+150,1431057600000,Start Date
+150,"Bethel Park ",opponent
+151,Bethel Park,Location
+151,1431057600000,Start Date
+151,1431124319000,Start Time
+152,Bethel Park,Location
+152,1431057600000,Start Date
+152,1431125696000,Start Time
+153,Bethel Park,Location
+153,1431057600000,Start Date
+153,1431127087000,Start Time
+154,Bethel Park,Location
+154,1431057600000,Start Date
+154,1431128568000,Start Time
+155,FC,Location
+155,1431576000000,Start Date
+155,USC,opponent
+156,FC,Location
+156,1431576000000,Start Date
+156,1431648272000,Start Time
+157,FC,Location
+157,1431576000000,Start Date
+157,1431649420000,Start Time
+158,FC,Location
+158,1431576000000,Start Date
+158,1431650618000,Start Time
+159,Hampton,Location
+159,1432008000000,Start Date
+159,Plum,opponent
+160,Hampton,Location
+160,1432008000000,Start Date
+160,1432079677000,Start Time
+161,Hampton,Location
+161,1432008000000,Start Date
+161,1432080807000,Start Time
+162,Hampton,Location
+162,1432008000000,Start Date
+162,1432082259000,Start Time
+163,Hampton,Location
+163,1432008000000,Start Date
+163,1432083814000,Start Time
+164,Hampton,Location
+164,1432008000000,Start Date
+164,1432085245000,Start Time
+165,Baldwin,Location
+165,1432267200000,Start Date
+165,Seneca Valley,opponent
+166,Baldwin,Location
+166,1432267200000,Start Date
+166,1432340965000,Start Time
+167,Baldwin,Location
+167,1432267200000,Start Date
+167,1432342248000,Start Time
+168,Baldwin,Location
+168,1432267200000,Start Date
+168,1432343551000,Start Time
+169,Baldwin,Location
+169,1432267200000,Start Date
+169,1432345010000,Start Time
+172,Norwin,Location
+172,1432699200000,Start Date
+172,Central Dauphin,opponent
+173,Norwin,Location
+173,1432699200000,Start Date
+173,1432763799000,Start Time
+174,Norwin,Location
+174,1432699200000,Start Date
+174,1432765450000,Start Time
+176,Norwin,Location
+176,1432699200000,Start Date
+176,1432766907000,Start Time
+177,NA,Location
+177,1432958400000,Start Date
+177,"Bethel Park ",opponent
+178,NA,Location
+178,1432958400000,Start Date
+178,1433001751000,Start Time
+179,NA,Location
+179,1432958400000,Start Date
+179,1433003329000,Start Time
+180,NA,Location
+180,1432958400000,Start Date
+180,1433004621000,Start Time
+181,NA,Location
+181,1432958400000,Start Date
+181,1433006002000,Start Time
+182,NA,Location
+182,1432958400000,Start Date
+182,1433007386000,Start Time
+183,NA,Location
+183,1433217600000,Start Date
+183,Seneca Valley,opponent
+184,NA,Location
+184,1433217600000,Start Date
+184,1433285975000,Start Time
+185,NA,Location
+185,1433217600000,Start Date
+185,1433287669000,Start Time
+186,NA,Location
+186,1433217600000,Start Date
+186,1433288972000,Start Time
+187,NA,Location
+187,1433217600000,Start Date
+187,1433290838000,Start Time
+188,NA,Location
+188,1433217600000,Start Date
+188,1433292422000,Start Time
+189,Penn State,Location
+189,1433563200000,Start Date
+189,Parkland,opponent
+190,Penn State,Location
+190,1433563200000,Start Date
+190,1433608064000,Start Time
+191,Penn State,Location
+191,1433563200000,Start Date
+191,1433611393000,Start Time
+192,Penn State,Location
+192,1433563200000,Start Date
+192,1433612786000,Start Time
+193,Penn State,Location
+193,1433563200000,Start Date
+193,1433614136000,Start Time
+194,Cannon Mac,Location
+194,Cannon Mac,Name
+195,Cannon Mac,Location
+195,1441425600000,Start Date
+195,Beaver,opponent
+196,Cannon Mac,Location
+196,1441425600000,Start Date
+196,1441459939000,Start Time
+197,Cannon Mac,Location
+197,1441425600000,Start Date
+197,1441461356000,Start Time
+198,Cannon Mac,Location
+198,1441425600000,Start Date
+198,Quaker Valley,opponent
+199,Cannon Mac,Location
+199,1441425600000,Start Date
+199,1441468757000,Start Time
+200,Cannon Mac,Location
+200,1441425600000,Start Date
+200,1441470522000,Start Time
+201,Cannon Mac,Location
+201,1441425600000,Start Date
+201,Moon,opponent
+202,Cannon Mac,Location
+202,1441425600000,Start Date
+202,1441478321000,Start Time
+203,Cannon Mac,Location
+203,1441425600000,Start Date
+203,1441479667000,Start Time
+204,Cannon Mac,Location
+204,1441425600000,Start Date
+204,Seton La Salle,opponent
+205,Cannon Mac,Location
+205,1441425600000,Start Date
+205,1441484237000,Start Time
+206,Cannon Mac,Location
+206,1441425600000,Start Date
+206,1441485699000,Start Time
+207,Cannon Mac,Location
+207,1441425600000,Start Date
+207,Beaver,opponent
+208,Cannon Mac,Location
+208,1441425600000,Start Date
+208,1441493595000,Start Time
+209,Cannon Mac,Location
+209,1441425600000,Start Date
+209,Moon,opponent
+210,Cannon Mac,Location
+210,1441425600000,Start Date
+210,1441495802000,Start Time
+211,Woodland Hills,Location
+211,1441684800000,Start Date
+211,Woodland Hillls,opponent
+212,Woodland Hills,Location
+212,1441684800000,Start Date
+212,1441739351000,Start Time
+213,Woodland Hills,Location
+213,1441684800000,Start Date
+213,1441741960000,Start Time
+214,Woodland Hills,Location
+214,1441684800000,Start Date
+214,Woodland Hillls,opponent
+215,Woodland Hills,Location
+215,1441684800000,Start Date
+215,1441743327000,Start Time
+216,Woodland Hills,Location
+216,1441684800000,Start Date
+216,1441745465000,Start Time
+217,Woodland Hills,Location
+217,1441684800000,Start Date
+217,1441746679000,Start Time
+218,Shaler,Location
+218,1441857600000,Start Date
+218,Shaler,opponent
+219,Shaler,Location
+219,1441857600000,Start Date
+219,1441927023000,Start Time
+220,Shaler,Location
+220,1441857600000,Start Date
+220,1441928607000,Start Time
+221,Shaler,Location
+221,1441857600000,Start Date
+221,1441930262000,Start Time
+222,Plum,Location
+222,1442289600000,Start Date
+222,Plum,opponent
+223,Plum,Location
+223,1442289600000,Start Date
+223,1442358112000,Start Time
+224,Plum,Location
+224,1442289600000,Start Date
+224,1442359980000,Start Time
+225,Plum,Location
+225,1442289600000,Start Date
+225,1442361521000,Start Time
+226,Plum,Location
+226,1442289600000,Start Date
+226,1442362817000,Start Time
+227,Plum,Location
+227,1442289600000,Start Date
+227,1442364381000,Start Time
+228,oakland catholic high school,Location
+228,1442462400000,Start Date
+228,oakland catholic high school,opponent
+229,oakland catholic high school,Location
+229,1442462400000,Start Date
+229,1442527113000,Start Time
+230,oakland catholic high school,Location
+230,1442462400000,Start Date
+230,1442528254000,Start Time
+231,Oakland Catholic,Location
+231,1442462400000,Start Date
+231,Oakland Catholic,opponent
+232,Oakland Catholic,Location
+232,1442462400000,Start Date
+232,1442531364000,Start Time
+233,Oakland Catholic,Location
+233,1442462400000,Start Date
+233,1442533233000,Start Time
+234,Oakland Catholic,Location
+234,1442462400000,Start Date
+234,1442534669000,Start Time
+235,Oakland Catholic,Location
+235,1442462400000,Start Date
+235,1442536252000,Start Time
+236,Gateway,Location
+236,1442808000000,Start Date
+236,Gateway,opponent
+237,Gateway,Location
+237,1442808000000,Start Date
+237,1442872561000,Start Time
+238,Gateway,Location
+238,1442808000000,Start Date
+238,1442874034000,Start Time
+239,Gateway,Location
+239,1442808000000,Start Date
+239,Gateway,opponent
+240,Gateway,Location
+240,1442808000000,Start Date
+240,1442876981000,Start Time
+241,Gateway,Location
+241,1442808000000,Start Date
+241,1442878939000,Start Time
+242,Gateway,Location
+242,1442808000000,Start Date
+242,1442880475000,Start Time
+243,Gateway,Location
+243,1442808000000,Start Date
+243,1442882248000,Start Time
+244,Penn Hills,Location
+244,1443067200000,Start Date
+244,Penn Hills,opponent
+245,Penn Hills,Location
+245,1443067200000,Start Date
+245,1443137107000,Start Time
+246,Penn Hills,Location
+246,1443067200000,Start Date
+246,1443138326000,Start Time
+247,Penn Hills,Location
+247,1443067200000,Start Date
+247,1443139744000,Start Time
+248,Fox Chapel,Location
+248,1443499200000,Start Date
+248,Armstrong,opponent
+249,Fox Chapel,Location
+249,1443499200000,Start Date
+249,1443568580000,Start Time
+250,Fox Chapel,Location
+250,1443499200000,Start Date
+250,1443570027000,Start Time
+251,Fox Chapel,Location
+251,1443499200000,Start Date
+251,1443571571000,Start Time
+252,Fox Chapel,Location
+252,1443499200000,Start Date
+252,1443573530000,Start Time
+253,Fox Chapel,Location
+253,1443672000000,Start Date
+253,Woodland Hillls,opponent
+254,Fox Chapel,Location
+254,1443672000000,Start Date
+254,1443741048000,Start Time
+255,Fox Chapel,Location
+255,1443672000000,Start Date
+255,1443742198000,Start Time
+256,Fox Chapel,Location
+256,1443672000000,Start Date
+256,1443743128000,Start Time
+257,Hampton,Location
+257,1444017600000,Start Date
+257,Hampton,opponent
+258,Hampton,Location
+258,1444017600000,Start Date
+258,1444087129000,Start Time
+259,Hampton,Location
+259,1444017600000,Start Date
+259,1444088742000,Start Time
+260,Hampton,Location
+260,1444017600000,Start Date
+260,1444090110000,Start Time
+261,Hampton,Location
+261,1444017600000,Start Date
+261,1444091457000,Start Time
+262,Fox Chapel,Location
+262,1444104000000,Start Date
+262,Shaler,opponent
+263,Fox Chapel,Location
+263,1444104000000,Start Date
+263,1444173227000,Start Time
+264,Fox Chapel,Location
+264,1444104000000,Start Date
+264,1444174289000,Start Time
+265,Fox Chapel,Location
+265,1444104000000,Start Date
+265,1444176048000,Start Time
+266,Fox Chapel,Location
+266,1444276800000,Start Date
+266,Plum,opponent
+267,Fox Chapel,Location
+267,1444276800000,Start Date
+267,1444346294000,Start Time
+268,Fox Chapel,Location
+268,1444276800000,Start Date
+268,1444347648000,Start Time
+269,Fox Chapel,Location
+269,1444276800000,Start Date
+269,1444349311000,Start Time
+270,Fox Chapel,Location
+270,1444276800000,Start Date
+270,1444350904000,Start Time
+271,Fox Chapel,Location
+271,1444708800000,Start Date
+271,Oakland Catholic,opponent
+272,Fox Chapel,Location
+272,1444708800000,Start Date
+272,1444778901000,Start Time
+273,Fox Chapel,Location
+273,1444708800000,Start Date
+273,1444780367000,Start Time
+274,Fox Chapel,Location
+274,1444708800000,Start Date
+274,1444781788000,Start Time
+275,Fox Chapel,Location
+275,1444708800000,Start Date
+275,1444783377000,Start Time
+276,Fox Chapel,Location
+276,1444881600000,Start Date
+276,Gateway,opponent
+277,Fox Chapel,Location
+277,1444881600000,Start Date
+277,1444952181000,Start Time
+278,Fox Chapel,Location
+278,1444881600000,Start Date
+278,1444953629000,Start Time
+279,Fox Chapel,Location
+279,1444881600000,Start Date
+279,1444954994000,Start Time
+280,Fox Chapel,Location
+280,1445227200000,Start Date
+280,penn Trafford,opponent
+281,Fox Chapel,Location
+281,1445227200000,Start Date
+281,1445297230000,Start Time
+282,Fox Chapel,Location
+282,1445227200000,Start Date
+282,1445298735000,Start Time
+283,Fox Chapel,Location
+283,1445227200000,Start Date
+283,1445299747000,Start Time
+284,Fox Chapel,Location
+284,1445313600000,Start Date
+284,Penn Hill,opponent
+285,Fox Chapel,Location
+285,1445313600000,Start Date
+285,1445383632000,Start Time
+286,Fox Chapel,Location
+286,1445313600000,Start Date
+286,1445385152000,Start Time
+287,Fox Chapel,Location
+287,1445313600000,Start Date
+287,1445386060000,Start Time
+288,Armstrong,Location
+288,1445486400000,Start Date
+288,Armstrong,opponent
+289,Armstrong,Location
+289,1445486400000,Start Date
+289,1445556654000,Start Time
+290,Armstrong,Location
+290,1445486400000,Start Date
+290,1445558370000,Start Time
+291,Armstrong,Location
+291,1445486400000,Start Date
+291,1445559822000,Start Time
+292,Armstrong,Location
+292,1445486400000,Start Date
+292,1445560969000,Start Time
+293,NA,Location
+293,NA,Name
+294,NA,Location
+294,1445659200000,Start Date
+294,Hempfield,opponent
+295,NA,Location
+295,1445659200000,Start Date
+295,1445689047000,Start Time
+296,NA,Location
+296,1445659200000,Start Date
+296,Plum,opponent
+297,NA,Location
+297,1445659200000,Start Date
+297,1445690386000,Start Time
+298,NA,Location
+298,1445659200000,Start Date
+298,Baldwin,opponent
+299,NA,Location
+299,1445659200000,Start Date
+299,1445694412000,Start Time
+300,NA,Location
+300,1445659200000,Start Date
+300,Oakland Catholic,opponent
+301,NA,Location
+301,1445659200000,Start Date
+301,1445698394000,Start Time
+302,Norwin,Location
+302,1446004800000,Start Date
+302,Norwin,opponent
+303,Norwin,Location
+303,1446004800000,Start Date
+303,1446078376000,Start Time
+304,Norwin,Location
+304,1446004800000,Start Date
+304,1446079842000,Start Time
+305,Norwin,Location
+305,1446004800000,Start Date
+305,1446081064000,Start Time
+306,NA,Location
+306,NA Tournament,Name
+309,NA,Location
+309,1458964800000,Start Date
+309,Montour,opponent
+310,NA,Location
+310,1458964800000,Start Date
+310,1458998300000,Start Time
+311,NA,Location
+311,1458964800000,Start Date
+311,1458999497000,Start Time
+312,NA,Location
+312,1458964800000,Start Date
+312,Penn Trafford,opponent
+313,NA,Location
+313,1458964800000,Start Date
+313,1459001348000,Start Time
+314,NA,Location
+314,1458964800000,Start Date
+314,1459002303000,Start Time
+315,NA,Location
+315,1458964800000,Start Date
+315,Penn Hills,opponent
+316,NA,Location
+316,1458964800000,Start Date
+316,1459006139000,Start Time
+317,NA,Location
+317,1458964800000,Start Date
+317,1459007294000,Start Time
+318,NA,Location
+318,1458964800000,Start Date
+318,Plum,opponent
+319,NA,Location
+319,1458964800000,Start Date
+319,1459014315000,Start Time
+320,NA,Location
+320,1458964800000,Start Date
+320,1459015560000,Start Time
+321,NA,Location
+321,1458964800000,Start Date
+321,"North Hills ",opponent
+322,NA,Location
+322,1458964800000,Start Date
+322,1459020040000,Start Time
+323,NA,Location
+323,1458964800000,Start Date
+323,1459020824000,Start Time
+324,NA,Location
+324,1458964800000,Start Date
+324,Montour,opponent
+325,NA,Location
+325,1458964800000,Start Date
+325,1459021832000,Start Time
+326,NA,Location
+326,1458964800000,Start Date
+326,NA,opponent
+327,NA,Location
+327,1458964800000,Start Date
+327,1459024808000,Start Time
+328,NA,Location
+328,1458964800000,Start Date
+328,Penn Trafford,opponent
+329,NA,Location
+329,1458964800000,Start Date
+329,1459026616000,Start Time
+330,Butler,Location
+330,1459224000000,Start Date
+330,Butler,opponent
+331,Butler,Location
+331,1459224000000,Start Date
+331,1459292946000,Start Time
+332,Butler,Location
+332,1459224000000,Start Date
+332,1459294603000,Start Time
+333,Butler,Location
+333,1459224000000,Start Date
+333,1459295852000,Start Time
+334,Butler,Location
+334,1459224000000,Start Date
+334,1459297225000,Start Time
+335,Butler,Location
+335,1459224000000,Start Date
+335,1459298875000,Start Time
+336,FC,Location
+336,1459396800000,Start Date
+336,NA,opponent
+337,FC,Location
+337,1459396800000,Start Date
+337,1459465400000,Start Time
+338,FC,Location
+338,1459396800000,Start Date
+338,1459466898000,Start Time
+339,FC,Location
+339,1459396800000,Start Date
+339,1459468265000,Start Time
+340,Derry,Location
+340,Derry,Name
+341,Derry,Location
+341,1459569600000,Start Date
+341,West Shamokin,opponent
+342,Derry,Location
+342,1459569600000,Start Date
+342,1459600750000,Start Time
+343,Derry,Location
+343,1459569600000,Start Date
+343,1459601652000,Start Time
+344,Derry,Location
+344,1459569600000,Start Date
+344,Huntington,opponent
+345,Derry,Location
+345,1459569600000,Start Date
+345,1459609012000,Start Time
+346,Derry,Location
+346,1459569600000,Start Date
+346,1459610402000,Start Time
+347,Derry,Location
+347,1459569600000,Start Date
+347,Latrobe,opponent
+348,Derry,Location
+348,1459569600000,Start Date
+348,1459617783000,Start Time
+349,Derry,Location
+349,1459569600000,Start Date
+349,1459619447000,Start Time
+350,Derry,Location
+350,1459569600000,Start Date
+350,NA,opponent
+351,Derry,Location
+351,1459569600000,Start Date
+351,1459623743000,Start Time
+352,Derry,Location
+352,1459569600000,Start Date
+352,1459625344000,Start Time
+353,Derry,Location
+353,1459569600000,Start Date
+353,Montour,opponent
+354,Derry,Location
+354,1459569600000,Start Date
+354,1459631619000,Start Time
+355,Derry,Location
+355,1459569600000,Start Date
+355,Norwin,opponent
+356,Derry,Location
+356,1459569600000,Start Date
+356,1459632849000,Start Time
+357,Pine Richland,Location
+357,1459828800000,Start Date
+357,Pine Richland,opponent
+358,Pine Richland,Location
+358,1459828800000,Start Date
+358,1459898122000,Start Time
+359,Pine Richland,Location
+359,1459828800000,Start Date
+359,1459899805000,Start Time
+360,Pine Richland,Location
+360,1459828800000,Start Date
+360,1459901371000,Start Time
+361,Pine Richland,Location
+361,1459828800000,Start Date
+361,1459903175000,Start Time
+362,FC,Location
+362,1460001600000,Start Date
+362,Shaler,opponent
+363,FC,Location
+363,1460001600000,Start Date
+363,1460069902000,Start Time
+364,FC,Location
+364,1460001600000,Start Date
+364,1460071935000,Start Time
+365,FC,Location
+365,1460001600000,Start Date
+365,1460073372000,Start Time
+366,FC,Location
+366,1460001600000,Start Date
+366,1460074748000,Start Time
+367,FC,Location
+367,1460001600000,Start Date
+367,1460076026000,Start Time
+368,FC,Location
+368,Fox Chapel,Name
+369,FC,Location
+369,1460174400000,Start Date
+369,Plum,opponent
+370,FC,Location
+370,1460174400000,Start Date
+370,1460208461000,Start Time
+371,FC,Location
+371,1460174400000,Start Date
+371,1460209430000,Start Time
+372,FC,Location
+372,1460174400000,Start Date
+372,"Bethel Park ",opponent
+373,FC,Location
+373,1460174400000,Start Date
+373,1460211336000,Start Time
+374,FC,Location
+374,1460174400000,Start Date
+374,1460212563000,Start Time
+375,FC,Location
+375,1460174400000,Start Date
+375,Peters Township,opponent
+376,FC,Location
+376,1460174400000,Start Date
+376,1460218510000,Start Time
+377,FC,Location
+377,1460174400000,Start Date
+377,Plum,opponent
+378,FC,Location
+378,1460174400000,Start Date
+378,1460220165000,Start Time
+379,FC,Location
+379,1460174400000,Start Date
+379,1460221033000,Start Time
+380,FC,Location
+380,1460174400000,Start Date
+380,Conneaut Valley,opponent
+381,FC,Location
+381,1460174400000,Start Date
+381,1460225495000,Start Time
+382,FC,Location
+382,1460174400000,Start Date
+382,1460226573000,Start Time
+383,FC,Location
+383,1460174400000,Start Date
+383,"Bethel Park ",opponent
+384,FC,Location
+384,1460174400000,Start Date
+384,1460234478000,Start Time
+385,North Hills,Location
+385,1460433600000,Start Date
+385,"North Hills ",opponent
+386,North Hills,Location
+386,1460433600000,Start Date
+386,1460504777000,Start Time
+387,North Hills,Location
+387,1460433600000,Start Date
+387,1460506620000,Start Time
+388,North Hills,Location
+388,1460433600000,Start Date
+388,1460508127000,Start Time
+389,Fox Chapel,Location
+389,1460606400000,Start Date
+389,Seneca Valley,opponent
+390,Fox Chapel,Location
+390,1460606400000,Start Date
+390,1460675546000,Start Time
+391,Fox Chapel,Location
+391,1460606400000,Start Date
+391,1460677041000,Start Time
+392,Fox Chapel,Location
+392,1460606400000,Start Date
+392,1460678170000,Start Time
+393,Fox Chapel,Location
+393,1461211200000,Start Date
+393,Butler,opponent
+394,Fox Chapel,Location
+394,1461211200000,Start Date
+394,1461280788000,Start Time
+395,Fox Chapel,Location
+395,1461211200000,Start Date
+395,1461282260000,Start Time
+396,Fox Chapel,Location
+396,1461211200000,Start Date
+396,1461283413000,Start Time
+397,Plum,Location
+397,Plum,Name
+398,Plum,Location
+398,1461384000000,Start Date
+398,Central Catholic,opponent
+399,Plum,Location
+399,1461384000000,Start Date
+399,1461414907000,Start Time
+400,Plum,Location
+400,1461384000000,Start Date
+400,South Park,opponent
+401,Plum,Location
+401,1461384000000,Start Date
+401,1461418014000,Start Time
+402,Plum,Location
+402,1461384000000,Start Date
+402,Norwin,opponent
+403,Plum,Location
+403,1461384000000,Start Date
+403,1461422674000,Start Time
+404,Plum,Location
+404,1461384000000,Start Date
+404,Bishop Guilfoyle,opponent
+405,Plum,Location
+405,1461384000000,Start Date
+405,1461425964000,Start Time
+406,Plum,Location
+406,1461384000000,Start Date
+406,1461427085000,Start Time
+407,Plum,Location
+407,1461384000000,Start Date
+407,Baldwin,opponent
+408,Plum,Location
+408,1461384000000,Start Date
+408,1461430743000,Start Time
+409,Plum,Location
+409,1461384000000,Start Date
+409,1461432103000,Start Time
+410,Plum,Location
+410,1461384000000,Start Date
+410,Montour,opponent
+411,Plum,Location
+411,1461384000000,Start Date
+411,1461439080000,Start Time
+412,Plum,Location
+412,1461384000000,Start Date
+412,1461440064000,Start Time
+413,Plum,Location
+413,1461384000000,Start Date
+413,"Bethel Park ",opponent
+414,Plum,Location
+414,1461384000000,Start Date
+414,1461443199000,Start Time
+415,NA,Location
+415,1461643200000,Start Date
+415,NA,opponent
+416,NA,Location
+416,1461643200000,Start Date
+416,1461711911000,Start Time
+417,NA,Location
+417,1461643200000,Start Date
+417,1461713163000,Start Time
+418,NA,Location
+418,1461643200000,Start Date
+418,1461714935000,Start Time
+419,NA,Location
+419,1461643200000,Start Date
+419,1461716457000,Start Time
+420,FC,Location
+420,1461816000000,Start Date
+420,Pine Richland,opponent
+421,FC,Location
+421,1461816000000,Start Date
+421,1461886717000,Start Time
+422,FC,Location
+422,1461816000000,Start Date
+422,1461888343000,Start Time
+423,FC,Location
+423,1461816000000,Start Date
+423,1461889551000,Start Time
+424,FC,Location
+424,1462420800000,Start Date
+424,"North Hills ",opponent
+425,FC,Location
+425,1462420800000,Start Date
+425,1462491339000,Start Time
+426,FC,Location
+426,1462420800000,Start Date
+426,1462492904000,Start Time
+427,FC,Location
+427,1462420800000,Start Date
+427,1462494181000,Start Time
+428,FC,Location
+428,1462420800000,Start Date
+428,1462495723000,Start Time
+429,Seneca Valley,Location
+429,1462852800000,Start Date
+429,Seneca Valley,opponent
+430,Seneca Valley,Location
+430,1462852800000,Start Date
+430,1462922561000,Start Time
+431,Seneca Valley,Location
+431,1462852800000,Start Date
+431,1462924277000,Start Time
+432,Seneca Valley,Location
+432,1462852800000,Start Date
+432,1462925832000,Start Time
+433,Fox Chapel,Location
+433,1463112000000,Start Date
+433,Bethel Park,opponent
+434,Fox Chapel,Location
+434,1463112000000,Start Date
+434,1463174778000,Start Time
+435,Fox Chapel,Location
+435,1463112000000,Start Date
+435,1463176079000,Start Time
+436,Fox Chapel,Location
+436,1463112000000,Start Date
+436,1463177450000,Start Time
+437,Mt. Lebonan,Location
+437,Mt. Lebonan,Name
+438,Mt. Lebonan,Location
+438,1504324800000,Start Date
+438,USC,opponent
+439,Mt. Lebonan,Location
+439,1504324800000,Start Date
+439,1504357669000,Start Time
+440,Mt. Lebonan,Location
+440,1504324800000,Start Date
+440,"Bethel Park ",opponent
+441,Mt. Lebonan,Location
+441,1504324800000,Start Date
+441,1504359021000,Start Time
+442,Mt. Lebonan,Location
+442,1504324800000,Start Date
+442,Mt Lebonan,opponent
+443,Mt. Lebonan,Location
+443,1504324800000,Start Date
+443,1504362926000,Start Time
+444,Mt. Lebonan,Location
+444,1504324800000,Start Date
+444,Seton La Salle,opponent
+445,Mt. Lebonan,Location
+445,1504324800000,Start Date
+445,1504364677000,Start Time
+446,Mt. Lebonan,Location
+446,1504324800000,Start Date
+446,Peters Township,opponent
+447,Mt. Lebonan,Location
+447,1504324800000,Start Date
+447,1504368427000,Start Time
+448,Mt. Lebonan,Location
+448,1504324800000,Start Date
+448,Penn Trafford,opponent
+449,Mt. Lebonan,Location
+449,1504324800000,Start Date
+449,1504371254000,Start Time
+450,Mt. Lebonan,Location
+450,1504324800000,Start Date
+450,Pine Richland,opponent
+451,Mt. Lebonan,Location
+451,1504324800000,Start Date
+451,1504375259000,Start Time
+452,Mt. Lebonan,Location
+452,1504324800000,Start Date
+452,Norwin,opponent
+453,Mt. Lebonan,Location
+453,1504324800000,Start Date
+453,1504377128000,Start Time
+454,Fox Chapel,Location
+454,1504584000000,Start Date
+454,Woodland Hillls,opponent
+455,Fox Chapel,Location
+455,1504584000000,Start Date
+455,1504648296000,Start Time
+456,Fox Chapel,Location
+456,1504584000000,Start Date
+456,1504649202000,Start Time
+457,Fox Chapel,Location
+457,1504584000000,Start Date
+457,Woodland Hillls,opponent
+458,Fox Chapel,Location
+458,1504584000000,Start Date
+458,1504651503000,Start Time
+459,Fox Chapel,Location
+459,1504584000000,Start Date
+459,1504653262000,Start Time
+460,Fox Chapel,Location
+460,1504584000000,Start Date
+460,1504654795000,Start Time
+461,Penn Hills,Location
+461,1504756800000,Start Date
+461,Penn Hills,opponent
+462,Penn Hills,Location
+462,1504756800000,Start Date
+462,1504826260000,Start Time
+463,Penn Hills,Location
+463,1504756800000,Start Date
+463,1504828562000,Start Time
+464,Penn Hills,Location
+464,1504756800000,Start Date
+464,1504830023000,Start Time
+465,Shaler,Location
+465,Shaler,Name
+466,Shaler,Location
+466,1504929600000,Start Date
+466,Titusville,opponent
+467,Shaler,Location
+467,1504929600000,Start Date
+467,1504961653000,Start Time
+468,Shaler,Location
+468,1504929600000,Start Date
+468,Shaler,opponent
+469,Shaler,Location
+469,1504929600000,Start Date
+469,1504965448000,Start Time

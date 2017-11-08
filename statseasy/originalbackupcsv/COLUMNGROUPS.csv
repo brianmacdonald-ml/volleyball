@@ -1,0 +1,19 @@
+COLUMNGROUP,NAME,STARTINDEX,ENDINDEX,STATVIEW
+1,Hitting,1,6,1
+2,Serving,7,9,1
+3,Defense,10,11,1
+4,Blocking,12,16,1
+5,Passing,17,22,1
+6,Our Serve,1,10,3
+7,Their Serve,11,20,3
+8,Breakdown,4,7,4
+9,Digs,8,11,4
+10,Points Earned,1,4,5
+11,Points Given,5,10,5
+12,After a 3-Pass,1,4,6
+13,After a 2-Pass,5,8,6
+14,After a 1-Pass,9,12,6
+15,In Transition,13,16,6
+16,Setter Out,17,20,6
+17,Attack,1,4,7
+18,Sideout Efficiency,5,7,7

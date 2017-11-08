@@ -1,0 +1,10 @@
+#HeatMapLiveView_Div {
+	background-color: #61995E;
+	padding : 15px;
+}
+
+#HeatMapLiveView_Div table {
+	float: left;
+	color: white;
+	text-shadow: 1px 1px black;
+}

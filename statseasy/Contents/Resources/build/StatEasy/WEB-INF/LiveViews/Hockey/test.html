@@ -1,0 +1,96 @@
+
+
+<style>
+#ourTeamScore {
+     float: left;
+     width: 100px;
+     
+}
+
+#theirTeamScore {
+     float: right;
+     width: 100px;
+}
+
+#ourScore {
+     font-size: 50px;
+}
+
+#theirScore {
+     font-size: 50px;
+}
+
+
+
+.PP {
+	background: darkblue;
+    color: #fff;
+    text-align: center;
+    border-style: solid;
+    font-size: 16px;
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.4);
+    width: 40px;
+    height: 20px;
+    border-width: 1px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+
+
+</style>
+
+
+
+<body>
+<div id='ourTeamScore'> Penguins <br>
+	<span id='ourScore'>2</span>  
+	<div class="PP">PP</div>
+</div>
+<div id='theirTeamScore'>Red Wings<br>
+	<span id='theirScore'>1</span> 
+	<div class="PP">PP</div>
+	</div>
+					
+
+
+
+
+
+</body>
+
+
+<script>
+function parseForPlayer(stat){
+	var startIndex = stat.indexOf("\"")+1;
+	var endIndex = stat.indexOf("\"",startIndex);
+	var parsedStat = stat.substring(startIndex, endIndex);
+	return parsedStat;
+}
+//rename to parseForDataAtPosOne? 
+function parseForPointType(stat){	
+	var startIndex = stat.indexOf("(")+1;
+	var endIndex = stat.indexOf(")",startIndex);
+	var parsedStat = stat.substring(startIndex, endIndex);
+	return parsedStat;
+}
+
+function parseForDataAtLastPos(stat){	
+	var startIndex = stat.lastIndexOf("(")+1;
+	var endIndex = stat.lastIndexOf(")");
+	var parsedStat = stat.substring(startIndex, endIndex);
+	return parsedStat;
+}
+
+stat = "Penalty \"Blewitt, Jim\" (2) (Tripping)";
+
+
+
+parsedStat = parseForDataAtLastPos(stat);
+
+document.write(parsedStat2);
+
+
+
+
+
+</script>

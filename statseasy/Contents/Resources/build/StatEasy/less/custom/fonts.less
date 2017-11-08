@@ -1,0 +1,110 @@
+//fonts placeholder
+.open-sans-regular {
+    font-family: "open-sans-n4","open-sans",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+.open-sans-italic {
+    font-family: "open-sans-i4","open-sans",sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+.open-sans-semibold {
+    font-family: "open-sans-n6","open-sans",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+.open-sans-bold {
+    font-family: "open-sans-n7","open-sans",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+.alternate-gothic-1 {
+    font-family: "alternate-gothic-no-1-d-n4","alternate-gothic-no-1-d",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+.alternate-gothic-2 {
+    font-family: "alternate-gothic-no-2-d-n4","alternate-gothic-no-2-d",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+.alternate-gothic-3 {
+    font-family: "alternate-gothic-no-3-d-n4","alternate-gothic-no-3-d",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+.helvetica {
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+// FONTS
+// --------------------------------------------------
+
+#font {
+  #family {
+    .open-sans-regular () {
+       font-family: @open-sans-regular;
+    }
+    .open-sans-italic () {
+      font-family: @open-sans-italic;
+    }
+    .open-sans-semibold () {
+      font-family: @open-sans-semibold;
+    }
+    .open-sans-bold () {
+      font-family: @open-sans-bold;
+    }
+    .alternate-gothic-1 () {
+      font-family: @alternate-gothic-1;
+    }
+    .alternate-gothic-2 () {
+      font-family: @alternate-gothic-2;
+    }
+    .alternate-gothic-3 () {
+      font-family: @alternate-gothic-3;
+    }
+    .helvetica (){
+      font-family: @helvetica;
+    }
+  }
+  .shorthand(@size: @baseFontSize,@lineHeight: @baseLineHeight, @weight: 400, @style:normal) {
+    font-size: @size;
+    font-weight: @weight;
+    line-height: @lineHeight;
+    font-style: @style;
+  }
+  .open-sans-regular (@size: @baseFontSize,@lineHeight: @baseLineHeight, @weight: 400,@style:normal) {
+    #font > #family > .open-sans-regular;
+    #font > .shorthand(@size,@lineHeight, @weight,@style);
+  }
+  .open-sans-italic (@size: @baseFontSize,@lineHeight: @baseLineHeight, @weight: 400,@style:italic) {
+    #font > #family > .open-sans-italic;
+    #font > .shorthand(@size, @lineHeight, @weight,@style);
+  }
+  .open-sans-semibold (@size: @baseFontSize, @lineHeight: @baseLineHeight, @weight: 600,@style:normal) {
+    #font > #family > .open-sans-semibold;
+    #font > .shorthand(@size, @lineHeight, @weight,@style);
+  }
+  .open-sans-bold (@size: @baseFontSize, @lineHeight: @baseLineHeight, @weight: 700,@style:normal) {
+    #font > #family > .open-sans-bold;
+    #font > .shorthand(@size,@lineHeight, @weight,@style);
+  }
+  .alternate-gothic-1 (@size: @baseFontSize, @lineHeight: @baseLineHeight, @weight: 400,@style:normal) {
+    #font > #family > .alternate-gothic-1;
+    #font > .shorthand(@size,@lineHeight, @weight,@style);
+  }
+  .alternate-gothic-2 (@size: @baseFontSize, @lineHeight: @baseLineHeight, @weight: 400,@style:normal) {
+    #font > #family > .alternate-gothic-2;
+    #font > .shorthand(@size,@lineHeight, @weight,@style);
+  }
+  .alternate-gothic-3 (@size: @baseFontSize, @lineHeight: @baseLineHeight, @weight: 400,@style:normal) {
+    #font > #family > .alternate-gothic-3;
+    #font > .shorthand(@size,@lineHeight, @weight,@style);
+  }
+  .helvetica (@size: @baseFontSize, @lineHeight: @baseLineHeight, @weight: normal,@style:normal) {
+    #font > #family > .helvetica;
+    #font > .shorthand(@size,@lineHeight, @weight,@style);
+  }
+}

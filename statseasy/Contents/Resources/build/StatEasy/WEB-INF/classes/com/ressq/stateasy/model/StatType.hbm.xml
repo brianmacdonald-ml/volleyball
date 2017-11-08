@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+
+	<typedef name="Shape" class="com.ressq.stateasy.model.hibernate.GenericEnumUserType">
+		<param name="enumClass">com.ressq.stateasy.model.enums.Shape</param>
+	</typedef>
+
+	<typedef name="LineStyle" class="com.ressq.stateasy.model.hibernate.GenericEnumUserType">
+		<param name="enumClass">com.ressq.stateasy.model.enums.LineStyle</param>
+	</typedef>
+	
+	<class name="StatType" table="stattypes" batch-size="20">
+		<id name="id" column="stattype" unsaved-value="null">
+			<generator class="native"/>
+		</id>
+		
+		<property name="uuid" index="stattypeuuidindex">
+			<column name="uuid"/>
+		</property>
+	
+		<property name="name">
+			<column name="name"/>
+		</property>
+	
+		<property name="onlineHelp">
+			<column name="onlinehelp"/>
+		</property>
+		
+		<property name="shortcut" unique-key="sport_shortcut_uniqueness">
+			<column name="shortcut"/>
+		</property>
+		
+		<property name="parseInformation" type="text">
+			<column name="parseInformation"/>
+		</property>
+		
+		<many-to-one 
+			name="statEffectObject" 
+			column="statEffect" 
+			class="StatEffect" 
+			not-null="false"
+			cascade="all"/>
+		
+		<property name="seekTimeOffset">
+			<column name="seektimeoffset"/>
+		</property>
+		
+		<property name="endTimeOffset">
+			<column name="endtimeoffset"/>
+		</property>
+		
+		<property name="actionEndingStat">
+			<column name="actionendingstat"/>
+		</property>
+		
+		<property name="locationAware" not-null="true">
+			<column name="locationaware"/>
+		</property>
+		
+		<property name="pointCount">
+			<column name="pointcount"/>
+		</property>
+		
+		<property name="color">
+			<column name="color"/>
+		</property>
+		
+		<property name="shape" type="Shape">
+			<column name="shape"/>
+		</property>
+		
+		<property name="lineStyle" type="LineStyle">
+			<column name="linestyle"/>
+		</property>
+		
+		<property name="lineWidth">
+			<column name="linewidth"/>
+		</property>
+		
+		<many-to-one 
+			name="sport" 
+			column="sport" 
+			class="Sport" 
+			not-null="true" 
+			unique-key="sport_shortcut_uniqueness"/>
+			
+		<property name="doubleTap">
+			<column name="doubleTap"/>
+		</property>
+		
+		<property name="privateStat">
+			<column name="privateStat"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

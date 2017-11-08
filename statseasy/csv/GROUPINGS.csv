@@ -1,0 +1,7 @@
+GROUPING|UUID|NAME|GROUPINGDATA|DEFAULTGROUPING|SPORT
+1|94bb2c17-c5cb-4d44-85f2-d7008152a09b|Players|players|1|1
+2|7b7fbd69-0754-430e-9284-7ffb0b9bea7a|Our Rotation|gameStates.ourRotation|0|1
+3|dca1633a-14a8-41b9-8fd6-6e28d03b274c|Their Rotation|gameStates.theirRotation|0|1
+4|a9e728ee-df43-4dd1-9f15-d54542501d9b|Our Setter|gameStates.ourSetter|0|1
+5|5d170d87-496b-491d-b20a-b33e2fb683ba|Set Type|gameStates.setType|0|1
+6|8e75e1d8-ce9e-43a1-8180-adea9f7fdb0a|Serve Type|gameStates.serveType|0|1

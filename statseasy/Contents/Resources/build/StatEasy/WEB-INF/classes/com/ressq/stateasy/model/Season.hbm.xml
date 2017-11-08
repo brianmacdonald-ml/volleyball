@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+	<class name="Season" table="seasons">
+		<id name="id" column="season" unsaved-value="null">
+			<generator class="native"/>
+		</id>
+		
+		<property name="uuid" index="seasonuuidindex">
+			<column name="uuid"/>
+		</property>
+	
+		<property name="name">
+			<column name="name"/>
+		</property>
+	
+		<property name="headCoach">
+			<column name="headcoach"/>
+		</property>
+	
+		<property name="assistantCoach">
+			<column name="assistantcoach"/>
+		</property>
+	
+		<property name="shown">
+			<column name="shown"/>
+		</property>
+		
+		<bag name="allPlayers" cascade="all-delete-orphan">
+			<key column="season"/>
+			<one-to-many class="PlayerInSeason"/>
+		</bag>
+		
+		<many-to-one name="team" column="team" class="Team" not-null="true" />
+		
+		<property name="createdDate">
+			<column name="createdDate"/>
+		</property>
+		
+		<property name="nextEventIndex">
+			<column name="nextEventIndex" default="0"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

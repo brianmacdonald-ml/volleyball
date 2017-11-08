@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+	<class name="Stat" table="stats" batch-size="100">
+		<id name="id" column="stat" unsaved-value="null">
+			<generator class="native"/>
+		</id>
+		
+		<property name="uuid" index="statuuidindex">
+			<column name="uuid"/>
+		</property>
+		
+		<many-to-one name="statType" column="stattype" class="StatType" not-null="true" lazy="proxy"/>
+		
+		<many-to-one name="event" column="game" class="Event" not-null="true"/>
+		
+		<list name="allData" cascade="all-delete-orphan" fetch="subselect">
+			<key column="stat" not-null="true"/>
+			<list-index column="dataindex"/>
+			<one-to-many class="StatData"/>
+		</list>
+		
+		<list name="locationInfo" cascade="all-delete-orphan" fetch="subselect">
+			<key column="stat" not-null="true"/>
+			<list-index column="dataindex"/>
+			<one-to-many class="LocationData"/>
+		</list>
+		
+		<property name="color">
+			<column name="color"/>
+		</property>
+		
+		<property name="timeTaken" type="com.ressq.stateasy.hibernate.UTCTimestampType">
+			<column name="timetaken"/>
+		</property>
+		
+		<property name="gameTime">
+			<column name="gameTime"/>
+		</property>
+		
+		<property name="statIndex">
+			<column name="statindex"/>
+		</property>
+		
+		<many-to-one name="parentStat" column="parentStat" class="Stat"/>
+		<bag name="supplementalStats" cascade="all-delete-orphan" inverse="true">
+			<key column="parentStat"/>
+			<one-to-many class="Stat"/>
+		</bag>
+		
+		<!-- Cascade everything except delete for a few reasons.  One is that 
+			this GameState is most likely referenced by SOMETHING else, so 
+			leave it around.  The other is that something might reference this 
+			game state in the future, so why not? -->
+		<many-to-one name="beginningGameState" column="beginninggamestate" class="GameState" cascade="persist,merge,save-update,lock,refresh,evict,replicate"/>
+		<many-to-one name="endingGameState" column="endinggamestate" class="GameState" cascade="persist,merge,save-update,lock,refresh,evict,replicate"/>
+		
+		<property name="opponentStat">
+			<column name="opponentstat"/>
+		</property>
+		
+		<property name="seekTimeOffset">
+			<column name="seektimeoffset"/>
+		</property>
+		
+		<property name="endTimeOffset">
+			<column name="endtimeoffset"/>
+		</property>
+		
+		<property name="actionEndingStat">
+			<column name="actionendingstat"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

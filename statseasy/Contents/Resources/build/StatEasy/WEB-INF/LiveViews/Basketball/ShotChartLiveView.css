@@ -1,0 +1,22 @@
+#ShotChartLiveView_Div {
+	background-color: #61995E;
+}
+
+#ShotChartLiveView_Div .infoBar {
+	height : 30px;
+	position : absolute;
+	left : 1px;
+	top : 1px;
+	background-image: -webkit-linear-gradient( #DDD, #BBB);
+	background-image: -moz-linear-gradient( #DDD, #BBB);
+	background-image: -ms-linear-gradient( #DDD, #BBB);
+	background-image: -o-linear-gradient( #DDD, #BBB);
+	background-image: linear-gradient( #DDD, #BBB);
+	text-shadow: 0 1px 0 #EEE;
+}
+
+#ShotChartLiveView_Div .infoBar div {
+	height : 30px;
+	line-height: 30px;
+	text-align: center;
+}

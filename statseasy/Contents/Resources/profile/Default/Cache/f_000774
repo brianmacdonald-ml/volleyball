@@ -1,0 +1,1633 @@
+
+
+
+
+
+
+
+
+
+
+<html>
+	<head>
+		<title>The StatEasy Content Creator</title>
+		<link rel="stylesheet" href="/css/tokens.css" type="text/css">
+		<link rel="stylesheet" href="/css/print.css" type="text/css" media="print">
+		<link rel="stylesheet" href="/css/jquery.autocomplete.css" type="text/css">
+
+		<script src="/js/jquery-1.6.1.js" type="text/javascript"></script>
+		<script src="/js/jquery.easing.1.3.js" type="text/javascript"></script>
+		<script src="/js/jquery.corners.min.js" type="text/javascript"></script>
+		<script src="/js/jquery.dropshadow.js" type="text/javascript"></script>
+		<script src="/js/jquery.autocomplete.js" type="text/javascript"></script>
+		
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		
+		<link rel="shortcut icon" href="/images/favicon_1.jpg" />
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				$(".autofocus").focus();
+			});
+		</script>
+		
+	</head>
+
+	<body>
+
+<div id="container">
+	<div id="header">
+		<img src="/images/logo.png" class="headerLogo" />
+		
+		<div id="gameType"><span id="gameTypeInnerText"><a href="/hello.htm" title="Return to the Welcome page." class="noUnderline">Logout</a></span></div>
+
+		
+		
+		<div id="sportUpdates"></div>
+	</div>
+	<div id="navigation">
+		
+		<ul id="launch">
+			<li class="main
+				 
+			"><a href="/launch.htm" title="Select an action from the StatEasy dashboard">Dashboard</a></li>
+		</ul>
+		<ul id="config">
+			<li class="main
+				 
+			">
+			
+			<a href="/configure/stats.htm" title="Configure your stats, reports, views, teams, or players">Configuration</a></li>
+		</ul>
+		<ul id="account">
+			<li class="main">
+			<a href="http://app.stateasy.com:80/" target="_blank">Social Sports Network</a>
+			</li>
+		</ul>
+		
+
+		
+
+	</div>
+
+
+<script type="text/javascript" src="/js/jquery.metadata.js"></script>
+<script type="text/javascript" src="/js/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="/js/stickyheaders.js"></script>
+<link type="text/css" href="/css/jquery.ui/jquery-ui-1.8.2.custom.css" rel="stylesheet" />
+<script src="/js/jquery.ui/jquery-ui-1.8.2.custom.js" type="text/javascript"></script>
+<link rel="stylesheet" href="/css/jquery.validation/validationEngine.jquery.css" type="text/css" media="screen" charset="utf-8" />
+<script src="/js/jquery.validation/jquery.validationEngine-en.js" type="text/javascript"></script>
+<script src="/js/jquery.validation/jquery.validationEngine.js" type="text/javascript"></script>
+<script type="text/javascript" src="/js/jquery.plugins/jquery.cookie.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/paper.js"></script>
+<script type="text/javascript" src="/js/validateHelper.js"></script>
+<script type="text/javascript" src="/js/liveParser.js"></script>
+<script type="text/javascript" src="/js/data.js"></script>
+<script type="text/javascript" src="/js/statEvent.js"></script>
+<script type="text/javascript" src="/js/statList.js"></script>
+<script type="text/javascript" src="/js/events.js"></script>
+<script type="text/javascript" src="/js/utils.js"></script>
+<script type="text/javascript" src="/js/liveViewManager.js"></script>
+<script type="text/javascript" src="/js/jquery.color.js"></script>
+<script type="text/javascript" src="/js/player-videoManager.js"></script>
+<script type="text/javascript" src="/js/player-playlistMode.js"></script>
+<script type="text/javascript" src="/js/player-reportMode.js"></script>
+<script type="text/javascript" src="/js/player-singleEventGroupingMode.js"></script>
+<script type="text/javascript" src="/js/player-noEventGroupingMode.js"></script>
+<script type="text/javascript" src="/js/player.js"></script>
+<link rel="stylesheet" href="/css/inputEvents.css" type="text/css">
+<link rel="stylesheet" href="/css/statPlayer.css" type="text/css">
+<link rel="stylesheet" href="/css/tableSort.css" type="text/css">
+
+<div id="content"><div id="innercontent">
+<div class='middle'>
+
+	
+		<h2 class="borderBelow">Varsity: Take stats for Game #3 @ 8:08:31 PM.</h2>
+		
+			<p>Member of:</p>
+			<ul>
+			
+				<li>Match: Varsity vs. Plum on Oct 8, 2015 (<a class="newLink" href="/eventSetup.htm?season=27&eventGroupingId=266">Create a new Game for this Match</a>)</li>
+			
+			</ul>
+			<br/>
+		
+	
+	
+
+
+<table style="padding:0"><tr>
+<td style="padding:0; vertical-align:top"><div class="inputSection" style='width:300px'>
+	Plays so far this game:<br />
+	<div id="input-events" class="events">
+	</div>
+	
+	<div id="enterStats">
+		<br/>
+		<div><span class="tinyHelpText">To enter a stat, type the stat and then press</span></div>
+		<div><span class="tinyHelpText">the space bar or enter key.</span></div>
+		Enter plays:
+		<form method="post" action="">
+		
+		<span id="bufferDiv"></span><input type="text" name="statsToParse" id="statsToParse" size="20" value="" autocomplete="off"/>
+		<input type="hidden" name="format" value="html"/>
+		<div id="statsToParse-autocomplete" class="autocomplete"><table><tr><td>No stats detected.</td></tr></table></div>
+		<div id="statsToParse-statDataDisplay" class="statDataDisplay"><table><tr><td>No stats detected.</td></tr></table></div>
+		</form>
+	</div>
+
+</div></td>
+
+<td style="padding:0; vertical-align:top"><div class="liveViewContainer"></div></td>
+</tr></table>
+
+
+<script type="text/javascript" defer="defer">
+/*
+ * Required for all LiveViews
+ */
+var classname = "ViewLiveView";
+var version = 4.2;
+
+function inc(filename) {
+	if (typeof document === 'undefined') {
+		return;
+	}
+	
+	var body = document.getElementsByTagName('body').item(0);
+	script = document.createElement('script');
+	script.src = filename;
+	script.type = 'text/javascript';
+	body.appendChild(script);
+}
+
+inc("/js/objectSelector.js");
+
+/*
+ *  Everyone should hold onto their div.  It's your workpad to show off your
+ *  view to the world!
+ */ 
+function ViewLiveView(myTargetDivId, dataManager) {
+	var self = this;
+
+	self.targetDivId = myTargetDivId;
+	
+	self.shown = false;
+	self.valid = false;
+
+	var currentlySelectedViewId;
+	var currentlySelectedGroupingId;
+	var currentlySelectedGroupingFocusId;
+	var currentlySelectedGroupingFocusName;
+	var currentSortInfo;
+	var playerFilter;
+	
+	var playerSelector;
+	var selectedPlayers;
+	var allPlayersSelected;
+
+	/* 
+	 * Do some quick setup.  Should not be long running, we don't want to delay 
+	 * other LiveViews.  This will be called on page startup.  This might not be
+	 * necessary, since any non-long running tasks should really be done in the 
+	 * constructor.  Or maybe we execute these after the window is done being 
+	 * displayed
+	 */
+	function prepareToShow() {
+		var players = [];
+		for (var i in dataManager.allPlayers) {
+			var player = dataManager.allPlayers[i];
+			players.push([player.id, player.firstName, player.lastName]);
+		}
+		players.sort(function (a, b) {
+			return (a[2] || "").localeCompare(b[2]);
+		});
+		
+		for (var i in dataManager.allOpponents) {
+			var player = dataManager.allOpponents[i];
+			players.push([player.id, player.firstName, player.lastName]);
+		}
+		
+		playerSelector = new ObjectSelector(
+			["", "First Name", "Last Name"],
+			players,
+			{
+				title: "Select a player",
+				id: "player"
+			}
+		);
+	}
+	this.prepareToShow = prepareToShow;
+	
+	function invalidate() {
+		self.valid = false;
+	}
+	this.invalidate = invalidate;
+	
+	/*
+	 * Helper method to append a score to a table
+	 */
+	function appendScoreAndGameClock(ourScore, theirScore) {
+		if (ourScore == undefined) {
+			ourScore = 0;
+		}
+		if (theirScore == undefined) {
+			theirScore = 0;
+		}
+		var innerHtml = "<table>" + 
+			"<tr><td>" + dataManager.game.ourTeamName + ":</td><td>" + ourScore + "</td><td rowspan='2'><div id='gameClock' class='timer'><div class='numbers'>&nbsp;</div></div></td></tr>" +
+			"<tr><td>" + dataManager.game.theirTeamName + ":</td><td>" + theirScore + "</td></tr>" +
+			"</table>";
+		
+		return innerHtml;
+	}
+	
+	function playersHtml(somePlayers) {
+		var html = "";
+		
+		for (var i in somePlayers) {
+			var player = somePlayers[i];
+			html += "<tr id='row" + player.id + "'>";
+			html += "<td style='width:5%'><input type='checkbox' checked='checked' class='checkMeOut' name='selectedPlayers' value='" + player.id + "'/></td>";
+			html += "<td><label>" + player.lastName + "</label></td>";
+			html += "<td><label>" + player.firstName + "</label></td>";
+			html += "</tr>";
+		}
+		
+		return html;
+	}
+	
+	function updateClock() {
+		var lastStat = undefined;
+		if (dataManager.allStats.length > 0) {
+			lastStat = dataManager.allStats[dataManager.allStats.length - 1];
+		}
+		
+		if ((lastStat == undefined) || (lastStat.getGameTime() == undefined)) {
+			$("#gameClock").removeClass("stopped").removeClass("running").html("&nbsp;");
+			return;
+		}
+		
+		var isRunning = lastStat.getEndingGameState()["gameClockRunning"] == "1";
+		var gameTime = undefined;
+		if (isRunning) {
+			$("#gameClock").removeClass("stopped").addClass("running");
+			var lastGameTime = lastStat.getGameTime();
+			var lastStatTime = lastStat.getTime();
+			var thisStatTime = new Date().getTime() / 1000;
+			var elapsedTime = thisStatTime - lastStatTime;
+			
+			if (lastStat.getEndingGameState()["gameClockDirection"] == "up") {
+				gameTime = lastGameTime + elapsedTime;
+			} else {
+				gameTime = lastGameTime - elapsedTime;
+				if (gameTime < 0) {
+					gameTime = 0;
+				}
+			}
+		} else {
+			$("#gameClock").addClass("stopped").removeClass("running");
+			gameTime = lastStat.getGameTime();
+		}
+		
+		$("#gameClock .numbers").html(toTimeString(gameTime, 1));
+		
+		(function() {
+			setTimeout(updateClock, 50);
+		})();
+	}
+	
+	/* 
+	 * This is to actually do any required long running tasks.  This is when 
+	 * we're going to be shown.
+	 */ 
+	function show() {
+		if (self.shown && self.valid) {
+			return;
+		}
+		
+		if (!self.shown) {
+			var myDiv = $("#" + self.targetDivId);
+		
+			var innerHtml = "<div class='viewList'>View the stats for <select id='groupingId'>";
+			var someGrouping = dataManager.groupings[dataManager.game.associatedEvent];
+			currentlySelectedGroupingId = someGrouping.id;
+			while (someGrouping != undefined) {
+				innerHtml += "<option value='" + someGrouping.id + "'>" + someGrouping.name + "</option>";
+				someGrouping = dataManager.groupings[someGrouping.parentGroup];
+			}
+			innerHtml += "</select>";
+			innerHtml += " using <select id='viewId' name='gameIds'>";
+			for (i in dataManager.allViews) {
+				var currView = dataManager.allViews[i];
+				if (!currView.hidden) {
+					innerHtml += "<option value='" + currView.id + "-" + currView.type + "'" + (currView.defaultView ? "selected" : "") + ">" + currView.name + "</option>";
+				}
+			}
+			innerHtml += "</select> focused on <select id='groupingFocusId' name='groupingFocusId'>";
+			for (i in dataManager.reportGroupings) {
+				innerHtml += "<option value='" + dataManager.reportGroupings[i].id + "'>" + dataManager.reportGroupings[i].name + "</option>";
+			}
+			innerHtml += "</select> using <a href='#' id='setPlayerDialogLink'>All Players</a>.<br/><input type='checkbox' id='playerFilter'>Only show players in the game.</div><div class='score'></div><div class='content'></div>";
+			
+			if (dataManager.allViews.length == 0) {
+				innerHtml = "There are no views configured.  Add some views first.";
+			} else {
+				currentlySelectedViewId = dataManager.allViews[0].id + "-" + dataManager.allViews[0].type;
+				for (i in dataManager.allViews) {
+					var currView = dataManager.allViews[i];
+					if (currView.defaultView) {
+						currentlySelectedViewId = currView.id + "-" + currView.type;
+					}
+				}
+			}
+			
+			myDiv.html(innerHtml);
+			
+			// Make sure the default grouping focus is pre-selected
+			if (currentlySelectedGroupingFocusId == null) {
+				for (var i in dataManager.reportGroupings) {
+					if (dataManager.reportGroupings[i].defaultGrouping == true) {
+						$("#" + self.targetDivId + " #groupingFocusId").val(dataManager.reportGroupings[i].id);
+					}
+				}
+			}
+
+			$("#" + self.targetDivId + " #viewId").change(function () {
+				currentlySelectedViewId = $(this).val();
+				self.valid = false;
+				show();
+			});	
+			
+			$("#" + self.targetDivId + " #groupingId").change(function () {
+				currentlySelectedGroupingId = $(this).val();
+				self.valid = false;
+				show();
+			});	
+			
+			$("#" + self.targetDivId + " #groupingFocusId").change(function () {
+				currentlySelectedGroupingFocusId = $(this).val();
+				currentlySelectedGroupingFocusName = $(this).find(":selected").text();
+				self.valid = false;
+				show();
+			});
+			currentlySelectedGroupingFocusName = $("#" + self.targetDivId + " #groupingFocusId :selected").text();
+			
+			$("#" + self.targetDivId + " #playerFilter").change(function () {
+				playerFilter = $(this).is(':checked');
+				self.valid = false;
+				show();
+			});
+			
+			$("#" + self.targetDivId + " #setPlayerDialogLink").click(function () {
+				playerSelector.show(function () {
+					allPlayersSelected = playerSelector.isAllSelected();
+					selectedPlayers = playerSelector.result();
+					
+					if (allPlayersSelected) {
+						$("#" + self.targetDivId + " #setPlayerDialogLink").html("All Players");
+					} else {
+						$("#" + self.targetDivId + " #setPlayerDialogLink").html("Some Players");
+					}
+					
+					self.valid = false;
+					show();
+				});
+			});
+			updateClock();
+		}
+		
+		var scoreHtml = "";
+		var gameState = dataManager.gameStates[dataManager.game.currentGameState];
+		if (gameState == undefined) {
+			scoreHtml = appendScoreAndGameClock(0, 0);
+		} else {
+			scoreHtml = appendScoreAndGameClock(gameState.ourScore, gameState.theirScore);
+		}
+		var scoreDiv = $("#" + myTargetDivId + ' .score');
+		scoreDiv.html("");
+		scoreDiv.append(scoreHtml);
+		
+		if (dataManager.allViews.length > 0) {
+			var urlVariables = {
+				viewId: currentlySelectedViewId,
+				egId: currentlySelectedGroupingId,
+				grouping: currentlySelectedGroupingFocusId,
+				format: 'ajax'
+			};
+			
+			if (!allPlayersSelected) {
+				urlVariables.playerIds = selectedPlayers;
+			}
+			
+			$.get(
+				dataManager.viewUrl, 
+				urlVariables,
+				function (data, textStatus) {
+					//var responseHolder = $('<div></div>').html(data);
+					$('#' + myTargetDivId + ' .content').html("");
+					$('#' + myTargetDivId + ' .content').append(data);
+					
+					var sorterOptions = {
+				        sortInitialOrder: 'desc'
+				    };
+					if (currentSortInfo != undefined) {
+						sorterOptions["sortList"] = currentSortInfo;
+					}
+					
+					if (playerFilter && ("Players" == currentlySelectedGroupingFocusName)) {
+						var gameState = dataManager.gameStates[dataManager.game.currentGameState];
+						
+						var playerNumberToId = {
+							our		: {},
+							their	: {},
+						};
+						addPlayersToMap(dataManager.allPlayers, playerNumberToId.our);
+						addPlayersToMap(dataManager.allOpponents, playerNumberToId.their);
+						
+						var allowablePlayerIds = {
+							our		: {},
+							their	: {},
+						};
+						for (var stateName in gameState) {
+							var team = undefined;
+							var playerNumber = undefined;
+							if ("ourPlayer" == stateName.substring(0,9)) {
+								team = "our";
+								playerNumber = stateName.substring("ourPlayer".length, stateName.length);
+							} else if ("theirPlayer" == stateName.substring(0,11)) {
+								team = "their";
+								playerNumber = stateName.substring("theirPlayer".length, stateName.length);
+							}
+							
+							if (team != undefined) {
+								var inOrOut = gameState[stateName];
+								if (inOrOut == "In") {
+									var playerId = playerNumberToId[team][playerNumber];
+									allowablePlayerIds[team][playerId] = true;
+								}
+							}
+						}
+						
+						hidePlayersNotInTheGame("our", allowablePlayerIds);
+						hidePlayersNotInTheGame("their", allowablePlayerIds);
+					}
+					
+					$(".tablesorter").filter(":visible").tablesorter(sorterOptions).bind("sortInfo", function (e, sortInfo) {
+				    	currentSortInfo = sortInfo;
+				    }).each(function() {
+				    	$(this).stickyHeaders();
+				    });
+				}
+			);
+		}
+		
+		self.shown = true;
+		self.valid = true;
+	}
+	this.show = show;
+	
+	function hidePlayersNotInTheGame(team, allowablePlayerIds) {
+		var table = $("#team" + dataManager.game[team + "TeamId"]);
+		table.find("tr").each(function (index, elem) {
+			var playerId = $(elem).attr('id');
+			if ((playerId != undefined) && (playerId.length > 0)) {
+				if (!allowablePlayerIds[team][playerId]) {
+					$(elem).remove();
+				}
+			}
+		});
+	}
+	
+	function addPlayersToMap(playerList, numberToIdMap) {
+		for (var i in playerList) {
+			var player = playerList[i];
+			numberToIdMap[player.number] = player.id;
+		}
+	}
+	
+	/*
+	 * If we kicked off any background processes, now would be the time to stop 
+	 * them since we're about to go away.
+	 */
+	function stopShowing() {
+	}
+	this.stopShowing = stopShowing;
+}
+
+
+</script>
+<style type="text/css">
+
+</style>
+
+<script type="text/javascript" defer="defer">
+/*
+ * Required for all LiveViews
+ */
+var classname = "VideoLiveView";
+var version = 1.6;
+
+function inc(filename) {
+	if (typeof document === 'undefined') {
+		return;
+	}
+	
+	var body = document.getElementsByTagName('body').item(0);
+	script = document.createElement('script');
+	script.src = filename;
+	script.type = 'text/javascript';
+	body.appendChild(script);
+}
+
+inc("/js/player.js");
+inc("/js/gameVideo.js");
+inc("/js/timeline.js");
+inc("/js/canvas.js");
+
+/*
+ *  Everyone should hold onto their div.  It's your workpad to show off your
+ *  view to the world!
+ */ 
+function VideoLiveView(myTargetDivId, dataManager) {
+	var self = this;
+
+	self.targetDivId = myTargetDivId;
+	
+	self.shown = false;
+	self.valid = false;
+	
+	/* 
+	 * Do some quick setup.  Should not be long running, we don't want to delay 
+	 * other LiveViews.  This will be called on page startup.  This might not be
+	 * necessary, since any non-long running tasks should really be done in the 
+	 * constructor.  Or maybe we execute these after the window is done being 
+	 * displayed
+	 */
+	function prepareToShow() {
+	}
+	this.prepareToShow = prepareToShow;
+	
+	function invalidate() {
+		self.valid = false;
+	}
+	this.invalidate = invalidate;
+	
+	/* 
+	 * This is to actually do any required long running tasks.  This is when 
+	 * we're going to be shown.
+	 */ 
+	function show() {
+		if (self.shown && self.valid) {
+			return;
+		}
+		
+		if (!self.shown) {
+			$("#" + self.targetDivId).append("<div id='" + self.targetDivId + "-video'></div><p>Press the TAB key to pause/play.<br/>Press ALT-LeftArrow to skip back 5 seconds</p>");
+			
+			if (dataManager.gameVideos != undefined) {
+				
+				dataManager.viewer.setNetEventHighlighting(false);
+				var player = new StatPlayer({
+					id: self.targetDivId + "-video", 
+					dataManager: dataManager,
+					drawGameState: true,
+					mode: StatPlayer.LIVE_VIEW_MODE,
+					existingViewer: dataManager.viewer,
+					condenseChecked: false,
+					restoreVideoTime: true,
+					isServer: false
+				});
+				
+				$(".newLink").click(function () {
+					player.persistTime();
+				});
+			} else {
+				var firstLevelGrouping = dataManager.groupings[dataManager.game.associatedEvent];
+				var firstLevelGroupingType = dataManager.groupingTypes[firstLevelGrouping.myType];
+				var associateMessage = "There is no video associated to this " + firstLevelGroupingType.name;
+				
+				associateMessage += "<br/><br/><a href='../video/videos.htm?season=" + firstLevelGrouping.ourSeason + "&returnTo=" + firstLevelGrouping.associatedEvent + "'>Click here</a> to associate a video to it.";
+				
+				$("#" + self.targetDivId + "-video").append(associateMessage);
+			}
+		}
+		
+		self.shown = true;
+		self.valid = true;
+	}
+	this.show = show;
+	
+	/*
+	 * If we kicked off any background processes, now would be the time to stop 
+	 * them since we're about to go away.
+	 */
+	function stopShowing() {
+	}
+	this.stopShowing = stopShowing;
+}
+
+
+</script>
+<style type="text/css">
+
+</style>
+
+<script type="text/javascript" defer="defer">
+/*
+ * Required for all LiveViews
+ */
+var classname = "RotationAndScoreLiveView";
+var version = 1.7;
+
+/*
+ *  Everyone should hold onto their div.  It's your workpad to show off your
+ *  view to the world!
+ */ 
+function RotationAndScoreLiveView(myTargetDivId, dataManager) {
+	this.targetDivId = myTargetDivId;
+	
+	this.shown = false;
+	this.valid = false;
+	this.drawn = false;
+		
+	/* 
+	 * Do some quick setup.  Should not be long running, we don't want to delay 
+	 * other LiveViews.  This will be called on page startup.  This might not be
+	 * necessary, since any non-long running tasks should really be done in the 
+	 * constructor.  Or maybe we execute these after the window is done being 
+	 * displayed
+	 */
+	function prepareToShow() {}
+	this.preparetoShow = prepareToShow;
+	
+	function invalidate() {
+		this.valid = false;
+	}
+	this.invalidate = invalidate;
+	
+	/*
+	 * Helper method to append a score to a table
+	 */
+	function appendScore(ourScore, theirScore) {
+		if (ourScore == undefined) {
+			ourScore = 0;
+		}
+		if (theirScore == undefined) {
+			theirScore = 0;
+		}
+		var innerHtml = "<table>" + 
+			"<tr><td>" + dataManager.game.ourTeamName + ":</td><td>" + ourScore + "</td></tr>" +
+			"<tr><td>" + dataManager.game.theirTeamName + ":</td><td>" + theirScore + "</td></tr>" +
+			"</table>";
+		
+		return innerHtml;
+	}
+
+	function getPlayer(position) {
+		var playerList = dataManager.allPlayers;
+		if (position > 6) {
+			playerList = dataManager.allOpponents;
+		}
+		var gameState = dataManager.gameStates[dataManager.game.currentGameState];
+		if (gameState != undefined) {
+			var player = playerList[gameState["position_" + position]];
+			if (player != undefined) {
+				return player.firstName + " " + player.lastName;
+			}
+		}
+		return "?";
+	}
+	
+	function resize() {
+		var relevantDiv = document.getElementById(this.targetDivId);
+		var canvas = document.getElementById("RotationAndScoreCanvas");
+		canvas.setAttribute('width', $(relevantDiv).width() + 10);
+		canvas.setAttribute('height', $(relevantDiv).height() + 20);
+	}
+	this.resize = resize;
+	
+	/* 
+	 * This is to actually do any required long running tasks.  This is when 
+	 * we're going to be shown.
+	 */ 
+	function show() {
+		if (this.shown && this.valid) {
+			return;
+		}
+		
+		var relevantDiv = document.getElementById(this.targetDivId);
+		if (!this.drawn) {
+			$(relevantDiv).append("<div id='" + this.targetDivId + "-court'></div>");
+		}
+		
+		/*
+		 * Populate the DIV with Score Info!
+		 */
+		var innerHtml = "";
+		
+		var gameState = dataManager.gameStates[dataManager.game.currentGameState];
+		if (gameState == undefined) {
+			innerHtml = appendScore(0, 0);
+		} else {
+			innerHtml = appendScore(gameState.ourScore, gameState.theirScore);
+		}
+		
+		/*
+		 * Populate the DIV with rotation info!
+		 */
+		var height = 360;
+		innerHtml += "<table class='court' style='padding:0px' cellspacing='0'>" +
+			"<tr class='opponent-backrow'><td>" + getPlayer(7) + "</td><td>" + getPlayer(12) + "</td><td>" + getPlayer(11) + "</td></tr>" + 
+			"<tr class='opponent-frontrow'><td>" + getPlayer(8) + "</td><td>" + getPlayer(9) + "</td><td>" + getPlayer(10) + "</td></tr>" + 
+			"<tr class='our-frontrow'><td>" + getPlayer(4) + "</td><td>" + getPlayer(3) + "</td><td>" + getPlayer(2) + "</td></tr>" + 
+			"<tr class='our-backrow'><td>" + getPlayer(5) + "</td><td>" + getPlayer(6) + "</td><td>" + getPlayer(1) + "</td></tr>" + 
+			"</table><div style='clear:both'></div>";
+		
+		$("#" + this.targetDivId + "-court").html(innerHtml);
+		
+		if (!this.drawn && (typeof StatEasyCanvas != "undefined")) {
+			$(relevantDiv).append(
+				"<canvas id='RotationAndScoreCanvas' style='position:absolute;left: 0px; top: 0px;'></canvas>" +
+				"<input type='submit' id='RotationAndScoreCalibrate' value='Calibrate this drawing area' style='position:absolute;bottom:15px;left:15px'/>"
+			);
+			setTimeout(function () {
+				// The Owner DIV has 5px of padding on either side = +10px
+				new StatEasyCanvas("#RotationAndScoreCanvas", $(relevantDiv).width() + 10, $(relevantDiv).height() + 20);
+				$("#RotationAndScoreCalibrate").click(function (jsEvent) {
+					$("#RotationAndScoreCalibrate").hide(500);
+					StatEasyCanvas.enterCalibrationMode();
+					jsEvent.preventDefault();
+				});
+			}, 500);
+		}
+		
+		this.shown = true;
+		this.valid = true;
+		this.drawn = true;
+		
+	}
+	this.show = show;
+	
+	/*
+	 * If we kicked off any background processes, now would be the time to stop 
+	 * them since we're about to go away.
+	 */
+	function stopShowing() {
+	}
+	this.stopShowing = stopShowing;
+	
+}
+
+
+</script>
+<style type="text/css">
+#RotationAndScoreLiveView_Div {
+	background-color: #61995E;
+}
+
+#RotationAndScoreLiveView_Div table {
+	float: left;
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+.court {
+	background-color: #E19B4E;
+	border: 2px solid white;
+	height: 360px;
+	width: 180px;
+	padding: 0;
+	-moz-box-shadow: 1px 1px 6px #000;
+	text-align: center;
+}
+	
+.opponent-backrow td {
+	border-bottom: 2px solid white;
+	height: 120px;
+}
+	
+.opponent-frontrow td {
+	border-bottom: 2px solid black;
+	height: 60px;
+}
+	
+.our-frontrow td {
+	border-bottom: 2px solid white;
+	height: 60px;
+}
+	
+.our-backrow td {
+	height: 120px;
+}
+</style>
+
+<script type="text/javascript" defer="defer">
+/*
+ * Required for all LiveViews
+ */
+var classname = "ShotChartLiveView";
+var version = 1.1;
+
+/*
+ *  Everyone should hold onto their div.  It's your workpad to show off your
+ *  view to the world!
+ */ 
+function ShotChartLiveView(myTargetDivId, dataManager) {
+	var self = this;
+
+	self.targetDivId = myTargetDivId;
+	
+	self.shown = false;
+	self.valid = false;
+	
+	var canvasEl;
+	var ctx;
+	var scalingFactor;
+	var centerPlayArea = {};
+	
+	/* 
+	 * Do some quick setup.  Should not be long running, we don't want to delay 
+	 * other LiveViews.  This will be called on page startup.  This might not be
+	 * necessary, since any non-long running tasks should really be done in the 
+	 * constructor.  Or maybe we execute these after the window is done being 
+	 * displayed
+	 */
+	function prepareToShow() {
+	}
+	this.prepareToShow = prepareToShow;
+	
+	function invalidate() {
+		self.valid = false;
+	}
+	this.invalidate = invalidate;
+	
+	function resize(fullscreen) {
+		var offset = $("#" + self.targetDivId).offset();
+		var width = window.innerWidth - offset.left - 30;
+		var height = window.innerHeight - offset.top - 40;
+		
+		if (height < 500) {
+			height = 500;
+		}
+		
+		if (!fullscreen) {
+			$("#" + self.targetDivId).width(width);
+			$("#" + self.targetDivId).height(height);
+		} else {
+			$("#" + self.targetDivId).width("auto");
+			$("#" + self.targetDivId).height("100%");
+			
+			width = $("#" + self.targetDivId).width();
+			height = $("#" + self.targetDivId).height();
+		}
+		
+		self.valid = false;
+	}
+	
+	function resizeAndShow(fullscreen) {
+		resize(fullscreen);
+		show();
+	}
+	this.resize = resizeAndShow;
+	
+	var image = {
+		url : '/images/VolleyballCourt.svg',
+		height : 886,
+		width : 567,
+		object : undefined,
+	};
+	var displayArea = {
+		x : 30,
+		y : 100,
+		width : 507,
+		height : 686,
+	}
+	
+	/* 
+	 * This is to actually do any required long running tasks.  This is when 
+	 * we're going to be shown.
+	 */ 
+	function show() {
+		if (self.shown && self.valid) {
+			return;
+		}
+		
+		if (!self.shown) {
+			$("#" + self.targetDivId).css("background-color", "#61995E");
+			$("#" + self.targetDivId).append("<audio  id='" + self.targetDivId + "_audio' preload='auto'><source src='/images/alert.oga' type='audio/ogg'/><source src='/images/alert.mp3' type='audio/mpeg'/></audio>");
+			$("#" + self.targetDivId).append("<div id='" + self.targetDivId + "' onClick='document.getElementById(\"" + self.targetDivId + "_audio\").play()' class='infoBar'><div>Shot Chart</div></div>");
+			$("#" + self.targetDivId).append("<canvas id='" + self.targetDivId + "_canvas' style='position:absolute;left: 1px; top: 31px;'></canvas>");
+			
+			resize();
+			
+			canvasEl = document.getElementById(self.targetDivId + "_canvas");
+			ctx = canvasEl.getContext('2d');
+			
+			$(window).resize(function () {
+				resizeAndShow();
+			});
+			
+			for (var i in allPlayers) {
+				allPlayers[i].registerNotificationFor(Timeline.JUST_HAPPENED, enterPointCollectionMode);
+			}
+			dataManager.registerForNotification(DataManager.DELETE, manageEditsAndDeletions);
+			dataManager.registerForNotification(DataManager.EDIT, manageEditsAndDeletions);
+		}
+		
+		if (!self.valid) {
+			var width = $("#" + self.targetDivId).width() + 10;
+			var height = $("#" + self.targetDivId).height() - 10;
+			$(canvasEl).attr("width", width);
+			$(canvasEl).attr("height", height);
+			
+			$(".infoBar", "#" + self.targetDivId).width(width - 20);
+			
+			if ((width / displayArea.width) > (height / displayArea.height)) {
+				scalingFactor = height / displayArea.height;
+			} else {
+				scalingFactor = width / displayArea.width;
+			}
+
+			ctx.clearRect(0, 0, width, height);
+			
+			var centerOffset = width / 2 - (displayArea.width * scalingFactor) / 2;
+			centerPlayArea.x = width / 2;
+			centerPlayArea.y = (image.height / 2 - displayArea.y) * scalingFactor;
+			
+			if (image.object == undefined) {
+				image.object = new Image();  
+				image.object.onload = function(){  
+					ctx.drawImage(image.object, displayArea.x, displayArea.y, displayArea.width, displayArea.height, centerOffset, 0, displayArea.width * scalingFactor, displayArea.height * scalingFactor);
+					
+					determineModeAndDraw();
+			    };  
+			    image.object.src = image.url; // Set source path
+			} else {
+				ctx.drawImage(image.object, displayArea.x, displayArea.y, displayArea.width, displayArea.height, centerOffset, 0, displayArea.width * scalingFactor, displayArea.height * scalingFactor);
+				
+				determineModeAndDraw();
+			}
+		}
+		
+		self.shown = true;
+		self.valid = true;
+	}
+	this.show = show;
+	
+	function manageEditsAndDeletions(data) {
+		for (var id in data.deletedStats) {
+			if ((collectingInfoFor != null) && (collectingInfoFor.getId() == id)) {
+				// What if the stat is deleted?  Do we go back to displaying the location info?
+				modifyCollectingInfoFor(data.allStats[0]);
+				return;
+			}
+		}
+	}
+	
+	function universalToLocal(universal) {
+		var local = {};
+		local.x = universal.x * scalingFactor + centerPlayArea.x;
+		local.y = universal.y * scalingFactor + centerPlayArea.y;
+		
+		return local;
+	}
+	
+	function localToUniversal(localX, localY) {
+		var universalX = (localX - centerPlayArea.x) / scalingFactor;
+		var universalY = (localY - centerPlayArea.y) / scalingFactor;
+		
+		return [universalX, universalY];
+	}
+	
+	function determineModeAndDraw() {
+		var i = dataManager.allStats.length - 1;
+		while (0 <= i) {
+			var stat = dataManager.allStats[i];
+			var statType = dataManager.statTypes[stat.getStatType()];
+			if (statType.locationAware) {
+				if (stat.getLocationData().length == 0) {
+					enterPointCollectionMode(stat);
+				} else {
+					drawAllLocationData();
+				}
+				return;
+			}
+			i--;
+		}
+	}
+	
+	// Modes
+	function exitMode() {
+		var canvas = $("#" + self.targetDivId + "_canvas");
+		
+		collectingInfoFor = undefined;
+		
+		canvas.unbind("mousedown");
+		canvas.unbind("mouseup");
+		canvas.unbind("mousemove");
+		canvas.unbind("touchstart");
+		canvas.unbind("touchmove");
+		canvas.unbind("touchend");
+	}
+	
+	var pointData = [];
+	var collectingInfoFor = undefined;
+	function enterPointCollectionMode(stat) {
+		if (collectingInfoFor != undefined) {
+			// Redraw the points already collected
+			for (var i in pointData) {
+				var universal = {
+						x : pointData[i][0],
+						y : pointData[i][1],
+				}
+				var local = universalToLocal(universal);
+				drawPointClick(local.x, local.y, collectingInfoFor);
+			}
+			return;
+		}
+		
+		pointData = [];
+		
+		modifyCollectingInfoFor(stat);
+	}
+	
+	function modifyCollectingInfoFor(stat) {
+		collectingInfoFor = stat;
+		
+		$(".infoBar div", "#" + self.targetDivId).html("Collection Mode: " + stat.getName());
+		document.getElementById(self.targetDivId + "_audio").play();
+		
+		var canvas = $("#" + self.targetDivId + "_canvas");
+		
+		canvas.unbind("mousedown");
+		canvas.mousedown(canvasMousedown(stat));
+	}
+	
+	function canvasMousedown(stat) {
+		var statType = dataManager.statTypes[stat.getStatType()];
+		
+		return function (event) {
+			var canvas = $("#" + self.targetDivId + "_canvas");
+			var offset = canvas.offset();
+			var clickX = event.pageX - offset.left; 
+			var clickY = event.pageY - offset.top;
+			
+			drawPointClick(clickX, clickY, stat);
+			
+			var newLength = pointData.push(localToUniversal(clickX, clickY));
+			
+			if (newLength == statType.pointCount) {
+				// Submit location information
+				dataManager.setLocationData(stat, pointData);
+				exitMode();
+			}
+		}
+	}
+	
+	function drawAllLocationData() {
+		$(".infoBar div", "#" + self.targetDivId).html("Shot Chart");
+		
+		var i = dataManager.allStats.length - 1;
+		while (0 <= i) {
+			var stat = dataManager.allStats[i];
+			if (stat.getLocationData().length > 0) {
+				drawLocationData(stat);
+			}
+			i--;
+		}
+	}
+	
+	function drawLocationData(stat) {
+		var statType = dataManager.statTypes[stat.getStatType()];
+		if (statType.pointCount == 1) {
+			var local = universalToLocal(stat.getLocationData()[0]);
+			drawPointClick(local.x, local.y, stat);
+		} else {
+			for (var i = 1; i < stat.getLocationData().length; i++) {
+				var localPrev = universalToLocal(stat.getLocationData()[i - 1]);
+				var local = universalToLocal(stat.getLocationData()[i]);
+				drawLine(localPrev.x, localPrev.y,
+						 local.x, local.y,
+						 stat);
+			}
+		}
+	}
+	
+	function drawLine(startX, startY, endX, endY, stat) {
+		var statType = dataManager.statTypes[stat.getStatType()];
+		ctx.strokeStyle = stat.getColor();
+		ctx.lineWidth = statType.lineWidth ? statType.lineWidth : 2;
+		ctx.beginPath();
+		ctx.moveTo(startX, startY);
+		ctx.lineTo(endX, endY);
+		ctx.stroke();
+	}
+	
+	function drawPointClick(clickX, clickY, stat) {
+		var statType = dataManager.statTypes[stat.getStatType()];
+		ctx.beginPath();
+		ctx.strokeStyle = stat.getColor();
+		ctx.lineWidth = statType.lineWidth ? statType.lineWidth : 2;
+		if ((statType.shape == undefined) || (statType.shape == "CIRCLE") || (statType.shape == "POINT")) {
+			ctx.arc(clickX, clickY, 5, 0, 2 * Math.PI, false);
+		}
+		ctx.stroke();
+	}
+	
+	/*
+	 * If we kicked off any background processes, now would be the time to stop 
+	 * them since we're about to go away.
+	 */
+	function stopShowing() {
+	}
+	this.stopShowing = stopShowing;
+}
+
+
+</script>
+<style type="text/css">
+#ShotChartLiveView_Div {
+	background-color: #61995E;
+}
+
+#ShotChartLiveView_Div .infoBar {
+	height : 30px;
+	position : absolute;
+	left : 1px;
+	top : 1px;
+	background-image: -webkit-linear-gradient( #DDD, #BBB);
+	background-image: -moz-linear-gradient( #DDD, #BBB);
+	background-image: -ms-linear-gradient( #DDD, #BBB);
+	background-image: -o-linear-gradient( #DDD, #BBB);
+	background-image: linear-gradient( #DDD, #BBB);
+	text-shadow: 0 1px 0 #EEE;
+	padding-left : 20px;
+}
+
+#ShotChartLiveView_Div .infoBar div {
+	height : 30px;
+	line-height: 30px;
+	text-align: center;
+}
+</style>
+
+<script type="text/javascript" defer="defer">
+/*
+ * Required for all LiveViews
+ */
+var classname = "MaxPrepsLiveView";
+var version = 1.0;
+
+function inc(filename) {
+	if (typeof document === 'undefined') {
+		return;
+	}
+	
+	var body = document.getElementsByTagName('body').item(0);
+	script = document.createElement('script');
+	script.src = filename;
+	script.type = 'text/javascript';
+	body.appendChild(script);
+}
+
+inc("/js/FileSaver.js");
+
+/*
+ *  Everyone should hold onto their div.  It's your workpad to show off your
+ *  view to the world!
+ */ 
+function MaxPrepsLiveView(myTargetDivId, dataManager) {
+	var self = this;
+
+	self.targetDivId = myTargetDivId;
+	
+	self.shown = false;
+	self.valid = false;
+
+	var currentlySelectedGroupingId;
+	var currentlySelectedGroupingName;
+	
+	/* 
+	 * Do some quick setup.  Should not be long running, we don't want to delay 
+	 * other LiveViews.  This will be called on page startup.  This might not be
+	 * necessary, since any non-long running tasks should really be done in the 
+	 * constructor.  Or maybe we execute these after the window is done being 
+	 * displayed
+	 */
+	function prepareToShow() {
+	}
+	this.prepareToShow = prepareToShow;
+	
+	function invalidate() {
+		self.valid = false;
+	}
+	this.invalidate = invalidate;
+	
+	/* 
+	 * This is to actually do any required long running tasks.  This is when 
+	 * we're going to be shown.
+	 */ 
+	function show() {
+		if (self.shown && self.valid) {
+			return;
+		}
+		
+		if (!self.shown) {
+			var myDiv = $("#" + self.targetDivId);
+		
+			var innerHtml = "<div class='viewList'>Generate MaxPreps report for <select id='groupingId'>";
+			var someGrouping = dataManager.groupings[dataManager.game.associatedEvent];
+			currentlySelectedGroupingId = someGrouping.id;
+			currentlySelectedGroupingName = someGrouping.name;
+			while (someGrouping != undefined) {
+				innerHtml += "<option value='" + someGrouping.id + "'>" + someGrouping.name + "</option>";
+				someGrouping = dataManager.groupings[someGrouping.parentGroup];
+			}
+			innerHtml += "</select></div><div class='content' style='display:none'></div><pre class='toSubmit'></pre><input type='button' class='saveMe' value='Save As...'/>";
+			
+			myDiv.html(innerHtml);
+			
+			$("#" + self.targetDivId + " .saveMe").click(function () {
+				var textContent = $("#" + self.targetDivId + " .toSubmit").text();
+				textContent = "833973a5-2a74-4c4c-8c70-addbd633fb2d\n" + textContent;
+				var blob = new Blob([textContent], {type: "text/plain;charset=utf-8"});
+				
+				var fileName = currentlySelectedGroupingName.replace(/[^\d.A-Za-z]/g, "");
+				
+				saveAs(blob, fileName + ".StatEasy.txt");
+			});
+			
+			$("#" + self.targetDivId + " #groupingId").change(function () {
+				currentlySelectedGroupingId = $(this).val();
+				currentlySelectedGroupingName = $(this).find(":selected").text();
+				self.valid = false;
+				show();
+			});
+		}
+		
+		if (dataManager.allViews.length > 0) {
+			var urlVariables = {
+				viewByName: "MaxPreps",
+				sportId: dataManager.sportId,
+				egId: currentlySelectedGroupingId,
+				format: 'ajax'
+			};
+			
+			$.get(
+				dataManager.viewUrl, 
+				urlVariables,
+				function (data, textStatus) {
+					$('#' + myTargetDivId + ' .content').html("");
+					$('#' + myTargetDivId + ' .toSubmit').html("");
+					var resultingContent = "";
+					
+					var resultingData = $(data);
+					var table;
+					for (var i = 0; i < resultingData.length; i++) {
+						if ($(resultingData[i]).hasClass("statTable")) {
+							table = resultingData[i];
+							break;
+						}
+					}
+					
+					var tHeadRows = table.tHead.rows;
+					resultingContent += pullTextFromRows(tHeadRows);
+					
+					var tBodyRows = table.tBodies[0].rows;
+					resultingContent += pullTextFromRows(tBodyRows);
+					
+					$('#' + myTargetDivId + ' .toSubmit').append(resultingContent);
+					$('#' + myTargetDivId + ' .content').append(data);
+				}
+			).fail(function () {
+				$('#' + myTargetDivId + ' .toSubmit').append("No MaxPreps report defined for this sport");
+			});
+		}
+		
+		self.shown = true;
+		self.valid = true;
+	}
+	this.show = show;
+	
+	function pullTextFromRows(rows) {
+		var resultingContent = "";
+		
+		for (var i = 0; i < rows.length; i++) {
+			var row = rows[i];
+			var $row = $(row);
+			if (!$row.hasClass("stickyHeader") && !$row.hasClass("columnGroup")) {
+				for (var j = 1; j < row.cells.length; j++) {
+					if (j > 1) {
+						resultingContent += "|";
+					}
+					var trimmedContent = $.trim(row.cells[j].textContent);
+					if (trimmedContent == "#") {
+						trimmedContent = "Jersey";
+					}
+					resultingContent += trimmedContent;
+				}
+				resultingContent += "\n";
+			}
+		}
+		
+		return resultingContent;
+	}
+	
+	/*
+	 * If we kicked off any background processes, now would be the time to stop 
+	 * them since we're about to go away.
+	 */
+	function stopShowing() {
+	}
+	this.stopShowing = stopShowing;
+}
+
+</script>
+<style type="text/css">
+
+</style>
+
+<script type="text/javascript" defer="defer">
+/*
+ * Required for all LiveViews
+ */
+var classname = "HelpLiveView";
+var version = 2.9;
+
+/*
+ *  Everyone should hold onto their div.  It's your workpad to show off your
+ *  view to the world!
+ */ 
+function HelpLiveView(myTargetDivId, dataManager) {
+	this.targetDivId = myTargetDivId;
+	
+	this.shown = false;
+	this.valid = false;
+
+	/* 
+	 * Do some quick setup.  Should not be long running, we don't want to delay 
+	 * other LiveViews.  This will be called on page startup.  This might not be
+	 * necessary, since any non-long running tasks should really be done in the 
+	 * constructor.  Or maybe we execute these after the window is done being 
+	 * displayed
+	 */
+	function prepareToShow() {}
+	this.prepareToShow = prepareToShow;
+	
+	function invalidate() {
+		this.valid = false;
+	}
+	this.invalidate = invalidate;
+	
+	function constructPlayerTable(playerSource, title, seasonId) {
+		var link = "";
+		var endLink = "";
+		if (seasonId != undefined) {
+			link = "<a href='/configure/seasonForm.htm?id=" + seasonId + "' title='Click to edit season'>";
+			endLink = "</a>";
+		}
+		var ourPlayers = "<div class='tableContainer'><span style='font-weight: bold; font-size: large'>" + link + title + endLink + "</span>" +
+			"<table class='striped tablesorter cellspacing'>" +
+			"<thead><tr><th>First</th><th>Last</th><th>Number</th><th>Shortcut</th></tr></thead><tbody>";
+		
+		var playerList = [];
+		for (var i in playerSource) {
+			playerList.push(playerSource[i]);
+		}
+		playerList.sort(function (a, b) {
+			return a.lastName.localeCompare(b.lastName);
+		});
+		
+		for (player in playerList) {
+			var number = playerList[player].number;
+			var shortcut = playerList[player].shortcut;
+			ourPlayers += "<tr><td>" + playerList[player].firstName + "</td><td>" + playerList[player].lastName + "</td><td>" + number + "</td><td>" + shortcut + "</td></tr>";
+		}
+		ourPlayers += "</tbody></table></div>";
+		
+		return ourPlayers;
+	}
+	
+	function formatStatInfo(statInfo) {
+		var parseInformation = "";
+		
+		if (statInfo.statEffectProvided) {
+			parseInformation += "<span class='statEffectProvided'>";
+		}
+		
+		parseInformation += "(";
+		
+		if (statInfo.textData != null) {
+			parseInformation += statInfo.textData;
+		} else {
+			switch(statInfo.type) {
+				case 'player':
+					parseInformation += "Player";
+					break;
+				case 'numerical':
+					parseInformation += "Data Point";
+					break;
+				case 'opponent':
+					parseInformation += "Opponent";
+					break;
+				case 'time':
+					parseInformation += "Time";
+					break;
+			}
+			if ((statInfo.extraInformation != undefined) && 
+				(statInfo.extraInformation.length > 0)) 
+			{
+				parseInformation += " values: ";
+				for (var j in statInfo.extraInformation) {
+					if (j != 0) {
+						parseInformation += ", ";
+					}
+					parseInformation += statInfo.extraInformation[j].shortcut;
+				}
+				if (statInfo.allDigitsAllowed) {
+					parseInformation += ", and all digits";
+				}
+			}
+		}
+		
+		parseInformation += ")";
+		
+		if (statInfo.statEffectProvided) {
+			parseInformation += "</span>";
+		}
+		
+		parseInformation += " ";
+		
+		return parseInformation;
+	}
+	
+	function constructStatTable(title) {
+		var statTable = "<div class='tableContainer'><span style='font-weight: bold; font-size: large'>" + title + "</span>" +
+			"<table class='striped tablesorter cellspacing'>" +
+			"<thead><tr><th>Name</th><th>Shortcut</th><th>Parse Information</th></tr></thead><tbody>";
+		
+		var stats = [];
+		for (var stat in dataManager.statTypes) {
+			stats.push(dataManager.statTypes[stat]);
+		}
+		stats.sort(function (a, b) {
+			return a.name.localeCompare(b.name);
+		});
+		
+		for (var stat in stats) {
+			var name = stats[stat].name;
+			var shortcut = stats[stat].maskedShortcut;
+			var parseInformation = "";
+			for (var i in stats[stat].fullSentence) {
+				if ((stats[stat].firstStatEffectIndex == undefined) || (i < stats[stat].firstStatEffectIndex)) {
+					var statInfo = stats[stat].fullSentence[i];
+					if (statInfo.textOnly) {
+						parseInformation += statInfo.textData + " ";
+					} else {
+						parseInformation += formatStatInfo(statInfo);
+					}
+				}
+			}
+			
+			statTable += "<tr><td>" + name + "</td><td>" + shortcut + "</td><td>" + parseInformation + "</td></tr>";
+		}
+		
+		statTable += "</tbody></table></div>";
+		
+		return statTable;
+	}
+	
+	/* 
+	 * This is to actually do any required long running tasks.  This is when 
+	 * we're going to be shown.
+	 */ 
+	function show() {
+		if (this.shown && this.valid) {
+			return;
+		}
+		
+		var relevantDiv = document.getElementById(this.targetDivId);
+		/*
+		 * Populate the DIV with Help Info!
+		 */
+		
+		var innerHtml = "<table><tr>";
+		innerHtml += "<td style='vertical-align:top;'>" + constructStatTable("Available Stats:") + "</td>";
+		innerHtml += "<td style='vertical-align:top;'>" + constructPlayerTable(dataManager.allPlayers, dataManager.game.ourTeamName + ":", dataManager.game.ourSeasonId);
+		innerHtml += constructPlayerTable(dataManager.allOpponents,  dataManager.game.theirTeamName + ":", dataManager.game.theirSeasonId) + "</td>";
+		innerHtml += "</tr></table>";
+		
+		relevantDiv.innerHTML = innerHtml;
+		
+		$(".tablesorter").tablesorter().stickyHeaders();
+		
+		this.shown = true;
+		this.valid = true;
+	}
+	this.show = show;
+	
+	/*
+	 * If we kicked off any background processes, now would be the time to stop 
+	 * them since we're about to go away.
+	 */
+	function stopShowing() {
+	}
+	this.stopShowing = stopShowing;
+}
+
+
+</script>
+<style type="text/css">
+
+</style>
+
+
+<script type="text/javascript">
+var crudUrl = '/take/gameStats.htm';
+var dataUrl = '/video/video.htm';
+var viewUrl = '/reports.htm';
+	
+$(document).ready(function () {
+	
+	new DataManager(crudUrl, dataUrl, undefined, false, function (newDataManager) {
+		listenForStats("/ws?clazz=stats", {}, newDataManager, null, "ws");
+		
+		newDataManager.viewer = new EventViewer("input", newDataManager, {
+			returnFocus: $("#statsToParse"),
+		});
+
+		if (!!$('#statsToParse').length) {
+			new LiveParser('#statsToParse', 187, newDataManager);
+		}
+		
+		newDataManager.viewUrl = viewUrl;
+		LiveViewManager.drawLiveViewContainer(".liveViewContainer", [
+			
+				{
+						className: 'ViewLiveView',
+						displayName: 'Stats',
+						object: new ViewLiveView('ViewLiveView_Div', newDataManager)
+				},
+			
+				{
+						className: 'VideoLiveView',
+						displayName: 'Video',
+						object: new VideoLiveView('VideoLiveView_Div', newDataManager)
+				},
+			
+				{
+						className: 'RotationAndScoreLiveView',
+						displayName: 'Score',
+						object: new RotationAndScoreLiveView('RotationAndScoreLiveView_Div', newDataManager)
+				},
+			
+				{
+						className: 'ShotChartLiveView',
+						displayName: 'Shot Chart',
+						object: new ShotChartLiveView('ShotChartLiveView_Div', newDataManager)
+				},
+			
+				{
+						className: 'MaxPrepsLiveView',
+						displayName: 'MaxPreps',
+						object: new MaxPrepsLiveView('MaxPrepsLiveView_Div', newDataManager)
+				},
+			
+				{
+						className: 'HelpLiveView',
+						displayName: 'Help',
+						object: new HelpLiveView('HelpLiveView_Div', newDataManager)
+				},
+			 
+		]);
+		newDataManager.registerForNotification(DataManager.ADD,    LiveViewManager.notifyNewData);
+		newDataManager.registerForNotification(DataManager.EDIT,   LiveViewManager.notifyNewData);
+		newDataManager.registerForNotification(DataManager.DELETE, LiveViewManager.notifyNewData);
+		newDataManager.registerForNotification(DataManager.ADD_TYPE, LiveViewManager.notifyNewData);
+	}).getAllDataForEvent(187);
+
+});
+</script>
+
+
+
+
+</div>
+</div></div>
+
+	
+	<!-- Hack for the footer to follow -->
+	<div id="push"></div>
+</div>
+
+<div id="footer">StatEasy Release #29, registered to kingleo008@yahoo.com. <br/>Copyright 2012 <a href="http://www.ressq.com/">RessQ Technologies Inc.</a>
+<div id="logo"><img src="/images/flogo.png" /></div>
+</div>
+
+</body>
+</html>

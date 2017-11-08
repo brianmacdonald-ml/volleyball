@@ -1,0 +1,109 @@
+STATCOLUMN|NAME|DEFINITION|COLUMNINDEX|TABLENUMBER|FORMATTYPE|FORMATPATTERN|STATVIEW
+1|K|count(k)|1|1|number||1
+2|E|count(e)|2|1|number||1
+3|Att|count([k,e,at])|3|1|number||1
+4|PCT|(count(k)-count(e))/count([k,e,at])|4|1|number|#0.000|1
+6|A|count(sa)|13|1|number||1
+7|E|count(se)|14|1|number||1
+9|#|count([sat,sa,se])|15|1|number||1
+11|Digs|count(d)|16|1|number||1
+12|MDig|count(md)|17|1|number||1
+13|SB|count(sb)|18|1|number||1
+14|DB|count(db,*)|19|1|number||1
+16|Pass Avg|sum(p)/count(p)|7|1|number|#0.00|1
+17|#|count(p)|8|1|number||1
+18|RE|count(p)?[data[1]=0]|9|1|number||1
+19|FB|count(f)|10|1|number|[null]|1
+20|FB Avg|sum(f)/count(f)|11|1|number|[null]|1
+21|BT|count(bt)|20|1|number|[null]|1
+23|AttacksAttempts|count([k,at,e])|1|1|number|[null]|2
+24|AttacksKills|count(k)|2|1|number|[null]|2
+25|AttacksErrors|count(e)|3|1|number|[null]|2
+26|BlocksSolo|count(sb)|4|1|number|[null]|2
+27|BlocksAssists|count([db,tb],*)|5|1|number|[null]|2
+28|BlocksErrors|count(be)|6|1|number|[null]|2
+29|Digs|count(d)|7|1|number|[null]|2
+30|DigsErrors|count(md)|8|1|number|[null]|2
+31|BallHandlingAttempt|count([s,a])|9|1|number|[null]|2
+32|Assists|count(a)|10|1|number|[null]|2
+33|AssistsErrors|count(bhe)|11|1|number|[null]|2
+34|TotalServes|count([sat,sa,se])|12|1|number|[null]|2
+35|ServingAces|count(sa)|13|1|number|[null]|2
+36|ServingErrors|count(se)|14|1|number|[null]|2
+37|ServingReceivedSuccess|count(p)?[data[1]>0]|15|1|number|[null]|2
+38|ServingReceivedErrors|count(p)?[data[1]=0]|16|1|number|[null]|2
+39|K|count(k)?[startingState[hasServe]=weDo]|1|1|number|[null]|3
+40|E|count(e)?[startingState[hasServe]=weDo]|2|1|number|[null]|3
+41|TA|count([e,at,k])?[startingState[hasServe]=weDo]|3|1|number|[null]|3
+42|PCT|(count(k)?[startingState[hasServe]=weDo]-count(e)?[startingState[hasServe]=weDo])/count([e,at,k])?[startingState[hasServe]=weDo]|4|1|number|[null]|3
+43|A|count(a)?[startingState[hasServe]=weDo]|5|1|number|[null]|3
+44|D|count(d)?[startingState[hasServe]=weDo]|6|1|number|[null]|3
+45|MD|count(md)?[startingState[hasServe]=weDo]|7|1|number|[null]|3
+46|SB|count(sb)?[startingState[hasServe]=weDo]|8|1|number|[null]|3
+47|DB|count(db,*)?[startingState[hasServe]=weDo]|9|1|number|[null]|3
+48|TB|count(tb,*)?[startingState[hasServe]=weDo]|10|1|number|[null]|3
+49|K|count(k)?[startingState[hasServe]=theyDo]|11|1|number|[null]|3
+50|E|count(e)?[startingState[hasServe]=theyDo]|12|1|number|[null]|3
+51|TA|count([e,at,k])?[startingState[hasServe]=theyDo]|13|1|number|[null]|3
+52|PCT|(count(k)?[startingState[hasServe]=theyDo]-count(e)?[startingState[hasServe]=theyDo])/count([e,at,k])?[startingState[hasServe]=theyDo]|14|1|number|[null]|3
+53|A|count(a)?[startingState[hasServe]=theyDo]|15|1|number|[null]|3
+54|D|count(d)?[startingState[hasServe]=theyDo]|16|1|number|[null]|3
+55|MD|count(md)?[startingState[hasServe]=theyDo]|17|1|number|[null]|3
+56|SB|count(sb)?[startingState[hasServe]=theyDo]|18|1|number|[null]|3
+57|DB|count(db,*)?[startingState[hasServe]=theyDo]|19|1|number|[null]|3
+58|TB|count(tb,*)?[startingState[hasServe]=theyDo]|20|1|number|[null]|3
+59|Rating|sum(p)/count(p)|1|1|number|[null]|4
+60|#|count(p)|2|1|number|[null]|4
+61|PP%|count(p)?[data[1]=3]/count(p)|3|1|number|[null]|4
+62|3|count(p)?[data[1]=3]|4|1|number|[null]|4
+63|2|count(p)?[data[1]=2]|5|1|number|[null]|4
+64|1|count(p)?[data[1]=1]|6|1|number|[null]|4
+65|0/RE|count(p)?[data[1]=0]|7|1|number|[null]|4
+66|D|count(d)|8|1|number|[null]|4
+67|MD|count(md)|9|1|number|[null]|4
+68|D -> K|count(d)?[statAt(1, k)]+count(d)?[statAt(2, k)]|10|1|number|[null]|4
+69|DK%|(count(d)?[statAt(1, k)]+count(d)?[statAt(2, k)])/count(d)|11|1|number|[null]|4
+70|Kill|count(k)|1|1|number|[null]|5
+71|Blocks|count(sb)+count(db,*)+count(tb,*)|2|1|number|[null]|5
+72|Aces|count(sa)|3|1|number|[null]|5
+73|Total|count(k)+count(sb)+count(db,*)+count(tb,*)+count(sa)|4|1|number|[null]|5
+74|Passing|count(p)?[data[1]=0]|5|1|number|[null]|5
+75|Hitting|count(e)|6|1|number|[null]|5
+76|Serving|count(se)|7|1|number|[null]|5
+77|BHE|count(bhe)|8|1|number|[null]|5
+78|Net|count(be)|9|1|number|[null]|5
+79|Totals|count(p)?[data[1]=0]+count(e)+count(se)+count(bhe)+count(be)|10|1|number|[null]|5
+80|Diff|count(k)+count(sb)+count(db,*)+count(tb,*)+count(sa)-count(p)?[data[1]=0]-count(e)-count(se)-count(bhe)-count(be)|11|1|number|[null]|5
+81|K|count(k)?[statAt(-1, p)?[data[1]=3]]+count(k)?[statAt(-2, p)?[data[1]=3]]|1|1|number||6
+82|E|count(e)?[statAt(-1, p)?[data[1]=3]]+count(e)?[statAt(-2, p)?[data[1]=3]]|2|1|number||6
+83|TA|count([e,at,k])?[statAt(-1, p)?[data[1]=3]]+count([e,at,k])?[statAt(-2, p)?[data[1]=3]]|3|1|number||6
+84|PCT|(count(k)?[statAt(-1, p)?[data[1]=3]]+count(k)?[statAt(-2, p)?[data[1]=3]]-count(e)?[statAt(-1, p)?[data[1]=3]]-count(e)?[statAt(-2, p)?[data[1]=3]])/(count([e,at,k])?[statAt(-1, p)?[data[1]=3]]+count([e,at,k])?[statAt(-2, p)?[data[1]=3]])|4|1|number|[null]|6
+85|K|count(k)?[statAt(-1, p)?[data[1]=2]]+count(k)?[statAt(-2, p)?[data[1]=2]]|5|1|number|[null]|6
+86|E|count(e)?[statAt(-1, p)?[data[1]=2]]+count(e)?[statAt(-2, p)?[data[1]=2]]|6|1|number|[null]|6
+87|TA|count([e,at,k])?[statAt(-1, p)?[data[1]=2]]+count([e,at,k])?[statAt(-2, p)?[data[1]=2]]|7|1|number|[null]|6
+88|PCT|(count(k)?[statAt(-1, p)?[data[1]=2]]+count(k)?[statAt(-2, p)?[data[1]=2]]-count(e)?[statAt(-1, p)?[data[1]=2]]-count(e)?[statAt(-2, p)?[data[1]=2]])/(count([e,at,k])?[statAt(-1, p)?[data[1]=2]]+count([e,at,k])?[statAt(-2, p)?[data[1]=2]])|8|1|number|[null]|6
+89|K|count(k)?[statAt(-1, p)?[data[1]=1]]+count(k)?[statAt(-2, p)?[data[1]=1]]|9|1|number|[null]|6
+90|E|count(e)?[statAt(-1, p)?[data[1]=1]]+count(e)?[statAt(-2, p)?[data[1]=1]]|10|1|number|[null]|6
+91|TA|count([e,at,k])?[statAt(-1, p)?[data[1]=1]]+count([e,at,k])?[statAt(-2, p)?[data[1]=1]]|11|1|number|[null]|6
+92|PCT|(count(k)?[statAt(-1, p)?[data[1]=1]]+count(k)?[statAt(-2, p)?[data[1]=1]]-count(e)?[statAt(-1, p)?[data[1]=1]]-count(e)?[statAt(-2, p)?[data[1]=1]])/(count([e,at,k])?[statAt(-1, p)?[data[1]=1]]+count([e,at,k])?[statAt(-2, p)?[data[1]=1]])|12|1|number|[null]|6
+93|K|count(k)?[statAt(-1, d)]+count(k)?[statAt(-2, d)]|13|1|number|[null]|6
+94|E|count(e)?[statAt(-1, d)]+count(e)?[statAt(-2, d)]|14|1|number|[null]|6
+95|TA|count([e,at,k])?[statAt(-1, d)]+count([e,at,k])?[statAt(-2, d)]|15|1|number|[null]|6
+96|PCT|(count(k)?[statAt(-1, d)]+count(k)?[statAt(-2, d)]-count(e)?[statAt(-1, d)]-count(e)?[statAt(-2, d)])/(count([e,at,k])?[statAt(-1, d)]+count([e,at,k])?[statAt(-2, d)])|16|1|number|[null]|6
+97|K|count(k)?[statAt(-1, so)]+count(k)?[statAt(-2, so)]|17|1|number|[null]|6
+98|E|count(e)?[statAt(-1, so)]+count(e)?[statAt(-2, so)]|18|1|number|[null]|6
+99|TA|count([e,at,k])?[statAt(-1, so)]+count([e,at,k])?[statAt(-2, so)]|19|1|number|[null]|6
+100|PCT|(count(k)?[statAt(-1, so)]+count(k)?[statAt(-2, so)]-count(e)?[statAt(-1, so)]-count(e)?[statAt(-2, so)])/(count([e,at,k])?[statAt(-1, so)]+count([e,at,k])?[statAt(-2, so)])|20|1|number|[null]|6
+101|K|count(k)|1|1|number|[null]|7
+102|E|count(e)|2|1|number|[null]|7
+103|TA|count([at,k,e])|3|1|number|[null]|7
+104|PCT|(count(k)-count(e))/count([at,k,e])|4|1|number|[null]|7
+105|Success|count(sideout,*)|5|1|number|[null]|7
+106|Failure|count(nosideout,*)|6|1|number|[null]|7
+107|PCT|count(sideout,*)/(count([sideout,nosideout],*))|7|1|percent|[null]|7
+108|FBSO|count(k)?[startingState[firstAttempt]=Yes]|8|1|number|[null]|7
+109|N|count(n)|21|1|number|[null]|1
+110|OPK|count(opk)|5|1|number|[null]|1
+111|Ast|count(a)|6|1|number|[null]|1
+112|BHE|count(bhe)|12|1|number|[null]|1
+113|BE|count(be)|22|1|number|[null]|1

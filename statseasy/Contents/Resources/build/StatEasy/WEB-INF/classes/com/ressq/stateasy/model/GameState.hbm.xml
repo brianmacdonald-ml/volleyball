@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+	<class name="GameState" table="gamestates" batch-size="500">
+		<id name="id" column="gamestate" unsaved-value="null">
+			<generator class="native"/>
+		</id>
+	
+		<set name="allProperties" cascade="all" table="gamestate_gamestateproperties" fetch="join">
+			<key column="gamestate"/>
+			<many-to-many class="GameStateProperty" column="gamestateproperty"/>
+		</set>
+		
+		<property name="generatedHashCode">
+			<column name="hashCode"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

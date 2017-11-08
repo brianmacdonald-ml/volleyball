@@ -1,0 +1,67 @@
+/********************
+	Print View
+*******************/
+
+#header, #navigation, #buffer, #footer, input { display:none; }
+#container, #content { margin:0px; }
+div.middle { background-color:#fff; }
+div.middle { margin:0px; padding:0px; border: none}
+
+#innercontent {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+p {
+	display: none;
+}
+
+#innercontent > .middle > table {
+	padding-bottom: 0px;
+}
+
+#content #innercontent table.tablesorter thead .header {
+	background-image: none;
+	padding: 0px 2px;
+}
+#innercontent table .columngroup td {
+	padding: 0px 4px;
+	font-size: 10px;
+	font-weight: bold;
+}
+#innercontent table th, #innercontent table td {
+	padding: 1px 4px;
+	font-size: 10px;
+}
+.statTable a {
+	text-decoration: none;
+}
+h2.borderBelow {
+	display: none;
+}
+h2 {
+	font-size: 15px;
+}
+.viewList, .score, .liveViewMenu, .commonOptions {
+	display: none;
+}
+.activeContent {
+	border: none;
+}
+.separatorCol {
+	border-right: thin solid black;
+}
+.separatorTotalCol {
+	border-right: thin solid black;
+}
+table.striped thead tr:nth-child(2n), table.striped thead tr:nth-child(2n+1) {
+	background-color: white;
+	color: black;
+}
+table.striped tr:nth-child(2n + 1) {
+	background-image:url('images/stripe.gif');
+	-webkit-print-color-adjust:exact;
+}
+#innercontent table th {
+	border-bottom: 2px solid black;
+}

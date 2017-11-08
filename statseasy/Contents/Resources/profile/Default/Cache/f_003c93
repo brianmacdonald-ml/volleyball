@@ -1,0 +1,1251 @@
+
+
+
+
+
+
+
+
+
+
+<html>
+	<head>
+		<title>The StatEasy Content Creator</title>
+		<link rel="stylesheet" href="/css/tokens.css" type="text/css">
+		<link rel="stylesheet" href="/css/print.css" type="text/css" media="print">
+		<link rel="stylesheet" href="/css/jquery.autocomplete.css" type="text/css">
+
+		<script src="/js/jquery-1.6.1.js" type="text/javascript"></script>
+		<script src="/js/jquery.easing.1.3.js" type="text/javascript"></script>
+		<script src="/js/jquery.corners.min.js" type="text/javascript"></script>
+		<script src="/js/jquery.dropshadow.js" type="text/javascript"></script>
+		<script src="/js/jquery.autocomplete.js" type="text/javascript"></script>
+		
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		
+		<link rel="shortcut icon" href="/images/favicon_1.jpg" />
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				$(".autofocus").focus();
+			});
+		</script>
+		
+	</head>
+
+	<body>
+
+<div id="container">
+	<div id="header">
+		<img src="/images/logo.png" class="headerLogo" />
+		
+		<div id="gameType"><span id="gameTypeInnerText"><a href="/hello.htm" title="Return to the Welcome page." class="noUnderline">Logout</a></span></div>
+
+		
+		
+		<div id="sportUpdates"></div>
+	</div>
+	<div id="navigation">
+		
+		<ul id="launch">
+			<li class="main
+				 
+			"><a href="/launch.htm" title="Select an action from the StatEasy dashboard">Dashboard</a></li>
+		</ul>
+		<ul id="config">
+			<li class="main
+				
+					tabbed
+				 
+			">
+			
+			<a href="/configure/stats.htm" title="Configure your stats, reports, views, teams, or players">Configuration</a></li>
+		</ul>
+		<ul id="account">
+			<li class="main">
+			<a href="http://app.stateasy.com:80/" target="_blank">Social Sports Network</a>
+			</li>
+		</ul>
+		
+
+		
+
+	</div>
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#configuration").show();
+	});
+</script>
+
+<div id="configuration">
+	<div class="configLinks">
+	<a href="/configure/stats.htm" title="Edit existing statistics or create a new one">Stats</a> 
+	<a href="/configure/views.htm" title="Configure reports to analyze the statistics you have taken">Stat Reports</a> 
+	<a href="/configure/liveViews.htm" title="Configure the views you can see while taking statistics during a game">Live Views</a>  
+	<a href="/configure/teams.htm" title="Manage your teams and seasons">Teams</a> 
+	<a href="/configure/players.htm" title="Manage your players">Players</a> 
+	<a href="/configure/configure.htm" title="Import/Export Configurations">Advanced</a>
+	</div>
+</div>		
+
+<script type="text/javascript" src="/js/jquery.metadata.js?sv=1"></script>
+<script type="text/javascript" src="/js/jquery.tablesorter.js?sv=1"></script>
+<script type="text/javascript" src="/js/stickyheaders.js?sv=1"></script>
+<script type="text/javascript" src="/js/jquery.plugins/jquery.cookie.js?sv=1"></script>
+<link rel="stylesheet" href="/css/tableSort.css?sv=1" type="text/css">
+
+<script type="text/javascript">
+$(document).ready(function () {
+	$(".tablesorter").tablesorter({
+		sortList: [[0, 0]],
+		headers: {  
+            4: { // Fifth column, no sorting 
+                sorter: false 
+            },
+		}
+	});
+	
+	$('.tableSorter').stickyHeaders();
+});
+</script>
+
+<div id="content"><div id="innercontent">
+<div class="middle">
+
+<h2 class="titleBorder borderBelow"><a href="/configure/stats.htm?sportSelect=true" onclick='$.cookie("sport", "", { path : "/"})'>Volleyball</a> Stats: </h2>
+
+
+  
+	<table class="striped forNow tablesorter" id="mainTable">
+	  <thead>
+	    <tr>
+		  <th>Name</th>
+		  <th>Shortcut</th>
+		  <th>Stat Sentence</th>
+		  <th>StatEffect</th>
+		  <th>Action</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	  
+		<tr>
+		  <td>Assist</td>
+		  <td>a</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	
+		  	  <td>[None]</td>
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=1">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=1">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Attempt</td>
+		  <td>at</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Attempt (v2.3)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=2">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=2">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Ball Handling Error</td>
+		  <td>bhe</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Their Point (v2.4)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=3">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=3">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Block Touch</td>
+		  <td>bt</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	
+		  	  <td>[None]</td>
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=4">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=4">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Blocking Error</td>
+		  <td>be</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Their Point (v2.4)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=5">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=5">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Cover </td>
+		  <td>c</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	
+		  	  <td>[None]</td>
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=6">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=6">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Dig</td>
+		  <td>d</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Dig (v2.5)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=7">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=7">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Dig Rating</td>
+		  <td>dr</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  		(Data Point)
+		  	
+		  </td>
+		  
+		  	
+		  	
+		  	  <td>[None]</td>
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=8">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=8">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Double Block</td>
+		  <td>db</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Our Point (v2.4)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=9">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=9">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Error</td>
+		  <td>e</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Error (v1.7)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=10">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=10">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Free Ball Zero</td>
+		  <td>fa</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	
+		  	  <td>[None]</td>
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=11">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=11">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Free Ball-Overpass Dig</td>
+		  <td>fb</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	
+		  	  <td>[None]</td>
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=12">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=12">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Freeball</td>
+		  <td>f</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  		(Data Point)
+		  	
+		  </td>
+		  
+		  	
+		  	
+		  	  <td>[None]</td>
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=13">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=13">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Kill</td>
+		  <td>k</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Kill (v1.4)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=14">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=14">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Missed Dig</td>
+		  <td>md</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Their Point (v2.4)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=15">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=15">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Net</td>
+		  <td>n</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Their Point (v2.4)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  
+		  	  	<a href="/configure/statType.htm?id=39">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=39">Delete</a>
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Our Point</td>
+		  <td>op</td>
+		  <td style="white-space:normal">
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Our Point (v2.4)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=16">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=16">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Out Of System</td>
+		  <td>o</td>
+		  <td style="white-space:normal">
+		  	
+		  </td>
+		  
+		  	
+		  	
+		  	  <td>[None]</td>
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=17">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=17">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Over Pass Attempt</td>
+		  <td>opa</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	
+		  	  <td>[None]</td>
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  
+		  	  	<a href="/configure/statType.htm?id=42">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=42">Delete</a>
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Over Pass Error</td>
+		  <td>ope</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Their Point (v2.4)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  
+		  	  	<a href="/configure/statType.htm?id=41">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=41">Delete</a>
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Over Pass Kill</td>
+		  <td>opk</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Our Point (v2.4)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  
+		  	  	<a href="/configure/statType.htm?id=40">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=40">Delete</a>
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Passer Rating</td>
+		  <td>p</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  		(Data Point)
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Pass Rating (v6.6)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=18">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=18">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Serve Rating</td>
+		  <td>ser</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  		(Data Point)
+		  	
+		  </td>
+		  
+		  	
+		  	
+		  	  <td>[None]</td>
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=19">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=19">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Serve Type - Hybrid</td>
+		  <td>hy</td>
+		  <td style="white-space:normal">
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Serve Type (v1.9)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=20">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=20">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Serve Type - Jump Float</td>
+		  <td>jf</td>
+		  <td style="white-space:normal">
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Serve Type (v1.9)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=21">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=21">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Serve Type - Jump Serve</td>
+		  <td>js</td>
+		  <td style="white-space:normal">
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Serve Type (v1.9)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=22">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=22">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Serve Type - Standing Float</td>
+		  <td>sf</td>
+		  <td style="white-space:normal">
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Serve Type (v1.9)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=23">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=23">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Service Ace</td>
+		  <td>sa</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Our Point (v2.4)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=24">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=24">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Service Attempt</td>
+		  <td>sat</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	
+		  	  <td>[None]</td>
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=25">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=25">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Service Error</td>
+		  <td>se</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Their Point (v2.4)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=26">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=26">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Set Attempt</td>
+		  <td>s</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	
+		  	  <td>[None]</td>
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=27">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=27">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Set Rotation Number</td>
+		  <td>srn</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Data Point)
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Set Rotation Number (v2.0)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=28">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=28">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Set Setter</td>
+		  <td>set</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Set Setter (v1.1)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=29">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=29">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Set Type - Pipe</td>
+		  <td>i</td>
+		  <td style="white-space:normal">
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Set Type (v3.2)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=30">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=30">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Setter Out</td>
+		  <td>so</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	
+		  	  <td>[None]</td>
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=31">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=31">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Sideout Failure</td>
+		  <td>nosideout</td>
+		  <td style="white-space:normal">
+		  	
+		  </td>
+		  
+		  	
+		  	
+		  	  <td>[None]</td>
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=32">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=32">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Sideout Success</td>
+		  <td>sideout</td>
+		  <td style="white-space:normal">
+		  	
+		  </td>
+		  
+		  	
+		  	
+		  	  <td>[None]</td>
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=33">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=33">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Solo Block </td>
+		  <td>sb</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Our Point (v2.4)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=34">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=34">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Starting Lineup</td>
+		  <td>sl</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  		(Player)
+		  	
+		  		(Player)
+		  	
+		  		(Player)
+		  	
+		  		(Player)
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Setup All Rotations (v2.0)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=35">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=35">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Sub</td>
+		  <td>sub</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Substitution (v2.3)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=36">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=36">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Their Point</td>
+		  <td>tp</td>
+		  <td style="white-space:normal">
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Their Point (v2.4)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=37">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=37">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+		<tr>
+		  <td>Triple Block</td>
+		  <td>tb</td>
+		  <td style="white-space:normal">
+		  	
+		  		(Player)
+		  	
+		  		(Player)
+		  	
+		  		(Player)
+		  	
+		  </td>
+		  
+		  	
+		  	  <td>Our Point (v2.4)</td>
+		  	
+		  	
+		  
+		  <td>
+		  	
+		  	  
+		  	  	<a href="/configure/statType.htm?id=38">Edit</a>
+		  	  	| <a href="/configure/statType.htm?action=delete&id=38">Delete</a>
+		  	  	&nbsp;
+		  	  
+		  	  
+		  	
+		  </td>
+		</tr>
+	  
+	  </tbody>
+	  	<tr class="thebottomrow"><td colspan="5">
+		  	  <a href="/configure/statType.htm">Create a new stat</a>
+	  	</td></tr>
+	</table>
+  
+  
+
+
+</div>
+</div></div>
+
+
+	
+	<!-- Hack for the footer to follow -->
+	<div id="push"></div>
+</div>
+
+<div id="footer">StatEasy Release #29, registered to kingleo008@yahoo.com. <br/>Copyright 2012 <a href="http://www.ressq.com/">RessQ Technologies Inc.</a>
+<div id="logo"><img src="/images/flogo.png" /></div>
+</div>
+
+</body>
+</html>

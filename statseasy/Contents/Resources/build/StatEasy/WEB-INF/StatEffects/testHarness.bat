@@ -1,0 +1,1 @@
+java -classpath ../lib/js.jar;../lib/commons-lang.jar;../classes org.mozilla.javascript.tools.shell.Main

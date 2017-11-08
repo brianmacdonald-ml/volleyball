@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+	<class name="GameVideo" table="gamevideos">
+		<id name="id" column="gamevideo" unsaved-value="null">
+			<generator class="native"/>
+		</id>
+		
+		<property name="uuid" index="gamevideouuidindex">
+			<column name="uuid"/>
+		</property>
+		
+		<many-to-one name="eventGrouping" column="eventGrouping" class="EventGrouping" />
+	
+		<property name="displayName">
+			<column name="displayname"/>
+		</property>
+		
+		<property name="readyToShare">
+			<column name="readytoshare"/>
+		</property>
+		
+		<bag name="syncPoints" cascade="all-delete-orphan" inverse="true" lazy="false">
+			<key column="gamevideo"/>
+			<one-to-many class="VideoSyncPoint"/>
+		</bag>
+		
+		<list name="segments" cascade="all" fetch="subselect" lazy="false">
+			<key column="gameVideo" />
+			<list-index column="segmentIndex"/>
+			<one-to-many class="VideoSegment"/>
+		</list>
+	
+		<property name="thumbnailPath">
+			<column name="thumbnailPath"/>
+		</property>
+		
+		<many-to-one name="sport" column="sport" class="Sport" lazy="false"/>
+		
+	</class>
+</hibernate-mapping>

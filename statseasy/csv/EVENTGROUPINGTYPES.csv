@@ -1,0 +1,8 @@
+EVENTGROUPINGTYPE|EVENTGROUPINGTYPEINDEX|LEAFTYPE|EVENTGROUPINGSERIES|NAME|NAMEFORMAT|CONTRIBUTEWINLOSS|DISPLAYWINLOSS|DISPLAYSCORE|DISPLAYTIE|DISPLAYINSTREAM|DISPLAYASPRACTICE|OPPONENTSPECLEVEL
+1|0|0|1|Tournament|Tournament: ${Name}|0|0|0|0|0|0|NOT_SPECIFIED
+2|1|0|1|Match|Match: ${team} vs. ${opponent} on ${Start Date}|0|1|1|1|0|0|SPECIFIED
+3|2|1|1|Game|Game #${ordinal} @ ${Start Time}|0|1|1|0|0|0|INHERITED
+4|0|0|2|Match|Match: ${team} vs. ${opponent} on ${Start Date}|1|1|1|1|0|0|SPECIFIED
+5|1|1|2|Game|Game #${ordinal} @ ${Start Time}|0|1|1|0|0|0|INHERITED
+6|0|0|3|Practice|Practice: ${Start Date}|0|0|0|0|0|0|NOT_SPECIFIED
+7|1|1|3|Drill|Drill #${index}: ${Name}|0|0|0|0|0|0|SPECIFIED

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+
+	<class name="EventGrouping" table="eventGroupings" batch-size="100">
+		<id name="id" column="eventGrouping" unsaved-value="null">
+			<generator class="native"/>
+		</id>
+		
+		<property name="uuid" index="eventgroupinguuidindex">
+			<column name="uuid"/>
+		</property>
+		
+		<property name="index">
+			<column name="eventGroupingIndex"/>
+		</property>
+		
+		<property name="cachedName">
+			<column name="cachedName"/>
+		</property>
+	
+		<property name="thumbnailPath">
+			<column name="thumbnailPath"/>
+		</property>
+		
+		<map name="attributes" table="eventGroupingAttribute">
+			<key column="eventGroupingAttribute"/>
+			<index column="name" type="string"/>
+			<element column="value" type="string"/>
+		</map>
+		
+		<property name="pointsFor">
+			<column name="pointsFor"/>
+		</property>
+		
+		<property name="pointsTied">
+			<column name="pointsTied"/>
+		</property>
+		
+		<property name="pointsAgainst">
+			<column name="pointsAgainst"/>
+		</property>
+		
+		<property name="createdBy">
+			<column name="createdBy"/>
+		</property>
+		
+		<property name="shareable">
+			<column name="shareable"/>
+		</property>
+		
+		<property name="allAccess">
+			<column name="allAccess"/>
+		</property>
+		
+		<many-to-one name="associatedEvent" column="associatedEvent" class="Event" unique="true" not-null="false" cascade="all"/>
+		
+		<many-to-one name="myType" column="eventGroupingType" class="EventGroupingType" not-null="true" />
+		
+		<many-to-one name="parentGroup" column="parentGroup" class="EventGrouping"/>
+		
+		<bag name="childrenGroups" inverse="true" order-by="eventGroupingIndex" cascade="all-delete-orphan">
+			<key column="parentGroup"/>
+			<one-to-many class="EventGrouping"/>
+		</bag>
+		
+		<!-- Cascade all except delete -->
+		<bag name="allVideos" cascade="persist,merge,save-update,lock,refresh,evict,replicate" inverse="true">
+			<key column="eventGrouping"/>
+			<one-to-many class="GameVideo"/>
+		</bag>
+		
+		<many-to-one name="ourSeason" column="ourSeason" class="Season" not-null="true" />
+		<many-to-one name="theirSeason" column="theirSeason" class="Season" not-null="false" />
+		
+		<property name="viewCount">
+			<column name="viewCount"/>
+		</property>
+		
+		<property name="createdDate">
+			<column name="createdDate"/>
+		</property>
+		
+		<property name="uploadDate">
+			<column name="uploadDate"/>
+		</property>
+		
+		<property name="shared">
+			<column name="shared"/>
+		</property>
+		
+		<property name="demo">
+			<column name="demo"/>
+		</property>
+		
+		<property name="shareError">
+			<column name="shareError"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

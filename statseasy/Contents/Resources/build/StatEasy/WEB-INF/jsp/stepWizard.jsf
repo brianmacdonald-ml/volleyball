@@ -1,0 +1,12 @@
+<div id="steps">
+	<c:forEach items="${headlines}" var="headline" varStatus="status">
+		<h3 id="step${status.count}" class="notyet">${headline}</h3>
+		<div id="step${status.count}Stuff" style="visibility: hidden">
+			<div class="heavyIndent">
+				${hints[status.count-1]}
+   				<form:input id="stepInput${status.count}" path="${names[status.count-1]}"/>
+				<form:errors path="${names[status.count-1]}" cssClass="formErrors"/>
+			</div>			
+		</div>
+	</c:forEach>
+</div>

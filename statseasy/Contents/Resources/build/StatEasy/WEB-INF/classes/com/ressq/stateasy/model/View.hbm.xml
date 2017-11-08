@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+	<class name="View" table="statviews">
+		<id name="id" column="statview" unsaved-value="null">
+			<generator class="native"/>
+		</id>
+	
+		<property name="uuid" index="viewuuidindex">
+			<column name="uuid"/>
+		</property>
+	
+		<property name="name">
+			<column name="view"/>
+		</property>
+	
+		<property name="totalRow">
+			<column name="totalrow"/>
+		</property>
+	
+		<property name="flipColRow">
+			<column name="flipColRow"/>
+		</property>
+	
+		<property name="mergeOpponentTables">
+			<column name="mergeOpponentTables"/>
+		</property>
+	
+		<property name="defaultView">
+			<column name="defaultView"/>
+		</property>
+	
+		<property name="hidden">
+			<column name="hidden"/>
+		</property>
+		
+		<bag name="allColumns" cascade="all-delete-orphan" order-by="tablenumber,columnindex" inverse="true">
+			<key column="statview"/>
+			<one-to-many class="Column"/>
+		</bag>
+		
+		<bag name="allGroups" cascade="all-delete-orphan" order-by="startIndex" inverse="true">
+			<key column="statview"/>
+			<one-to-many class="ColumnGroup"/>
+		</bag>
+		
+		<many-to-one name="sport" column="sport" class="Sport" not-null="true" />
+		
+	</class>
+</hibernate-mapping>

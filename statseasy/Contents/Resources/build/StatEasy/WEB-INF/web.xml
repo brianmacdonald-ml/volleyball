@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0">
+            
+  
+    
+  <servlet>
+    <servlet-name>StatEasy</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>StatEasy</servlet-name>
+    <url-pattern>*.htm</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>StatEasyWebSocket</servlet-name>
+  	<servlet-class>com.ressq.stateasy.web.StatEasyClientWebSocketServlet</servlet-class>
+  	<load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StatEasyWebSocket</servlet-name>
+  	<url-pattern>/ws/*</url-pattern>
+  </servlet-mapping>
+  
+  <session-config>
+  	<tracking-mode>COOKIE</tracking-mode>
+  </session-config>
+
+  <welcome-file-list>
+    <welcome-file>
+      index.jsp
+    </welcome-file>
+  </welcome-file-list>
+  
+  <error-page>
+    <error-code>404</error-code>
+    <location>/errorPage.jsp</location>
+  </error-page>
+
+</web-app>

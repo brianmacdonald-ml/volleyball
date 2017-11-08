@@ -1,0 +1,5363 @@
+
+
+
+
+
+
+
+
+
+
+<html>
+	<head>
+		<title>The StatEasy Content Creator</title>
+		<link rel="stylesheet" href="/css/tokens.css" type="text/css">
+		<link rel="stylesheet" href="/css/print.css" type="text/css" media="print">
+		<link rel="stylesheet" href="/css/jquery.autocomplete.css" type="text/css">
+
+		<script src="/js/jquery-1.6.1.js" type="text/javascript"></script>
+		<script src="/js/jquery.easing.1.3.js" type="text/javascript"></script>
+		<script src="/js/jquery.corners.min.js" type="text/javascript"></script>
+		<script src="/js/jquery.dropshadow.js" type="text/javascript"></script>
+		<script src="/js/jquery.autocomplete.js" type="text/javascript"></script>
+		
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		
+		<link rel="shortcut icon" href="/images/favicon_1.jpg" />
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				$(".autofocus").focus();
+			});
+		</script>
+		
+	</head>
+
+	<body>
+
+<div id="container">
+	<div id="header">
+		<img src="/images/logo.png" class="headerLogo" />
+		
+		<div id="gameType"><span id="gameTypeInnerText"><a href="/hello.htm" title="Return to the Welcome page." class="noUnderline">Logout</a></span></div>
+
+		
+		
+		<div id="sportUpdates"></div>
+	</div>
+	<div id="navigation">
+		
+		<ul id="launch">
+			<li class="main
+				 
+			"><a href="/launch.htm" title="Select an action from the StatEasy dashboard">Dashboard</a></li>
+		</ul>
+		<ul id="config">
+			<li class="main
+				 
+			">
+			
+			<a href="/configure/stats.htm" title="Configure your stats, reports, views, teams, or players">Configuration</a></li>
+		</ul>
+		<ul id="account">
+			<li class="main">
+			<a href="http://app.stateasy.com:80/" target="_blank">Social Sports Network</a>
+			</li>
+		</ul>
+		
+
+		
+
+	</div>
+
+
+<script type="text/javascript" src="/js/jquery.metadata.js"></script>
+<script type="text/javascript" src="/js/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="/js/stickyheaders.js"></script>
+<link type="text/css" href="/css/jquery.ui/jquery-ui-1.8.2.custom.css" rel="stylesheet" />
+<script src="/js/jquery.ui/jquery-ui-1.8.2.custom.js" type="text/javascript"></script>
+<script type="text/javascript" src="/js/jquery.plugins/jquery.cookie.js"></script>
+<script type="text/javascript" src="/js/seasonDisplay.js"></script>
+<script type="text/javascript" src="/js/objectSelector.js"></script>
+<script type="text/javascript" src="/js/statView.js"></script>
+
+<link rel="stylesheet" href="/css/tableSort.css" type="text/css">
+
+<div id="content">
+    <div id="innercontent">
+        <div class="middle">
+
+<h2 class="titleBorder borderBelow">Situational Offense for Varsity 2016 - Boys 2016 <a id="reportOptions" href="#">(Report Options)</a></h2>
+
+<form method="get" action="/reports.htm" id="reportForm" style="display:none">
+<h2 class="titleBorder smaller">
+	With <a id="setGameDialogLink" href="#">the included games</a>, view the stats using 
+	<select name="viewId">
+	  
+	  	
+  		
+		<option value="1-View" >Default View</option>
+	  
+	  	
+  		
+		<option value="2-View" >MaxPreps</option>
+	  
+	  	
+  		
+		<option value="3-View" >Our Serve / Their Serve</option>
+	  
+	  	
+  		
+		<option value="4-View" >Passing & Defense</option>
+	  
+	  	
+  		
+		<option value="5-View" >Points Earned and Errors</option>
+	  
+	  	
+  		
+  			
+  		
+		<option value="6-View" selected='selected'>Situational Offense</option>
+	  
+	  	
+  		
+		<option value="7-View" >Team Attack</option>
+	  
+	</select>
+	focused on
+	<select name="grouping">
+	  
+	  	
+	  	
+	  	  
+	  	
+		<option value="1" selected='true'>Players</option>
+	  
+	  	
+	  	
+		<option value="2" >Our Rotation</option>
+	  
+	  	
+	  	
+		<option value="3" >Their Rotation</option>
+	  
+	  	
+	  	
+		<option value="4" >Our Setter</option>
+	  
+	  	
+	  	
+		<option value="5" >Set Type</option>
+	  
+	  	
+	  	
+		<option value="6" >Serve Type</option>
+	  
+	</select>
+	using <a id="setPlayerDialogLink" href="#">All Players</a> 
+	<input type="hidden" name="season" value="49"/>
+	<input class="hoverGreen" type="submit" value="Go"/>
+</h2>
+<div style="display:none;padding: 10px;" id="showGamesDialog" title="The events included in the report">
+<table class="striped forNow">
+	<tr>
+		<th width="75%"><img id='open_close_all' class='open_close' src='/images/minus.png'/><input type="checkbox" name="selectAllEvents" id="selectAllEvents"/><span style="margin-left: 10px">Name</span></th>
+	</tr>
+	
+		<tr class="depth0 eventRow" id="eventId293">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="293"/>
+				Tournament: NA
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId294">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="294"/>
+				Match: Varsity vs. Hempfield on Oct 24, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId295">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="295"/>
+				Game #1 @ 8:17:27 AM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId296">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="296"/>
+				Match: Varsity vs. Plum on Oct 24, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId297">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="297"/>
+				Game #1 @ 8:39:46 AM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId298">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="298"/>
+				Match: Varsity vs. Baldwin on Oct 24, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId299">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="299"/>
+				Game #1 @ 9:46:52 AM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId300">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="300"/>
+				Match: Varsity vs. Oakland Catholic on Oct 24, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId301">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="301"/>
+				Game #1 @ 10:53:14 AM
+			</td>
+		</tr>
+	
+		<tr class="depth0 eventRow" id="eventId102">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="102"/>
+				Tournament: Plum
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId103">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="103"/>
+				Match: Varsity vs. Central Catholic on Apr 25, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId104">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="104"/>
+				Game #1 @ 8:40:20 AM
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId105">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="105"/>
+				Game #2 @ 8:56:58 AM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId106">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="106"/>
+				Match: Varsity vs. Montour on Apr 25, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId107">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="107"/>
+				Game #1 @ 10:14:21 AM
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId108">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="108"/>
+				Game #2 @ 10:30:40 AM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId109">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="109"/>
+				Match: Varsity vs. Norwin on Apr 25, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId110">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="110"/>
+				Game #1 @ 12:31:35 PM
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId111">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="111"/>
+				Game #2 @ 12:46:27 PM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId112">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="112"/>
+				Match: Varsity vs. Fort LeBoeuf on Apr 25, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId113">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="113"/>
+				Game #1 @ 1:32:13 PM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId114">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="114"/>
+				Match: Varsity vs. Plum on Apr 25, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId115">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="115"/>
+				Game #1 @ 2:28:02 PM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId116">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="116"/>
+				Match: Varsity vs. Derry on Apr 25, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId117">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="117"/>
+				Game #1 @ 3:52:40 PM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId118">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="118"/>
+				Match: Varsity vs. Deer Lakes on Apr 25, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId119">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="119"/>
+				Game #1 @ 5:06:46 PM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId120">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="120"/>
+				Match: Varsity vs. Plum on Apr 25, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId121">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="121"/>
+				Game #1 @ 6:06:38 PM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId122">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="122"/>
+				Match: Varsity vs. Butler on Apr 25, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId123">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="123"/>
+				Game #1 @ 6:29:36 PM
+			</td>
+		</tr>
+	
+		<tr class="depth0 eventRow" id="eventId46">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="46"/>
+				Tournament: Fox Chapel
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId47">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="47"/>
+				Match: Varsity vs. USC on Apr 11, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId48">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="48"/>
+				Game #1 @ 8:39:45 AM
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId49">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="49"/>
+				Game #2 @ 8:56:18 AM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId50">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="50"/>
+				Match: Varsity vs. Fort LeBoeuf on Apr 11, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId51">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="51"/>
+				Game #1 @ 10:03:14 AM
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId52">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="52"/>
+				Game #2 @ 10:28:35 AM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId53">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="53"/>
+				Match: Varsity vs. Bethel Park  on Apr 11, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId54">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="54"/>
+				Game #1 @ 11:58:01 AM
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId55">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="55"/>
+				Game #2 @ 12:20:02 PM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId56">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="56"/>
+				Match: Varsity vs. Saegertown on Apr 11, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId57">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="57"/>
+				Game #1 @ 1:45:30 PM
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId58">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="58"/>
+				Game #2 @ 2:06:14 PM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId59">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="59"/>
+				Match: Varsity vs. Central York on Apr 11, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId60">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="60"/>
+				Game #1 @ 3:22:47 PM
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId61">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="61"/>
+				Game #2 @ 3:41:21 PM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId62">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="62"/>
+				Match: Varsity vs. Pine Richland on Apr 11, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId63">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="63"/>
+				Game #1 @ 4:44:40 PM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId64">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="64"/>
+				Match: Varsity vs. Saegertown on Apr 11, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId65">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="65"/>
+				Game #1 @ 5:19:04 PM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId66">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="66"/>
+				Match: Varsity vs. Central York on Apr 11, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId67">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="67"/>
+				Game #1 @ 5:54:33 PM
+			</td>
+		</tr>
+	
+		<tr class="depth0 eventRow" id="eventId12">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="12"/>
+				Tournament: Derry
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId13">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="13"/>
+				Match: Varsity vs. Latrobe on Mar 28, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId14">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="14"/>
+				Game #1 @ 8:41:30 AM
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId15">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="15"/>
+				Game #2 @ 9:03:09 AM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId18">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="18"/>
+				Match: Varsity vs. Shaler on Mar 28, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId19">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="19"/>
+				Game #1 @ 1:35:43 PM
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId20">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="20"/>
+				Game #2 @ 1:55:27 PM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId21">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="21"/>
+				Match: Varsity vs. NA on Mar 28, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId22">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="22"/>
+				Game #1 @ 3:06:22 PM
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId23">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="23"/>
+				Game #2 @ 3:29:41 PM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId24">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="24"/>
+				Match: Varsity vs. Deer Lakes on Mar 28, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId25">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="25"/>
+				Game #1 @ 4:56:34 PM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId26">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="26"/>
+				Match: Varsity vs. Derry on Mar 28, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId27">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="27"/>
+				Game #1 @ 5:41:26 PM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId28">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="28"/>
+				Match: Varsity vs. Altoona on Mar 28, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId29">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="29"/>
+				Game #1 @ 6:18:20 PM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId30">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="30"/>
+				Match: Varsity vs. Penn Trafford on Mar 28, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId31">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="31"/>
+				Game #1 @ 6:41:50 PM
+			</td>
+		</tr>
+	
+		<tr class="depth0 eventRow" id="eventId306">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="306"/>
+				Tournament: NA Tournament
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId309">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="309"/>
+				Match: Varsity 2016 vs. Montour on Mar 26, 2016
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId310">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="310"/>
+				Game #1 @ 9:18:20 AM
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId311">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="311"/>
+				Game #2 @ 9:38:17 AM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId312">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="312"/>
+				Match: Varsity 2016 vs. Penn Trafford on Mar 26, 2016
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId313">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="313"/>
+				Game #1 @ 10:09:08 AM
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId314">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="314"/>
+				Game #2 @ 10:25:03 AM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId315">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="315"/>
+				Match: Varsity 2016 vs. Penn Hills on Mar 26, 2016
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId316">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="316"/>
+				Game #1 @ 11:28:59 AM
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId317">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="317"/>
+				Game #2 @ 11:48:14 AM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId318">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="318"/>
+				Match: Varsity 2016 vs. Plum on Mar 26, 2016
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId319">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="319"/>
+				Game #1 @ 1:45:15 PM
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId320">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="320"/>
+				Game #2 @ 2:06:00 PM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId321">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="321"/>
+				Match: Varsity 2016 vs. North Hills  on Mar 26, 2016
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId322">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="322"/>
+				Game #1 @ 3:20:40 PM
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId323">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="323"/>
+				Game #2 @ 3:33:44 PM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId324">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="324"/>
+				Match: Varsity 2016 vs. Montour on Mar 26, 2016
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId325">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="325"/>
+				Game #1 @ 3:50:32 PM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId326">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="326"/>
+				Match: Varsity 2016 vs. NA on Mar 26, 2016
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId327">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="327"/>
+				Game #1 @ 4:40:08 PM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId328">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="328"/>
+				Match: Varsity 2016 vs. Penn Trafford on Mar 26, 2016
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId329">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="329"/>
+				Game #1 @ 5:10:16 PM
+			</td>
+		</tr>
+	
+		<tr class="depth0 eventRow" id="eventId194">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="194"/>
+				Tournament: Cannon Mac
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId195">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="195"/>
+				Match: Varsity vs. Beaver on Sep 5, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId196">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="196"/>
+				Game #1 @ 9:32:19 AM
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId197">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="197"/>
+				Game #2 @ 9:55:56 AM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId198">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="198"/>
+				Match: Varsity vs. Quaker Valley on Sep 5, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId199">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="199"/>
+				Game #1 @ 11:59:17 AM
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId200">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="200"/>
+				Game #2 @ 12:28:42 PM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId201">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="201"/>
+				Match: Varsity vs. Moon on Sep 5, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId202">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="202"/>
+				Game #1 @ 2:38:41 PM
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId203">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="203"/>
+				Game #2 @ 3:01:07 PM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId204">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="204"/>
+				Match: Varsity vs. Seton La Salle on Sep 5, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId205">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="205"/>
+				Game #1 @ 4:17:17 PM
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId206">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="206"/>
+				Game #2 @ 4:41:39 PM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId207">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="207"/>
+				Match: Varsity vs. Beaver on Sep 5, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId208">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="208"/>
+				Game #1 @ 6:53:15 PM
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId209">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="209"/>
+				Match: Varsity vs. Moon on Sep 5, 2015
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId210">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="210"/>
+				Game #1 @ 7:30:02 PM
+			</td>
+		</tr>
+	
+</table>
+</div>
+</form>
+
+
+
+
+
+
+
+
+  
+	
+
+
+
+
+
+
+
+
+	
+		<h2>Varsity 2016</h2>
+	
+	
+	
+		
+		
+			
+
+
+<table class="striped tablesorter statTable" id="team43">
+<thead>
+  
+  <tr class="columnGroup">
+  	
+  	  
+  	  	<td>&nbsp;</td>
+  	  	<td class="separatorCol">&nbsp;</td>
+  	  	
+  	  
+  	  
+  	
+  	
+  	  
+  	  <td class="separatorCol" colspan="4">After a 3-Pass</td>
+  	
+  	  
+  	  <td class="separatorCol" colspan="4">After a 2-Pass</td>
+  	
+  	  
+  	  <td class="separatorCol" colspan="4">After a 1-Pass</td>
+  	
+  	  
+  	  <td class="separatorCol" colspan="4">In Transition</td>
+  	
+  	  
+  	  <td class="separatorCol" colspan="4">Setter Out</td>
+  	
+  </tr>
+  
+  <tr>
+  	<th class="">Players</th>
+  	
+  	  <th class="{sorter: 'digit'} separatorCol">#</th>
+  	
+	
+	  
+		
+		
+		  
+		
+	  
+	  <th class="{sorter: 'digit'} ">K</th>
+	
+	  
+		
+		
+		  
+		
+	  
+	  <th class="{sorter: 'digit'} ">E</th>
+	
+	  
+		
+		
+		  
+		
+	  
+	  <th class="{sorter: 'digit'} ">TA</th>
+	
+	  
+		
+		  
+		
+		
+	  
+	  <th class="{sorter: 'digit'} separatorCol">PCT</th>
+	
+	  
+		
+		
+		  
+		
+	  
+	  <th class="{sorter: 'digit'} ">K</th>
+	
+	  
+		
+		
+		  
+		
+	  
+	  <th class="{sorter: 'digit'} ">E</th>
+	
+	  
+		
+		
+		  
+		
+	  
+	  <th class="{sorter: 'digit'} ">TA</th>
+	
+	  
+		
+		  
+		
+		
+	  
+	  <th class="{sorter: 'digit'} separatorCol">PCT</th>
+	
+	  
+		
+		
+		  
+		
+	  
+	  <th class="{sorter: 'digit'} ">K</th>
+	
+	  
+		
+		
+		  
+		
+	  
+	  <th class="{sorter: 'digit'} ">E</th>
+	
+	  
+		
+		
+		  
+		
+	  
+	  <th class="{sorter: 'digit'} ">TA</th>
+	
+	  
+		
+		  
+		
+		
+	  
+	  <th class="{sorter: 'digit'} separatorCol">PCT</th>
+	
+	  
+		
+		
+		  
+		
+	  
+	  <th class="{sorter: 'digit'} ">K</th>
+	
+	  
+		
+		
+		  
+		
+	  
+	  <th class="{sorter: 'digit'} ">E</th>
+	
+	  
+		
+		
+		  
+		
+	  
+	  <th class="{sorter: 'digit'} ">TA</th>
+	
+	  
+		
+		  
+		
+		
+	  
+	  <th class="{sorter: 'digit'} separatorCol">PCT</th>
+	
+	  
+		
+		
+		  
+		
+	  
+	  <th class="{sorter: 'digit'} ">K</th>
+	
+	  
+		
+		
+		  
+		
+	  
+	  <th class="{sorter: 'digit'} ">E</th>
+	
+	  
+		
+		
+		  
+		
+	  
+	  <th class="{sorter: 'digit'} ">TA</th>
+	
+	  
+		
+		  
+		
+		
+	  
+	  <th class="{sorter: 'digit'} separatorCol">PCT</th>
+	
+  </tr>
+ </thead>
+ <tbody>
+  
+	<tr id="15">
+	  
+	  	
+	  	  
+	  	  <td class="">
+	  	  	
+	  	  	
+	  	  		<a href="/reports.htm?action=watch&row=15&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">Jordan DiSanti</a>
+	  	  	
+	  	  	
+	  	  	
+	  	  	
+	  	  </td>
+	  	
+	  	
+	  	
+	  
+	  
+	  	<td class="separatorCol">
+	  		
+	  	  	
+	  	  		<a href="/reports.htm?action=watch&row=15&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">4</a>
+	  	  	
+	  	  	
+	  	  	
+	  	  	
+	  	</td>
+	  
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=83&row=15&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">1</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=89&row=15&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">1</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=90&row=15&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">1</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=91&row=15&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">2</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=92&row=15&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">0</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=93&row=15&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">1</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=94&row=15&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">1</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=95&row=15&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">3</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=96&row=15&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">0</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+	</tr>
+  
+	<tr id="8">
+	  
+	  	
+	  	  
+	  	  <td class="">
+	  	  	
+	  	  	
+	  	  		<a href="/reports.htm?action=watch&row=8&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">Matt Friday</a>
+	  	  	
+	  	  	
+	  	  	
+	  	  	
+	  	  </td>
+	  	
+	  	
+	  	
+	  
+	  
+	  	<td class="separatorCol">
+	  		
+	  	  	
+	  	  		<a href="/reports.htm?action=watch&row=8&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">14</a>
+	  	  	
+	  	  	
+	  	  	
+	  	  	
+	  	</td>
+	  
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=81&row=8&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">6</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=82&row=8&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">3</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=83&row=8&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">15</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=84&row=8&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">0.2</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=85&row=8&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">4</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=87&row=8&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">8</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=88&row=8&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">0.5</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=89&row=8&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">2</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=90&row=8&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">3</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=91&row=8&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">13</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=92&row=8&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">-0.077</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=93&row=8&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">8</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=94&row=8&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">3</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=95&row=8&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">18</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=96&row=8&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">0.278</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=97&row=8&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">2</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=99&row=8&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">5</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=100&row=8&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">0.4</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+	</tr>
+  
+	<tr id="9">
+	  
+	  	
+	  	  
+	  	  <td class="">
+	  	  	
+	  	  	
+	  	  		<a href="/reports.htm?action=watch&row=9&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">Conor Gaffney</a>
+	  	  	
+	  	  	
+	  	  	
+	  	  	
+	  	  </td>
+	  	
+	  	
+	  	
+	  
+	  
+	  	<td class="separatorCol">
+	  		
+	  	  	
+	  	  		<a href="/reports.htm?action=watch&row=9&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">27</a>
+	  	  	
+	  	  	
+	  	  	
+	  	  	
+	  	</td>
+	  
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=82&row=9&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">2</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=83&row=9&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">4</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=84&row=9&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">-0.5</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=86&row=9&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">1</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=87&row=9&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">3</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=88&row=9&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">-0.333</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=89&row=9&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">1</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=91&row=9&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">3</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=92&row=9&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">0.333</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=95&row=9&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">1</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+	</tr>
+  
+	<tr id="27">
+	  
+	  	
+	  	  
+	  	  <td class="">
+	  	  	
+	  	  	
+	  	  		<a href="/reports.htm?action=watch&row=27&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">Matt Heilman</a>
+	  	  	
+	  	  	
+	  	  	
+	  	  	
+	  	  </td>
+	  	
+	  	
+	  	
+	  
+	  
+	  	<td class="separatorCol">
+	  		
+	  	  	
+	  	  		<a href="/reports.htm?action=watch&row=27&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">1</a>
+	  	  	
+	  	  	
+	  	  	
+	  	  	
+	  	</td>
+	  
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=82&row=27&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">1</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=83&row=27&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">1</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=84&row=27&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">-1</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=85&row=27&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">1</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=87&row=27&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">1</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=88&row=27&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">1</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=90&row=27&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">1</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=91&row=27&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">2</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=92&row=27&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">-0.5</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=94&row=27&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">1</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=95&row=27&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">3</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=96&row=27&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">-0.333</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+	</tr>
+  
+	<tr id="12">
+	  
+	  	
+	  	  
+	  	  <td class="">
+	  	  	
+	  	  	
+	  	  		<a href="/reports.htm?action=watch&row=12&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">Alex Lawson</a>
+	  	  	
+	  	  	
+	  	  	
+	  	  	
+	  	  </td>
+	  	
+	  	
+	  	
+	  
+	  
+	  	<td class="separatorCol">
+	  		
+	  	  	
+	  	  		<a href="/reports.htm?action=watch&row=12&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">20</a>
+	  	  	
+	  	  	
+	  	  	
+	  	  	
+	  	</td>
+	  
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=81&row=12&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">1</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=82&row=12&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">1</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=83&row=12&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">4</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=84&row=12&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">0</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=89&row=12&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">1</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=91&row=12&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">4</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=92&row=12&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">0.25</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=95&row=12&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">2</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+	</tr>
+  
+	<tr id="11">
+	  
+	  	
+	  	  
+	  	  <td class="">
+	  	  	
+	  	  	
+	  	  		<a href="/reports.htm?action=watch&row=11&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">Jack Reese</a>
+	  	  	
+	  	  	
+	  	  	
+	  	  	
+	  	  </td>
+	  	
+	  	
+	  	
+	  
+	  
+	  	<td class="separatorCol">
+	  		
+	  	  	
+	  	  		<a href="/reports.htm?action=watch&row=11&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">11</a>
+	  	  	
+	  	  	
+	  	  	
+	  	  	
+	  	</td>
+	  
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=81&row=11&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">17</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=82&row=11&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">2</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=83&row=11&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">23</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=84&row=11&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">0.652</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=85&row=11&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">8</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=86&row=11&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">3</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=87&row=11&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">13</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=88&row=11&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">0.385</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=89&row=11&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">5</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=90&row=11&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">5</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=91&row=11&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">14</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=92&row=11&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">0</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=93&row=11&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">13</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=94&row=11&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">7</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=95&row=11&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">28</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=96&row=11&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">0.214</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=97&row=11&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">6</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=98&row=11&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">4</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=99&row=11&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">16</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=100&row=11&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">0.125</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+	</tr>
+  
+	<tr id="13">
+	  
+	  	
+	  	  
+	  	  <td class="">
+	  	  	
+	  	  	
+	  	  		<a href="/reports.htm?action=watch&row=13&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">Dom Scanga</a>
+	  	  	
+	  	  	
+	  	  	
+	  	  	
+	  	  </td>
+	  	
+	  	
+	  	
+	  
+	  
+	  	<td class="separatorCol">
+	  		
+	  	  	
+	  	  		<a href="/reports.htm?action=watch&row=13&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">26</a>
+	  	  	
+	  	  	
+	  	  	
+	  	  	
+	  	</td>
+	  
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=81&row=13&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">1</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=83&row=13&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">2</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=84&row=13&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">0.5</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=85&row=13&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">1</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=87&row=13&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">3</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=88&row=13&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">0.333</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=91&row=13&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">2</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=94&row=13&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">1</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=95&row=13&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">6</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=96&row=13&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">-0.167</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+	</tr>
+  
+	<tr id="5">
+	  
+	  	
+	  	  
+	  	  <td class="">
+	  	  	
+	  	  	
+	  	  		<a href="/reports.htm?action=watch&row=5&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">Jerett Zaleski</a>
+	  	  	
+	  	  	
+	  	  	
+	  	  	
+	  	  </td>
+	  	
+	  	
+	  	
+	  
+	  
+	  	<td class="separatorCol">
+	  		
+	  	  	
+	  	  		<a href="/reports.htm?action=watch&row=5&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">3</a>
+	  	  	
+	  	  	
+	  	  	
+	  	  	
+	  	</td>
+	  
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=81&row=5&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">3</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=82&row=5&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">1</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=83&row=5&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">7</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=84&row=5&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">0.286</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=86&row=5&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">2</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=87&row=5&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">7</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=88&row=5&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">-0.286</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=89&row=5&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">2</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=90&row=5&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">2</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=91&row=5&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">10</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=92&row=5&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">0</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=93&row=5&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">7</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=94&row=5&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">2</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=95&row=5&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">13</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=96&row=5&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">0.385</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class=" dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorCol dataCell">
+		  
+			
+			
+			    0
+			
+		  
+		</td>
+	  
+	</tr>
+  
+ </tbody>
+  
+	<tr>
+	  
+  	  	
+	  	  <td class="separatorTotalCol" colspan="2">Total</td>
+	  	
+	  	
+	  
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class="totalCol dataCell">
+		  
+		    
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=81&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">28</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class="totalCol dataCell">
+		  
+		    
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=82&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">10</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class="totalCol dataCell">
+		  
+		    
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=83&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">57</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorTotalCol dataCell">
+		  
+		    
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=84&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">0.316</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class="totalCol dataCell">
+		  
+		    
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=85&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">14</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class="totalCol dataCell">
+		  
+		    
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=86&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">6</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class="totalCol dataCell">
+		  
+		    
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=87&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">35</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorTotalCol dataCell">
+		  
+		    
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=88&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">0.229</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class="totalCol dataCell">
+		  
+		    
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=89&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">12</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class="totalCol dataCell">
+		  
+		    
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=90&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">12</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class="totalCol dataCell">
+		  
+		    
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=91&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">50</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorTotalCol dataCell">
+		  
+		    
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=92&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">0</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class="totalCol dataCell">
+		  
+		    
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=93&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">29</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class="totalCol dataCell">
+		  
+		    
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=94&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">15</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class="totalCol dataCell">
+		  
+		    
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=95&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">74</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorTotalCol dataCell">
+		  
+		    
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=96&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">0.189</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class="totalCol dataCell">
+		  
+		    
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=97&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">8</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class="totalCol dataCell">
+		  
+		    
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=98&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">4</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+		  
+			
+		  
+		
+		<td class="totalCol dataCell">
+		  
+		    
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=99&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">21</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+		
+		  
+			
+		  
+		  
+		
+		<td class="separatorTotalCol dataCell">
+		  
+		    
+		      
+			  
+			  	
+			  	  
+			  	  <a href="/reports.htm?action=watch&column=100&team=43&op=false&viewIndex=0&viewId=6-View&grouping=1&season=49&egId=306">0.19</a>
+			  	
+			  	
+			  	
+			  
+			
+			
+		  
+		</td>
+	  
+	</tr>
+  
+</table>
+		
+	
+	
+	
+
+
+  
+  
+
+
+<p><input class="hoverGreen" type="button" value="Done with this report"  onclick='javascript: window.location="/take.htm?season=49"'/></p>
+</div>
+</div></div>
+
+<script type="text/javascript">
+
+var allPlayers = [{"firstName":"Karissa","lastName":"Becer","name":"Karissa Becer","id":47},{"firstName":"Desirae","lastName":"Buccigrossi","name":"Desirae Buccigrossi","id":28},{"firstName":"Dominique","lastName":"Buccigrossi","name":"Dominique Buccigrossi","id":29},{"firstName":"Mark","lastName":"Calandra","name":"Mark Calandra","id":20},{"firstName":"Chad","lastName":"Capuzzi","name":"Chad Capuzzi","id":10},{"firstName":"Katherine","lastName":"Chomko","name":"Katherine Chomko","id":30},{"firstName":"Katie","lastName":"Costanzo","name":"Katie Costanzo","id":31},{"firstName":"Max","lastName":"DePellegrini","name":"Max DePellegrini","id":2},{"firstName":"Ben","lastName":"DePellegrini","name":"Ben DePellegrini","id":3},{"firstName":"Dom","lastName":"DiMatteo","name":"Dom DiMatteo","id":25},{"firstName":"Jordan","lastName":"DiSanti","name":"Jordan DiSanti","id":15},{"firstName":"Jocelyn","lastName":"Eckenrode","name":"Jocelyn Eckenrode","id":48},{"firstName":"Shannon","lastName":"Fisher","name":"Shannon Fisher","id":32},{"firstName":"Annamaria","lastName":"Fort","name":"Annamaria Fort","id":49},{"firstName":"Matt","lastName":"Friday","name":"Matt Friday","id":8},{"firstName":"Megan","lastName":"Friday","name":"Megan Friday","id":33},{"firstName":"Tessa","lastName":"Friday","name":"Tessa Friday","id":50},{"firstName":"Kota","lastName":"Furuhata","name":"Kota Furuhata","id":18},{"firstName":"Conor","lastName":"Gaffney","name":"Conor Gaffney","id":9},{"firstName":"Lauren","lastName":"Heasley","name":"Lauren Heasley","id":51},{"firstName":"Matt","lastName":"Heilman","name":"Matt Heilman","id":27},{"firstName":"Matt","lastName":"Heilman","name":"Matt Heilman","id":14},{"firstName":"Haley","lastName":"Herrman","name":"Haley Herrman","id":34},{"firstName":"Matt","lastName":"Herrmann","name":"Matt Herrmann","id":1},{"firstName":"Mike","lastName":"Hudic","name":"Mike Hudic","id":16},{"firstName":"Emily","lastName":"Hunt","name":"Emily Hunt","id":52},{"firstName":"Elizabeth","lastName":"Kaslewicz","name":"Elizabeth Kaslewicz","id":53},{"firstName":"Katie","lastName":"Kenney","name":"Katie Kenney","id":35},{"firstName":"Meredith","lastName":"Kenney","name":"Meredith Kenney","id":36},{"firstName":"Alex","lastName":"Lawson","name":"Alex Lawson","id":12},{"firstName":"Tom","lastName":"McFadden","name":"Tom McFadden","id":17},{"firstName":"Jessica","lastName":"Michel","name":"Jessica Michel","id":37},{"firstName":"Olivia","lastName":"Molina","name":"Olivia Molina","id":38},{"firstName":"Elliot","lastName":"Norman","name":"Elliot Norman","id":24},{"firstName":"Jacob","lastName":"Orban","name":"Jacob Orban","id":21},{"firstName":"Eric","lastName":"Ovick","name":"Eric Ovick","id":6},{"firstName":"Katie","lastName":"Palumbo","name":"Katie Palumbo","id":54},{"firstName":"Murphy","lastName":"Patterson","name":"Murphy Patterson","id":39},{"firstName":"Dylan","lastName":"Peterlie","name":"Dylan Peterlie","id":19},{"firstName":"Jack","lastName":"Reese","name":"Jack Reese","id":11},{"firstName":"Locklain","lastName":"Renfrew","name":"Locklain Renfrew","id":23},{"firstName":"Madeline","lastName":"Richards","name":"Madeline Richards","id":55},{"firstName":"Dom","lastName":"Scanga","name":"Dom Scanga","id":13},{"firstName":"Kayla","lastName":"Slovenec","name":"Kayla Slovenec","id":40},{"firstName":"Chris","lastName":"Snider","name":"Chris Snider","id":26},{"firstName":"Ana","lastName":"Spangenberg","name":"Ana Spangenberg","id":41},{"firstName":"Nikki","lastName":"Stumpf","name":"Nikki Stumpf","id":42},{"firstName":"Sarah","lastName":"Supsura","name":"Sarah Supsura","id":43},{"firstName":"Will","lastName":"Tabor","name":"Will Tabor","id":22},{"firstName":"Andrew","lastName":"Tublin","name":"Andrew Tublin","id":7},{"firstName":"Bridget","lastName":"Wang","name":"Bridget Wang","id":56},{"firstName":"Maya","lastName":"Weis","name":"Maya Weis","id":44},{"firstName":"Erasmia","lastName":"Yager","name":"Erasmia Yager","id":45},{"firstName":"Chloe","lastName":"Yofan","name":"Chloe Yofan","id":46},{"firstName":"Jerett","lastName":"Zaleski","name":"Jerett Zaleski","id":5},{"firstName":"Jaysen","lastName":"Zaleski","name":"Jaysen Zaleski","id":4}];
+var eventGroupings = {"320":{"pointsAgainst":15,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":318,"id":320,"childrenGroups":[],"favorited":false,"theirSeasonName":"Boys 2016","associatedEvent":221,"ourTeam":"Varsity 2016","pointsFor":25,"index":1,"dateString":"Saturday, March 26, 2016","theirSeason":53,"parentGroupName":"Match: Varsity 2016 vs. Plum on Mar 26, 2016","parentGroupScore":"2-0-0","videoUploadPercentage":0,"ourTeamId":43,"ourSeason":49,"name":"Game #2 @ 2:06:00 PM","thumbnailPath":"","ourSeasonName":"Boys 2016","attributes":{"Start Date":"1458964800000","Start Time":"1459015560000","Location":"NA"},"sportName":"Volleyball","theirTeam":"Plum","sport":1,"theirTeamId":23},"310":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":309,"id":310,"childrenGroups":[],"favorited":false,"theirSeasonName":"Boys 2016","associatedEvent":214,"ourTeam":"Varsity 2016","pointsFor":23,"index":0,"dateString":"Saturday, March 26, 2016","theirSeason":51,"parentGroupName":"Match: Varsity 2016 vs. Montour on Mar 26, 2016","parentGroupScore":"0-0-2","videoUploadPercentage":0,"ourTeamId":43,"ourSeason":49,"name":"Game #1 @ 9:18:20 AM","thumbnailPath":"","ourSeasonName":"Boys 2016","attributes":{"Start Date":"1458964800000","Start Time":"1458998300000","Location":"NA"},"sportName":"Volleyball","theirTeam":"Montour","sport":1,"theirTeamId":21},"321":{"pointsAgainst":1,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":306,"id":321,"childrenGroups":[322,323],"favorited":false,"theirSeasonName":"Boys 2016","ourTeam":"Varsity 2016","pointsFor":1,"index":4,"dateString":"Saturday, March 26, 2016","theirSeason":54,"parentGroupScore":"4-1-3","videoUploadPercentage":0,"ourTeamId":43,"ourSeason":49,"name":"Match: Varsity 2016 vs. North Hills  on Mar 26, 2016","thumbnailPath":"","ourSeasonName":"Boys 2016","attributes":{"Start Date":"1458964800000","opponent":"North Hills ","Location":"NA"},"sportName":"Volleyball","theirTeam":"North Hills ","sport":1,"theirTeamId":11},"311":{"pointsAgainst":26,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":309,"id":311,"childrenGroups":[],"favorited":false,"theirSeasonName":"Boys 2016","associatedEvent":215,"ourTeam":"Varsity 2016","pointsFor":24,"index":1,"dateString":"Saturday, March 26, 2016","theirSeason":51,"parentGroupName":"Match: Varsity 2016 vs. Montour on Mar 26, 2016","parentGroupScore":"0-0-2","videoUploadPercentage":0,"ourTeamId":43,"ourSeason":49,"name":"Game #2 @ 9:38:17 AM","thumbnailPath":"","ourSeasonName":"Boys 2016","attributes":{"Start Date":"1458964800000","Start Time":"1458999497000","Location":"NA"},"sportName":"Volleyball","theirTeam":"Montour","sport":1,"theirTeamId":21},"322":{"pointsAgainst":9,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":321,"id":322,"childrenGroups":[],"favorited":false,"theirSeasonName":"Boys 2016","associatedEvent":222,"ourTeam":"Varsity 2016","pointsFor":25,"index":0,"dateString":"Saturday, March 26, 2016","theirSeason":54,"parentGroupName":"Match: Varsity 2016 vs. North Hills  on Mar 26, 2016","parentGroupScore":"1-0-1","videoUploadPercentage":0,"ourTeamId":43,"ourSeason":49,"name":"Game #1 @ 3:20:40 PM","thumbnailPath":"","ourSeasonName":"Boys 2016","attributes":{"Start Date":"1458964800000","Start Time":"1459020040000","Location":"NA"},"sportName":"Volleyball","theirTeam":"North Hills ","sport":1,"theirTeamId":11},"312":{"pointsAgainst":2,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":306,"id":312,"childrenGroups":[313,314],"favorited":false,"theirSeasonName":"Boys 2016","ourTeam":"Varsity 2016","pointsFor":0,"index":2,"dateString":"Saturday, March 26, 2016","theirSeason":50,"parentGroupScore":"4-1-3","videoUploadPercentage":0,"ourTeamId":43,"ourSeason":49,"name":"Match: Varsity 2016 vs. Penn Trafford on Mar 26, 2016","thumbnailPath":"","ourSeasonName":"Boys 2016","attributes":{"Start Date":"1458964800000","opponent":"Penn Trafford","Location":"NA"},"sportName":"Volleyball","theirTeam":"Penn Trafford","sport":1,"theirTeamId":10},"323":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":321,"id":323,"childrenGroups":[],"favorited":false,"theirSeasonName":"Boys 2016","associatedEvent":223,"ourTeam":"Varsity 2016","pointsFor":23,"index":1,"dateString":"Saturday, March 26, 2016","theirSeason":54,"parentGroupName":"Match: Varsity 2016 vs. North Hills  on Mar 26, 2016","parentGroupScore":"1-0-1","videoUploadPercentage":0,"ourTeamId":43,"ourSeason":49,"name":"Game #2 @ 3:33:44 PM","thumbnailPath":"","ourSeasonName":"Boys 2016","attributes":{"Start Date":"1458964800000","Start Time":"1459020824000","Location":"NA"},"sportName":"Volleyball","theirTeam":"North Hills ","sport":1,"theirTeamId":11},"313":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":312,"id":313,"childrenGroups":[],"favorited":false,"theirSeasonName":"Boys 2016","associatedEvent":216,"ourTeam":"Varsity 2016","pointsFor":16,"index":0,"dateString":"Saturday, March 26, 2016","theirSeason":50,"parentGroupName":"Match: Varsity 2016 vs. Penn Trafford on Mar 26, 2016","parentGroupScore":"0-0-2","videoUploadPercentage":0,"ourTeamId":43,"ourSeason":49,"name":"Game #1 @ 10:09:08 AM","thumbnailPath":"","ourSeasonName":"Boys 2016","attributes":{"Start Date":"1458964800000","Start Time":"1459001348000","Location":"NA"},"sportName":"Volleyball","theirTeam":"Penn Trafford","sport":1,"theirTeamId":10},"324":{"pointsAgainst":0,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":306,"id":324,"childrenGroups":[325],"favorited":false,"theirSeasonName":"Boys 2016","ourTeam":"Varsity 2016","pointsFor":1,"index":5,"dateString":"Saturday, March 26, 2016","theirSeason":51,"parentGroupScore":"4-1-3","videoUploadPercentage":0,"ourTeamId":43,"ourSeason":49,"name":"Match: Varsity 2016 vs. Montour on Mar 26, 2016","thumbnailPath":"","ourSeasonName":"Boys 2016","attributes":{"Start Date":"1458964800000","opponent":"Montour","Location":"NA"},"sportName":"Volleyball","theirTeam":"Montour","sport":1,"theirTeamId":21},"314":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":312,"id":314,"childrenGroups":[],"favorited":false,"theirSeasonName":"Boys 2016","associatedEvent":217,"ourTeam":"Varsity 2016","pointsFor":18,"index":1,"dateString":"Saturday, March 26, 2016","theirSeason":50,"parentGroupName":"Match: Varsity 2016 vs. Penn Trafford on Mar 26, 2016","parentGroupScore":"0-0-2","videoUploadPercentage":0,"ourTeamId":43,"ourSeason":49,"name":"Game #2 @ 10:25:03 AM","thumbnailPath":"","ourSeasonName":"Boys 2016","attributes":{"Start Date":"1458964800000","Start Time":"1459002303000","Location":"NA"},"sportName":"Volleyball","theirTeam":"Penn Trafford","sport":1,"theirTeamId":10},"325":{"pointsAgainst":16,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":324,"id":325,"childrenGroups":[],"favorited":false,"theirSeasonName":"Boys 2016","associatedEvent":224,"ourTeam":"Varsity 2016","pointsFor":25,"index":0,"dateString":"Saturday, March 26, 2016","theirSeason":51,"parentGroupName":"Match: Varsity 2016 vs. Montour on Mar 26, 2016","parentGroupScore":"1-0-0","videoUploadPercentage":0,"ourTeamId":43,"ourSeason":49,"name":"Game #1 @ 3:50:32 PM","thumbnailPath":"","ourSeasonName":"Boys 2016","attributes":{"Start Date":"1458964800000","Start Time":"1459021832000","Location":"NA"},"sportName":"Volleyball","theirTeam":"Montour","sport":1,"theirTeamId":21},"315":{"pointsAgainst":0,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":306,"id":315,"childrenGroups":[316,317],"favorited":false,"theirSeasonName":"Boys 2016","ourTeam":"Varsity 2016","pointsFor":3,"index":2,"dateString":"Saturday, March 26, 2016","theirSeason":52,"parentGroupScore":"4-1-3","videoUploadPercentage":0,"ourTeamId":43,"ourSeason":49,"name":"Match: Varsity 2016 vs. Penn Hills on Mar 26, 2016","thumbnailPath":"","ourSeasonName":"Boys 2016","attributes":{"Start Date":"1458964800000","opponent":"Penn Hills","Location":"NA"},"sportName":"Volleyball","theirTeam":"Penn Hills","sport":1,"theirTeamId":36},"326":{"pointsAgainst":0,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":306,"id":326,"childrenGroups":[327],"favorited":false,"theirSeasonName":"Boys 2016","ourTeam":"Varsity 2016","pointsFor":1,"index":6,"dateString":"Saturday, March 26, 2016","theirSeason":55,"parentGroupScore":"4-1-3","videoUploadPercentage":0,"ourTeamId":43,"ourSeason":49,"name":"Match: Varsity 2016 vs. NA on Mar 26, 2016","thumbnailPath":"","ourSeasonName":"Boys 2016","attributes":{"Start Date":"1458964800000","opponent":"NA","Location":"NA"},"sportName":"Volleyball","theirTeam":"NA","sport":1,"theirTeamId":3},"316":{"pointsAgainst":14,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":315,"id":316,"childrenGroups":[],"favorited":false,"theirSeasonName":"Boys 2016","associatedEvent":218,"ourTeam":"Varsity 2016","pointsFor":25,"index":0,"dateString":"Saturday, March 26, 2016","theirSeason":52,"parentGroupName":"Match: Varsity 2016 vs. Penn Hills on Mar 26, 2016","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":43,"ourSeason":49,"name":"Game #1 @ 11:28:59 AM","thumbnailPath":"","ourSeasonName":"Boys 2016","attributes":{"Start Date":"1458964800000","Start Time":"1459006139000","Location":"NA"},"sportName":"Volleyball","theirTeam":"Penn Hills","sport":1,"theirTeamId":36},"327":{"pointsAgainst":19,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":326,"id":327,"childrenGroups":[],"favorited":false,"theirSeasonName":"Boys 2016","associatedEvent":225,"ourTeam":"Varsity 2016","pointsFor":25,"index":0,"dateString":"Saturday, March 26, 2016","theirSeason":55,"parentGroupName":"Match: Varsity 2016 vs. NA on Mar 26, 2016","parentGroupScore":"1-0-0","videoUploadPercentage":0,"ourTeamId":43,"ourSeason":49,"name":"Game #1 @ 4:40:08 PM","thumbnailPath":"","ourSeasonName":"Boys 2016","attributes":{"Start Date":"1458964800000","Start Time":"1459024808000","Location":"NA"},"sportName":"Volleyball","theirTeam":"NA","sport":1,"theirTeamId":3},"317":{"pointsAgainst":15,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":315,"id":317,"childrenGroups":[],"favorited":false,"theirSeasonName":"Boys 2016","associatedEvent":219,"ourTeam":"Varsity 2016","pointsFor":25,"index":1,"dateString":"Saturday, March 26, 2016","theirSeason":52,"parentGroupName":"Match: Varsity 2016 vs. Penn Hills on Mar 26, 2016","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":43,"ourSeason":49,"name":"Game #2 @ 11:48:14 AM","thumbnailPath":"","ourSeasonName":"Boys 2016","attributes":{"Start Date":"1458964800000","Start Time":"1459007294000","Location":"NA"},"sportName":"Volleyball","theirTeam":"Penn Hills","sport":1,"theirTeamId":36},"328":{"pointsAgainst":1,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":306,"id":328,"childrenGroups":[329],"favorited":false,"theirSeasonName":"Boys 2016","ourTeam":"Varsity 2016","pointsFor":0,"index":7,"dateString":"Saturday, March 26, 2016","theirSeason":50,"parentGroupScore":"4-1-3","videoUploadPercentage":0,"ourTeamId":43,"ourSeason":49,"name":"Match: Varsity 2016 vs. Penn Trafford on Mar 26, 2016","thumbnailPath":"","ourSeasonName":"Boys 2016","attributes":{"Start Date":"1458964800000","opponent":"Penn Trafford","Location":"NA"},"sportName":"Volleyball","theirTeam":"Penn Trafford","sport":1,"theirTeamId":10},"306":{"pointsAgainst":3,"practice":false,"typeName":"Tournament","gameVideos":[],"pointsTied":1,"myType":1,"id":306,"childrenGroups":[309,312,315,318,321,324,326,328],"favorited":false,"ourTeam":"Varsity 2016","pointsFor":4,"index":0,"dateString":"","parentGroupName":"","parentGroupScore":"","videoUploadPercentage":0,"ourTeamId":43,"ourSeason":49,"name":"Tournament: NA Tournament","thumbnailPath":"","ourSeasonName":"Boys 2016","attributes":{"Location":"NA","Name":"NA Tournament"},"sportName":"Volleyball","theirTeam":"","sport":1,"theirTeamId":""},"318":{"pointsAgainst":0,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":306,"id":318,"childrenGroups":[319,320],"favorited":false,"theirSeasonName":"Boys 2016","ourTeam":"Varsity 2016","pointsFor":2,"index":3,"dateString":"Saturday, March 26, 2016","theirSeason":53,"parentGroupScore":"4-1-3","videoUploadPercentage":0,"ourTeamId":43,"ourSeason":49,"name":"Match: Varsity 2016 vs. Plum on Mar 26, 2016","thumbnailPath":"","ourSeasonName":"Boys 2016","attributes":{"Start Date":"1458964800000","opponent":"Plum","Location":"NA"},"sportName":"Volleyball","theirTeam":"Plum","sport":1,"theirTeamId":23},"329":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":328,"id":329,"childrenGroups":[],"favorited":false,"theirSeasonName":"Boys 2016","associatedEvent":226,"ourTeam":"Varsity 2016","pointsFor":16,"index":0,"dateString":"Saturday, March 26, 2016","theirSeason":50,"parentGroupName":"Match: Varsity 2016 vs. Penn Trafford on Mar 26, 2016","parentGroupScore":"0-0-1","videoUploadPercentage":0,"ourTeamId":43,"ourSeason":49,"name":"Game #1 @ 5:10:16 PM","thumbnailPath":"","ourSeasonName":"Boys 2016","attributes":{"Start Date":"1458964800000","Start Time":"1459026616000","Location":"NA"},"sportName":"Volleyball","theirTeam":"Penn Trafford","sport":1,"theirTeamId":10},"319":{"pointsAgainst":17,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":318,"id":319,"childrenGroups":[],"favorited":false,"theirSeasonName":"Boys 2016","associatedEvent":220,"ourTeam":"Varsity 2016","pointsFor":25,"index":0,"dateString":"Saturday, March 26, 2016","theirSeason":53,"parentGroupName":"Match: Varsity 2016 vs. Plum on Mar 26, 2016","parentGroupScore":"2-0-0","videoUploadPercentage":0,"ourTeamId":43,"ourSeason":49,"name":"Game #1 @ 1:45:15 PM","thumbnailPath":"","ourSeasonName":"Boys 2016","attributes":{"Start Date":"1458964800000","Start Time":"1459014315000","Location":"NA"},"sportName":"Volleyball","theirTeam":"Plum","sport":1,"theirTeamId":23},"309":{"pointsAgainst":2,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":306,"id":309,"childrenGroups":[310,311],"favorited":false,"theirSeasonName":"Boys 2016","ourTeam":"Varsity 2016","pointsFor":0,"index":1,"dateString":"Saturday, March 26, 2016","theirSeason":51,"parentGroupScore":"4-1-3","videoUploadPercentage":0,"ourTeamId":43,"ourSeason":49,"name":"Match: Varsity 2016 vs. Montour on Mar 26, 2016","thumbnailPath":"","ourSeasonName":"Boys 2016","attributes":{"Start Date":"1458964800000","opponent":"Montour","Location":"NA"},"sportName":"Volleyball","theirTeam":"Montour","sport":1,"theirTeamId":21}};
+var selectedGroupingIds = [306];
+var selectedPlayers = {};
+
+$(document).ready(function () {
+	$(".tablesorter").tablesorter({ 
+        // define a custom text extraction function 
+        textExtraction: function(node) { 
+            // extract data from markup and return it
+            var childLinks = node.getElementsByTagName("a");
+            if (childLinks.length > 0) {
+            	return node.getElementsByTagName("a")[0].innerHTML;
+            } else {
+                return "0"; //node.childNodes[0].textContent;
+            } 
+        },
+        sortInitialOrder: 'desc'
+    });
+	
+	$('.tableSorter').stickyHeaders();
+});
+</script>
+
+	
+	<!-- Hack for the footer to follow -->
+	<div id="push"></div>
+</div>
+
+<div id="footer">StatEasy Release #29, registered to kingleo008@yahoo.com. <br/>Copyright 2012 <a href="http://www.ressq.com/">RessQ Technologies Inc.</a>
+<div id="logo"><img src="/images/flogo.png" /></div>
+</div>
+
+</body>
+</html>

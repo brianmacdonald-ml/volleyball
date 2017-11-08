@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+
+	<typedef name="SharingPermissionsType" class="com.ressq.stateasy.model.hibernate.GenericEnumUserType">
+		<param name="enumClass">com.ressq.stateasy.model.enums.SharingPermissions</param>
+	</typedef>
+	
+	<class name="SeasonFollower" table="seasonFollowers">
+		<id name="id" column="seasonFollower">
+			<generator class="native"/>
+		</id>
+		
+		<many-to-one name="followUser" column="statUser" class="StatUser" index="FollowSeasonLookupByUser" unique-key="FollowSeasonOncePerUser" />
+		
+		<many-to-one name="followUserGroup" column="userGroup" class="UserGroup" index="FollowSeasonLookupByUserGroup" unique-key="FollowSeasonOncePerUserGroup" />
+		
+		<many-to-one name="season" column="season" class="Season" not-null="true" unique-key="FollowSeasonOncePerUser, FollowSeasonOncePerUserGroup" />
+		
+		<property name="permissions" type="SharingPermissionsType">
+			<column name="permissions"/>
+		</property>
+		
+		<property name="followedOn">
+			<column name="followedOn"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

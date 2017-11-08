@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+	<class name="StatEffect" table="stateffects">
+		<id name="id" column="stateffect" unsaved-value="null">
+			<generator class="native"/>
+		</id>
+		
+		<property name="uuid" index="stateffectuuidindex">
+			<column name="uuid"/>
+		</property>
+	
+		<property name="name" unique-key="effect_unique_by_sport">
+			<column name="name"/>
+		</property>
+	
+		<property name="friendlyName">
+			<column name="friendlyName"/>
+		</property>
+		
+		<property name="version">
+			<column name="version"/>
+		</property>
+		
+		<property name="provides">
+			<column name="provideInfo"/>
+		</property>
+		
+		<property name="effect" type="text">
+			<column name="effect"/>
+		</property>
+		
+		<property name="sharedCode">
+			<column name="sharedCode" default="false"/>
+		</property>
+		
+		<many-to-one 
+			name="sport" 
+			column="sport" 
+			class="Sport" 
+			not-null="true" 
+			unique-key="effect_unique_by_sport"/>
+		
+	</class>
+</hibernate-mapping>

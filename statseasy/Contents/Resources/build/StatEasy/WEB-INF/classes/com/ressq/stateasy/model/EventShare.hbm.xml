@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+
+	<typedef name="SharingPermissionsType" class="com.ressq.stateasy.model.hibernate.GenericEnumUserType">
+		<param name="enumClass">com.ressq.stateasy.model.enums.SharingPermissions</param>
+	</typedef>
+
+	<class name="EventShare" table="eventShares">
+		<id name="id" column="eventShare" unsaved-value="null">
+			<generator class="native"/>
+		</id>
+
+		<many-to-one name="eventGrouping" column="eventGrouping" class="EventGrouping" />
+		<many-to-one name="fromUser" column="fromUser" class="StatUser" />
+		<many-to-one name="toUser" column="toUser" class="StatUser" />
+		
+		<property name="sharingPermissions" type="SharingPermissionsType">
+			<column name="sharingPermissions"/>
+		</property>
+		
+		<property name="sharedWhen">
+			<column name="sharedWhen"/>
+		</property>
+				
+	</class>
+</hibernate-mapping>

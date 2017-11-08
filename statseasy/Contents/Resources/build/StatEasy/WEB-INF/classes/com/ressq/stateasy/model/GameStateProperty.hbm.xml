@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+	<class name="GameStateProperty" table="gamestateproperties" batch-size="1000">
+		<id name="id" column="gamestateproperty" unsaved-value="null">
+			<generator class="native"/>
+		</id>
+	
+		<natural-id>
+			<property name="name" index="gamestatepropertynaturalindex">
+				<column name="propertyname"/>
+			</property>
+	
+			<property name="value" index="gamestatepropertynaturalindex">
+				<column name="propertyvalue"/>
+			</property>
+		</natural-id>
+		
+	</class>
+</hibernate-mapping>

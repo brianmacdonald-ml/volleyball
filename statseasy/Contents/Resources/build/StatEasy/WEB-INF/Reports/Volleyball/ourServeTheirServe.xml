@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_26" class="java.beans.XMLDecoder"> 
+ <object id="View1" class="com.ressq.stateasy.model.View"> 
+  <void property="allColumns"> 
+   <object class="java.util.ArrayList"> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count(k)?[startingState[hasServe]=weDo]</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>1</int> 
+      </void> 
+      <void property="name"> 
+       <string>K</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View1"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count(e)?[startingState[hasServe]=weDo]</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>2</int> 
+      </void> 
+      <void property="name"> 
+       <string>E</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View1"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count([k,e,at])?[startingState[hasServe]=weDo]</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>3</int> 
+      </void> 
+      <void property="name"> 
+       <string>TA</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View1"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>(count(k)?[startingState[hasServe]=weDo]-count(e)?[startingState[hasServe]=weDo])/count([k,e,at])?[startingState[hasServe]=weDo]</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>4</int> 
+      </void> 
+      <void property="name"> 
+       <string>PCT</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View1"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count(a)?[startingState[hasServe]=weDo]</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>5</int> 
+      </void> 
+      <void property="name"> 
+       <string>A</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View1"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count(d)?[startingState[hasServe]=weDo]</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>6</int> 
+      </void> 
+      <void property="name"> 
+       <string>D</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View1"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count(md)?[startingState[hasServe]=weDo]</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>7</int> 
+      </void> 
+      <void property="name"> 
+       <string>MD</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View1"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count(bs)?[startingState[hasServe]=weDo]</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>8</int> 
+      </void> 
+      <void property="name"> 
+       <string>BS</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View1"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count(db,*)?[startingState[hasServe]=weDo]</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>9</int> 
+      </void> 
+      <void property="name"> 
+       <string>DB</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View1"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count(tb,*)?[startingState[hasServe]=weDo]</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>10</int> 
+      </void> 
+      <void property="name"> 
+       <string>TB</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View1"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count(k)?[startingState[hasServe]=theyDo]</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>11</int> 
+      </void> 
+      <void property="name"> 
+       <string>K</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View1"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count(e)?[startingState[hasServe]=theyDo]</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>12</int> 
+      </void> 
+      <void property="name"> 
+       <string>E</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View1"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count([k,e,at])?[startingState[hasServe]=theyDo]</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>13</int> 
+      </void> 
+      <void property="name"> 
+       <string>TA</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View1"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>(count(k)?[startingState[hasServe]=theyDo]-count(e)?[startingState[hasServe]=theyDo])/count([k,e,at])?[startingState[hasServe]=theyDo]</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>14</int> 
+      </void> 
+      <void property="name"> 
+       <string>PCT</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View1"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count(a)?[startingState[hasServe]=theyDo]</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>15</int> 
+      </void> 
+      <void property="name"> 
+       <string>A</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View1"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count(d)?[startingState[hasServe]=theyDo]</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>16</int> 
+      </void> 
+      <void property="name"> 
+       <string>D</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View1"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count(md)?[startingState[hasServe]=theyDo]</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>17</int> 
+      </void> 
+      <void property="name"> 
+       <string>MD</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View1"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count(bs)?[startingState[hasServe]=theyDo]</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>18</int> 
+      </void> 
+      <void property="name"> 
+       <string>BS</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View1"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count(db,*)?[startingState[hasServe]=theyDo]</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>19</int> 
+      </void> 
+      <void property="name"> 
+       <string>DB</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View1"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count(tb,*)?[startingState[hasServe]=theyDo]</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>20</int> 
+      </void> 
+      <void property="name"> 
+       <string>TB</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View1"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="allGroups"> 
+   <object class="java.util.ArrayList"> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.ColumnGroup"> 
+      <void property="endIndex"> 
+       <int>10</int> 
+      </void> 
+      <void property="name"> 
+       <string>Our Serve</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View1"/> 
+      </void> 
+      <void property="startIndex"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.ColumnGroup"> 
+      <void property="endIndex"> 
+       <int>20</int> 
+      </void> 
+      <void property="name"> 
+       <string>Their Serve</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View1"/> 
+      </void> 
+      <void property="startIndex"> 
+       <int>11</int> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="name"> 
+   <string>Our Serve / Their Serve</string> 
+  </void> 
+  <void property="totalRow"> 
+   <boolean>true</boolean> 
+  </void> 
+ </object> 
+</java> 

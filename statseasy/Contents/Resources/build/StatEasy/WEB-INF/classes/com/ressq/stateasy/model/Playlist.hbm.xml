@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+
+	<typedef name="PlaylistStatus" class="com.ressq.stateasy.model.hibernate.GenericEnumUserType">
+		<param name="enumClass">com.ressq.stateasy.model.ProgressStatus</param>
+	</typedef>
+
+	<class name="Playlist" table="playlists">
+		<id name="id" column="playlist" unsaved-value="null">
+			<generator class="native"/>
+		</id>
+		
+		<property name="uuid" index="playlistuuidindex">
+			<column name="uuid"/>
+		</property>
+		
+		<property name="name">
+			<column name="name"/>
+		</property>
+		
+		<property name="status" type="PlaylistStatus">
+			<column name="status"/>
+		</property>
+		
+		<bag name="entries" cascade="all-delete-orphan" order-by="entryindex asc">
+			<key column="playlist"/>
+			<one-to-many class="PlaylistEntry"/>
+		</bag>
+		
+		<property name="viewCount">
+			<column name="viewCount"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

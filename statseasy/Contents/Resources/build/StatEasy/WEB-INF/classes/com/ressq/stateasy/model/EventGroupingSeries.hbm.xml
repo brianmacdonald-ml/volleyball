@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+	<class name="EventGroupingSeries" table="eventGroupingSerieses">
+		<id name="id" column="eventGroupingSeries" unsaved-value="null">
+			<generator class="native"/>
+		</id>
+	
+		<property name="uuid" index="eventgroupingseriesuuidindex">
+			<column name="uuid"/>
+		</property>
+		
+		<many-to-one name="sport" column="sport" class="Sport" not-null="true" />
+		
+		<bag name="series" inverse="true" order-by="eventGroupingTypeIndex asc" cascade="all">
+			<key column="eventGroupingSeries"/>
+			<one-to-many class="EventGroupingType"/>
+		</bag>
+		
+	</class>
+</hibernate-mapping>

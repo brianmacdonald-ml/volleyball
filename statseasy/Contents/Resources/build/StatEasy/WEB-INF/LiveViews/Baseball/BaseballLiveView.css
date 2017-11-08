@@ -1,0 +1,14 @@
+#BaseballLiveView_Div table { margin-top:20px; margin-left:30px; }
+.clear { clear:both; }
+.scoreboard { float:left; }
+.dataItem { float:left; text-align:center; font-family:Arial Narrow, sans-serif; margin-top:10px; }
+.dataItem .label { font-size:14px; font-weight:bold; color:#e99d1a; }
+.dataItem .value { background-color:#000; border:1px solid #e99d1a; color:#eee; text-align:center; margin:0px auto; margin-top:5px; font-family:Arial Black; }
+.bottomRow { margin-left:21px; }
+.topRow .dataItem { width:100px; }
+.topRow .dataItem .value { height:60px; width:80px; font-size:34px; line-height:62px; }
+.bottomRow .dataItem .label { line-height:38px; margin-left:6px; font-size:12px; }
+.bottomRow .dataItem .value { height:30px; width:30px; font-size:18px; line-height:30px; }
+.bottomRow .dataItem * { float:left; }
+.bottomRow .drive .value { width:70px; }
+.pitchCount { font-size: 12px; }

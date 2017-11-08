@@ -1,0 +1,1601 @@
+
+
+
+
+
+
+
+
+
+
+<html>
+	<head>
+		<title>The StatEasy Content Creator</title>
+		<link rel="stylesheet" href="/css/tokens.css" type="text/css">
+		<link rel="stylesheet" href="/css/print.css" type="text/css" media="print">
+		<link rel="stylesheet" href="/css/jquery.autocomplete.css" type="text/css">
+
+		<script src="/js/jquery-1.6.1.js" type="text/javascript"></script>
+		<script src="/js/jquery.easing.1.3.js" type="text/javascript"></script>
+		<script src="/js/jquery.corners.min.js" type="text/javascript"></script>
+		<script src="/js/jquery.dropshadow.js" type="text/javascript"></script>
+		<script src="/js/jquery.autocomplete.js" type="text/javascript"></script>
+		
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		
+		<link rel="shortcut icon" href="/images/favicon_1.jpg" />
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				$(".autofocus").focus();
+			});
+		</script>
+		
+	</head>
+
+	<body>
+
+<div id="container">
+	<div id="header">
+		<img src="/images/logo.png" class="headerLogo" />
+		
+		<div id="gameType"><span id="gameTypeInnerText"><a href="/hello.htm" title="Return to the Welcome page." class="noUnderline">Logout</a></span></div>
+
+		
+		
+		<div id="sportUpdates"></div>
+	</div>
+	<div id="navigation">
+		
+		<ul id="launch">
+			<li class="main
+				 
+			"><a href="/launch.htm" title="Select an action from the StatEasy dashboard">Dashboard</a></li>
+		</ul>
+		<ul id="config">
+			<li class="main
+				 
+			">
+			
+			<a href="/configure/stats.htm" title="Configure your stats, reports, views, teams, or players">Configuration</a></li>
+		</ul>
+		<ul id="account">
+			<li class="main">
+			<a href="http://app.stateasy.com:80/" target="_blank">Social Sports Network</a>
+			</li>
+		</ul>
+		
+
+		
+
+	</div>
+
+
+<link type="text/css" href="/css/jquery.ui/jquery-ui-1.8.2.custom.css?sv=1" rel="stylesheet" />
+<script src="/js/jquery.ui/jquery-ui-1.8.2.custom.js?sv=1" type="text/javascript"></script>
+<script type="text/javascript" src="/js/jquery.plugins/jquery.cookie.js?sv=1"></script>
+<script type="text/javascript" src="/js/encoder.js?sv=1"></script>
+<script type="text/javascript" src="/js/common.js?sv=1"></script>
+<script type="text/javascript" src="/js/seasonDisplay.js?sv=1"></script>
+<script type="text/javascript" src="/js/objectSelector.js?sv=1"></script>
+<script type="text/javascript" src="/js/seasonManagement.js?sv=1"></script>
+
+<div id="content"><div id="innercontent">
+<div class="middle">
+
+<script type="text/javascript">
+var eventGroupings = {"450":{"pointsAgainst":1,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":437,"id":450,"childrenGroups":[451],"favorited":false,"theirSeasonName":"Varsity 2017","ourTeam":"Girls 2017","pointsFor":0,"index":6,"dateString":"Saturday, September 2, 2017","theirSeason":78,"parentGroupName":"Tournament: Mt. Lebonan","parentGroupScore":"2-0-6","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Match: Girls 2017 vs. Pine Richland on Sep 2, 2017","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Start Date":"1504324800000","opponent":"Pine Richland","Location":"Mt. Lebonan"},"sportName":"Volleyball","theirTeam":"Pine Richland","sport":1,"theirTeamId":18},"451":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":450,"id":451,"childrenGroups":[],"favorited":false,"theirSeasonName":"Varsity 2017","associatedEvent":306,"ourTeam":"Girls 2017","pointsFor":18,"index":0,"dateString":"Saturday, September 2, 2017","theirSeason":78,"parentGroupName":"Match: Girls 2017 vs. Pine Richland on Sep 2, 2017","parentGroupScore":"0-0-1","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Game #1 @ 2:00:59 PM","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Start Date":"1504324800000","Start Time":"1504375259000","Location":"Mt. Lebonan"},"sportName":"Volleyball","theirTeam":"Pine Richland","sport":1,"theirTeamId":18},"452":{"pointsAgainst":1,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":437,"id":452,"childrenGroups":[453],"favorited":false,"theirSeasonName":"Varsity 2017","ourTeam":"Girls 2017","pointsFor":0,"index":7,"dateString":"Saturday, September 2, 2017","theirSeason":79,"parentGroupName":"Tournament: Mt. Lebonan","parentGroupScore":"2-0-6","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Match: Girls 2017 vs. Norwin on Sep 2, 2017","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Start Date":"1504324800000","opponent":"Norwin","Location":"Mt. Lebonan"},"sportName":"Volleyball","theirTeam":"Norwin","sport":1,"theirTeamId":22},"453":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":452,"id":453,"childrenGroups":[],"favorited":false,"theirSeasonName":"Varsity 2017","associatedEvent":307,"ourTeam":"Girls 2017","pointsFor":13,"index":0,"dateString":"Saturday, September 2, 2017","theirSeason":79,"parentGroupName":"Match: Girls 2017 vs. Norwin on Sep 2, 2017","parentGroupScore":"0-0-1","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Game #1 @ 2:32:08 PM","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Start Date":"1504324800000","Start Time":"1504377128000","Location":"Mt. Lebonan"},"sportName":"Volleyball","theirTeam":"Norwin","sport":1,"theirTeamId":22},"457":{"pointsAgainst":0,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":4,"id":457,"childrenGroups":[458,459,460],"favorited":false,"theirSeasonName":"Varsity 2017","ourTeam":"Girls 2017","pointsFor":3,"index":1,"dateString":"Tuesday, September 5, 2017","theirSeason":82,"parentGroupName":"","parentGroupScore":"","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Match: Girls 2017 vs. Woodland Hillls on Sep 5, 2017","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Start Date":"1504584000000","opponent":"Woodland Hillls","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Woodland Hillls","sport":1,"theirTeamId":32},"458":{"pointsAgainst":9,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":457,"id":458,"childrenGroups":[],"favorited":false,"theirSeasonName":"Varsity 2017","associatedEvent":310,"ourTeam":"Girls 2017","pointsFor":25,"index":0,"dateString":"Tuesday, September 5, 2017","theirSeason":82,"parentGroupName":"Match: Girls 2017 vs. Woodland Hillls on Sep 5, 2017","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Game #1 @ 6:45:03 PM","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Start Date":"1504584000000","Start Time":"1504651503000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Woodland Hillls","sport":1,"theirTeamId":32},"437":{"pointsAgainst":6,"practice":false,"typeName":"Tournament","gameVideos":[],"pointsTied":0,"myType":1,"id":437,"childrenGroups":[438,440,442,444,446,448,450,452],"favorited":false,"ourTeam":"Girls 2017","pointsFor":2,"index":0,"dateString":"","parentGroupName":"","parentGroupScore":"","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Tournament: Mt. Lebonan","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Location":"Mt. Lebonan","Name":"Mt. Lebonan"},"sportName":"Volleyball","theirTeam":"","sport":1,"theirTeamId":""},"459":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":457,"id":459,"childrenGroups":[],"favorited":false,"theirSeasonName":"Varsity 2017","associatedEvent":311,"ourTeam":"Girls 2017","pointsFor":27,"index":1,"dateString":"Tuesday, September 5, 2017","theirSeason":82,"parentGroupName":"Match: Girls 2017 vs. Woodland Hillls on Sep 5, 2017","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Game #2 @ 7:14:22 PM","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Start Date":"1504584000000","Start Time":"1504653262000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Woodland Hillls","sport":1,"theirTeamId":32},"438":{"pointsAgainst":0,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":437,"id":438,"childrenGroups":[439],"favorited":false,"theirSeasonName":"Varsity 2017","ourTeam":"Girls 2017","pointsFor":1,"index":0,"dateString":"Saturday, September 2, 2017","theirSeason":72,"parentGroupName":"Tournament: Mt. Lebonan","parentGroupScore":"2-0-6","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Match: Girls 2017 vs. USC on Sep 2, 2017","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Start Date":"1504324800000","opponent":"USC","Location":"Mt. Lebonan"},"sportName":"Volleyball","theirTeam":"USC","sport":1,"theirTeamId":13},"439":{"pointsAgainst":23,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":438,"id":439,"childrenGroups":[],"favorited":false,"theirSeasonName":"Varsity 2017","associatedEvent":300,"ourTeam":"Girls 2017","pointsFor":25,"index":0,"dateString":"Saturday, September 2, 2017","theirSeason":72,"parentGroupName":"Match: Girls 2017 vs. USC on Sep 2, 2017","parentGroupScore":"1-0-0","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Game #1 @ 9:07:49 AM","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Start Date":"1504324800000","Start Time":"1504357669000","Location":"Mt. Lebonan"},"sportName":"Volleyball","theirTeam":"USC","sport":1,"theirTeamId":13},"460":{"pointsAgainst":17,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":457,"id":460,"childrenGroups":[],"favorited":false,"theirSeasonName":"Varsity 2017","associatedEvent":312,"ourTeam":"Girls 2017","pointsFor":25,"index":2,"dateString":"Tuesday, September 5, 2017","theirSeason":82,"parentGroupName":"Match: Girls 2017 vs. Woodland Hillls on Sep 5, 2017","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Game #3 @ 7:39:55 PM","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Start Date":"1504584000000","Start Time":"1504654795000","Location":"Fox Chapel"},"sportName":"Volleyball","theirTeam":"Woodland Hillls","sport":1,"theirTeamId":32},"461":{"pointsAgainst":0,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":4,"id":461,"childrenGroups":[462,463,464],"favorited":false,"theirSeasonName":"Varsity 2017","ourTeam":"Girls 2017","pointsFor":3,"index":2,"dateString":"Thursday, September 7, 2017","theirSeason":83,"parentGroupName":"","parentGroupScore":"","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Match: Girls 2017 vs. Penn Hills on Sep 7, 2017","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Start Date":"1504756800000","opponent":"Penn Hills","Location":"Penn Hills"},"sportName":"Volleyball","theirTeam":"Penn Hills","sport":1,"theirTeamId":36},"440":{"pointsAgainst":1,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":437,"id":440,"childrenGroups":[441],"favorited":false,"theirSeasonName":"Varsity 2017","ourTeam":"Girls 2017","pointsFor":0,"index":1,"dateString":"Saturday, September 2, 2017","theirSeason":73,"parentGroupName":"Tournament: Mt. Lebonan","parentGroupScore":"2-0-6","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Match: Girls 2017 vs. Bethel Park  on Sep 2, 2017","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Start Date":"1504324800000","opponent":"Bethel Park ","Location":"Mt. Lebonan"},"sportName":"Volleyball","theirTeam":"Bethel Park ","sport":1,"theirTeamId":15},"462":{"pointsAgainst":13,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":461,"id":462,"childrenGroups":[],"favorited":false,"theirSeasonName":"Varsity 2017","associatedEvent":313,"ourTeam":"Girls 2017","pointsFor":25,"index":0,"dateString":"Thursday, September 7, 2017","theirSeason":83,"parentGroupName":"Match: Girls 2017 vs. Penn Hills on Sep 7, 2017","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Game #1 @ 7:17:40 PM","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Start Date":"1504756800000","Start Time":"1504826260000","Location":"Penn Hills"},"sportName":"Volleyball","theirTeam":"Penn Hills","sport":1,"theirTeamId":36},"441":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":440,"id":441,"childrenGroups":[],"favorited":false,"theirSeasonName":"Varsity 2017","associatedEvent":301,"ourTeam":"Girls 2017","pointsFor":18,"index":0,"dateString":"Saturday, September 2, 2017","theirSeason":73,"parentGroupName":"Match: Girls 2017 vs. Bethel Park  on Sep 2, 2017","parentGroupScore":"0-0-1","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Game #1 @ 9:30:21 AM","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Start Date":"1504324800000","Start Time":"1504359021000","Location":"Mt. Lebonan"},"sportName":"Volleyball","theirTeam":"Bethel Park ","sport":1,"theirTeamId":15},"463":{"pointsAgainst":18,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":461,"id":463,"childrenGroups":[],"favorited":false,"theirSeasonName":"Varsity 2017","associatedEvent":314,"ourTeam":"Girls 2017","pointsFor":25,"index":1,"dateString":"Thursday, September 7, 2017","theirSeason":83,"parentGroupName":"Match: Girls 2017 vs. Penn Hills on Sep 7, 2017","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Game #2 @ 7:56:02 PM","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Start Date":"1504756800000","Start Time":"1504828562000","Location":"Penn Hills"},"sportName":"Volleyball","theirTeam":"Penn Hills","sport":1,"theirTeamId":36},"442":{"pointsAgainst":1,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":437,"id":442,"childrenGroups":[443],"favorited":false,"theirSeasonName":"Varsity 2017","ourTeam":"Girls 2017","pointsFor":0,"index":2,"dateString":"Saturday, September 2, 2017","theirSeason":74,"parentGroupName":"Tournament: Mt. Lebonan","parentGroupScore":"2-0-6","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Match: Girls 2017 vs. Mt Lebonan on Sep 2, 2017","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Start Date":"1504324800000","opponent":"Mt Lebonan","Location":"Mt. Lebonan"},"sportName":"Volleyball","theirTeam":"Mt Lebonan","sport":1,"theirTeamId":51},"464":{"pointsAgainst":18,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":5,"parentGroup":461,"id":464,"childrenGroups":[],"favorited":false,"theirSeasonName":"Varsity 2017","associatedEvent":315,"ourTeam":"Girls 2017","pointsFor":25,"index":2,"dateString":"Thursday, September 7, 2017","theirSeason":83,"parentGroupName":"Match: Girls 2017 vs. Penn Hills on Sep 7, 2017","parentGroupScore":"3-0-0","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Game #3 @ 8:20:23 PM","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Start Date":"1504756800000","Start Time":"1504830023000","Location":"Penn Hills"},"sportName":"Volleyball","theirTeam":"Penn Hills","sport":1,"theirTeamId":36},"443":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":442,"id":443,"childrenGroups":[],"favorited":false,"theirSeasonName":"Varsity 2017","associatedEvent":302,"ourTeam":"Girls 2017","pointsFor":19,"index":0,"dateString":"Saturday, September 2, 2017","theirSeason":74,"parentGroupName":"Match: Girls 2017 vs. Mt Lebonan on Sep 2, 2017","parentGroupScore":"0-0-1","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Game #1 @ 10:35:26 AM","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Start Date":"1504324800000","Start Time":"1504362926000","Location":"Mt. Lebonan"},"sportName":"Volleyball","theirTeam":"Mt Lebonan","sport":1,"theirTeamId":51},"465":{"pointsAgainst":0,"practice":false,"typeName":"Tournament","gameVideos":[],"pointsTied":0,"myType":1,"id":465,"childrenGroups":[466],"favorited":false,"ourTeam":"Girls 2017","pointsFor":1,"index":3,"dateString":"","parentGroupName":"","parentGroupScore":"","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Tournament: Shaler","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Location":"Shaler","Name":"Shaler"},"sportName":"Volleyball","theirTeam":"","sport":1,"theirTeamId":""},"444":{"pointsAgainst":0,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":437,"id":444,"childrenGroups":[445],"favorited":false,"theirSeasonName":"Varsity 2017","ourTeam":"Girls 2017","pointsFor":1,"index":3,"dateString":"Saturday, September 2, 2017","theirSeason":75,"parentGroupName":"Tournament: Mt. Lebonan","parentGroupScore":"2-0-6","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Match: Girls 2017 vs. Seton La Salle on Sep 2, 2017","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Start Date":"1504324800000","opponent":"Seton La Salle","Location":"Mt. Lebonan"},"sportName":"Volleyball","theirTeam":"Seton La Salle","sport":1,"theirTeamId":31},"466":{"pointsAgainst":0,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":465,"id":466,"childrenGroups":[467],"favorited":false,"theirSeasonName":"Varsity 2017","ourTeam":"Girls 2017","pointsFor":1,"index":0,"dateString":"Saturday, September 9, 2017","theirSeason":84,"parentGroupScore":"1-0-0","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Match: Girls 2017 vs. Titusville on Sep 9, 2017","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Start Date":"1504929600000","opponent":"Titusville","Location":"Shaler"},"sportName":"Volleyball","theirTeam":"Titusville","sport":1,"theirTeamId":52},"445":{"pointsAgainst":16,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":444,"id":445,"childrenGroups":[],"favorited":false,"theirSeasonName":"Varsity 2017","associatedEvent":303,"ourTeam":"Girls 2017","pointsFor":25,"index":0,"dateString":"Saturday, September 2, 2017","theirSeason":75,"parentGroupName":"Match: Girls 2017 vs. Seton La Salle on Sep 2, 2017","parentGroupScore":"1-0-0","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Game #1 @ 11:04:37 AM","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Start Date":"1504324800000","Start Time":"1504364677000","Location":"Mt. Lebonan"},"sportName":"Volleyball","theirTeam":"Seton La Salle","sport":1,"theirTeamId":31},"467":{"pointsAgainst":8,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":466,"id":467,"childrenGroups":[],"favorited":false,"theirSeasonName":"Varsity 2017","associatedEvent":316,"ourTeam":"Girls 2017","pointsFor":25,"index":0,"dateString":"Saturday, September 9, 2017","theirSeason":84,"parentGroupName":"Match: Girls 2017 vs. Titusville on Sep 9, 2017","parentGroupScore":"1-0-0","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Game #1 @ 8:54:13 AM","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Start Date":"1504929600000","Start Time":"1504961653000","Location":"Shaler"},"sportName":"Volleyball","theirTeam":"Titusville","sport":1,"theirTeamId":52},"446":{"pointsAgainst":1,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":437,"id":446,"childrenGroups":[447],"favorited":false,"theirSeasonName":"Varsity 2017","ourTeam":"Girls 2017","pointsFor":0,"index":4,"dateString":"Saturday, September 2, 2017","theirSeason":76,"parentGroupName":"Tournament: Mt. Lebonan","parentGroupScore":"2-0-6","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Match: Girls 2017 vs. Peters Township on Sep 2, 2017","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Start Date":"1504324800000","opponent":"Peters Township","Location":"Mt. Lebonan"},"sportName":"Volleyball","theirTeam":"Peters Township","sport":1,"theirTeamId":46},"447":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":446,"id":447,"childrenGroups":[],"favorited":false,"theirSeasonName":"Varsity 2017","associatedEvent":304,"ourTeam":"Girls 2017","pointsFor":16,"index":0,"dateString":"Saturday, September 2, 2017","theirSeason":76,"parentGroupName":"Match: Girls 2017 vs. Peters Township on Sep 2, 2017","parentGroupScore":"0-0-1","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Game #1 @ 12:07:07 PM","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Start Date":"1504324800000","Start Time":"1504368427000","Location":"Mt. Lebonan"},"sportName":"Volleyball","theirTeam":"Peters Township","sport":1,"theirTeamId":46},"448":{"pointsAgainst":1,"practice":false,"typeName":"Match","gameVideos":[],"pointsTied":0,"myType":2,"parentGroup":437,"id":448,"childrenGroups":[449],"favorited":false,"theirSeasonName":"Varsity 2017","ourTeam":"Girls 2017","pointsFor":0,"index":5,"dateString":"Saturday, September 2, 2017","theirSeason":77,"parentGroupName":"Tournament: Mt. Lebonan","parentGroupScore":"2-0-6","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Match: Girls 2017 vs. Penn Trafford on Sep 2, 2017","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Start Date":"1504324800000","opponent":"Penn Trafford","Location":"Mt. Lebonan"},"sportName":"Volleyball","theirTeam":"Penn Trafford","sport":1,"theirTeamId":10},"449":{"pointsAgainst":25,"practice":false,"typeName":"Game","gameVideos":[],"pointsTied":0,"myType":3,"parentGroup":448,"id":449,"childrenGroups":[],"favorited":false,"theirSeasonName":"Varsity 2017","associatedEvent":305,"ourTeam":"Girls 2017","pointsFor":20,"index":0,"dateString":"Saturday, September 2, 2017","theirSeason":77,"parentGroupName":"Match: Girls 2017 vs. Penn Trafford on Sep 2, 2017","parentGroupScore":"0-0-1","videoUploadPercentage":0,"ourTeamId":50,"ourSeason":71,"name":"Game #1 @ 12:54:14 PM","thumbnailPath":"","ourSeasonName":"Varsity 2017","attributes":{"Start Date":"1504324800000","Start Time":"1504371254000","Location":"Mt. Lebonan"},"sportName":"Volleyball","theirTeam":"Penn Trafford","sport":1,"theirTeamId":10}};
+var allPlayers = [{"firstName":"Abby","lastName":"Kieffer","name":"Abby Kieffer","id":61},{"firstName":"Chloe","lastName":"Yofan","name":"Chloe Yofan","id":46},{"firstName":"Joanna","lastName":"Delaney","name":"Joanna Delaney","id":75},{"firstName":"Erasmia","lastName":"Yager","name":"Erasmia Yager","id":45},{"firstName":"Lauren","lastName":"Himmel","name":"Lauren Himmel","id":65},{"firstName":"Joanna","lastName":"Delaney","name":"Joanna Delaney","id":58},{"firstName":"Jocelyn","lastName":"Eckenrode","name":"Jocelyn Eckenrode","id":48},{"firstName":"Jessica","lastName":"Klein","name":"Jessica Klein","id":62},{"firstName":"Jessica","lastName":"Michel","name":"Jessica Michel","id":37},{"firstName":"Katherine","lastName":"Chomko","name":"Katherine Chomko","id":30},{"firstName":"Maddy","lastName":"Kieffer","name":"Maddy Kieffer","id":64},{"firstName":"Lauren","lastName":"Heasley","name":"Lauren Heasley","id":51},{"firstName":"Jasmine","lastName":"Macdonald","name":"Jasmine Macdonald","id":63},{"firstName":"Megan","lastName":"Friday","name":"Megan Friday","id":33},{"firstName":"Madison","lastName":"Heininger","name":"Madison Heininger","id":60},{"firstName":"Meredith","lastName":"Kenney","name":"Meredith Kenney","id":36},{"firstName":"Rachel","lastName":"Ferris","name":"Rachel Ferris","id":59},{"firstName":"Tessa","lastName":"Friday","name":"Tessa Friday","id":50}];
+</script>
+
+<form method="get" action="/reports.htm" id="reportForm">
+<h2 class="titleBorder smaller">
+	With the selected games, view the stats using 
+	<select name="viewId">
+	  
+	  	
+	  	
+		<option value="1-View" >Default View</option>
+	  
+	  	
+	  	
+		<option value="3-View" >Our Serve / Their Serve</option>
+	  
+	  	
+	  	
+		<option value="4-View" >Passing & Defense</option>
+	  
+	  	
+	  	
+		<option value="5-View" >Points Earned and Errors</option>
+	  
+	  	
+	  	
+		<option value="6-View" >Situational Offense</option>
+	  
+	  	
+	  	
+		<option value="7-View" >Team Attack</option>
+	  
+	</select>
+	focused on
+	<select name="grouping">
+	  
+	  	
+	  	
+	  	  
+	  	
+		<option value="1" selected='true'>Players</option>
+	  
+	  	
+	  	
+		<option value="2" >Our Rotation</option>
+	  
+	  	
+	  	
+		<option value="3" >Their Rotation</option>
+	  
+	  	
+	  	
+		<option value="4" >Our Setter</option>
+	  
+	  	
+	  	
+		<option value="5" >Set Type</option>
+	  
+	  	
+	  	
+		<option value="6" >Serve Type</option>
+	  
+	</select>
+	using <a id="setPlayerDialogLink" href="#">All Players</a> 
+	<input type="hidden" name="season" value="71"/>
+	<input class="hoverGreen" type="submit" value="Go"/>
+</h2>
+
+<h2 class="titleBorder borderAbove">Girls 2017 - Varsity 2017:</h2>
+
+<div id="seasonEvents">
+
+
+
+<table class="striped forNow" style="width:100%">
+	<thead>
+	<tr>
+		<th><img id='open_close_all' class='open_close' src='/images/minus.png'/><input type="checkbox" name="selectAllEvents" id="selectAllEvents"/><span style="margin-left: 10px">Name</span></th>
+		<th>Actions</th>
+	</tr>
+	</thead>
+	<tbody>
+	
+		<tr class="depth0 eventRow" id="eventId465">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="465"/>
+				Tournament: Shaler 
+				<span class="teamColor"></span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=71&eventGroupingId=465">Create a new Match</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=465">Edit properties</a>
+					
+				
+				
+					
+						|
+					
+					<a href="/importExport.htm?action=export&egId=465">Export</a>
+					
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=465&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[465].name, 465, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId466">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="466"/>
+				Match: Girls 2017 vs. Titusville on Sep 9, 2017 
+				<span class="teamColor">WIN(1-0-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=71&eventGroupingId=466">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=466">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=466&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[466].name, 466, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId467">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="467"/>
+				Game #1 @ 8:54:13 AM 
+				<span class="teamColor">WIN(25-8)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=316">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=467">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=467&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[467].name, 467, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth0 eventRow" id="eventId461">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="461"/>
+				Match: Girls 2017 vs. Penn Hills on Sep 7, 2017 
+				<span class="teamColor">WIN(3-0-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=71&eventGroupingId=461">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=461">Edit properties</a>
+					
+				
+				
+					
+						|
+					
+					<a href="/importExport.htm?action=export&egId=461">Export</a>
+					
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=461&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[461].name, 461, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId462">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="462"/>
+				Game #1 @ 7:17:40 PM 
+				<span class="teamColor">WIN(25-13)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=313">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=462">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=462&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[462].name, 462, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId463">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="463"/>
+				Game #2 @ 7:56:02 PM 
+				<span class="teamColor">WIN(25-18)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=314">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=463">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=463&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[463].name, 463, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId464">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="464"/>
+				Game #3 @ 8:20:23 PM 
+				<span class="teamColor">WIN(25-18)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=315">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=464">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=464&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[464].name, 464, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth0 eventRow" id="eventId457">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="457"/>
+				Match: Girls 2017 vs. Woodland Hillls on Sep 5, 2017 
+				<span class="teamColor">WIN(3-0-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=71&eventGroupingId=457">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=457">Edit properties</a>
+					
+				
+				
+					
+						|
+					
+					<a href="/importExport.htm?action=export&egId=457">Export</a>
+					
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=457&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[457].name, 457, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId458">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="458"/>
+				Game #1 @ 6:45:03 PM 
+				<span class="teamColor">WIN(25-9)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=310">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=458">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=458&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[458].name, 458, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId459">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="459"/>
+				Game #2 @ 7:14:22 PM 
+				<span class="teamColor">WIN(27-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=311">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=459">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=459&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[459].name, 459, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId460">
+			<td style="padding-left: 40px">
+				
+				<input type="checkbox" name="egId" value="460"/>
+				Game #3 @ 7:39:55 PM 
+				<span class="teamColor">WIN(25-17)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=312">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=460">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=460&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[460].name, 460, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth0 eventRow" id="eventId437">
+			<td style="padding-left: 10px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="437"/>
+				Tournament: Mt. Lebonan 
+				<span class="teamColor"></span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=71&eventGroupingId=437">Create a new Match</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=437">Edit properties</a>
+					
+				
+				
+					
+						|
+					
+					<a href="/importExport.htm?action=export&egId=437">Export</a>
+					
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=437&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[437].name, 437, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId438">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="438"/>
+				Match: Girls 2017 vs. USC on Sep 2, 2017 
+				<span class="teamColor">WIN(1-0-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=71&eventGroupingId=438">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=438">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=438&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[438].name, 438, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId439">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="439"/>
+				Game #1 @ 9:07:49 AM 
+				<span class="teamColor">WIN(25-23)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=300">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=439">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=439&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[439].name, 439, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId440">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="440"/>
+				Match: Girls 2017 vs. Bethel Park  on Sep 2, 2017 
+				<span class="teamColor">LOSS(0-1-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=71&eventGroupingId=440">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=440">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=440&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[440].name, 440, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId441">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="441"/>
+				Game #1 @ 9:30:21 AM 
+				<span class="teamColor">LOSS(18-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=301">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=441">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=441&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[441].name, 441, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId442">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="442"/>
+				Match: Girls 2017 vs. Mt Lebonan on Sep 2, 2017 
+				<span class="teamColor">LOSS(0-1-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=71&eventGroupingId=442">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=442">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=442&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[442].name, 442, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId443">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="443"/>
+				Game #1 @ 10:35:26 AM 
+				<span class="teamColor">LOSS(19-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=302">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=443">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=443&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[443].name, 443, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId444">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="444"/>
+				Match: Girls 2017 vs. Seton La Salle on Sep 2, 2017 
+				<span class="teamColor">WIN(1-0-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=71&eventGroupingId=444">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=444">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=444&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[444].name, 444, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId445">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="445"/>
+				Game #1 @ 11:04:37 AM 
+				<span class="teamColor">WIN(25-16)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=303">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=445">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=445&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[445].name, 445, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId446">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="446"/>
+				Match: Girls 2017 vs. Peters Township on Sep 2, 2017 
+				<span class="teamColor">LOSS(0-1-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=71&eventGroupingId=446">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=446">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=446&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[446].name, 446, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId447">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="447"/>
+				Game #1 @ 12:07:07 PM 
+				<span class="teamColor">LOSS(16-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=304">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=447">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=447&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[447].name, 447, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId448">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="448"/>
+				Match: Girls 2017 vs. Penn Trafford on Sep 2, 2017 
+				<span class="teamColor">LOSS(0-1-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=71&eventGroupingId=448">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=448">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=448&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[448].name, 448, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId449">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="449"/>
+				Game #1 @ 12:54:14 PM 
+				<span class="teamColor">LOSS(20-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=305">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=449">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=449&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[449].name, 449, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId450">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="450"/>
+				Match: Girls 2017 vs. Pine Richland on Sep 2, 2017 
+				<span class="teamColor">LOSS(0-1-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=71&eventGroupingId=450">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=450">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=450&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[450].name, 450, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId451">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="451"/>
+				Game #1 @ 2:00:59 PM 
+				<span class="teamColor">LOSS(18-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=306">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=451">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=451&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[451].name, 451, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth1 eventRow" id="eventId452">
+			<td style="padding-left: 40px">
+				
+					<img class='open_close' src='/images/minus.png'/>
+				
+				<input type="checkbox" name="egId" value="452"/>
+				Match: Girls 2017 vs. Norwin on Sep 2, 2017 
+				<span class="teamColor">LOSS(0-1-0)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+							<a href="/eventSetup.htm?season=71&eventGroupingId=452">Create a new Game</a>
+						
+						
+					
+					| <a href="/eventGrouping.htm?id=452">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=452&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[452].name, 452, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+		<tr class="depth2 eventRow" id="eventId453">
+			<td style="padding-left: 70px">
+				
+				<input type="checkbox" name="egId" value="453"/>
+				Game #1 @ 2:32:08 PM 
+				<span class="teamColor">LOSS(13-25)</span>
+				
+				
+			</td>
+			<td>
+				
+				
+				
+				
+					
+					
+						
+						
+							<a href="/take/gameStats.htm?id=307">Take stats</a>
+						
+					
+					| <a href="/eventGrouping.htm?id=453">Edit properties</a>
+					
+				
+				
+				
+					|
+				
+				
+					
+					
+					
+						
+					
+				
+				<a href="/share.htm?id=453&season=71">Share</a>
+				
+				
+				
+					
+						|
+					
+					<a href="#" onclick='deleteObject(event, eventGroupings[453].name, 453, "/eventGrouping.htm?season=71", {doNotEncode : true})'>Delete</a>
+					
+				
+			</td>
+		</tr>
+	
+	<tr class='thebottomrow'>
+		<td colspan="2">
+			&nbsp;
+			
+				Create a new 
+				
+					 <a href="/eventSetup.htm?season=71&seriesId=1">Tournament</a>, 
+				
+					 <a href="/eventSetup.htm?season=71&seriesId=2">Match</a>, 
+				
+					or  <a href="/eventSetup.htm?season=71&seriesId=3">Practice</a>
+				
+			
+		</td>
+	</tr>
+	</tbody>
+</table>
+</div>
+
+</form>
+
+</div>
+
+</div></div>
+
+	
+	<!-- Hack for the footer to follow -->
+	<div id="push"></div>
+</div>
+
+<div id="footer">StatEasy Release #29, registered to kingleo008@yahoo.com. <br/>Copyright 2012 <a href="http://www.ressq.com/">RessQ Technologies Inc.</a>
+<div id="logo"><img src="/images/flogo.png" /></div>
+</div>
+
+</body>
+</html>

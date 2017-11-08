@@ -1,0 +1,13 @@
+#WrestlingLiveView_Div table { margin-top:20px; margin-left:30px; }
+.clear { clear:both; }
+.scoreboard { float:left; }
+.dataItem { float:left; text-align:center; font-family:Arial Narrow, sans-serif; margin-top:10px; }
+.dataItem .label { font-size:14px; font-weight:bold; color:#e99d1a; }
+.dataItem .value { background-color:#000; border:1px solid #e99d1a; color:#eee; text-align:center; margin:0px auto; margin-top:5px; font-family:Arial Black; }
+.bottomRow { margin-left:180px; }
+.topRow .dataItem { width: 120px; }
+.topRow .dataItem .value { height:60px; width:80px; font-size:34px; line-height:62px; }
+.bottomRow .dataItem { width:100px; }
+.bottomRow .dataItem .value { height:30px; width:40px; font-size:24px; line-height:31px; }
+.topRow .dataItem .time { height:60px; width:120px; font-size:34px; line-height:62px; }
+.topRow .dataItem { margin-left:25px;}

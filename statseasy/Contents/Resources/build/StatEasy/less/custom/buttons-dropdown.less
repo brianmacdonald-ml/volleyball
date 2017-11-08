@@ -1,0 +1,316 @@
+//buttons
+//.btn {
+//  &:hover, &:active, &:focus {
+//    #gradient > .vertical(#e9e9e9, #ffffff);
+//    .reset-filter();
+//    background-position: 0 0;
+//  }
+//}
+.btn-primary-light {
+  	border-color: #005DD4;
+ 	text-shadow: 0px 1px @black;
+  	color:#ffffff;
+  	#gradient > .vertical(@blue-3dabff, @blue-005dd5);
+  	.reset-filter();
+  	&:hover, &:focus {
+    	#gradient > .vertical(@blue-005dd5, @blue-3dabff);
+    	background-position: 0;    
+    	color: @white;
+    	.reset-filter();
+  	}
+}
+.btn-primary {
+	//-color: @blue-005DD4;
+	text-shadow: 0px 1px @gray-808080;
+	color: @white;
+	#gradient > .vertical(@btnPrimaryBackground, @blue-0078C4);
+	.reset-filter();
+	&:hover, &:focus {
+		#gradient > .vertical(@blue-0078C4, @btnPrimaryBackground);
+		background-position: 0;		
+		color: @white;
+		.reset-filter();
+		outline: 0;
+	}
+	outline: 0;
+}
+.btn-light-grey {
+  border-color: #C5C4C4;
+  color: #6D6E6E;
+  text-shadow: 1px -1px 0 #fff;
+  #gradient > .vertical(#fff, #e9e8e8);
+  .box-shadow(0 0 0);
+  &:hover, &:focus {
+      #gradient > .vertical(#e9e8e8, #fff);
+      background-position: 0;
+      color: #6D6E6E;
+      .reset-filter();
+  }
+}
+.btn-light-grey-one {
+	border-color: #c5c5c5;
+	color: #6d6d6d;
+	text-shadow: 1px -1px 0 #fff;
+  	#gradient > .vertical(#fff, #e9e9e9);
+  	.box-shadow(0 0 0);
+  	&:hover, &:focus {
+    	#gradient > .vertical(#e9e9e9, #fff);
+      	background-position: 0;
+      	color: #6D6E6E;
+      	.reset-filter();
+  	}
+}
+.btn-delete {
+  border-color: #C5C4C4;
+  color: #ffffff;
+  //text-shadow: 1px -1px 0 #C5C4C4;
+  #gradient > .vertical(#ee4036 ,#be1e2d);
+  .box-shadow(0 0 0);
+  .reset-filter();
+  &:hover, &:focus {
+      #gradient > .vertical(#be1e2d,#ee4036);
+      background-position: 0;
+      color: #CCCCCC;
+      text-shadow: none;
+      .reset-filter();
+  }
+}
+.btn-comment {
+    border-color: #BABABA;
+    color: #5A5A5A;
+    text-shadow: 1px -1px 0 #fff;
+    #gradient > .vertical(#fff, #e5e5e5);    
+    .box-shadow(0 0 0);
+    &:hover, &:focus {
+        #gradient > .vertical(#e5e5e5,#fff);
+        background-position: 0;
+        color: #5A5A5A;
+        text-shadow: none;
+        .reset-filter();
+  }
+}
+.btn_profile_follow {
+	color: #333333;
+    position: relative;
+	#gradient > .vertical(#ffffff, #e5e5e5);
+	#font > .open-sans-semibold(11px , 15px);
+	min-width: 49px;
+	display: inline-block;
+	.border-radius(4px);
+	border: 1px solid #BABABA;	
+	text-align:center;
+	&:hover {
+		background: url(../../images/profile_follow_bg.png) repeat-x 0 0 transparent;
+		color: #0562B8;            
+	}
+}
+.btn-admin-gray {
+	#font > .open-sans-regular (14px, 20px);
+	padding: 5px 2px 5px 6px;
+	border: 1px solid @gray-B7B7B7;
+	color: #5A5A5A;
+	text-shadow: 0px 1px rgba(255,255,255,1);
+	#gradient > .vertical(#fff,#e3e3e3);
+	min-width: 132px;
+	&:hover, &:focus {
+		#gradient > .vertical(#e3e3e3, #FFF);
+		background-position: 0;
+		color: #5A5A5A;
+		
+		transition: none;
+	}
+}
+/*Custom Button Classes */
+.btn_one {
+	padding: 5px 19px;
+	#font > .open-sans-regular (14px, 20px);
+	min-width: 45px;
+}
+.btn_two {
+	min-width: 96px;	
+}
+.btn_link_no_padding {
+	padding: 0px;
+}
+.btn_three {
+	line-height: 18px;
+	min-width: 195px;
+	padding: 5px 25px;
+}
+.btn_four {
+	min-width: 114px;
+}
+.btn_five {
+	font-size: 14px;
+	min-width: 210px;
+	padding: 8px 19px;
+}
+.btn_six {
+	min-width: 52px;
+	#font > .open-sans-regular (11px, 15px);
+	color: #FFFFFF;
+	padding: 4px 10px;
+}
+.btn_seven {
+	min-width: 45px;
+	padding: 5px 1px;
+	font-weight: 300;
+	color: #5A5A5A;
+	#gradient > .vertical(#fff,#e5e5e5);
+	&:hover {
+		#gradient > .vertical(#e5e5e5, #fff);		
+		transition: none;
+		background-position: 0;
+		.reset-filter();
+	}
+}
+.popup_delete_btn {
+	padding: 3px 14px;
+	min-width: 40px;
+}
+.btn_cancel {
+	color: @gray-545556;
+	line-height: 18px;
+	&:hover {
+		text-decoration: none;
+		color: #A6A6A6;
+	}
+}
+.btn_social {
+	#gradient > .vertical (@gray-fefefe, @gray-eae9e9);
+	padding: 8px 12px 10px 46px;
+	border-color: @gray-C5C4C4;
+	min-width: 191px;
+	text-align: left;
+	&:hover {
+		#gradient > .vertical (@gray-eae9e9, @gray-fefefe);
+		background-position: 0;
+		.reset-filter();
+		transition: none;
+	}
+}
+.dropdown_shipping_stored {
+	> a {
+		min-width: 110px;
+		display: inline-block;
+		.caret {
+			margin-left: 6px;
+			margin-top: 10px;
+		}
+	}
+	.dropdown-menu {
+		width: 173px;
+		padding-bottom: 8px;
+		.box-shadow(0px 0px 7px -2px @black-545454);
+		li {			
+			width: 173px;
+			&.dropdown_add_address:hover {
+				>a {
+					color: @black-2F292B;					
+				}
+				.icon_add {
+					background-position: -379px 4px;					
+				}				
+			}
+			&.dropdown_add_address {
+				> a {
+					padding: 3px 17px;
+					color: @blue-1a87c8;
+				}
+				.icon_add {
+					.icon_add_hover();
+					width: 20px;
+				}
+			}
+		}
+	}
+}
+.popup_dropdown_state_mini {
+	width: 80px;
+}
+.popup_dropdown_state_medium {
+	width: 160px;
+}
+.popup_dropdown_state_large {
+	width: 240px;
+}
+.admin_medium_block {
+	width: 202px;
+}
+.admin_large_block {
+	width: 222px;
+}
+.admin_mini_block {
+	margin-left: 10px;
+	width: 128px;
+}
+.admin_popup_medium {
+	width: 156px;
+}
+.admin_popup_medium_custom {
+	width: 156px;
+	margin-left: 28px;
+}
+.dropdown_custom {
+	padding-left: 10px;
+	padding-right: 25px;
+	position: relative;
+	text-align: left;	
+	#gradient > .vertical (@dropdownLinkBackgroundActive, @dropdownLinkBackgroundGradientLast);
+	border-color: @gray-d9dbdc;
+	.text-ellipsis();
+	> .caret {
+		position: absolute;
+		right: 15px;
+		border-top-color: @gray-6D6D6D;
+	}
+	&:hover, &:focus {
+		#gradient > .vertical (@dropdownLinkBackgroundGradientLast, @gray-EDEDED);
+		transition: none;
+		background-position: 0px 0px;
+		.reset-filter();
+	}
+}
+.btn_gray {
+	border-color: @btnBorder;
+	#gradient > .vertical(@white, @btnBackgroundHighlight);
+	&:hover {
+		#gradient > .vertical(@btnBackgroundHighlight, @white);
+		background-position: 0px 0px;
+		transition: none;
+	}
+}
+.dropdown {
+	.dropdown_custom {
+		color: @gray-545556;
+	}
+}
+.input_one {
+	color: @black;
+}
+.dropdown-menu {
+	li {
+		a {
+			.text-ellipsis();
+		}
+	}
+}
+
+//code snippet for add type anchors
+.add_icon_link() {
+	a {
+        color: @blue-0074CB;   
+        text-shadow: 0px 1px @white;     
+        &:hover,&:focus {
+            color: @gray-808080;
+            .icon_add_small {
+                .icon_add_small_hover();
+            }
+        }
+    }
+}
+.btn_onboard {
+    line-height: 18px;
+    min-width: 242px;
+    padding: 5px 12px;
+}

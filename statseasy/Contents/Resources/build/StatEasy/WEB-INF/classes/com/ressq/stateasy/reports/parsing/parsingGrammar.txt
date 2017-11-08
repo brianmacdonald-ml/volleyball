@@ -1,0 +1,35 @@
+<columnDefinition> ::= <columnDefinitionUnit> [ {+ | - | * | /} <columnDefinitionUnit> ]
+
+<columnDefinitionUnit> ::= <columnExpression> | { <openParen> <columnDefinition> <closeParen> }
+
+<columnExpression> ::= { avg | count | sum | min | max } <openParen> <statTypeSpecification> <argument> <argument> <closeParen> [ ? <openBracket> <statSelectorExpression> <closeBracket> ]
+
+<argument> ::= [ , { <statDataIndex> | * } ]
+
+<statTypeSpecification> ::=  <singleStatType> | { <openBracket> <singleStatType> [ , <singleStatType> ] <closeBracket> } | * | { ! <statTypeSpecification> }
+
+<singleStatType> ::= Any Valid Stat Shortcut (i.e. anything that is not '[', ']', ',', '*', or '!')
+
+<statSelectorExpression> ::= { <statSelectorStatAt> | <statSelectorComparison> } [ & <statSelectorExpression> ]
+
+<statSelectorStatAt> ::= statAt ( <statAtOffset>, <statTypeSpecification> ) [ ? <openBracket> <statSelectorComparison> [ & <statSelectorComparison> ] <closeBracket> ]
+
+<statAtOffset> ::= Any Integer
+
+<statSelectorComparison> ::= <statExpression> { = | < | <= | > | >= } <statExpression>
+
+<statExpression> ::= <statSelectorUnit> [ { + | - | * | / } <statSelectorUnit> ]
+
+<statSelectorUnit> ::= <statSelector> | { <openParen> <statExpression> <closeParen> }
+
+<statSelector> ::= { <statDataSelector> | <statStateSelector> | <statSelectorConstant> }
+
+<statDataSelector> ::= data <openBracket> { <statDataIndex> | * } <closeBracket>
+
+<statDataIndex> ::= Any Non-Negative Integer
+
+<statStateSelector> ::= { startingState | endingState } <openBracket> <statStateName> <closeBracket>
+
+<statStateName> ::= Any String
+
+<statSelectorConstant> ::= Any Integer or %d specifier

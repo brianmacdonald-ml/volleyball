@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_26" class="java.beans.XMLDecoder"> 
+ <object id="View2" class="com.ressq.stateasy.model.View"> 
+  <void property="allColumns"> 
+   <object class="java.util.ArrayList"> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>sum(p)/(count(p)+count(re))</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>1</int> 
+      </void> 
+      <void property="name"> 
+       <string>Rating</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View2"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count(p)+count(re)</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>2</int> 
+      </void> 
+      <void property="name"> 
+       <string>#</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View2"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count(p)?[data[1]=3]/(count(p)+count(re))</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>3</int> 
+      </void> 
+      <void property="name"> 
+       <string>PP%</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View2"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count(p)?[data[1]=3]</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>4</int> 
+      </void> 
+      <void property="name"> 
+       <string>3</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View2"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count(p)?[data[1]=2]</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>5</int> 
+      </void> 
+      <void property="name"> 
+       <string>2</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View2"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count(p)?[data[1]=1]</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>6</int> 
+      </void> 
+      <void property="name"> 
+       <string>1</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View2"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count(p)?[data[1]=3]+count(re)</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>7</int> 
+      </void> 
+      <void property="name"> 
+       <string>0/RE</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View2"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count(d)</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>8</int> 
+      </void> 
+      <void property="name"> 
+       <string>D</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View2"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count(md)</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>9</int> 
+      </void> 
+      <void property="name"> 
+       <string>MD</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View2"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>count(d)?[statAt(1,k)]+count(d)?[statAt(2,k)]</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>10</int> 
+      </void> 
+      <void property="name"> 
+       <string>D -&gt; K</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View2"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.Column"> 
+      <void property="definition"> 
+       <string>(count(d)?[statAt(1,k)]+count(d)?[statAt(2,k)])/count(d)</string> 
+      </void> 
+      <void property="formatType"> 
+       <string>number</string> 
+      </void> 
+      <void property="index"> 
+       <int>11</int> 
+      </void> 
+      <void property="name"> 
+       <string>DK%</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View2"/> 
+      </void> 
+      <void property="tableNumber"> 
+       <int>1</int> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="allGroups"> 
+   <object class="java.util.ArrayList"> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.ColumnGroup"> 
+      <void property="endIndex"> 
+       <int>7</int> 
+      </void> 
+      <void property="name"> 
+       <string>Breakdown</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View2"/> 
+      </void> 
+      <void property="startIndex"> 
+       <int>4</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="com.ressq.stateasy.model.ColumnGroup"> 
+      <void property="endIndex"> 
+       <int>11</int> 
+      </void> 
+      <void property="name"> 
+       <string>Digs</string> 
+      </void> 
+      <void property="parentView"> 
+       <object idref="View2"/> 
+      </void> 
+      <void property="startIndex"> 
+       <int>8</int> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="name"> 
+   <string>Passing &amp; Defense</string> 
+  </void> 
+  <void property="totalRow"> 
+   <boolean>true</boolean> 
+  </void> 
+ </object> 
+</java> 

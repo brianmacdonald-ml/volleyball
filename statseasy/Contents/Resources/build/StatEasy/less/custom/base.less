@@ -1,0 +1,87 @@
+html {background: #231F20;}
+ul {margin: 0px;}
+ul, ol, li { list-style-type: none; }
+a {
+  outline: none;
+}
+a:hover, a:focus, a:active { text-decoration: none; outline: none;}
+.global {
+  background: #F0F1F1;
+  overflow: hidden;
+}
+.global_no_overflow {
+  background: #F0F1F1;
+}
+body {
+  font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  text-rendering: auto;
+}
+label {
+  cursor: default;
+  &.checkbox {
+    cursor: pointer;
+  }
+}
+// Hover/Focus state
+// -----------
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+  text-decoration: none;
+  color: @dropdownLinkColorHover;
+  text-shadow: 0 1px 0 @white;
+  #gradient > .horizontal(@dropdownLinkBackgroundHover, @dropdownLinkBackgroundGradientLast);
+}
+
+// Active state
+// ------------
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: @dropdownLinkColorActive;
+  text-decoration: none;
+  outline: 0;
+  text-shadow: 0 1px 0 @white;
+  #gradient > .horizontal(@dropdownLinkBackgroundHover, @dropdownLinkBackgroundGradientLast);
+}
+
+//forms
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  #font > #family  > .open-sans-regular();
+  font-weight: 400;
+  // Focus state
+  &:focus {
+    border-color: rgba(0,120,196,.8);
+  }
+  color: @black;
+  .placeholder();
+}
+.modal-backdrop {
+  background-color: #404041;
+  // Fade for backdrop
+  &.fade { opacity: 0; }
+}
+.modal-backdrop,
+.modal-backdrop.fade.in {
+  .opacity(86);
+}

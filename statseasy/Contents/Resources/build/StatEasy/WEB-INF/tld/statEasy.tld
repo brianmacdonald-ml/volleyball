@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xsi:schemaLocation="http://java.sun.com/xml/ns/javaee web-jsptaglibrary_2_1.xsd"
+		xmlns="http://java.sun.com/xml/ns/javaee"
+  		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		version="2.1">
+    
+	<tlib-version>1.0</tlib-version>
+	<short-name>StatEasy</short-name>
+	
+	<function>
+		<name>resolvedPlayerInSeason</name>
+		<function-class>com.ressq.stateasy.web.spring.JspHelperFunctions</function-class>
+		<function-signature>java.lang.Object resolved(com.ressq.stateasy.service.importExport.ImportResolution, com.ressq.stateasy.model.PlayerInSeason )</function-signature>
+	</function>
+
+	<function>
+		<name>resolvedSeason</name>
+		<function-class>com.ressq.stateasy.web.spring.JspHelperFunctions</function-class>
+		<function-signature>java.lang.Object resolved(com.ressq.stateasy.service.importExport.ImportResolution, com.ressq.stateasy.model.Season )</function-signature>
+	</function>
+
+	<function>
+		<name>resolvedStatType</name>
+		<function-class>com.ressq.stateasy.web.spring.JspHelperFunctions</function-class>
+		<function-signature>java.lang.Object resolved(com.ressq.stateasy.service.importExport.ImportResolution, com.ressq.stateasy.model.StatType )</function-signature>
+	</function>
+	
+	<function>
+		<description>
+			JavaScript Escape function
+		</description>
+		<name>escapeJS</name>
+		<function-class>com.ressq.stateasy.web.spring.Utilities</function-class>
+		<function-signature>java.lang.String escapeJS(java.lang.String)</function-signature>
+	</function>
+	
+	<function>
+		<description>
+			HTML Escape function
+		</description>
+		<name>escapeHTML</name>
+		<function-class>com.ressq.stateasy.web.spring.Utilities</function-class>
+		<function-signature>java.lang.String escapeHTML(java.lang.String)</function-signature>
+	</function>
+	
+	<function>
+		<description>
+			URL Encoding function
+		</description>
+		<name>urlEncode</name>
+		<function-class>com.ressq.stateasy.web.spring.Utilities</function-class>
+		<function-signature>java.lang.String urlEncode(java.lang.String)</function-signature>
+	</function>
+	
+	<tag>
+		<name>formatTime</name>
+		<tagclass>com.ressq.stateasy.web.spring.FormatTimeTag</tagclass>
+		<bodycontent>empty</bodycontent>
+		
+		<attribute>
+			<name>value</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!--
+                
+			-->
+		</attribute>
+	</tag>
+		
+	<tag>
+		<name>eventResult</name>
+		<tagclass>com.ressq.stateasy.web.spring.EventGroupingResultDisplayTag</tagclass>
+		<bodycontent>empty</bodycontent>
+		
+		<attribute>
+			<name>season</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!--The season in the eventGrouping that you'd like to display the results for.-->
+		</attribute>
+		
+		<attribute>
+			<name>event</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!--The eventGrouping that you'd like to display the results for.-->
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>eventIter</name>
+		<tagclass>com.ressq.stateasy.web.spring.EventGroupingIteratorTag</tagclass>
+		<bodycontent>JSP</bodycontent>
+		
+		<attribute>
+			<name>items</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!--
+				Will iterate over the EventGrouping objects in 'items'
+			-->
+		</attribute>
+		
+		<attribute>
+			<name>season</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 
+				Will filter events down to just those related to this season
+			-->
+		</attribute>
+		
+		<attribute>
+			<name>timesLeft</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 
+				Will filter events down to just those related to this season
+			-->
+		</attribute>
+	</tag>
+	
+	<tag>
+	    <name>displayTypeNames</name>
+	    <tagclass>com.ressq.stateasy.web.spring.EventGroupingSeriesDisplay</tagclass>
+	    <bodycontent>JSP</bodycontent>
+	    
+	    <attribute>
+	       <name>allSeries</name>
+	       <required>false</required>
+	       <rtexprvalue>true</rtexprvalue>
+	       <!--
+	           Will iterate over the EventGroupingSeries' and print the top level EventGroupingType name.
+	       -->
+	    </attribute>
+	    <attribute>
+	       <name>types</name>
+	       <required>false</required>
+	       <rtexprvalue>true</rtexprvalue>
+	       <!--
+	           Will iterate over the passed in types and format the type names.
+	       -->
+	    </attribute>
+	    <attribute>
+	       <name>level</name>
+	       <required>false</required>
+	       <!--
+	           Do you show the top or bottom position. Top if not specified.
+	       -->
+	    </attribute>
+	    <attribute>
+	       <name>var</name>
+	       <required>false</required>
+	       <!--
+	           Saves the output into the specified var.
+	       -->
+	    </attribute>
+	</tag>
+	 
+</taglib>

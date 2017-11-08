@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+	<class name="StatUser" table="statusers">
+		<id name="id" column="userid">
+			<generator class="assigned"/>
+		</id>
+		
+		<property name="username" index="usernameIndex" unique-key="uniqueUsername">
+			<column name="username"/>
+		</property>
+		
+		<property name="password">
+			<column name="password"/>
+		</property>
+		
+		<property name="phoneNumber">
+			<column name="phoneNumber"/>
+		</property>
+		
+		<property name="createdOn">
+			<column name="createdon"/>
+		</property>
+		
+		<property name="lastLoggedIn">
+			<column name="lastLoggedIn"/>
+		</property>
+		
+		<property name="verified">
+			<column name="verified"/>
+		</property>
+		
+		<property name="bouncing">
+			<column name="bouncing"/>
+		</property>
+		
+		<property name="admin">
+			<column name="admin"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>

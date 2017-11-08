@@ -1,0 +1,1069 @@
+
+
+
+
+
+
+
+
+
+
+<html>
+	<head>
+		<title>The StatEasy Content Creator</title>
+		<link rel="stylesheet" href="/css/tokens.css" type="text/css">
+		<link rel="stylesheet" href="/css/print.css" type="text/css" media="print">
+		<link rel="stylesheet" href="/css/jquery.autocomplete.css" type="text/css">
+
+		<script src="/js/jquery-1.6.1.js" type="text/javascript"></script>
+		<script src="/js/jquery.easing.1.3.js" type="text/javascript"></script>
+		<script src="/js/jquery.corners.min.js" type="text/javascript"></script>
+		<script src="/js/jquery.dropshadow.js" type="text/javascript"></script>
+		<script src="/js/jquery.autocomplete.js" type="text/javascript"></script>
+		
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		
+		<link rel="shortcut icon" href="/images/favicon_1.jpg" />
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				$(".autofocus").focus();
+			});
+		</script>
+		
+	</head>
+
+	<body>
+
+<div id="container">
+	<div id="header">
+		<img src="/images/logo.png" class="headerLogo" />
+		
+		<div id="gameType"><span id="gameTypeInnerText"><a href="/hello.htm" title="Return to the Welcome page." class="noUnderline">Logout</a></span></div>
+
+		
+		
+		<div id="sportUpdates"></div>
+	</div>
+	<div id="navigation">
+		
+		<ul id="launch">
+			<li class="main
+				 
+			"><a href="/launch.htm" title="Select an action from the StatEasy dashboard">Dashboard</a></li>
+		</ul>
+		<ul id="config">
+			<li class="main
+				
+					tabbed
+				 
+			">
+			
+			<a href="/configure/stats.htm" title="Configure your stats, reports, views, teams, or players">Configuration</a></li>
+		</ul>
+		<ul id="account">
+			<li class="main">
+			<a href="http://app.stateasy.com:80/" target="_blank">Social Sports Network</a>
+			</li>
+		</ul>
+		
+
+		
+
+	</div>
+
+<link rel="stylesheet" href="/css/jquery.validation/validationEngine.jquery.css?sv=1" type="text/css" media="screen"/>
+<script src="/js/jquery.validation/jquery.validationEngine-en.js?sv=1" type="text/javascript"></script>
+<script src="/js/jquery.validation/jquery.validationEngine.js?sv=1" type="text/javascript"></script>
+
+<script src="/js/validateHelper.js?sv=1" type="text/javascript"></script>
+
+<style type="text/css">
+    .formErrors {
+        display: none;
+    }
+</style>
+
+<script type="text/javascript">
+	$(document).ready( function() {
+	    processFormErrors();
+	});
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#configuration").show();
+	});
+</script>
+
+<div id="configuration">
+	<div class="configLinks">
+	<a href="/configure/stats.htm" title="Edit existing statistics or create a new one">Stats</a> 
+	<a href="/configure/views.htm" title="Configure reports to analyze the statistics you have taken">Stat Reports</a> 
+	<a href="/configure/liveViews.htm" title="Configure the views you can see while taking statistics during a game">Live Views</a>  
+	<a href="/configure/teams.htm" title="Manage your teams and seasons">Teams</a> 
+	<a href="/configure/players.htm" title="Manage your players">Players</a> 
+	<a href="/configure/configure.htm" title="Import/Export Configurations">Advanced</a>
+	</div>
+</div>		
+
+<link type="text/css" href="/css/jquery.ui/jquery-ui-1.8.2.custom.css?sv=1" rel="stylesheet" />
+<script src="/js/jquery.ui/jquery-ui-1.8.2.custom.js?sv=1" type="text/javascript"></script>
+<script type="text/javascript" src="/js/jquery.tmpl.min.js?sv=1"></script>
+
+<script type="text/javascript" src="/js/encoder.js?sv=1"></script>
+<script type="text/javascript" src="/js/autocomplete.js?sv=1"></script>
+<script type="text/javascript" src="/js/common.js?sv=1"></script>
+<script type="text/javascript" src="/js/wizardHelper.js?sv=1"></script>
+<script type="text/javascript" src="/js/createAndAddPlayers.js?sv=1"></script>
+<script type="text/javascript" src="/js/editSeason.js?sv=1"></script>
+
+<script type="text/javascript">
+	var ac;
+	$(function() {
+		ac = $('.playersToAdd').autocomplete([{"firstName":"Karissa","lastName":"Becer","name":"Karissa Becer","id":47},{"firstName":"Desirae","lastName":"Buccigrossi","name":"Desirae Buccigrossi","id":28},{"firstName":"Dominique","lastName":"Buccigrossi","name":"Dominique Buccigrossi","id":29},{"firstName":"Chad","lastName":"Capuzzi","name":"Chad Capuzzi","id":10},{"firstName":"Katherine","lastName":"Chomko","name":"Katherine Chomko","id":30},{"firstName":"Katie","lastName":"Costanzo","name":"Katie Costanzo","id":31},{"firstName":"Max","lastName":"DePellegrini","name":"Max DePellegrini","id":2},{"firstName":"Ben","lastName":"DePellegrini","name":"Ben DePellegrini","id":3},{"firstName":"Jocelyn","lastName":"Eckenrode","name":"Jocelyn Eckenrode","id":48},{"firstName":"Shannon","lastName":"Fisher","name":"Shannon Fisher","id":32},{"firstName":"Annamaria","lastName":"Fort","name":"Annamaria Fort","id":49},{"firstName":"Matt","lastName":"Friday","name":"Matt Friday","id":8},{"firstName":"Megan","lastName":"Friday","name":"Megan Friday","id":33},{"firstName":"Tessa","lastName":"Friday","name":"Tessa Friday","id":50},{"firstName":"Conor","lastName":"Gaffney","name":"Conor Gaffney","id":9},{"firstName":"Lauren","lastName":"Heasley","name":"Lauren Heasley","id":51},{"firstName":"Matt","lastName":"Heilman","name":"Matt Heilman","id":27},{"firstName":"Haley","lastName":"Herrman","name":"Haley Herrman","id":34},{"firstName":"Matt","lastName":"Herrmann","name":"Matt Herrmann","id":1},{"firstName":"Emily","lastName":"Hunt","name":"Emily Hunt","id":52},{"firstName":"Elizabeth","lastName":"Kaslewicz","name":"Elizabeth Kaslewicz","id":53},{"firstName":"Katie","lastName":"Kenney","name":"Katie Kenney","id":35},{"firstName":"Meredith","lastName":"Kenney","name":"Meredith Kenney","id":36},{"firstName":"Jessica","lastName":"Michel","name":"Jessica Michel","id":37},{"firstName":"Olivia","lastName":"Molina","name":"Olivia Molina","id":38},{"firstName":"Eric","lastName":"Ovick","name":"Eric Ovick","id":6},{"firstName":"Katie","lastName":"Palumbo","name":"Katie Palumbo","id":54},{"firstName":"Murphy","lastName":"Patterson","name":"Murphy Patterson","id":39},{"firstName":"Jack","lastName":"Reese","name":"Jack Reese","id":11},{"firstName":"Madeline","lastName":"Richards","name":"Madeline Richards","id":55},{"firstName":"Kayla","lastName":"Slovenec","name":"Kayla Slovenec","id":40},{"firstName":"Ana","lastName":"Spangenberg","name":"Ana Spangenberg","id":41},{"firstName":"Nikki","lastName":"Stumpf","name":"Nikki Stumpf","id":42},{"firstName":"Sarah","lastName":"Supsura","name":"Sarah Supsura","id":43},{"firstName":"Andrew","lastName":"Tublin","name":"Andrew Tublin","id":7},{"firstName":"Bridget","lastName":"Wang","name":"Bridget Wang","id":56},{"firstName":"Maya","lastName":"Weis","name":"Maya Weis","id":44},{"firstName":"Erasmia","lastName":"Yager","name":"Erasmia Yager","id":45},{"firstName":"Chloe","lastName":"Yofan","name":"Chloe Yofan","id":46},{"firstName":"Jerett","lastName":"Zaleski","name":"Jerett Zaleski","id":5},{"firstName":"Jaysen","lastName":"Zaleski","name":"Jaysen Zaleski","id":4}], "ac_", "player", ['firstName', 'lastName', 'name'], 'name');
+		// Override default autocomplete functionality
+	    $('.playersToAdd').find('tr').die('click').live('click', function() {
+			var input = $(this).find("input");
+			var clickedPlayer = new player(
+					input.attr("firstname"),
+					input.attr("lastname"),
+					input.attr("playerid"));
+			addPlayerToTeam(clickedPlayer, true);
+		});
+	});
+</script>
+
+<script type="text/x-jquery-tmpl" id="playerToAddTemplate">
+	<tr id="ac_row_${id}">
+		<td><div class="rowContainer"><input  id="ac_radio_${id}" 
+					firstname="${firstName}" 
+					lastname="${lastName}" 
+					playerid="${id}" 
+					type="radio" 
+					name="player_radio" 
+					value="${name}" 
+					tabindex="-1"/> ${name}
+		</div></td>
+	</tr>
+</script>
+
+<div id="content"><div id="innercontent">
+<div class="middle" id="formContent">
+	
+	  
+	  
+		<h2 class="titleBorder">Edit season 'JV - Boys 2015':</h2>
+	  
+	
+    
+	<form id="season" action="/configure/seasonForm.htm?id=2" method="post">
+		<div id="steps">
+			<h3 id="step1" class="complete">Set up general information</h3>
+			<div id="step1stuff">
+				<table>
+				  <tr>
+				    <td>Season Name:</td>
+				    <td><input id="name" name="name" class="autofocus" type="text" value="Boys 2015"/></td>
+					<td></td>
+				  </tr>
+				  <tr>
+				    <td>Head Coach:</td>
+				    <td><input id="headCoach" name="headCoach" type="text" value="DJ Guardino"/></td>
+					<td></td>
+				  </tr>
+				  <tr>
+				    <td>Assistant Coach:</td>
+				    <td><input id="assistantCoach" name="assistantCoach" type="text" value="Phil O'Keeffe"/></td>
+				    <td></td>
+				  </tr>
+				  <tr>
+				    <td>Display in dashboard dropdown:</td>
+				    <td><input id="shown1" name="shown" type="checkbox" value="true" checked="checked"/><input type="hidden" name="_shown" value="on"/></td>
+				    <td></td>
+				  </tr>
+				</table>
+			</div>
+
+			<h3 id="step1" class="complete">Players in this season:</h3>
+			<div id="step2stuff">
+			<div class="playersToAdd">
+				<span class="boldTitle">Choose/Add players:</span><br />
+				<input id="playerToAdd" class="acInput" autocomplete="off" />
+				
+					<div id="ac_resize" class="acResize">
+					<div id="ac_select" class="acSelector">
+						<table cellspacing="0" class="striped">
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+								<tr id="ac_row_47">
+								<td><div class="rowContainer"><input  id="ac_radio_47" 
+											firstname="Karissa" 
+											lastname="Becer" 
+											playerid="47" 
+											type="radio" 
+											name="player_radio" 
+											value="Karissa Becer" 
+											tabindex="-1"/> Karissa Becer</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_28">
+								<td><div class="rowContainer"><input  id="ac_radio_28" 
+											firstname="Desirae" 
+											lastname="Buccigrossi" 
+											playerid="28" 
+											type="radio" 
+											name="player_radio" 
+											value="Desirae Buccigrossi" 
+											tabindex="-1"/> Desirae Buccigrossi</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_29">
+								<td><div class="rowContainer"><input  id="ac_radio_29" 
+											firstname="Dominique" 
+											lastname="Buccigrossi" 
+											playerid="29" 
+											type="radio" 
+											name="player_radio" 
+											value="Dominique Buccigrossi" 
+											tabindex="-1"/> Dominique Buccigrossi</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_10">
+								<td><div class="rowContainer"><input  id="ac_radio_10" 
+											firstname="Chad" 
+											lastname="Capuzzi" 
+											playerid="10" 
+											type="radio" 
+											name="player_radio" 
+											value="Chad Capuzzi" 
+											tabindex="-1"/> Chad Capuzzi</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_30">
+								<td><div class="rowContainer"><input  id="ac_radio_30" 
+											firstname="Katherine" 
+											lastname="Chomko" 
+											playerid="30" 
+											type="radio" 
+											name="player_radio" 
+											value="Katherine Chomko" 
+											tabindex="-1"/> Katherine Chomko</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_31">
+								<td><div class="rowContainer"><input  id="ac_radio_31" 
+											firstname="Katie" 
+											lastname="Costanzo" 
+											playerid="31" 
+											type="radio" 
+											name="player_radio" 
+											value="Katie Costanzo" 
+											tabindex="-1"/> Katie Costanzo</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_2">
+								<td><div class="rowContainer"><input  id="ac_radio_2" 
+											firstname="Max" 
+											lastname="DePellegrini" 
+											playerid="2" 
+											type="radio" 
+											name="player_radio" 
+											value="Max DePellegrini" 
+											tabindex="-1"/> Max DePellegrini</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_3">
+								<td><div class="rowContainer"><input  id="ac_radio_3" 
+											firstname="Ben" 
+											lastname="DePellegrini" 
+											playerid="3" 
+											type="radio" 
+											name="player_radio" 
+											value="Ben DePellegrini" 
+											tabindex="-1"/> Ben DePellegrini</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_48">
+								<td><div class="rowContainer"><input  id="ac_radio_48" 
+											firstname="Jocelyn" 
+											lastname="Eckenrode" 
+											playerid="48" 
+											type="radio" 
+											name="player_radio" 
+											value="Jocelyn Eckenrode" 
+											tabindex="-1"/> Jocelyn Eckenrode</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_32">
+								<td><div class="rowContainer"><input  id="ac_radio_32" 
+											firstname="Shannon" 
+											lastname="Fisher" 
+											playerid="32" 
+											type="radio" 
+											name="player_radio" 
+											value="Shannon Fisher" 
+											tabindex="-1"/> Shannon Fisher</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_49">
+								<td><div class="rowContainer"><input  id="ac_radio_49" 
+											firstname="Annamaria" 
+											lastname="Fort" 
+											playerid="49" 
+											type="radio" 
+											name="player_radio" 
+											value="Annamaria Fort" 
+											tabindex="-1"/> Annamaria Fort</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_8">
+								<td><div class="rowContainer"><input  id="ac_radio_8" 
+											firstname="Matt" 
+											lastname="Friday" 
+											playerid="8" 
+											type="radio" 
+											name="player_radio" 
+											value="Matt Friday" 
+											tabindex="-1"/> Matt Friday</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_33">
+								<td><div class="rowContainer"><input  id="ac_radio_33" 
+											firstname="Megan" 
+											lastname="Friday" 
+											playerid="33" 
+											type="radio" 
+											name="player_radio" 
+											value="Megan Friday" 
+											tabindex="-1"/> Megan Friday</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_50">
+								<td><div class="rowContainer"><input  id="ac_radio_50" 
+											firstname="Tessa" 
+											lastname="Friday" 
+											playerid="50" 
+											type="radio" 
+											name="player_radio" 
+											value="Tessa Friday" 
+											tabindex="-1"/> Tessa Friday</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_9">
+								<td><div class="rowContainer"><input  id="ac_radio_9" 
+											firstname="Conor" 
+											lastname="Gaffney" 
+											playerid="9" 
+											type="radio" 
+											name="player_radio" 
+											value="Conor Gaffney" 
+											tabindex="-1"/> Conor Gaffney</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_51">
+								<td><div class="rowContainer"><input  id="ac_radio_51" 
+											firstname="Lauren" 
+											lastname="Heasley" 
+											playerid="51" 
+											type="radio" 
+											name="player_radio" 
+											value="Lauren Heasley" 
+											tabindex="-1"/> Lauren Heasley</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_27">
+								<td><div class="rowContainer"><input  id="ac_radio_27" 
+											firstname="Matt" 
+											lastname="Heilman" 
+											playerid="27" 
+											type="radio" 
+											name="player_radio" 
+											value="Matt Heilman" 
+											tabindex="-1"/> Matt Heilman</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_34">
+								<td><div class="rowContainer"><input  id="ac_radio_34" 
+											firstname="Haley" 
+											lastname="Herrman" 
+											playerid="34" 
+											type="radio" 
+											name="player_radio" 
+											value="Haley Herrman" 
+											tabindex="-1"/> Haley Herrman</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_1">
+								<td><div class="rowContainer"><input  id="ac_radio_1" 
+											firstname="Matt" 
+											lastname="Herrmann" 
+											playerid="1" 
+											type="radio" 
+											name="player_radio" 
+											value="Matt Herrmann" 
+											tabindex="-1"/> Matt Herrmann</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_52">
+								<td><div class="rowContainer"><input  id="ac_radio_52" 
+											firstname="Emily" 
+											lastname="Hunt" 
+											playerid="52" 
+											type="radio" 
+											name="player_radio" 
+											value="Emily Hunt" 
+											tabindex="-1"/> Emily Hunt</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_53">
+								<td><div class="rowContainer"><input  id="ac_radio_53" 
+											firstname="Elizabeth" 
+											lastname="Kaslewicz" 
+											playerid="53" 
+											type="radio" 
+											name="player_radio" 
+											value="Elizabeth Kaslewicz" 
+											tabindex="-1"/> Elizabeth Kaslewicz</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_35">
+								<td><div class="rowContainer"><input  id="ac_radio_35" 
+											firstname="Katie" 
+											lastname="Kenney" 
+											playerid="35" 
+											type="radio" 
+											name="player_radio" 
+											value="Katie Kenney" 
+											tabindex="-1"/> Katie Kenney</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_36">
+								<td><div class="rowContainer"><input  id="ac_radio_36" 
+											firstname="Meredith" 
+											lastname="Kenney" 
+											playerid="36" 
+											type="radio" 
+											name="player_radio" 
+											value="Meredith Kenney" 
+											tabindex="-1"/> Meredith Kenney</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_37">
+								<td><div class="rowContainer"><input  id="ac_radio_37" 
+											firstname="Jessica" 
+											lastname="Michel" 
+											playerid="37" 
+											type="radio" 
+											name="player_radio" 
+											value="Jessica Michel" 
+											tabindex="-1"/> Jessica Michel</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_38">
+								<td><div class="rowContainer"><input  id="ac_radio_38" 
+											firstname="Olivia" 
+											lastname="Molina" 
+											playerid="38" 
+											type="radio" 
+											name="player_radio" 
+											value="Olivia Molina" 
+											tabindex="-1"/> Olivia Molina</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_6">
+								<td><div class="rowContainer"><input  id="ac_radio_6" 
+											firstname="Eric" 
+											lastname="Ovick" 
+											playerid="6" 
+											type="radio" 
+											name="player_radio" 
+											value="Eric Ovick" 
+											tabindex="-1"/> Eric Ovick</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_54">
+								<td><div class="rowContainer"><input  id="ac_radio_54" 
+											firstname="Katie" 
+											lastname="Palumbo" 
+											playerid="54" 
+											type="radio" 
+											name="player_radio" 
+											value="Katie Palumbo" 
+											tabindex="-1"/> Katie Palumbo</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_39">
+								<td><div class="rowContainer"><input  id="ac_radio_39" 
+											firstname="Murphy" 
+											lastname="Patterson" 
+											playerid="39" 
+											type="radio" 
+											name="player_radio" 
+											value="Murphy Patterson" 
+											tabindex="-1"/> Murphy Patterson</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_11">
+								<td><div class="rowContainer"><input  id="ac_radio_11" 
+											firstname="Jack" 
+											lastname="Reese" 
+											playerid="11" 
+											type="radio" 
+											name="player_radio" 
+											value="Jack Reese" 
+											tabindex="-1"/> Jack Reese</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_55">
+								<td><div class="rowContainer"><input  id="ac_radio_55" 
+											firstname="Madeline" 
+											lastname="Richards" 
+											playerid="55" 
+											type="radio" 
+											name="player_radio" 
+											value="Madeline Richards" 
+											tabindex="-1"/> Madeline Richards</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_40">
+								<td><div class="rowContainer"><input  id="ac_radio_40" 
+											firstname="Kayla" 
+											lastname="Slovenec" 
+											playerid="40" 
+											type="radio" 
+											name="player_radio" 
+											value="Kayla Slovenec" 
+											tabindex="-1"/> Kayla Slovenec</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_41">
+								<td><div class="rowContainer"><input  id="ac_radio_41" 
+											firstname="Ana" 
+											lastname="Spangenberg" 
+											playerid="41" 
+											type="radio" 
+											name="player_radio" 
+											value="Ana Spangenberg" 
+											tabindex="-1"/> Ana Spangenberg</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_42">
+								<td><div class="rowContainer"><input  id="ac_radio_42" 
+											firstname="Nikki" 
+											lastname="Stumpf" 
+											playerid="42" 
+											type="radio" 
+											name="player_radio" 
+											value="Nikki Stumpf" 
+											tabindex="-1"/> Nikki Stumpf</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_43">
+								<td><div class="rowContainer"><input  id="ac_radio_43" 
+											firstname="Sarah" 
+											lastname="Supsura" 
+											playerid="43" 
+											type="radio" 
+											name="player_radio" 
+											value="Sarah Supsura" 
+											tabindex="-1"/> Sarah Supsura</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_7">
+								<td><div class="rowContainer"><input  id="ac_radio_7" 
+											firstname="Andrew" 
+											lastname="Tublin" 
+											playerid="7" 
+											type="radio" 
+											name="player_radio" 
+											value="Andrew Tublin" 
+											tabindex="-1"/> Andrew Tublin</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_56">
+								<td><div class="rowContainer"><input  id="ac_radio_56" 
+											firstname="Bridget" 
+											lastname="Wang" 
+											playerid="56" 
+											type="radio" 
+											name="player_radio" 
+											value="Bridget Wang" 
+											tabindex="-1"/> Bridget Wang</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_44">
+								<td><div class="rowContainer"><input  id="ac_radio_44" 
+											firstname="Maya" 
+											lastname="Weis" 
+											playerid="44" 
+											type="radio" 
+											name="player_radio" 
+											value="Maya Weis" 
+											tabindex="-1"/> Maya Weis</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_45">
+								<td><div class="rowContainer"><input  id="ac_radio_45" 
+											firstname="Erasmia" 
+											lastname="Yager" 
+											playerid="45" 
+											type="radio" 
+											name="player_radio" 
+											value="Erasmia Yager" 
+											tabindex="-1"/> Erasmia Yager</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_46">
+								<td><div class="rowContainer"><input  id="ac_radio_46" 
+											firstname="Chloe" 
+											lastname="Yofan" 
+											playerid="46" 
+											type="radio" 
+											name="player_radio" 
+											value="Chloe Yofan" 
+											tabindex="-1"/> Chloe Yofan</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_5">
+								<td><div class="rowContainer"><input  id="ac_radio_5" 
+											firstname="Jerett" 
+											lastname="Zaleski" 
+											playerid="5" 
+											type="radio" 
+											name="player_radio" 
+											value="Jerett Zaleski" 
+											tabindex="-1"/> Jerett Zaleski</div></td>
+								</tr>
+								
+							
+								
+								<tr id="ac_row_4">
+								<td><div class="rowContainer"><input  id="ac_radio_4" 
+											firstname="Jaysen" 
+											lastname="Zaleski" 
+											playerid="4" 
+											type="radio" 
+											name="player_radio" 
+											value="Jaysen Zaleski" 
+											tabindex="-1"/> Jaysen Zaleski</div></td>
+								</tr>
+								
+							
+						</table>
+					</div>
+					</div>
+				
+			</div>
+			<div class="addPlayer">
+				<input type="button" class="hoverGreen" value="add >" id="addPlayer"/>
+			</div>
+			<div class="addedPlayers">
+				<span class="boldTitle">Players on this team for this season:</span>
+				<table class="striped players" id="mainTable">
+					  <tr>
+						<th width="40%">Player</th>
+					    <th>Shortcut</th>
+					    <th>Number<span class="formatFormErrors">(Required)</span></th>
+					    <th>Actions</th>
+					  </tr>
+				</table>
+				
+					    
+					    	<script type="text/javascript">
+					    		somePlayer = new player("Alex",
+					    								"Lawson",
+					    								"12",
+					    								"al",
+														"20");
+					    		appendPlayerToList(somePlayer);
+					    	</script>
+						
+				
+					    
+					    	<script type="text/javascript">
+					    		somePlayer = new player("Chris",
+					    								"Snider",
+					    								"26",
+					    								"cs",
+														"21");
+					    		appendPlayerToList(somePlayer);
+					    	</script>
+						
+				
+					    
+					    	<script type="text/javascript">
+					    		somePlayer = new player("Dom",
+					    								"DiMatteo",
+					    								"25",
+					    								"dd",
+														"29");
+					    		appendPlayerToList(somePlayer);
+					    	</script>
+						
+				
+					    
+					    	<script type="text/javascript">
+					    		somePlayer = new player("Dylan",
+					    								"Peterlie",
+					    								"19",
+					    								"dp",
+														"13");
+					    		appendPlayerToList(somePlayer);
+					    	</script>
+						
+				
+					    
+					    	<script type="text/javascript">
+					    		somePlayer = new player("Dom",
+					    								"Scanga",
+					    								"13",
+					    								"ds",
+														"26");
+					    		appendPlayerToList(somePlayer);
+					    	</script>
+						
+				
+					    
+					    	<script type="text/javascript">
+					    		somePlayer = new player("Elliot",
+					    								"Norman",
+					    								"24",
+					    								"en",
+														"28");
+					    		appendPlayerToList(somePlayer);
+					    	</script>
+						
+				
+					    
+					    	<script type="text/javascript">
+					    		somePlayer = new player("Mike",
+					    								"Hudic",
+					    								"16",
+					    								"hu",
+														"6");
+					    		appendPlayerToList(somePlayer);
+					    	</script>
+						
+				
+					    
+					    	<script type="text/javascript">
+					    		somePlayer = new player("Jordan",
+					    								"DiSanti",
+					    								"15",
+					    								"jd",
+														"4");
+					    		appendPlayerToList(somePlayer);
+					    	</script>
+						
+				
+					    
+					    	<script type="text/javascript">
+					    		somePlayer = new player("Jacob",
+					    								"Orban",
+					    								"21",
+					    								"jo",
+														"18");
+					    		appendPlayerToList(somePlayer);
+					    	</script>
+						
+				
+					    
+					    	<script type="text/javascript">
+					    		somePlayer = new player("Kota",
+					    								"Furuhata",
+					    								"18",
+					    								"kf",
+														"10");
+					    		appendPlayerToList(somePlayer);
+					    	</script>
+						
+				
+					    
+					    	<script type="text/javascript">
+					    		somePlayer = new player("Locklain",
+					    								"Renfrew",
+					    								"23",
+					    								"lr",
+														"25");
+					    		appendPlayerToList(somePlayer);
+					    	</script>
+						
+				
+					    
+					    	<script type="text/javascript">
+					    		somePlayer = new player("Mark",
+					    								"Calandra",
+					    								"20",
+					    								"mc",
+														"17");
+					    		appendPlayerToList(somePlayer);
+					    	</script>
+						
+				
+					    
+					    	<script type="text/javascript">
+					    		somePlayer = new player("Matt",
+					    								"Heilman",
+					    								"14",
+					    								"mh",
+														"1");
+					    		appendPlayerToList(somePlayer);
+					    	</script>
+						
+				
+					    
+					    	<script type="text/javascript">
+					    		somePlayer = new player("Tom",
+					    								"McFadden",
+					    								"17",
+					    								"tm",
+														"7");
+					    		appendPlayerToList(somePlayer);
+					    	</script>
+						
+				
+					    
+					    	<script type="text/javascript">
+					    		somePlayer = new player("Will",
+					    								"Tabor",
+					    								"22",
+					    								"wt",
+														"19");
+					    		appendPlayerToList(somePlayer);
+					    	</script>
+						
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+					    
+				
+			</div>
+			<div class="playersToDelete">
+			</div>
+			<div class="clear"></div>
+
+			
+			  
+			  
+				<input id="editingIsComplete" class="hoverGreen" type="button" value="Save my changes"/>
+			  
+			
+			<input class="hoverRed" type="submit" value="Cancel"/>
+			<div style="display:none;" id="hiddenRemovedElements"></div>
+			</form>
+		</div>
+
+</div>
+</div></div>
+
+<div id="editPlayerDialog" title="Edit player">
+	<table>
+	  <tr>
+	    <td style="white-space:nowrap;">First Name:</td>
+	    <td><input type="text" id="firstName" name="firstName"/></td>
+	  </tr>
+	  <tr>
+	    <td style="white-space:nowrap;">Last Name:</td>
+	    <td><input type="text" id="lastName" name="lastName"/></td>
+	  </tr>
+	</table>
+</div>
+
+	
+	<!-- Hack for the footer to follow -->
+	<div id="push"></div>
+</div>
+
+<div id="footer">StatEasy Release #29, registered to kingleo008@yahoo.com. <br/>Copyright 2012 <a href="http://www.ressq.com/">RessQ Technologies Inc.</a>
+<div id="logo"><img src="/images/flogo.png" /></div>
+</div>
+
+</body>
+</html>

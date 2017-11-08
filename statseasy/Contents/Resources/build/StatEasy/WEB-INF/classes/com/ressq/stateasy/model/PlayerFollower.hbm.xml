@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.ressq.stateasy.model">
+	<class name="PlayerFollower" table="playerFollowers">
+		<id name="id" column="playerFollower">
+			<generator class="native"/>
+		</id>
+		
+		<many-to-one name="followUser" column="followUser" class="StatUser" not-null="true" />
+		
+		<many-to-one name="player" column="player" class="Player" not-null="true" />
+		
+		<property name="admin">
+			<column name="isAdmin"/>
+		</property>
+		
+		<property name="followedOn">
+			<column name="followedOn"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>
