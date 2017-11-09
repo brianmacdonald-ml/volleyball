@@ -83,7 +83,7 @@ colnames(events)[15] <- "start_time"
 events$game_date <- ISOdatetime(1970,1,1,0,0,0) +as.numeric(as.character(events$start_date))/1e3
 events$game_time <- ISOdatetime(1970,1,1,0,0,0) +as.numeric(as.character(events$start_time))/1e3
 dim(events)
-names(events)
+
 ###  Need to fill in blank locations
 
 
