@@ -85,7 +85,9 @@ events$game_time <- ISOdatetime(1970,1,1,0,0,0) +as.numeric(as.character(events$
 dim(events)
 
 ###  Need to fill in blank locations
- 
+
+
+###  Who is competitor 
 
 # Matches
 
