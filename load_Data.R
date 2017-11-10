@@ -39,6 +39,8 @@ for(i in df_names){
   assign(i, read.csv(filepath,header=TRUE,sep = "|"))
 }
 
+
+
 #Merge Stat Dataframes
 
 stats <- merge(STATDATA,STATS[,c(1,3,4,6,7,8,9,10,11,12,13,14,15)],by = "STAT")
@@ -59,6 +61,13 @@ stats <- stats %>%
 state <- merge(GAMESTATE_GAMESTATEPROPERTIES,GAMESTATEPROPERTIES, by="GAMESTATEPROPERTY")
 state <- merge(state,GAMESTATES, by="GAMESTATE")
 
+##############
+#
+#  Merge teams and seasons
+#
+###########
+
+teams <- merge(SEASONS[,c(1,3:5,7)],TEAMS[,c(1,3)],by='TEAM' )
 
 ##############
 #
@@ -69,7 +78,7 @@ state <- merge(state,GAMESTATES, by="GAMESTATE")
 # First Merge with other data
 dim(EVENTGROUPINGS)
 dim(EVENTGROUPINGTYPES)
-events <- merge(EVENTGROUPINGS[,c(1,3,4,6:8,12:15)],EVENTGROUPINGTYPES[,c(1,2,5)],by="EVENTGROUPINGTYPE")
+events <- merge(EVENTGROUPINGS[,c(1,3,4,6:8,12:16)],EVENTGROUPINGTYPES[,c(1,2,5)],by="EVENTGROUPINGTYPE")
 dim(events)
 events <- merge(events,EVENTGROUPINGATTRIBUTE[EVENTGROUPINGATTRIBUTE$NAME=="Location",c(1,2)],
                 by.x="ASSOCIATEDEVENT",by.y="EVENTGROUPINGATTRIBUTE",all.x=TRUE)
@@ -82,6 +91,9 @@ colnames(events)[14] <- "start_date"
 colnames(events)[15] <- "start_time"
 events$game_date <- ISOdatetime(1970,1,1,0,0,0) +as.numeric(as.character(events$start_date))/1e3
 events$game_time <- ISOdatetime(1970,1,1,0,0,0) +as.numeric(as.character(events$start_time))/1e3
+
+#add opponent team name
+events <- merge(events,teams,by.x='THEIRSEASON',by.y='SEASON')
 dim(events)
 
 ###  Need to fill in blank locations
@@ -212,3 +224,20 @@ game_ranges[game_ranges$GAME==game_id,c(1:4,14)]
 
 #
 View(game_ranges[,c("ID","GAME","ourScore","our_prior","theirScore","their_prior")])
+
+
+
+
+####### get a list of vrbs by dataframes
+
+dfs <- ls()
+dfs <- dfs[dfs == toupper(dfs)]
+dd <- NULL
+for (i in dfs) {
+  a <- names(get(i))
+  b <- cbind(i,a)
+  dd <- rbind(dd,b)
+}
+dd<-as.data.frame(dd)
+colnames(dd)<-c
+dd[dd$variable == 'TEAM',]
